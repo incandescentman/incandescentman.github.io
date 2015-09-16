@@ -1,0 +1,30 @@
+* DAILIES - week of <2015-09-14 Mon> 
+*** COMMITTED <2015-09-16 Wed> [0%]
+***** TODO meditate 
+        SCHEDULED: <2015-09-16 Wed> 
+***** TODO morning pages 
+      SCHEDULED: <2015-09-16 Wed> 
+
+*** COMMITTED <2015-09-17 Thu> [0%]
+***** TODO wake up 8:30am
+      SCHEDULED: <2015-09-17 Thu 8:30am>
+***** TODO blue light therapy
+      SCHEDULED: <2015-09-17 Thu 8:31am>
+***** TODO meditate 
+      SCHEDULED: <2015-09-17 Thu> 
+***** TODO morning pages 
+      SCHEDULED: <2015-09-17 Thu>
+***** TODO lights out by 12:30am
+      SCHEDULED: <2015-09-17 Thu 11:59pm> 
+
+*** COMMITTED <2015-09-18 Fri> [0%]
+***** TODO wake up 8:30am
+      SCHEDULED: <2015-09-18 Fri 8:30am>
+***** TODO blue light therapy
+      SCHEDULED: <2015-09-18 Fri 8:31am>
+***** TODO meditate 
+      SCHEDULED: <2015-09-18 Fri> 
+***** TODO morning pages 
+      SCHEDULED: <2015-09-18 Fri>
+***** TODO lights out by 12:30am
+      SCHEDULED: <2015-09-18 Fri 11:59pm> 
