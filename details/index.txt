@@ -14,8 +14,13 @@ why don't you write a draft and I'll edit it
 
 - Boo 
 - Ok hang on
-- Here are our notes so far 
-- file:///details.jpg 
+- Here are our notes so far
+
+#+BEGIN_HTML
+<li><img src="http://incandescentman.github.io/details/details.jpg" /></li> 
+#+END_HTML 
+
+
 - Pretty straightforward :)
 
 boring. nothing to visualize. doesn't even answer the question of what she's doing!
