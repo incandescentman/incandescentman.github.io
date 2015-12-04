@@ -17,7 +17,9 @@ why don't you write a draft and I'll edit it
 - Here are our notes so far
 
 #+BEGIN_HTML
+<ul class="org-ul"> 
 <li><img src="http://incandescentman.github.io/details/details.jpg" /></li> 
+</ul> 
 #+END_HTML 
 
 
