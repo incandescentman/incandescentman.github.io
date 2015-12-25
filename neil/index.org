@@ -9,9 +9,13 @@
 
 
 * Merry Christmas!                                                    :slide: 
-*Dear Neil, \\
-Merry Christmas!*
+*Dear Neil*, \\
+*Merry Christmas!* \\ 
+*Love*, \\ 
+*Sunjay*
 
+Press right arrow to continue
+→ 
 
 * Merry Christmas!                                                    :slide: 
 http://www.magic4walls.com/wp-content/uploads/2014/12/christmas-reindeer-Santa-Claus-new-year-2015-vector-New-York-desktop.jpg 
@@ -41,7 +45,7 @@ http://www.wufashion.com/wp-content/uploads/2014/12/leather-shoes-5.jpg
 https://dobetter.files.wordpress.com/2008/06/running-shoes-sm.jpg 
 
 
-* Sneaker advice :slide:
+* Question and answer :slide:
 
 #+BEGIN_HTML
 <embed src="3.pdf" Width="800px" height="2100px"> 
@@ -79,7 +83,7 @@ file:img/85231_WT0002_d1.jpeg
 
 *→* 
 
-* Click through the gallery *→*                                       :slide:
+* Click through the gallery below :slide:
 
 #+BEGIN_HTML
 <a class="embedly-card" data-card-key="5a5f778983654664b58c992abf623e2c" data-card-controls="0" data-card-theme="dark" data-card-width="600" href="http://imgur.com/gallery/X5Z5q">Killshot</a>
@@ -88,6 +92,9 @@ file:img/85231_WT0002_d1.jpeg
 
 
 ** The End                                                            :slide:
+
+* If you don't like them there's also these :slide: 
+http://refreshstyle.com/blog/wp-content/uploads/2015/05/the-drop-date-adidas-stan-smith-otf.jpg 
 
 #+OPTIONS: num:nil toc:nil tags:t
 
