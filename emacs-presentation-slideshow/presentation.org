@@ -292,7 +292,7 @@ This slide is a *level-3* Org-Mode heading, inside the previous one.
 
 * Source Code                                                         :slide:
 
-Use =begin_/Users/jay/Dropbox/github/org-html-slideshow/src/end_src= blocks to include source code.
+Use =begin_../assets/org-html-slideshow/src/end_src= blocks to include source code.
 
 #+begin_src clojure
   (defn example []
@@ -372,14 +372,14 @@ Sometimes it's safest to add an "empty" heading at the end of your document to m
 
 #+TAGS: slide(is )
 
-#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/Users/jay/Dropbox/github/org-html-slideshow/src/css/common.css" />
-#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/Users/jay/Dropbox/github/org-html-slideshow/src/css/screen.css" media="screen" />
-#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/Users/jay/Dropbox/github/org-html-slideshow/src/css/projection.css" media="projection" />
-#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/Users/jay/Dropbox/github/org-html-slideshow/src/css/presenter.css" media="presenter" />
-#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/Users/jay/Dropbox/github/org-html-slideshow/src/css/jay-org-slideshow.css"/>
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/common.css" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/screen.css" media="screen" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/projection.css" media="projection" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/presenter.css" media="presenter" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/jay-org-slideshow.css"/>
 
 #+BEGIN_HTML
-<script type="text/javascript" src="/Users/jay/Dropbox/github/org-html-slideshow/production/org-html-slideshow.js"></script>
+<script type="text/javascript" src="../assets/org-html-slideshow/production/org-html-slideshow.js"></script>
 #+END_HTML
 
 # Local Variables:
