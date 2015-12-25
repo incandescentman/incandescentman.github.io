@@ -1,0 +1,390 @@
+#+TITLE: Emacs for Writers
+#+AUTHOR: Jay Dixit
+
+#+BEGIN_HTML
+<div class="initial_prompt">
+<h1 class="begin">Type <strong>T</strong> to begin the slideshow.</h1>
+</div>
+#+END_HTML
+
+
+* Emacs for Writers       :slide: 
+*How I found my way to Emacs* 
+
+Jay Dixit  \\
+The New York Writers' Intensive \\
+Twitter: [[http://twitter.com/jaydixit][@jaydixit]]  \\
+jay@jaydixit.com \\ 
+newyorkwritersintensive.com \\
+
+* My first computer :slide:
+
+https://upload.wikimedia.org/wikipedia/commons/9/99/DEC_VT100_terminal.jpg 
+
+*** Notes                                                             :notes: 
+At work he had some kind of Vax Station...
+and at home we had a VT terminal 
+
+But it wasn't mine. It belonged to the university.
+
+* Modem                                                               :slide: 
+https://c2.staticflickr.com/4/3227/2979693877_c601ac432a.jpg 
+
+*** Notes                                                             :notes: 
+And our modem looked like this 
+
+* VAX Terminal                                                        :slide: 
+file:///Users/jay/Downloads/Screenshots/2015-09-14.png
+*** Notes                                                             :notes: 
+
+It was a black screen with yellow text, like this: 
+Dear Dad.
+
+How are you? I am fine.
+
+How is Switzerland? I have been reading Isaac Asimov's Robot Dreams. It is depressing, and really makes you think. 
+
+I have a game called the Hitchiker's Guide to the Galaxy. I have defeated the Bugblatter Beast, but I am having trouble getting the Babel fish. 
+
+When are you coming home? I miss you. 
+
+Love,
+Sunjay
+
+P.S. Tomorrow I present my Gifted project on Atlantis. 
+
+* Dungeon (Zork)                                                      :slide:
+http://xmedia.ex.ac.uk/wp/wordpress/wp-content/uploads/2014/10/zork.png 
+
+* My own computer                                                      :slide: 
+http://www.vectronicsappleworld.com/archives/vintage/images/0032/snap13.jpg 
+
+* Microsoft Word                                                      :slide: 
+http://computersandcomposition.candcblog.org/archives/v10/10_2_html/10_2_8_Boudreau1.gif 
+
+* Microsoft Word                                                      :slide: 
+http://i260.photobucket.com/albums/ii8/patheticcockroach/microsoft-word-sucks-write-without-.gif 
+
+* New Project                                                         :slide: 
+https://johntomsett.files.wordpress.com/2013/03/1984-opening-paragraph.jpg 
+
+* Googling                                                            :slide: 
+file:///users/jay/Downloads/Screenshots/googling.png 
+
+* Workflowy                                                           :slide: 
+http://3.bp.blogspot.com/_oB6fkceAJrc/TSXTDtU_LiI/AAAAAAAABi8/gLOs_kICDZU/s1600/organize-goals-alt.png 
+
+* Scrivener                                                           :slide: 
+http://www.autostraddle.com/wp-content/uploads/2012/11/scrivener.jpg 
+
+* Scrivener                                                           :slide: 
+http://a5.mzstatic.com/us/r30/Purple/v4/fe/7b/16/fe7b1653-3165-7329-6ed8-60c10d4c4d5e/screen800x500.jpeg 
+
+* I needed a better solution                                     :slide: 
+file:///Users/jay/Downloads/Screenshots/DIY-mustard.png 
+
+*** Notes                                                             :notes: 
+So I did what I always do. Internet research.
+- blenders
+- coffee grinders
+- ergonomic keyboards
+
+* the original email                                              :slide:
+http://i.imgur.com/263uwKv.jpg 
+
+*** Notes                                                             :notes: 
+Is there an app that displays keyboard-editable hierarchical structure in the left pane and text editing/word processing in the right pane?
+
+I'm looking for a Mac or web-based app that will allow me to create and modify hierarchical structure (in the form of multi-level bulleted lists) in the left pane and do text editing/word processing in the right pane.
+
+I wish I could combine Workflowy and Scrivener into one tool.
+
+The good thing about Scrivener: It displays the hierarchical structure of my document in the left pane (with headers, subheaders, subsubheaders) and displays a text editor/word processor in the right pane.
+
+The problem with Scrivener: Creating new sections, moving sections around, nesting one section beneath another, etc is cumbersome. Every time you want a new level of the hierarchy, you have to choose "new text," name it, and use the trackpad (not the keyboard) to drag it to where you want it in document folder structure. Blech.
+
+The good thing about Workflowy: Creating and modifying the hierarchical structure is so easy. You create a new list item simply by hitting enter, promote by hitting tab, demote by hitting shift-tab, and move list items around easily using the keyboard. The problem with Workflowy: no text editor pane.
+
+What I want is a tool that's like Workflowy in the left pane---quick keyboard-based creating and modifying of hierarchical structure---but with a text editor/word processor in the right pane.
+
+With the tool I envision, for each bulleted list item in the left-pane hierarchy, I could enter right-pane text. At the end, like Scrivener, the tool would "compile" a Word document, excluding the hierarchy of headers and subheaders and including only the right-pane text.
+
+I can hack a solution to this with Workflowy by just entering body text below various list items in the structural hierarchy and adding a #bodytext tag for each paragraph of prose, then running a search for #bodytext and exporting only the paragraphs that appear thus tagged. But it would be more far more useful to have a split-screen navigation so that I could see the body text in a separate pane from the hierarchical structure.
+
+I looked at Omni Outliner, and with that tool, I do not seem to be able to select and export by hierarchical level, so I don't think I could isolate the body text.
+
+Does such a tool exist? What solutions would you suggest? Thanks! 
+
+Jay Dixit
+
+* Re: outlining in the left pane, text in the right?                                           :slide: 
+#+BEGIN_QUOTE
+From: Lucas 
+In the past, I used Mori for this sort of outlining and found it well suited. Both folders and notes can be hierarchically organized, and you can used the app's "Widescreen Layout" to get to the sort of set-up you're looking for. There are export options, but I don't know know whether they would fit your needs. Development has been scarce and erratic in recent years, but you can try Mori for free. 
+#+END_QUOTE
+
+*** Notes                                                             :notes: 
+In the past, I used Mori for this sort of outlining and found it well suited. Both folders and notes can be hierarchically organized, and you can used the app's "Widescreen Layout" to get to the sort of set-up you're looking for. There are export options, but I don't know know whether they would fit your needs. Development has been scarce and erratic in recent years, but you can try Mori for free. 
+
+* Re: outlining in the left pane, text in the right?            :slide: 
+#+BEGIN_QUOTE
+From: Stephen Zoll 
+OP is asking about something that's hard to find in modern "outlining" applications, even harder on Macs. Most Mac apps of this sort (DevonThink, Together) rely on a folder structure to build hierarchy. Few allow you to nest one note under another. In most cases, shifting back and forth between the "tree" and the editor is awkward. Those apps with strong editor panes are not set up to make the tree pane easy to edit and organize. It's odd that this seems so difficult to code, because it seems like a perfectly legitimate request: An application where it's easy to move between the editor and the outline, and where the outline is easy to edit and restructure using the keyboard. I agree with MadAboutDana that Tree is a good option to try, though the notes are inline and not in a separate, right-hand pane as the original poster requests. Steve Z. 
+#+END_QUOTE 
+
+*** Notes                                                             :notes: 
+OP is asking about something that's hard to find in modern "outlining" applications, even harder on Macs. Most Mac apps of this sort (DevonThink, Together) rely on a folder structure to build hierarchy. Few allow you to nest one note under another. In most cases, shifting back and forth between the "tree" and the editor is awkward. Those apps with strong editor panes are not set up to make the tree pane easy to edit and organize. It's odd that this seems so difficult to code, because it seems like a perfectly legitimate request: An application where it's easy to move between the editor and the outline, and where the outline is easy to edit and restructure using the keyboard. I agree with MadAboutDana that Tree is a good option to try, though the notes are inline and not in a separate, right-hand pane as the original poster requests. Steve Z. 
+
+
+* Re: outlining in the left pane, text in the right?                  :slide:
+#+BEGIN_QUOTE
+From: JBfrom. Posted by Nov 19, 2011 at 01:07 PM You can do this in Emacs Org-Mode by using indirect buffer, vertical split screen, and visibility cycling. Everything is handled via hotkeys. It's available for Mac. I frequently work in this mode for longer documents. 
+#+END_QUOTE
+
+*** Notes                                                             :notes: 
+From: JBfrom. Posted by Nov 19, 2011 at 01:07 PM You can do this in Emacs Org-Mode by using indirect buffer, vertical split screen, and visibility cycling. Everything is handled via hotkeys. It's available for Mac. I frequently work in this mode for longer documents. 
+
+
+* Re: outlining in the left pane, text in the right?            :slide: 
+#+BEGIN_QUOTE
+From: Jay Dixit 
+JBfrom, emacs org-mode sounds like a great solution. I'm intrigued. It also looks a little complicated, but if it indeed does exactly what I'm describing, then I'm willing to take on a learning curve. I've downloaded emacs and org-mode. Can you describe how to set it up to do this, or direct me to a resource that will? 
+#+END_QUOTE
+*** Notes                                                             :notes: 
+From: Jay Dixit 
+JBfrom, emacs org-mode sounds like a great solution. I'm intrigued. It also looks a little complicated, but if it indeed does exactly what I'm describing, then I'm willing to take on a learning curve. I've downloaded emacs and org-mode. Can you describe how to set it up to do this, or direct me to a resource that will? 
+
+
+* Taking the first step                                                  :slide: 
+#+BEGIN_QUOTE
+Hey Joseph, 
+Thanks for the tip about emacs org mode. It looks a little scary but I'm ready to try it out. 
+I'm trying to get started and I've gotten stuck. Wondering if you can help me.
+I've installed emacs and ergoemacs on my Mac. Now I need to install org mode. 
+I downloaded org mode and I'm trying to install it. The documentation simply says:
+To install org­mode, edit the Makefile, type `make', then `make install'.
+To create the PDF and HTML documentation files, type `make doc'. 
+But where am I supposed to type these things? In Terminal? Do I somehow type them in emacs itself? If so, how do I get a prompt in emacs so I can type commands? 
+#+END_QUOTE
+
+*** Notes                                                             :notes: 
+Hey Joseph,
+
+Thanks for the tip about emacs org mode. It looks a little scary but I'm ready to try it out.
+
+I'm trying to get started and I've gotten stuck. Wondering if you can help me.
+I've installed emacs and ergoemacs on my Mac. Now I need to install org mode.
+
+I downloaded org mode and I'm trying to install it. The documentation simply says:
+To install org­mode, edit the Makefile, type `make', then `make install'.
+To create the PDF and HTML documentation files, type `make doc'.
+
+But where am I supposed to type these things? In Terminal? Do I somehow type them in emacs itself? If so, how do I get a prompt in emacs so I can type commands? 
+
+* n00b                                                              :slide: 
+file:///users/jay/Dropbox/presentations/emacs-presentation-slideshow/img/noob.jpg 
+
+*** Notes                                                             :notes: 
+I was definitely one of these guys... Hey everybody had to start somewhere. 
+
+* But... I figured it out                                             :slide:
+file:///Users/jay/Dropbox/writing/book/book-images/Screen-Shot-2013-03-06-at-7.29.29pm.png 
+
+* org-mode to write a book                                            :slide:
+file:///Users/jay/Dropbox/writing/book/book-images/Screen-Shot-2013-05-31-at-1.39.52-AM.png 
+
+* commenting my prose :slide:
+file:///Users/jay/Dropbox/writing/book/book-images/Screen-Shot-2013-05-31-at-3.18.52-AM.png 
+
+
+* I still don't really know what I'm doing                            :slide: 
+file:///users/jay/Dropbox/presentations/emacs-presentation-slideshow/img/code_quality-self-taught.png 
+
+* The Emacs Learning Curve                                             :slide: 
+http://farm4.staticflickr.com/3109/3251176498_c3485a55fb.jpg 
+
+*** Notes                                                             :notes: 
+But my favorite is a blog post: learn Emacs in 10 years.
+StackExchange
+why I'm here 
+
+* But at least I'm in good company                                :slide:
+file:///Users/jay/Dropbox/presentations/emacs-presentation-slideshow/img/George-RR-Martin.png 
+
+* Neal Stephenson                                                     :slide: 
+http://www.nealstephenson.com/assets/gallery/3/113.jpg 
+
+* Neil Stephenson :slide: 
+#+BEGIN_QUOTE
+The engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text. If you are a professional writer---i.e., if someone else is getting paid to worry about how your words are formatted and printed--emacs outshines all other editing software in approximately the same way that the noonday sun does the stars. It is not just bigger and brighter; it simply makes everything else vanish.
+#+END_QUOTE
+
+*** Notes                                                             :notes: 
+The engineer-hours that, in the case of Microsoft Word, were devoted to features like mail merge, and the ability to embed feature-length motion pictures in corporate memoranda, were, in the case of emacs, focused with maniacal intensity on the deceptively simple-seeming problem of editing text. If you are a professional writer---i.e., if someone else is getting paid to worry about how your words are formatted and printed--emacs outshines all other editing software in approximately the same way that the noonday sun does the stars. It is not just bigger and brighter; it simply makes everything else vanish. 
+
+* WordStar                                                                :slide:
+
+file:///Users/jay/Dropbox/presentations/emacs-presentation-slideshow/img/wordstar.jpg 
+
+* George R.R. Martin               :slide:
+file:///Users/jay/Dropbox/presentations/emacs-presentation-slideshow/img/George-RR-Martin.png 
+
+* Richard Stallman                                                    :slide:
+file:///Users/jay/Dropbox/presentations/emacs-presentation-slideshow/img/Richard-Stallman.jpg 
+
+* The End                                                             :slide:
+
+
+* Org-HTML-Slideshow                                                  :slide:
+
+Make slides from Emacs Org-Mode!
+
+** Making Slides                                                      :slide:
+
+Org-Mode headlines with the =:slide:= tag will become slides.
+
+** Headlines Don't Have to be Slides
+
+This section doesn't have a =:slide:= tag, so it will *not* become a slide, although it is still part of the exported HTML document.
+
+** Use *Lists* For /Bullets/                                            :slide:
+
+- Use Org-Mode lists for bullet points
+- You can make nested bullet lists
+  - With sub-lists
+  - Like this
+
+** Or Low-Level Headings                                              :slide:
+
+**** By default
+***** Org-Mode headings below level 3
+****** Become bullets
+****** Meaning they *cannot* be slides
+**** This is configurable
+***** See [[http://orgmode.org/manual/Export-options.html][Export Options in the Org-Mode manual]]
+
+** Slides Can Be Nested                                               :slide:
+
+You can use the structure of the Org-Mode document to group your slides.
+
+For example, this slide is a *level-2* Org-Mode heading.
+
+*** Slide Headings Can Be Nested                                      :slide:
+
+This slide is a *level-3* Org-Mode heading, inside the previous one.
+
+* Presenter Notes                                                     :slide:
+
+- Slides can have presenter notes
+- Add a sub-heading with the =:notes:= tag
+  
+** A Slide with Notes                                                 :slide:
+
+- This slide has notes
+- Notes are only visible to presenter
+
+*** Notes                                                             :notes:
+
+- Presenter notes for this slide
+- Not displayed as part of the slide
+- Displayed in Presenter Preview window
+- Only one =:notes:= section per slide allowed
+
+* Source Code                                                         :slide:
+
+Use =begin_/Users/jay/Dropbox/github/org-html-slideshow/src/end_src= blocks to include source code.
+
+#+begin_src clojure
+  (defn example []
+    (println "This is sample source code."))
+#+end_src
+
+** Syntax Highlighting                                                :slide:
+
+- Org-Mode HTML export uses [[http://www.emacswiki.org/emacs/Htmlize][htmlize.el]]
+- Code in exported HTML will match your current Emacs theme
+  - Choose a theme that looks good on a projector!
+
+** Syntax Highlighting with CSS Classes                               :slide:
+
+- Set the Emacs variable 
+  - =org-export-htmlize-output-type= 
+  - to the symbol =css=
+  - (Does not work as a buffer-local variable)
+- Htmlize.el will add SPAN tags with CSS classes
+  - Named for each font face, e.g. =org-comment=
+- Examine HTML output to see class names
+- Add CSS styles to set colors
+
+* Images                                                              :slide:
+
+- Slides can contain images
+  - Any file type a browser can display
+- See also these Emacs variables:
+  - =org-export-html-inline-images=
+  - =org-export-html-inline-image-extensions=
+    - Controls which file types get exported
+- See [[http://orgmode.org/manual/Images-in-HTML-export.html][Images in HTML Export in the Org-Mode manual]].
+
+** Slide with Image                                                   :slide:
+
+Make a =file:= link with the path to the image and no link text.
+
+file:img/Jesus_paintingnew_293150090.jpeg 
+
+This example image is public-domain [[http://openclipart.org/detail/165554/geodesic_dome-by-yoderj][clip art by Josiah / yoderj]].
+
+* Styling                                                             :slide:
+
+- Use CSS styles to control appearance of slides
+- Extra tags on a slide become extra CSS classes on its HTML
+
+** Org-Mode Tag as CSS Class                          :slide:blue_background:
+
+- This slide has the =:blue_background:= tag
+  - Which is a class defined in =projection.css=
+- Make up your own tags
+  - Add them to the CSS file
+
+* Placing Stylesheets/JavaScript                                      :slide:
+
+Include the stylesheets and JavaScript at the *bottom* of your Org-Mode file.
+
+They must go at the bottom because the Google Closure Library does not support an on-DOM-ready event. See the [[http://groups.google.com/group/closure-library-discuss/browse_thread/thread/1beecbb5d6afcb41/075c536259653946][Closure mailing list discussion]] for an explanation.
+
+** Warning About Hidden Headlines                                     :slide:
+
+Stylesheets and JavaScript will *not* be loaded if the *last* headline in your Org-Mode file is hidden by any of:
+
+- =COMMENT= at the start of the heading
+- =#+COMMENT= at the start of the line
+- =:noexport:= tag, or missing =:export:= tag
+
+See [[http://orgmode.org/manual/Comment-lines.html][Comment lines]] and [[http://orgmode.org/manual/Selective-export.html][Selective export]] in the Org-Mode manual for details.
+
+org-html-head-include-scripts
+
+** The End                                                            :slide:
+
+Sometimes it's safest to add an "empty" heading at the end of your document to make sure the stylesheets and JavaScript are included.
+
+#+OPTIONS: num:nil toc:nil tags:t
+
+#+TAGS: slide(is )
+
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/Users/jay/Dropbox/github/org-html-slideshow/src/css/common.css" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/Users/jay/Dropbox/github/org-html-slideshow/src/css/screen.css" media="screen" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/Users/jay/Dropbox/github/org-html-slideshow/src/css/projection.css" media="projection" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/Users/jay/Dropbox/github/org-html-slideshow/src/css/presenter.css" media="presenter" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="/Users/jay/Dropbox/github/org-html-slideshow/src/css/jay-org-slideshow.css"/>
+
+#+BEGIN_HTML
+<script type="text/javascript" src="/Users/jay/Dropbox/github/org-html-slideshow/production/org-html-slideshow.js"></script>
+#+END_HTML
+
+# Local Variables:
+# org-html-head-include-default-style: nil
+# org-html-head-include-scripts: nil
+# buffer-file-coding-system: utf-8-unix
+# End:
+
