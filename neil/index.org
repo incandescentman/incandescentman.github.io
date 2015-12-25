@@ -10,7 +10,7 @@
 
 * Merry Christmas!                                                    :slide: 
 *Dear Neil, \\
-Merry Christmas*
+Merry Christmas!*
 
 
 * Merry Christmas!                                                    :slide: 
@@ -24,13 +24,42 @@ http://orig13.deviantart.net/7e42/f/2012/346/4/1/rockefeller_center_tree_ny_2012
 
 * Merry Christmas!                                                    :slide:
 
-http://tyohars.com/wp-content/uploads/2015/12/Merry-Christmas-or-Happy-Christmas-3.jpg 
+http://www.christmaseve-2015.com/wp-content/uploads/2015/12/Merry-Christmas-And-Happy-New-Year-Wallpaper-1.jpg 
 
 * Merry Christmas!                                                    :slide:
-http://40.media.tumblr.com/52bc56d3b35cfbf35ffc7b742c677221/tumblr_mwxon4Bqj91silsono1_1280.jpg
+http://i.imgur.com/EJq7gSp.jpg 
 
 
-* Sneakers                                                            :slide:
+* Christmas Present :slide: 
+http://images4.fanpop.com/image/photos/22200000/Christmas-gifts-christmas-gifts-22231228-2048-2048.jpg 
+
+* Shoes :slide: 
+http://www.wufashion.com/wp-content/uploads/2014/12/leather-shoes-5.jpg 
+
+
+* Sneakers                                                            :slide: 
+https://dobetter.files.wordpress.com/2008/06/running-shoes-sm.jpg 
+
+
+* Sneaker advice :slide:
+
+#+BEGIN_HTML
+<embed src="3.pdf" Width="800px" height="2100px"> 
+#+END_HTML 
+
+
+* Sneaker advice                                                      :slide:
+
+#+BEGIN_HTML
+<embed src="2.pdf" Width="800px" height="2100px"> 
+#+END_HTML 
+
+
+* Merry Christmas *→*                                                 :slide: 
+http://www.magic4walls.com/wp-content/uploads/2014/12/christmas-reindeer-Santa-Claus-new-year-2015-vector-New-York-desktop.jpg 
+
+
+* Killshot:slide:
 
 Introduced some 30 years ago, the original Killshot rolled out as low-profile tennis shoes. To give it our own spin, we updated the upper with sleek leather and suede and cast it in exclusive colors for some serious one-of-a-kind appeal.
 
@@ -38,154 +67,27 @@ Introduced some 30 years ago, the original Killshot rolled out as low-profile te
 - Cotton laces.
 - Padded footbed.
 - Natural gum rubber sole.
-- Import. 
-
-* Merry Christmas!                                                    :slide:
-
-#+BEGIN_HTML
-<embed src="https://www.reddit.com/r/malefashionadvice/comments/1xjp2d/nike_jcrew_killshots_what_do_you_think_i_dont/" width="800px" height="2100px"> 
-#+END_HTML 
+- Import.
 
 
-* imgur!                                                              :slide:
+* Nike Killshot 2 :slide: 
+file:img/85231_WT0002.jpeg 
+
+
+* Scroll down using trackpad :slide: 
+file:img/85231_WT0002_d1.jpeg 
+
+*→* 
+
+* Click through the gallery *→*                                       :slide:
 
 #+BEGIN_HTML
 <a class="embedly-card" data-card-key="5a5f778983654664b58c992abf623e2c" data-card-controls="0" data-card-theme="dark" data-card-width="600" href="http://imgur.com/gallery/X5Z5q">Killshot</a>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script> 
 #+END_HTML 
 
-* Org-HTML-Slideshow                                                  :slide:
-
-Make slides from Emacs Org-Mode!
-
-** Making Slides                                                      :slide:
-
-Org-Mode headlines with the =:slide:= tag will become slides.
-
-** Headlines Don't Have to be Slides
-
-This section doesn't have a =:slide:= tag, so it will *not* become a slide, although it is still part of the exported HTML document.
-
-** Use *Lists* For /Bullets/                                            :slide:
-
-- Use Org-Mode lists for bullet points
-- You can make nested bullet lists
-  - With sub-lists
-  - Like this
-
-** Or Low-Level Headings                                              :slide:
-
-**** By default
-***** Org-Mode headings below level 3
-****** Become bullets
-****** Meaning they *cannot* be slides
-**** This is configurable
-***** See [[http://orgmode.org/manual/Export-options.html][Export Options in the Org-Mode manual]]
-
-** Slides Can Be Nested                                               :slide:
-
-You can use the structure of the Org-Mode document to group your slides.
-
-For example, this slide is a *level-2* Org-Mode heading.
-
-*** Slide Headings Can Be Nested                                      :slide:
-
-This slide is a *level-3* Org-Mode heading, inside the previous one.
-
-* Presenter Notes                                                     :slide:
-
-- Slides can have presenter notes
-- Add a sub-heading with the =:notes:= tag
-  
-** A Slide with Notes                                                 :slide:
-
-- This slide has notes
-- Notes are only visible to presenter
-
-*** Notes                                                             :notes:
-
-- Presenter notes for this slide
-- Not displayed as part of the slide
-- Displayed in Presenter Preview window
-- Only one =:notes:= section per slide allowed
-
-* Source Code                                                         :slide:
-
-Use =begin_../assets/org-html-slideshow/src/end_src= blocks to include source code.
-
-#+begin_src clojure
-  (defn example []
-    (println "This is sample source code."))
-#+end_src
-
-** Syntax Highlighting                                                :slide:
-
-- Org-Mode HTML export uses [[http://www.emacswiki.org/emacs/Htmlize][htmlize.el]]
-- Code in exported HTML will match your current Emacs theme
-  - Choose a theme that looks good on a projector!
-
-** Syntax Highlighting with CSS Classes                               :slide:
-
-- Set the Emacs variable 
-  - =org-export-htmlize-output-type= 
-  - to the symbol =css=
-  - (Does not work as a buffer-local variable)
-- Htmlize.el will add SPAN tags with CSS classes
-  - Named for each font face, e.g. =org-comment=
-- Examine HTML output to see class names
-- Add CSS styles to set colors
-
-* Images                                                              :slide:
-
-- Slides can contain images
-  - Any file type a browser can display
-- See also these Emacs variables:
-  - =org-export-html-inline-images=
-  - =org-export-html-inline-image-extensions=
-    - Controls which file types get exported
-- See [[http://orgmode.org/manual/Images-in-HTML-export.html][Images in HTML Export in the Org-Mode manual]].
-
-** Slide with Image                                                   :slide:
-
-Make a =file:= link with the path to the image and no link text.
-
-file:img/Jesus_paintingnew_293150090.jpeg 
-
-This example image is public-domain [[http://openclipart.org/detail/165554/geodesic_dome-by-yoderj][clip art by Josiah / yoderj]].
-
-* Styling                                                             :slide:
-
-- Use CSS styles to control appearance of slides
-- Extra tags on a slide become extra CSS classes on its HTML
-
-** Org-Mode Tag as CSS Class                          :slide:blue_background:
-
-- This slide has the =:blue_background:= tag
-  - Which is a class defined in =projection.css=
-- Make up your own tags
-  - Add them to the CSS file
-
-* Placing Stylesheets/JavaScript                                      :slide:
-
-Include the stylesheets and JavaScript at the *bottom* of your Org-Mode file.
-
-They must go at the bottom because the Google Closure Library does not support an on-DOM-ready event. See the [[http://groups.google.com/group/closure-library-discuss/browse_thread/thread/1beecbb5d6afcb41/075c536259653946][Closure mailing list discussion]] for an explanation.
-
-** Warning About Hidden Headlines                                     :slide:
-
-Stylesheets and JavaScript will *not* be loaded if the *last* headline in your Org-Mode file is hidden by any of:
-
-- =COMMENT= at the start of the heading
-- =#+COMMENT= at the start of the line
-- =:noexport:= tag, or missing =:export:= tag
-
-See [[http://orgmode.org/manual/Comment-lines.html][Comment lines]] and [[http://orgmode.org/manual/Selective-export.html][Selective export]] in the Org-Mode manual for details.
-
-org-html-head-include-scripts
 
 ** The End                                                            :slide:
-
-Sometimes it's safest to add an "empty" heading at the end of your document to make sure the stylesheets and JavaScript are included.
 
 #+OPTIONS: num:nil toc:nil tags:t
 
