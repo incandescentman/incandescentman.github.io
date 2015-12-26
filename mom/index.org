@@ -53,7 +53,7 @@ http://orig07.deviantart.net/a1d6/f/2010/238/3/7/keep_walking_by_paulopatricio.j
 
 * The End                                                             :slide:
 
-* You love figure skating!                                            :slide:
+* P.S. You love figure skating!                                          :slide:
 #+HTML: <iframe width="1024" height="576" src="http://www.youtube.com/embed/msdnxqpE0iA" frameborder="0" allowfullscreen></iframe>
 
 
