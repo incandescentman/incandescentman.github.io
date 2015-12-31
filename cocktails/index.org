@@ -17,6 +17,6 @@ Jay
 *When*: 5:00pm today 
 
 * export settings                                          :ARCHIVE:noexport:
-#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='http://dixit.ca/css/gmail.css' />
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='http://dixit.ca/css/email.css' />
 #+OPTIONS:   H:6 num:nil toc:nil :nil @:t ::t |:t ^:t -:t f:t *:t <:t
  
