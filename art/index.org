@@ -5,7 +5,7 @@ Now that winter has at last roused and shaken off its slumber, let's gather toge
 
 I'll be co-hosting with a friend, the brilliant Max Makewell, at his art studio in Gramercy, where we'll clink glasses amid his mythic, kaleidoscopic paintings and toast the possibilities of the year ahead. 
 
-The house will offer a small menu of unusual cocktails of gin, mezcal, and moonshine, as well as light snacks. Your own civilian contributions of booze and foodstuffs are likewise welcome but certainly not required. Please feel free to invite friends as well.
+The house will be serving a small menu of unusual cocktails of gin, mezcal, and moonshine, as well as light snacks. Your own civilian contributions of booze and foodstuffs are likewise welcome but certainly not required. Please feel free to invite friends as well.
 
 Looking forward to seeing you all.
 
@@ -16,7 +16,7 @@ Jay
 *Where*: 30 East 22nd Street #4D New York NY 10010 \\
 *Map*: https://goo.gl/maps/8EAseZNHzHM2 \\
 *When*: Friday, January 8, 2016, 6:00 - 10:00pm \\ 
-
+*Invite*: [[http://dixit.ca/art][dixit.ca/art]]
 
 * export settings                                          :ARCHIVE:noexport:
 #+HTML_HEAD: <link rel='stylesheet' type='text/css' href='http://dixit.ca/css/evite.css' />
