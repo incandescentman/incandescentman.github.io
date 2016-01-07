@@ -324,5 +324,5 @@ Jay
 #+END_EXAMPLE 
 
 * export settings                                          :ARCHIVE:noexport:
-#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='/Users/jay/Dropbox/github/incandescentman.github.io/css/iphone-css-better.css' />
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='http://incandescentman.github.io/css/iphone-css-better.css' />
 #+OPTIONS:   H:6 num:nil toc:nil :nil @:t ::t |:t ^:t -:t f:t *:t <:t 
