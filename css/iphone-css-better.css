@@ -1,0 +1,177 @@
+/* Bit of normalisation */
+h1
+{
+	color:#C92228;
+	font-family:ChunkFive, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-weight:300;
+	line-height:1.1em;
+	margin-bottom:0;
+	text-shadow:#C92228 0 0 1px;
+}
+
+h2,h3,h4,h5
+{
+	color:#05ADF3;
+	font-family:ChunkFive, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-weight:300;
+	line-height:1.1em;
+	margin-bottom:0;
+}
+
+h2
+{
+	color:#C92228;
+	font-family:ChunkFive,'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-size:250%;
+	font-weight:400;
+}
+
+h3
+{
+	-webkit-transition:all .2s linear;
+	color:#000;
+	font-size:220%;
+	text-shadow:0 0 2px rgba(0,0,0,0.2), 0 0 4px rgba(0,0,0,0.2), 0 0 6px rgba(0,0,0,0.2);
+}
+
+body {
+	background-color: #eee;
+	color: #222;
+	font: 0.8125em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+.container {
+	padding: 40px 20px;
+	margin: 0 auto;
+	width: 400px;
+}
+
+/* .bubble */
+
+.bubble, p, ul.org-ul li {
+	background-image: linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -o-linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(210,244,254) 25%, rgb(149,194,253) 100%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, rgb(210,244,254)),
+	color-stop(1, rgb(149,194,253))
+);
+	border: solid 1px rgba(0, 0, 0, 0.5);
+	/* vendor rules */
+	border-radius: 20px;
+	/* vendor rules */
+	box-shadow: inset 0 5px 5px rgba(255, 255, 255, 0.4), 0 1px 3px rgba(0, 0, 0, 0.2);
+	/* vendor rules */
+	box-sizing: border-box;
+	clear: both;
+	float: left;
+	margin-bottom: 20px;
+	padding: 8px 30px;
+	position: relative;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+	width: auto;
+	max-width: 40%;
+	word-wrap: break-word;
+  list-style-type:none;
+}
+
+.bubble:before, .bubble:after, p:before, ul.org-ul li:before, p:after, ul.org-ul li:after {
+	border-radius: 20px / 10px;
+	content: '';
+	display: block;
+	position: absolute;
+}
+
+.bubble:before, p:before, ul.org-ul li:before {
+	border: 10px solid transparent;
+	border-bottom-color: rgba(0, 0, 0, 0.5);
+	bottom: 0;
+	left: -7px;
+	z-index: -2;
+}
+
+.bubble:after, p:after, ul.org-ul li:after {
+	border: 8px solid transparent;
+	border-bottom-color: #d2f4fe;
+	bottom: 1px;
+	left: -5px;
+}
+
+.bubble--alt, p {
+	background-image: linear-gradient(bottom, rgb(172,228,75) 25%, rgb(122,205,71) 100%);
+background-image: -o-linear-gradient(bottom, rgb(172,228,75) 25%, rgb(122,205,71) 100%);
+background-image: -moz-linear-gradient(bottom, rgb(172,228,75) 25%, rgb(122,205,71) 100%);
+background-image: -webkit-linear-gradient(bottom, rgb(172,228,75) 25%, rgb(122,205,71) 100%);
+background-image: -ms-linear-gradient(bottom, rgb(172,228,75) 25%, rgb(122,205,71) 100%);
+background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, rgb(172,228,75)),
+	color-stop(1, rgb(122,205,71))
+);
+	float: right;
+}
+
+.bubble--alt:before, p:before  {
+	border-bottom-color: rgba(0, 0, 0, 0.5);
+	border-radius: 20px / 10px;
+	left: auto;
+	right: -7px;
+}
+
+.bubble--alt:after, p:after  {
+	border-bottom-color: #ace44b;
+	border-radius: 20px / 10px;
+	left: auto;
+	right: -5px;
+                    }
+
+
+
+pre.example {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: normal !important;       /* Internet Explorer 5.5+ */
+    word-wrap: normal ;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+-khtml-border-radius:8px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	background:rgba(255,0,0,0.05);
+	border:1px solid rgba(255,0,0,0.2);
+	border-radius:8px;
+	color:#3f3f3f;
+	font-family:Monaco, Helvetica, sans-serif;
+	line-height:1.2;
+	padding: 0 1em 1em 1em;
+	text-align:left;
+	text-shadow:rgba(0,0,0,0.2) 0 2px 5px;
+	white-space:0;
+	width:500px;
+  padding:1em;
+clear: both;
+
+}
+
+
+
+h1,h2,h3,h4,h5,h6
+{ clear: both;
+text-transform: capitalize; 
+}
