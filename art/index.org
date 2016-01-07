@@ -19,6 +19,7 @@ Jay
 *Invite*: [[http://dixit.ca/art][dixit.ca/art]]
 
 * export settings                                          :ARCHIVE:noexport:
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='http://dixit.ca/css/evite.css' />
 #+HTML_HEAD: <link rel='stylesheet' type='text/css' href='/Users/jay/Dropbox/web-design/custom-css/evite.css' /> 
 #+OPTIONS:   H:6 num:nil toc:nil :nil @:t ::t |:t ^:t -:t f:t *:t <:t
  
