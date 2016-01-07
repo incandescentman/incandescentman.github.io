@@ -12,11 +12,11 @@ Until then!
 
 Jay
 
-*Where*: [[https://goo.gl/maps/deaqUaSuWNA2][22 Saint Marks Place Apt. D New York NY 10003]] 
-*Map*: https://goo.gl/maps/deaqUaSuWNA2 
-*When*: 5:00pm today 
+*Where*: [[https://goo.gl/maps/deaqUaSuWNA2][22 Saint Marks Place Apt. D New York NY 10003]] \\
+*Map*: https://goo.gl/maps/deaqUaSuWNA2 \\
+*When*: 5:00pm today \\
 
 * export settings                                          :ARCHIVE:noexport:
-#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='http://dixit.ca/css/email.css' />
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='http://dixit.ca/css/evite.css' />
 #+OPTIONS:   H:6 num:nil toc:nil :nil @:t ::t |:t ^:t -:t f:t *:t <:t
  
