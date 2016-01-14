@@ -84,4 +84,6 @@ div.wrapper-parallax header h2 strong
 
 div.outline-text-2 p img {
     float: left;
-} 
+    margin-right: 2em;
+}
+
