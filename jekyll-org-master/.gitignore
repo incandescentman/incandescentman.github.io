@@ -1,7 +1,0 @@
-# Files that GIT should ignore
-# See gitignore(5) for the format of this file
-
-/www/
-/src/articles/
-*~
-#.#*

@@ -1,9 +1,0 @@
-#+BEGIN_HTML
----
-layout: org
-title: Empty
-id: empty
----
-#+END_HTML
-
-Empty Org file
