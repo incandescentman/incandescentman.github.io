@@ -10,8 +10,7 @@
     <div class="wrapper-parallax">
       <header>
         <div class="accidental">
-<h2>We teach people and teams to be prolific, <strong>brilliant</strong>, & healthy.</h2>
-<h2>(646) 355-8001</h2>
+<h2>I help people people write personal statements that <strong>get them in.</strong></h2>
 
 </div>
         </div>
