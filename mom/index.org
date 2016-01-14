@@ -1,0 +1,83 @@
+#+TITLE: Merry Christmas
+#+AUTHOR: Jay Dixit
+
+#+BEGIN_HTML
+<div class="initial_prompt">
+<h1 class="begin">Type <strong>T</strong> to begin the slideshow.</h1>
+</div>
+#+END_HTML
+
+
+* Merry Christmas!                                                    :slide: 
+*Dear Mom*, \\
+*Merry Christmas!* \\ 
+*Love*, \\ 
+*Sunjay*
+
+Press right arrow to continue
+→ 
+
+
+* Merry Christmas!                                                    :slide:
+http://christmascardsayingss.com/wp-content/uploads/2015/11/Merry-Christmas-Photos.jpg 
+
+* Merry Christmas!                                                    :slide:
+http://orig13.deviantart.net/7e42/f/2012/346/4/1/rockefeller_center_tree_ny_2012_by_paws720-d5nv51r.jpg 
+
+* Christmas present :slide: 
+http://images4.fanpop.com/image/photos/22200000/Christmas-gifts-christmas-gifts-22231228-2048-2048.jpg 
+
+* Walking                                                             :slide: 
+https://bmarisol.files.wordpress.com/2010/05/walking_8.jpg 
+
+* Walking                                                             :slide: 
+http://www.dumblittleman.com/wp-content/uploads/2014/04/Benefits-of-Walking.jpg 
+
+* Walking with poles :slide: 
+http://www.wikihow.com/images/9/9e/Do-Nordic-Walking-Step-9.jpg 
+* Walking with poles :slide: 
+http://shawellnessclinic.com/shamagazine/wp-content/uploads/NordicWalking2.jpg 
+
+* Walking with poles :slide: 
+http://www.onefootforward.club/wp-content/uploads/2015/07/w11.jpg 
+* Walking with poles :slide: 
+http://www.valgardena.it/fileadmin/template/files/img/wandern-bike/nordic_walking_2.jpg 
+
+* Real Nordic Full-Length Non-Collapsible Walking Poles! :slide: 
+http://ecx.images-amazon.com/images/I/41uPu%2B3zjLL.jpg 
+* Merry Christmas!                                                    :slide: 
+http://www.magic4walls.com/wp-content/uploads/2014/12/christmas-reindeer-Santa-Claus-new-year-2015-vector-New-York-desktop.jpg 
+
+* Merry Christmas!                                                    :slide: 
+http://orig07.deviantart.net/a1d6/f/2010/238/3/7/keep_walking_by_paulopatricio.jpg 
+
+* The End                                                             :slide:
+
+* P.S. You love figure skating!                                          :slide:
+#+HTML: <iframe width="1024" height="576" src="http://www.youtube.com/embed/msdnxqpE0iA" frameborder="0" allowfullscreen></iframe>
+
+
+#+OPTIONS: num:nil toc:nil tags:t
+
+#+TAGS: slide(is )
+
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/common.css" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/screen.css" media="screen" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/projection.css" media="projection" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/presenter.css" media="presenter" />
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/jay-org-slideshow.css"/>
+
+
+
+#+BEGIN_HTML
+<script type="text/javascript" src="../assets/org-html-slideshow/production/org-html-slideshow.js"></script>
+
+<script async src="http://cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script> 
+#+END_HTML
+
+# Local Variables:
+# org-html-head-include-default-style: nil
+# org-html-head-include-scripts: nil
+# buffer-file-coding-system: utf-8-unix
+# End:
+
