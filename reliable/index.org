@@ -10,7 +10,7 @@
     <div class="wrapper-parallax">
       <header>
         <div class="accidental">
-<h2>I help people people write personal statements that <strong>get them in.</strong></h2>
+<h2>I help people write personal statements that <strong>get them in.</strong></h2>
 
 </div>
         </div>
