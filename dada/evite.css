@@ -1,0 +1,313 @@
+
+@font-face {
+    font-family: 'Garamond Premier Pro';
+    src: url('http://dixit.ca/fonts/garamondpremrpro-webfont.eot');
+    src: url('http://dixit.ca/fonts/garamondpremrpro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://dixit.ca/fonts/garamondpremrpro-webfont.woff') format('woff'),
+         url('http://dixit.ca/fonts/garamondpremrpro-webfont.ttf') format('truetype'),
+         url('http://dixit.ca/fonts/garamondpremrpro-webfont.svg#garamond_premr_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+p
+{
+font-size:large; 
+}
+
+html,body
+{
+    font-family: "Garamond Premier Pro","Hoefler Text", Garamond, Georgia, "Times New Roman", Times, serif;
+    margin: 1em ;
+    padding:0;
+color:#333;
+width:70%;
+margin-left:auto;
+margin-right:auto;
+}
+
+caption,col,colgroup
+{
+	background-color:#F9F9F9;
+	border:1px solid #CCC;
+	border-spacing:0;
+	font:11px/1.4em Arial, sans-serif;
+	padding:3px;
+}
+
+
+figure
+{
+	display:inline-block;
+	margin-bottom:1.2em;
+	position:relative;
+	width:100%;
+}
+
+figcaption
+{
+
+	background:rgba(0,0,0,0);
+	bottom:0;
+	color:rgba(255,255,255,0);
+	left:0;
+	position:absolute;
+	text-align:center;
+	width:100%;
+}
+
+figure:hover
+{
+	cursor:pointer;
+}
+
+figcaption:hover
+{
+	background:rgba(0,0,0,.56);
+	color:rgba(255,255,255,1);
+}
+
+dt
+{
+	font-weight:700;
+}
+
+
+strong
+{
+
+    font-weight:bold;
+    font-style:normal;
+    color:#00ADEF;
+    color: #fb8026;
+    color:#000;
+    text-rendering:optimizeLegibility;
+text-shadow:none !important;
+}
+
+
+
+
+
+pre
+{
+    margin-bottom:30px!important;
+}
+
+
+
+h1
+{
+    font-family:'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight:700;
+    border-bottom:2px dotted #CCCCCC;
+    line-height:1.5em;
+    line-height:1.1em;
+    text-align:left;
+    margin-bottom:1em;
+    font-size:larger; 
+}
+
+h2,h3,h4,h5
+{
+    font-family:'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight:700;
+    color:#55555;
+    line-height:1.1em;
+margin-bottom:1em;
+}
+
+
+
+
+h2
+{
+    color:#C92228;
+    font-family:'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+
+    border-bottom:2px dotted #CCC;
+
+}
+
+h3
+{
+    color:#00ADEF;
+    color:#000;
+    -webkit-transition:all 0.2s linear;
+
+}
+
+
+h4
+{
+    color:#DD3E74;
+
+}
+
+h5
+{
+    color:#000;
+    -webkit-transition:all 0.2s linear;
+
+}
+
+h6
+{
+    color:#000;
+    font-style:normal;
+    font-weight:700;
+    font-size:100%;
+    margin-bottom:0;
+    margin-top:0;
+}
+
+.title:first-letter, h1:first-letter,h2:first-letter,h3:first-letter,h4:first-letter,h5:first-letter,h6:first-letter
+{
+    text-transform:capitalize;
+}
+
+
+
+body,p,td,div,h6
+{
+
+    word-wrap:break-word;
+    text-rendering:optimizeLegibility;
+}
+
+li,ul li,ol li
+{
+word-wrap:break-word;
+    text-rendering:optimizeLegibility;
+margin-left:1em;
+}
+
+a
+{
+    -webkit-transition:color .5s linear;
+    text-decoration:none;
+    color:#05ADF3;
+}
+
+a:hover
+{
+    color:red;
+}
+
+h2 em
+{
+    color:#111;
+    padding-left:10px;
+}
+
+
+pre, blockquote {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: normal !important;       /* Internet Explorer 5.5+ */
+    text-align: left;
+    background: rgba(255, 0, 0, 0.05);
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    font-family: Monaco, Helvetica, sans-serif;
+    color: #3f3f3f;
+    line-height:1.2;
+width:500px;
+    padding:1em;
+    font-size:70%;
+}
+
+pre p, blockquote p 
+{
+    font-family: Monaco, Helvetica, sans-serif;
+    font-size:70%;
+    -webkit-margin-before: 0 !important;
+    -webkit-margin-after: 0 !important;
+}
+
+pre strong, blockquote strong
+{
+    color: #c61800;
+    font-style:normal;
+}
+
+pre em, blockquote em 
+{
+    color: #18a600;
+    font-style:normal;
+}
+
+
+img, .figure img
+{width:100%;
+ text-align:left;
+ display:block;
+}
+
+
+
+
+h1:first-letter, h2:first-letter, h3:first-letter, h4:first-letter, h5:first-letter
+{
+    text-transform:capitalize;
+}
+
+
+.footdef p
+{display:inline;}
+
+ul.org-ul {
+    margin-left: inherit;
+    padding-left: inherit;
+}
+
+ul.org-ul li {
+    margin-bottom: 0.3em;
+}
+
+
+h1.title
+{
+  display:inline;
+  display:none;
+}
+
+
+
+
+
+div.figure p img {
+    width: 100% !important;
+}
+
+
+
+
+#orgheadline1 {
+    font-size:50px;
+}
+
+p img {
+  margin-bottom: 2em !important; }
+
+div.outline-text-2 p img {
+  margin-bottom: 1em;
+}
+
+
+
+#orgheadline1 {
+  color: #000 ;
+}
+
+ html {
+  background: #d9d2b6 !important;
+
+}
