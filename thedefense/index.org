@@ -1,0 +1,31 @@
+* The Defense 
+#+BEGIN_HTML
+<div class="jayvideo">
+<video autoplay loop class="center" src="dissertation.mp4" controls preload="auto" height="400" ></video></div> 
+#+END_HTML 
+
+Friends,
+
+After two years, 160 pages, and 182 citations, Mia has successfully defended her dissertation proposal against those who would seek to destroy it (the dissertation committee). In recognition of her tireless field investigations into readings of femininity in pop culture among adolescent girls, please join me and an assemblage of other well-wishers and loved ones to witness and celebrate Mia's passage from student to scholar. Amid wine and cheese, we'll screen a video broadcast of the defense, to be followed by a brief live Q&A with the scholar herself. RSVP.
+
+Looking forward to seeing you all. 
+
+Until then!
+
+Jay
+
+*Where*: [[https://goo.gl/maps/deaqUaSuWNA2][22 Saint Marks Place Apt. D New York NY 10003]] \\
+*Map*: https://goo.gl/maps/deaqUaSuWNA2 \\
+*When*: 3:00pm Saturday \\
+RSVP: [[mailto:sunjaydixit@gmail.com][RSVP]] \\ 
+
+http://derp.co.uk/xkcd/comics/thesis_defense.png 
+
+#+BEGIN_HTML
+<audio autoplay loop class="center" src="westworld.mp3" controls preload></audio>
+#+END_HTML 
+
+* export settings                                          :ARCHIVE:noexport:
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='http://dixit.ca/css/evite.css' />
+#+OPTIONS:   H:6 num:nil toc:nil :nil @:t ::t |:t ^:t -:t f:t *:t <:t
+ 
