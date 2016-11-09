@@ -30,7 +30,7 @@ h2, p { margin:1em auto 20px; padding:10px; width:50%; text-align:left; border-r
 
 @media (max-width:800px) {
     img,video { width:100%; }
-    body { font:150%;} 
+    body { font:200%;} 
  p { width:100%; border-radius:0; }
 }
 
