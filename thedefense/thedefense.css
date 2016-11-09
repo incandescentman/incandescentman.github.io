@@ -11,16 +11,27 @@
  font-style: normal;
 }
 
-html,body
-{
- font-family: "Garamond Premier Pro","Hoefler Text", Garamond, Georgia, "Times New Roman", Times, serif;
- margin: 1em ;
- padding:0;
-color:#333;
-width:70%;
-margin-left:auto;
-margin-right:auto;
-}
+
+html { margin:0; padding:0; background:#fff url(paper.jpg); }
+body { font:62.5% "Garamond premier Pro","Hoefler Text", Garamond, Georgia, "Times New Roman", Times, serif; margin:0; padding:0; }
+div#main { margin-top:20px; text-align:center; font-size:1.5em; height:100%; }
+
+h2 { width:100%; margin:0 0 .7em; padding:0; color:#1d165e; font-weight:normal; font-family:georgia, serif; letter-spacing:1px; }
+h2 span.space { letter-spacing:7px; }
+
+a { color:#c2d1f8; }
+ul { margin:0; padding:0; }
+li { list-style:none; padding:3px 3px 3px 30%; width:700px; margin:.3em auto 0; color:#555; text-align:left; }
+
+img { width:50%; margin:0; padding:0; border:0; }
+
+p { margin:-7px auto 20px; padding:10px; width:50%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; }
+
+@media (max-width:800px) {
+ img { width:100%; }
+ p { width:100%; border-radius:0; }
+ div.unit { margin-bottom:20px; }
+} 
 
 
 
