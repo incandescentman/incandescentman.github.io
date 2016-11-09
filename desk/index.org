@@ -54,6 +54,6 @@ Origin: Imported  \\
 
 
 * export settings                                          :ARCHIVE:noexport:
-#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='thedefense.css' />
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='eric.css' />
 #+OPTIONS:   H:6 num:nil toc:nil :nil @:t ::t |:t ^:t -:t f:t *:t <:t
  

@@ -4,9 +4,9 @@
  font-family: 'Garamond Premier Pro';
  src: url('http://dixit.ca/fonts/garamondpremrpro-webfont.eot');
  src: url('http://dixit.ca/fonts/garamondpremrpro-webfont.eot?#iefix') format('embedded-opentype'),
-   url('http://dixit.ca/fonts/garamondpremrpro-webfont.woff') format('woff'),
-   url('http://dixit.ca/fonts/garamondpremrpro-webfont.ttf') format('truetype'),
-   url('http://dixit.ca/fonts/garamondpremrpro-webfont.svg#garamond_premr_proregular') format('svg');
+  url('http://dixit.ca/fonts/garamondpremrpro-webfont.woff') format('woff'),
+  url('http://dixit.ca/fonts/garamondpremrpro-webfont.ttf') format('truetype'),
+  url('http://dixit.ca/fonts/garamondpremrpro-webfont.svg#garamond_premr_proregular') format('svg');
  font-weight: normal;
  font-style: normal;
 }
@@ -25,11 +25,11 @@ img { width:100%; margin:0; padding:0; border:0; }
 
 p {margin:1em auto 20px; padding:10px; width:50%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; }
 
-h1,h2,h3,h4,h5 {margin:1em auto 20px auto; padding:10px; width:50%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; } 
+h1,h2,h3,h4,h5 {font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-weight: 700;margin:1em auto 20px auto; padding:10px; width:50%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; } 
 
 @media (max-width:800px) {
-    img,video { width:100%; }
-    body { font:200%;} 
+  img,video { width:100%; }
+  body { font:200%;} 
  p,h2 { width:100%; border-radius:0; }
 }
 
