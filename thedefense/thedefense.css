@@ -13,7 +13,7 @@
 
 
 html { margin:1em; padding:1em; background:#fff url(paper.jpg); }
-body { font:100% "Garamond premier Pro","Hoefler Text", Garamond, Georgia, "Times New Roman", Times, serif; margin:0; padding:0; }
+body { font:120% "Garamond premier Pro","Hoefler Text", Garamond, Georgia, "Times New Roman", Times, serif; margin:0; padding:0; }
 div#main { margin-top:20px; text-align:center; font-size:1.5em; height:100%; }
 
 
@@ -25,11 +25,6 @@ img { width:100%; margin:0; padding:0; border:0; }
 
 h2, p { margin:1em auto 20px; padding:10px; width:50%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; }
 
-@media (max-width:800px) {
- img { width:100%; }
- p { width:100%; border-radius:0; }
- div.unit { margin-bottom:20px; }
-} 
 
 
 
@@ -37,7 +32,6 @@ h2, p { margin:1em auto 20px; padding:10px; width:50%; text-align:left; border-r
     img,video { width:100%; }
     body { font:150%;} 
  p { width:100%; border-radius:0; }
- div.unit { margin-bottom:20px; }
 }
 
 
