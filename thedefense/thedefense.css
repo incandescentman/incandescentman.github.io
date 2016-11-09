@@ -13,7 +13,7 @@
 
 
 html { margin:1em; padding:1em; background:#fff url(paper.jpg); }
-body { font:130% "Garamond premier Pro","Hoefler Text", Garamond, Georgia, "Times New Roman", Times, serif; margin:0; padding:0; }
+body { font:100% "Garamond premier Pro","Hoefler Text", Garamond, Georgia, "Times New Roman", Times, serif; margin:0; padding:0; }
 div#main { margin-top:20px; text-align:center; font-size:1.5em; height:100%; }
 
 
@@ -35,6 +35,7 @@ h2, p { margin:-7px auto 20px; padding:10px; width:50%; text-align:left; border-
 
 @media (max-width:800px) {
     img,video { width:100%; }
+    body { font:150%;} 
  p { width:80%; border-radius:0; }
  div.unit { margin-bottom:20px; }
 }
