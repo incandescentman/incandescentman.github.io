@@ -23,15 +23,14 @@ li { list-style:none; padding:3px 3px 3px 30%; width:700px; margin:.3em auto 0; 
 
 img { width:100%; margin:0; padding:0; border:0; }
 
-h2, p { margin:1em auto 20px; padding:10px; width:50%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; }
+p {margin:1em auto 20px; padding:10px; width:50%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; }
 
-
-
+h2 {margin:1em auto 20px; padding:10px; width:50%; text-align:left; } 
 
 @media (max-width:800px) {
     img,video { width:100%; }
     body { font:200%;} 
- p { width:100%; border-radius:0; }
+ p,h2 { width:100%; border-radius:0; }
 }
 
 
