@@ -53,10 +53,6 @@ Store Item Number (DPCI): 249-01-0009 \\
 Origin: Imported  \\ 
 
 
-* Scarf
-
-
-
 * export settings                                          :ARCHIVE:noexport:
 #+HTML_HEAD: <link rel='stylesheet' type='text/css' href='eric.css' />
 #+OPTIONS:   H:6 num:nil toc:nil :nil @:t ::t |:t ^:t -:t f:t *:t <:t
