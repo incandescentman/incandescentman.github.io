@@ -116,9 +116,6 @@ ol.org-ol li::before {
 
 @media (max-width:800px) {
 
-body {
-font: 0.825em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
-} 
-    .bubble, p, ul.org-ul li {
+.bubble, p, ul.org-ul li {
 padding: 0.75em; } 
 }
