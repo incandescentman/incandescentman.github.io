@@ -43,7 +43,7 @@ background-image: -webkit-gradient(
 	clear: both;
 	float: left;
 	margin-bottom: 1.250em;
-	padding: 0.5em;
+	padding: 0.5em 1.875em;
 	position: relative;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
 	width: auto;
@@ -111,3 +111,10 @@ ol.org-ol li::before {
 	left: auto;
 	right: -5px;
 } 
+
+
+
+@media (max-width:800px) {
+.bubble, p, ul.org-ul li {
+padding: 0.5em; } 
+}
