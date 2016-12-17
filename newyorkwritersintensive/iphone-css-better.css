@@ -3,7 +3,7 @@
 body {
 	background-color: #eee;
 	color: #222;
-	font: 1.25em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font:1.125em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 img {
@@ -115,6 +115,12 @@ ol.org-ol li::before {
 
 
 @media (max-width:800px) {
-.bubble, p, ul.org-ul li {
+
+body {
+font: 1.8125em/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+    .bubble, p, ul.org-ul li {
 padding: 0.75em; } 
 }
