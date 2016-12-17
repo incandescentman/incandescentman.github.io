@@ -43,7 +43,7 @@ background-image: -webkit-gradient(
 	clear: both;
 	float: left;
 	margin-bottom: 1.250em;
-	padding: 8px 30px;
+	padding: 0.5em 1.875em;
 	position: relative;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
 	width: auto;
@@ -68,7 +68,7 @@ background-image: -webkit-gradient(
 }
 
 .bubble:after, p:after, ul.org-ul li:after {
-	border: 8px solid transparent;
+	border: 0.5em solid transparent;
 	border-bottom-color: #d2f4fe;
 	bottom: 1px;
 	left: -5px;
