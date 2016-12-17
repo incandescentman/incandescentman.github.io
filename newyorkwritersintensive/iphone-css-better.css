@@ -116,5 +116,5 @@ ol.org-ol li::before {
 
 @media (max-width:800px) {
 .bubble, p, ul.org-ul li {
-padding: 0.7em; } 
+padding: 1em; } 
 }
