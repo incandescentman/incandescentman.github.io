@@ -16,18 +16,18 @@ why don't you write a draft and I'll edit it
 - Ok hang on
 - Here are our notes so far
 
-#+BEGIN_HTML
+#+BEGIN_EXPORT HTML
 <ul class="org-ul"> 
-<li><img src="http://incandescentman.github.io/details/details.jpg" /></li> 
+<li><img src="http://incandescentman.github.io/mia-rachel-online-dating-okcupid-visualness-details/details.jpg" /></li> 
 </ul> 
-#+END_HTML 
+#+END_EXPORT
 
 
 - Pretty straightforward :)
 
 boring. nothing to visualize. doesn't even answer the question of what she's doing!
 
-- I'm not looking for a critique weirdo
+- I'm not looking for a critique, weirdo
 - :)
 
 hanging ornaments on a plastic tree at my sister's house 
@@ -46,8 +46,8 @@ but what are you guys actually doing
 
 give me 5 things you actually did or are going to do 
 
-- Eating pho decorating tree getting our nails done watching Jane the virgin drinking White Russians eating leftovers gossiping about people we used to know 
-- Playing connect four with nephews instagramming everything
+- Eating pho, decorating tree, getting our nails done, watching Jane the Virgin, drinking White Russians, eating leftovers, gossiping about people we used to know 
+- Playing Connect Four with nephews, instagramming everything
 
 now we're talking!
 
@@ -63,17 +63,17 @@ did you make the pho?
 
 her sister's son? how old?
 
-- Sisters sons who are 6 and 5
+- Sister's sons who are 6 and 5
 
 what's the gossip? anything mentionable?
 
-- Um...mostly about people we went to high school with who are divorcing 
+- Um... mostly about people we went to high school with who are divorcing 
 - Rachel says that if they get married you're invited to the wedding
 - And now she's called you her Cyrano de Bergerac 
 
 haha awesome 
 
-"My best friend is visiting from nyc and we made White Russians. I told my 5yo nephew we were drinking milk but I think he figured out the truth when he beat us at Connect 4."
+"My best friend is visiting from NYC and we made White Russians. I told my 5yo nephew we were drinking milk, but I think he figured out we were drunk when we played Connect 4 and he beat us."
 
 - You are a master weaver of stories
 
