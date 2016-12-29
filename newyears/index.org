@@ -1,0 +1,38 @@
+* Pre-New Year's Eve Pre-Cocktails on Saint Marks
+http://i4.mirror.co.uk/incoming/article6468441.ece/ALTERNATES/s615/asteroid-1-main.jpg 
+Though these be uncertain times, yet we have cause to celebrate. Please join me this Friday, December 31 for the second annual New Year's Eve Pre-Party on Saint Marks. 
+
+As we raise a glass to absent friends, give a final fuck you to the calamity that was 2016, and raise a glass to friendship, good cheer, and better times ahead.
+
+The pre-party tradition was born last year when a few of us found ourselves wishing we could celebrate together but committed to separate parties for the stroke of midnight. So instead we will convene here on Saint Marks at the unfashionably early hour of 5:00pm to toast the year ahead before adjourning promptly at 9:00 and scattering across the boroughs.
+
+As night falls on the island, we will keep the candles burning. Friends will be united, plans will be made, and ___ will be ____. There will be cider to warm you and wine to fortify you. The house will offer a limited menu of cocktails of gin, mezcal, and moonshine, and I may or may not experiment with the fermentation of various homemade vinegary concoctions. 
+
+
+
+Since it seems that everyone has their own plans for later in the evening, I'll be having people over for early cocktails on Saint Marks so we can all be together as a family one last time before 2015 takes its final bow. 
+
+Nota bene, this is not a New Year's party but a pre-New-Years pre-party. We'll be gathering at the unfashionably early hour of 5:00pm to toast the year ahead before adjourning promptly at 8:00 and scattering across the boroughs. 
+
+The house will offer a limited menu of cocktails of gin, mezcal, and moonshine. Your own civilian contributions of spirits and snacks are welcome but by no means required. Friends are also welcome.
+
+Looking forward to seeing you all. 
+
+Until then!
+
+Jay
+
+*Where*: [[https://goo.gl/maps/deaqUaSuWNA2][22 Saint Marks Place Apt. D New York NY 10003]] \\
+*Map*: https://goo.gl/maps/deaqUaSuWNA2 \\
+*When*: Friday December 31, 2016, 5:00pm. \\
+*RSVP*: [[mailto:jay@newyorkwritersintensive.com][jay@newyorkwritersintensive.com]]
+
+
+#+BEGIN_EXPORT HTML 
+<audio autoplay class="center" src="westworld.mp3" controls preload></audio>
+#+END_EXPORT
+
+* export settings                                          :ARCHIVE:noexport:
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='thedefense.css' />
+#+OPTIONS:   H:6 num:nil toc:nil :nil @:t ::t |:t ^:t -:t f:t *:t <:t
+ 

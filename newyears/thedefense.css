@@ -1,0 +1,36 @@
+
+
+@font-face {
+ font-family: 'Garamond Premier Pro';
+ src: url('http://dixit.ca/fonts/garamondpremrpro-webfont.eot');
+ src: url('http://dixit.ca/fonts/garamondpremrpro-webfont.eot?#iefix') format('embedded-opentype'),
+   url('http://dixit.ca/fonts/garamondpremrpro-webfont.woff') format('woff'),
+   url('http://dixit.ca/fonts/garamondpremrpro-webfont.ttf') format('truetype'),
+   url('http://dixit.ca/fonts/garamondpremrpro-webfont.svg#garamond_premr_proregular') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+
+html { margin:1em; padding:1em; background:#fff url(paper.jpg); }
+body { font:82.5% "Garamond premier Pro","Hoefler Text", Garamond, Georgia, "Times New Roman", Times, serif; margin:0; padding:0; }
+div#content { margin-top:20px; text-align:center; font-size:1.5em; height:100%; }
+
+
+a { color:#c2d1f8; }
+ul { margin:0; padding:0; }
+li { list-style:none; padding:3px 3px 3px 30%; width:700px; margin:.3em auto 0; color:#555; text-align:left; }
+
+img { width:100%; margin:0; padding:0; border:0; }
+
+p {margin:1em auto 20px; padding:10px; width:50%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; }
+
+h2 {margin:1em auto 20px; padding:10px; width:50%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; } 
+
+@media (max-width:800px) {
+    img,video { width:100%; }
+    body { font:200%;} 
+ p,h2 { width:100%; border-radius:0; }
+}
+
+
