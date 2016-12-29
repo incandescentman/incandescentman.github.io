@@ -21,15 +21,15 @@ a { color:#c2d1f8; }
 ul { margin:0; padding:0; }
 li { list-style:none; padding:3px 3px 3px 30%; width:700px; margin:.3em auto 0; color:#555; text-align:left; }
 
-img { width:100%; margin:0; padding:0; border:0; }
+img { width:50%; margin:0; padding:0; border:0; }
 
-p {margin:1em auto 20px; padding:10px; width:50%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; }
+p {margin:1em auto 20px; width:80%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; }
 
-h2 {margin:1em auto 20px; padding:10px; width:50%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; } 
+h2 {margin:1em auto 20px; width:80%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; } 
 
 @media (max-width:800px) {
     img,video { width:100%; }
-    body { font:200%;} 
+    body {font:160%;} 
  p,h2 { width:100%; border-radius:0; }
 }
 
