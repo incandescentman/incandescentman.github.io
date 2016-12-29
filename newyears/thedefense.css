@@ -21,7 +21,7 @@ a { color:#c2d1f8; }
 ul { margin:0; padding:0; }
 li { list-style:none; padding:3px 3px 3px 30%; width:700px; margin:.3em auto 0; color:#555; text-align:left; }
 
-img { width:50%; margin:0; padding:0; border:0; }
+img { width:50%; margin:0 0 -1em 0; padding:0; border:0; }
 
 p {margin:1em auto 20px; width:80%; text-align:left; border-radius:0 0 4px 4px; box-sizing:border-box; }
 
@@ -43,4 +43,18 @@ video.center {
   margin-bottom: -1em;
 }
 
+
+
+#orgheadline1 {
+  border: none;
+  color: #000;
+}
+
+div.outline-text-2 p img {
+  margin-bottom: 1em;
+}
+
+#org4d1cd0d {
+  font-family: Helvetica;
+}
 
