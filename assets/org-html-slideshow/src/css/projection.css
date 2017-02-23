@@ -3,38 +3,156 @@
  * These styles will apply only to the slide-show view.
  */
 
+@font-face
+{
+    font-family:ChunkFive;
+    src:url(/fonts/chunkfive/Chunkfive-webfont.eot?#iefix) format(eot), url(/fonts/chunkfive/Chunkfive-webfont.woff) format(woff), url(/fonts/chunkfive/Chunkfive-webfont.ttf) format(truetype), url(/fonts/chunkfive/Chunkfive-webfont.svg#webfont90E2uSjN) format(svg);
+    font-weight:normal;
+    font-style:normal;
+}
+
+
 body {
-   margin: 18pt;
-   font-size: 24pt;
+    margin: 18pt;
+    font-size: 24pt;
 }
 
 /* Use all headings as slide titles, regardless of level. */
 h1,h2,h3,h4,h5,h6,h7,h8 {
-   font-size: 48pt;
-   margin: 18pt;
-   text-align: center;
+    font-size: 65pt;
+    margin: 18pt;
+    text-align: center;
 }
 
 li {
-   margin: 12pt;
+    margin: 12pt;
 }
 
+
 /* Center embedded images. */
-p.image {
-   text-align: center;
+p.image img{
+    min-height:60%;
+    max-height:500px;
+    text-align: center !important;
+    max-width:100%;
+margin-left:auto;
+margin-right:auto;
 }
 
 /* Hide Org-Mode tags in slide-show view. */
 span.tag {
-   display: none;
+    display: none;
 }
 
 /* Hide Org-Mode section numbers in slide-show view. */
 span.section-number-1,span.section-number-2,span.section-number-3,span.section-number-4,span.section-number-5,span.section-number-6,span.section-number-7,span.section-number-8 {
-   display: none;
+    display: none;
 }
 
 .blue_background {
-   background: blue;
-   color: white;
+    background: blue;
+    color: white;
+}
+
+pre, blockquote, .example {
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: normal !important;       /* Internet Explorer 5.5+ */
+    text-align: left;
+    background: rgba(255, 0, 0, 0.05);
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    font-family: Monaco, Helvetica, sans-serif;
+    color: #3f3f3f;
+
+    line-height:1.2;
+    width:70%;
+    font-size:70%;
+    padding:1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+pre p, blockquote p 
+{
+    font-family: Monaco, Helvetica, sans-serif;
+    -webkit-margin-before: 0 !important;
+    -webkit-margin-after: 0 !important;
+}
+
+pre strong, blockquote strong
+{
+    color: #c61800;
+
+    font-style:normal;
+}
+
+pre em, blockquote em 
+{
+    color: #18a600;
+
+    font-style:normal;
+}
+
+.audiocontainer
+{
+width:100%;
+    margin-left: auto;
+    margin-right: auto;
+margin-top:1em;
+margin-bottom:1em;
+
+
+}
+
+audio
+{
+margin-left: auto;
+    margin-right: auto;
+}
+
+video
+{text-align: center;}
+
+.center { margin: 1em auto 1em auto; 
+width: 80%; 
+text-align: center;
+display: block;}
+
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+div.outline-text-3.outline-text p {
+  text-align: center;
+}
+
+
+a
+{text-decoration:none;}
+
+
+
+blockquote {
+  font-family: "Garamond Premier Pro";
+  white-space: normal !important;
+  width:60%;
+}
+blockquote p {
+ font-family: "Garamond Premier Pro";
+ white-space: normal !important;
+ margin-bottom:1em !imporant;
+ margin-top:1em !important;
+ width:90%;
+ margin-left:auto;
+ margin-right:auto;
 }

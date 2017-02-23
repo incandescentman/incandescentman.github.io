@@ -4,29 +4,30 @@
  */
 
 body.presenter-display {
-   background-color: white;
+   background-color: black;
 }
 
 .presenter-label {
-   color: black;
+   color: white;
    font-family: Helvetica, Arial, sans-serif;
 }
 
 #presenter-current-slide-container {
    bottom: 200px;
-   height: 40%;
+   height: 50%;
    left: 1%;
-   overflow: hidden;
+overflow:auto;
    position: absolute;
    top: 0;
    vertical-align: top;
    width: 50%;
    zoom: 60%;
+
 }
 
 #presenter-next-slide-container {
-   height: 30%;
-   overflow: hidden;
+   height: 50%;
+overflow:auto;
    position: absolute;
    right: 1%;
    top: 1%;
@@ -83,15 +84,17 @@ a#presenter-elapsed-time-reset {
 #presenter-notes-container {
    position: absolute;
    overflow: auto;
-   top: 40%;
+   top: 50%;
    left: 10px;
    height: 45%;
    width: 98%;
-   font-size: 18pt;
+   font-size: 14pt;
    color: black;
+overflow:auto;
 }
 
 #presenter-notes-container h1,#presenter-notes-container h2,#presenter-notes-container h3,#presenter-notes-container h4,#presenter-notes-container h5,#presenter-notes-container h6,#presenter-notes-container h7,#presenter-notes-container h8 {
    font-size: 12pt;
    text-align: left;
 }
+

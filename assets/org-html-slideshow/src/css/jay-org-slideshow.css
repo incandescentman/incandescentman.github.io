@@ -1,15 +1,7 @@
 
 /*Jay's customizations */
 
-body {
-    font-family: "GillSans-Light", Helvetica, Arial, sans-serif !important;
-
-  background: url(/Users/jay/Downloads/bg_gradient-noRepeat.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;}
-
+ 
 
 h1,h2,h3,h4,h5,h6,h7,h8 {
 	font-family: "ChunkFive",'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif !important;
@@ -29,6 +21,7 @@ color: #BE38F3;
 text-shadow: #BE38F3 0 0 1px;
 
 }
+
 
 
 
@@ -107,9 +100,8 @@ color:#FFF;
 font-size:190px;}
 
 em
-{
-font-weight:700;
-font-style:normal;
+{ 
+font-style:italic !important;
 }
 
 
@@ -141,74 +133,226 @@ text-shadow: #BE38F3 0 0 1px;
 
 
 .notes
-{color:#000;}
+{color:#fff;}
 
-p, ul.org-ul li, ul.org-ol li {
-    font-family: "GillSans-Light", Helvetica, Arial, sans-serif ;
+img,video,audio,iframe {
+  display: block;
+  margin: 0 auto;
 }
 
-
-.logo:before
+p.logo
 {
-content: url("/Users/jay/Dropbox/writing/writing-teacher/presentations/WeWork/img/signal-flare-logo_150.png");
+font-family:"IM Fell Great Primer PRO" !important;
+font-variant:small-caps;
+}
 
-   position:absolute;
-   left:0px;
-top:0px; 
+
+div.outline-text-3.outline-text p em {
+  font-family: "IM Fell Great Primer PRO" ;
+  font-variant: small-caps;
+  font-size:40px;
+text-shadow: 0 0 2px rgba(0,0,0,0.2), 0 0 4px rgba(0,0,0,0.2), 0 0 6px rgba(0,0,0,0.2); 
+text-shadow: 0 0 1px rgba(0,0,0,0.2), 0 0 2px rgba(0,0,0,0.2), 0 0 3px rgba(0,0,0,0.2); 
+
 }
 
 
 
-pre, blockquote {
-    white-space: pre-wrap;       /* css-3 */
-    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: normal !important;       /* Internet Explorer 5.5+ */
-    text-align: left;
-    background: rgba(255, 0, 0, 0.05);
-    -webkit-border-radius: 8px;
-    -khtml-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 0, 0, 0.2);
-    font-family: Monaco, Helvetica, sans-serif;
-    color: #3f3f3f;
-    line-height:1.2;
-width:700px;
-    padding:0 1em 1em 1em;
-    font-size:70%;
-    margin-left:auto;
-    margin-right:auto; 
+h2,h3,h4 {
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
-pre p, blockquote p 
+h2 strong,h3 strong, h4 strong {
+  color: #C92228;
+}
+
+
+table
 {
-    font-family: Monaco, Helvetica, sans-serif;
-    font-size:70%;
-    -webkit-margin-before: 0 !important;
-    -webkit-margin-after: 0 !important;
-margin-top:-1em;
-margin-bottom:-1em; 
-padding-top:-1em; 
-padding-bottom:-1em; 
-
+	border:1px solid rgba(0,0,0,0.25);
+	border-collapse:collapse;
+	display:table;
+	empty-cells:hide;
+padding:1em !important;
+	table-layout:fixed;
+  font-family:"Helvetica Neue";
+  font-weight:25 !important;
 }
 
-pre strong, blockquote strong
+caption
 {
-    color: #c61800;
-    font-style:normal;
+	display:table-caption;
+	font-weight:700;
 }
 
-pre em, blockquote em 
+col
 {
-    color: #18a600;
-    font-style:normal;
+	display:table-column;
+}
+
+colgroup
+{
+	display:table-column-group;
+}
+
+tbody
+{
+	display:table-row-group;
+}
+
+tfoot
+{
+	display:table-footer-group;
+}
+
+thead
+{
+	display:table-header-group;
+}
+
+td,th
+{
+	display:table-cell;
+}
+
+tr
+{
+	display:table-row;
+}
+
+table th,table td
+{
+	padding:0 1em;
+}
+
+table thead
+{
+	background:rgba(0,0,0,0.15);
+	border:1px solid rgba(0,0,0,0.15);
+	border-bottom:1px solid rgba(0,0,0,0.2);
+}
+
+table tbody
+{
+	background:rgba(0,0,0,0.05);
+}
+
+table tfoot
+{
+	background-color:#b0c4de;
+	border:1px solid rgba(0,0,0,0.15);
+	border-top:1px solid rgba(0,0,0,0.2);
+}
+
+blockquote p {
+  font-family: GillSans-Light, 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif !important;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  line-height:1.6;
+  font-size:120%;
 }
 
 
-h1.begin {
-font-size:170px;
+p, ol.org-ol li {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
+
+
+
+span.figure-number {
+  display: none;
+} 
+
+img
+{
+    max-width:100%;
+}
+
+
+h1:first-letter, h2:first-letter, h3:first-letter, h4:first-letter {
+ text-transform: capitalize;
+}
+
+.darkbloom span.todo.Practice_ {
+  color: yellow;
+}
+
+.small span.todo.Critique_, span.todo.Demonstration_ {
+    color: red;
+    text-shadow: none;
+}
+
+
+
+.darkbloom h1, .darkbloom h2, .darkbloom h3, .darkbloom h4, .darkbloom h5, .darkbloom h6, .darkbloom h7, .darkbloom h8
+{color:#FFF;
+text-shadow: #fff 0 0 1px;
+
+}
+
+.small ul li {
+  font-size: 18px;
+}
+
+
+.small h1, .small h2, .small h3
+{
+ font-size: 100%;
+}
+
+
+
+.small ul { margin-left: 0; }
+
+.small ul ul { margin-left: 0; }
+
+.small ul ul ul { margin-left: 0; }
+
+.small ul ul ul ul { margin-left: 0; }
+
+.small ul ul ul ul ul{ margin-left: 0; }
+
+.small ul ul ul ul ul ul { margin-left: 0; }
+
+.small ul ul ul ul ul ul ul { margin-left: 0; }
+
+.small ul ul ul ul ul ul ul ul { margin-left: 0; }
+
+.small ul ul ul ul ul ul ul ul ul { margin-left: 0; }
+
+.small ul ul ul ul ul ul ul ul ul ul { margin-left: 0; }
+
+.small ul ul ul ul ul ul ul ul ul ul ul { margin-left: 0; }
+
+.small ul ul ul ul ul ul ul ul ul ul ul ul { margin-left: 0; }
+
+.small ul ul ul ul ul ul ul ul ul ul ul ul ul { margin-left: 0; }
+
+
+
+.darkbloom p, .darkbloom ul.org-ul li {
+  color: #fff;
+}
+
+
+figure img {
+  max-width: 50%;
+}
+
+.full figure img {
+ max-width: 100%;
+}
+
+
+
+ol.org-ol ul.org-ul li {
+ margin-left: -3em;
+}
+
+ul.org-ul {
+ margin-left: 5em;
+}

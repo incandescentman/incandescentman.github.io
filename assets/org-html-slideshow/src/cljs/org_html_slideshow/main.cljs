@@ -356,16 +356,12 @@
    goog.events.KeyCodes.END :show-last-slide
 
    goog.events.KeyCodes.SPACE :show-next-slide
-   goog.events.KeyCodes.ENTER :show-next-slide        
+   goog.events.KeyCodes.ENTER :show-next-slide
    goog.events.KeyCodes.MAC_ENTER :show-next-slide
    goog.events.KeyCodes.RIGHT :show-next-slide
-   goog.events.KeyCodes.DOWN :show-next-slide
-   goog.events.KeyCodes.PAGE_DOWN :show-next-slide
    goog.events.KeyCodes.N :show-next-slide
 
    goog.events.KeyCodes.LEFT :show-prev-slide
-   goog.events.KeyCodes.UP :show-prev-slide
-   goog.events.KeyCodes.PAGE_UP :show-prev-slide
    goog.events.KeyCodes.P :show-prev-slide})
 
 (defn handle-key [event]
