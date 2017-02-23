@@ -804,97 +804,97 @@ To figure out what the important questions are
 
 ** Demonstration: The question method   :slide:
 
-*What's the objective of this document?*
+- *What's the objective of this document?*
 
 ** Demonstration: The question method   :slide:
 
-*What's the objective of this document?*
-- To lay out a strategy for doing a better job of capturing value from relocating customers.
+- *What's the objective of this document?*
+  - To lay out a strategy for doing a better job of capturing value from relocating customers.
 
 ** Demonstration: The question method  :slide:
 
-*Why do we want to do a better job?*
+- *Why do we want to do a better job?*
 
 ** Demonstration: The question method  :slide:
 
-*Why do we want to do a better job?*
-- we're not doing a good job of capturing them now
+- *Why do we want to do a better job?*
+  - we're not doing a good job of capturing them now
 
 ** Demonstration: The question method  :slide:
 
-*Why do we want to do a better job?*
-- we're not doing a good job of capturing them now
-- because they're a huge opportunity
+- *Why do we want to do a better job?*
+  - we're not doing a good job of capturing them now
+  - because they're a huge opportunity
 
 ** Demonstration: The question method  :slide:
 
-*How are we not doing a good job of capturing them now?*
+- *How are we not doing a good job of capturing them now?*
 
 ** Demonstration: The question method  :slide:
 
-*How are we not doing a good job of capturing them now?*
-- we're not capturing new leads
+- *How are we not doing a good job of capturing them now?*
+  - we're not capturing new leads
 
 ** Demonstration: The question method  :slide:
 
-*How are we not doing a good job of capturing them now?*
-- we're not capturing new leads
-- we're not converting
+- *How are we not doing a good job of capturing them now?*
+  - we're not capturing new leads
+  - we're not converting
 
 ** Demonstration: The question method  :slide:
 
-*Why do we think they're a huge opportunity?*
+- *Why do we think they're a huge opportunity?*
 
 ** Demonstration: The question method  :slide:
 
-*Why do we think they're a huge opportunity?*
-- relocating customers are a large segment of good contacts
-- relocating customers are good customers for us
-- we're uniquely positioned to win relocating customers
+- *Why do we think they're a huge opportunity?*
+  - relocating customers are a large segment of good contacts
+  - relocating customers are good customers for us
+  - we're uniquely positioned to win relocating customers
 
 ** Demonstration: The question method  :slide:
 
-*Well OK so what could we do better?*
+- *Well OK so what could we do better?*
 
 ** Demonstration: The question method  :slide:
 
-*Well OK so what could we do better?*
+- *Well OK so what could we do better?*
   - generating leads
 
 ** Demonstration: The question method  :slide:
 
-*Well OK so what could we do better?*
+- *Well OK so what could we do better?*
   - generating leads
   - converting existing leads
 
 ** Demonstration: The question method  :slide:
 
-*What's our strategy for doing better in those two areas?*
+- *What's our strategy for doing better in those two areas?*
 
 ** Demonstration: The question method  :slide:
-*What's our strategy for doing better in those two areas?*
-- to increase conversion rates:
+- *What's our strategy for doing better in those two areas?*
+   - to increase conversion rates:
 
 ** Demonstration: The question method  :slide:
-*What's our strategy for doing better in those two areas?*
-- to increase conversion rates:
-  - Improve identification of relocating customers in Agent Tools
-  - Implement a standard referral fee for third-party referrals
-  - Begin offering "neighborhood consultations"
-  - Add a "Relocation Coordinator" role
-  - Add relocation content and features to the Redfin website
+- *What's our strategy for doing better in those two areas?*
+  - to increase conversion rates:
+    - Improve identification of relocating customers in Agent Tools
+    - Implement a standard referral fee for third-party referrals
+    - Begin offering "neighborhood consultations"
+    - Add a "Relocation Coordinator" role
+    - Add relocation content and features to the Redfin website
 
 ** Demonstration: The question method  :slide:
-*What's our strategy for doing better in those two areas?*
-- for generating leads
+- *What's our strategy for doing better in those two areas?*
+  - for generating leads
 
 ** Demonstration: The question method  :slide:
-*What's our strategy for doing better in those two areas?*
-- for generating leads
-  - Partner with MOVE Guides
-  - Begin targeted consumer marketing of relocating customers
-  - Partner with corporate talent recruiters
-  - Begin a Redfin Business Ambassador program
+- *What's our strategy for doing better in those two areas?*
+  - for generating leads
+    - Partner with MOVE Guides
+    - Begin targeted consumer marketing of relocating customers
+    - Partner with corporate talent recruiters
+    - Begin a Redfin Business Ambassador program
 
 ** Practice: The question method :slide:darkbloom:
 Run the question method on the document you brought
@@ -962,131 +962,117 @@ Run the questions checklist on the document you brought
 *Learning objective:* Use the question method to formulate a logical
 structure
 
-** Logical Structure
+
+*** Logical Structure                 :notes:
 Outlining and organizing
 
 How to organize a document in a logical way.
 
-** Practice: Creating a hierarchical document structure :slide:darkbloom:
+** Creating a hierarchical document structure :slide:darkbloom:
 - Take the questions from the question method
 - Put them in a logical order
 - Identify relevant subquestions
 
-** Example
+** Question method                     :slide:small:
 
-based on the answers developed in the question method and
- [[https://www.google.com/url?q=https://docs.google.com/document/d/1wunl9i31PyRLWQOb0KLH0MlpGWBCIuiaYW2Q2EyfrI0/edit&sa=D&ust=1487465741146000&usg=AFQjCNE6n3JZy-bGWvm86vQQpC15Pgv2Tw][Redfin's own template]]
+- *What's the objective of this document?*
+  - To lay out a strategy for doing a better job of capturing value from relocating customers.
 
-** converting question method to an outline
+- *Why do we want to do a better job?*
+  - we're not doing a good job of capturing them now
+  - because they're a huge opportunity
 
-** Question method                     :slide:
-
-What's the objective of this document?
-To lay out a strategy for doing a better job of capturing value from relocating customers.
-
-Why do we want to do a better job?
-- we're not doing a good job of capturing them now
-- because they're a huge opportunity
-
-How are we not doing a good job of capturing them now?
+- *How are we not doing a good job of capturing them now?*
 - we're not capturing new leads
 - we're not converting
 
-Why do we think they're a huge opportunity?
-- relocating customers are a large segment of good contacts
-- relocating customers are good customers for us
-- we're uniquely positioned to win relocating customers
+- *Why do we think they're a huge opportunity?*
+  - relocating customers are a large segment of good contacts
+  - relocating customers are good customers for us
+  - we're uniquely positioned to win relocating customers
 
-Well OK so what could we do better?
+- *Well OK so what could we do better?*
   - generating leads
   - converting existing leads
 
-What's our plan for doing better in those two areas?
+- *What's our plan for doing better in those two areas?*
+  - to increase conversion rates
+    - Improve identification of relocating customers in Agent Tools
+    - Implement a standard referral fee for third-party referrals
+    - Begin offering "neighborhood consultations"
+    - Add a "Relocation Coordinator" role
+    - Add relocation content and features to the Redfin website
+  - for generating leads
+    - Partner with MOVE Guides
+    - Begin targeted consumer marketing of relocating customers
+    - Partner with corporate talent recruiters
+    - Begin a Redfin Business Ambassador program
+*** Notes                                :notes:
+Create an outline
+- assemble your list of important questions, both the standard ones and the ones you generated. Only the ones that are relevant to the objective of the doc
+- put them in order
+- that's your outline
 
-- to increase conversion rates
+** Creating a hierarchical document structure :slide:small:
+- *Relocating customers are a significant opportunity for Redfin*
+  - Relocating customers are a large segment of good contacts
+  - Relocating buyers and sellers are good customers for Redfin
+  - Redfin fails to capture leads among relocating home buyers
+  - Redfin fails to convert relocating customers
+  - Redfin is uniquely positioned to win relocating customers
+- *Objective #1: Increase conversion rate of relocating buyers and sellers*
   - Improve identification of relocating customers in Agent Tools
   - Implement a standard referral fee for third-party referrals
-  - Begin offering "neighborhood consultations"
+  - Begin offering "Neighborhood Consultations"
   - Add a "Relocation Coordinator" role
   - Add relocation content and features to the Redfin website
-
-- for generating leads
+    - Enable relocating customers to contact agents in their destination city
+    - Add website content for relocating customers
+- *Objective #2: Generate leads among relocating buyers and sellers*
   - Partner with MOVE Guides
   - Begin targeted consumer marketing of relocating customers
   - Partner with corporate talent recruiters
   - Begin a Redfin Business Ambassador program
+*** Notes                                :notes:
+If you're confused by document structure, here's the thing you need to remember: Each section must be asking and answering a question.
 
+** Practice: Create a hierarchical document structure :slide:darkbloom:
 
-** TODO create an outline
-assemble your list of important questions, both the standard ones and the ones you generated. Only the ones that are relevant to the objective of the doc
-put them in order
-that's your outline
+* within each section
 
-** Using accurate headings
+* question method
+** Using the question method within each section :slide:
+*Learning objective:* Use the question method to define the key points *within each section*
 
-If a section of the document is recommending that a particular action be taken, it's clearer if the heading itself is phrased as a recommendation. Generally, using verbs is clearer and more forceful than listing nouns.
-
-Take the heading *Deal Writing Agents*. This section is actually making an important recommendation: that Redfin should begin offering Neighborhood Consultations. But this is not apparent from the heading. I changed the heading to *Begin offering Neighborhood Consultations* to make it more clear what point is being made.
-
-Likewise, the heading "Support Agents and Relocation Coordinators" is also hiding an important recommendation: that Redfin should add the role of Relocation Coordinator. I changed the heading to *Add a Relocation Coordinator role*. This is a key recommendation of the document, and it should be labeled clearly so the reader knows what's in the section and where it fits into the larger argument.
-
-*** heading names
-Make the logical structure of their documents explicit by titling each section using the point it is making. The reader shouldn't have to guess to try to figure out what the section is about.
-
-If you use heading names that say what point is being made, it
-
-1. Makes it easier for the writer to organize the document
-2. Makes it easy for the reviewer to quickly grasp the logic of the document at a glance.
-
-(Incidentally, if the actual writing of these documents is done in Google Drive, I advise students to turn on [[https://i.imur.com/dNTxas2.png][Document Outline Mode]] to make it easy to see the logical structure as you're creating it.)
-
-I reorganized the document so as to make the structure more logical and explicit. Here's a before/after.
-
-*** sanity checks: are they parallel with each other?
-
-*** use of a colon: like this
-
-*** longer, more informative headings are better
-
-*** if it's a recommendation, it should start with a verb
-
-
-* 1:00–10:30
-** TODO The intrasection question method :slide:
-Learning objective
-Use the question method to define the key points *within
-*each section*
-
+*** Notes                             :notes:
 Now when you've done this for the whole document, you do the same thing for each section. Macro/ micro
 
 the question method is mirrored on a micro scale.
 
-The starting point for each is, what question am I trying to answer in this section?
+** All documents are FAQs              :slide:
+Every section must be asking and answering a question.
+*** Notes                             :notes:
 
+** Using the question method within each section :slide:
+Your stating point is always the same: *What question am I trying to answer in this section?*
 
-If you're confused by document structure, here's the thing you need to remember: Each section must be asking and answering a question.
-
+*** Notes                             :notes:
 I want to teach you to say to yourself, as they're creating the document structure, "This section answers the question: What steps would we need to take to implement this plan?" "This section answers the question: Why do I think this plan will work?"
 
-Every section must be asking and answering a question
+** How do I use the question method to define key points? :slide:
+** Practice: what am I saying in each of these paragraphs? :slide:
+** Debrief                             :slide:
 
+* Explicitness
+** *Explicitness:* telling the reader why they're reading what they're reading :slide:
+Never make the reader read something without telling them why it's important.
 
-** all documents should be FAQ's
-You don't have to include the questions
-- every section should be answering a question
-
-*** How do I use the question method to define key points? :slide:
-*** Practice: what am I saying in each of these paragraphs? :slide:
-*** Debrief :slide:
-
-* Significance - telling the reader why they're reading what they're reading
-** TODO Never make the reader read something without telling them why it's important.
-
+*** Notes                             :notes:
 For writing to be clear, the reader must not only understand the information, but must also why each piece of information is *relevant to the broader argument*. To put it another way: A proposal document should make a series of points, not just provide background information.
 
 The reader has to know why they need to know this
 
-*** relocation example - relevance
+**** relocation example---relevance
 For example, the "About the Relocation Customer" section is confusing because it's not clear how the information is relevant. Take this part:
 
 : "Relocatees have three traits that make them different from people moving within the same city... (1) They don't know where to move in their new city."
@@ -1099,7 +1085,7 @@ It seems like the information in the "About the Relocation customer" section is 
 
 To me, the place where the information above is actually relevant is later, in the section recommending that Redfin begin offering Neighborhood Consultations. In that part of the document, it does make sense to point out that relocating customers don't know where to move in their new city. In this context, the information actually is relevant because it's a statement about a problem with the current way of doing things---a problem to which Neighborhood Consultations are the solution.
 
-** and it should be a question the reader has
+*** and it should be a question the reader has
 Not just a random question they don't care about like "what are some facts about relocating customers?"
 
 The reader does not have the question
@@ -1110,6 +1096,85 @@ What the reader's question actually is is:
 - and what's the strategy for implementing it?
 - and what's the evidence that it's going to work?
 - and what's the problem again with the way we're doing it now?
+
+
+* Heading workshop
+** Heading workshop                    :slide:
+
+** How to title your headings    :slide:
+- use explicit headings to make it clear what the point of the section is
+*** Notes                                :notes:
+Make the logical structure of their documents explicit by titling each section using the point it is making. The reader shouldn't have to guess to try to figure out what the section is about.
+
+If you use heading names that say what point is being made, it
+
+1. Makes it easier for the writer to organize the document
+2. Makes it easy for the reviewer to quickly grasp the logic of the document at a glance.
+
+** How to title your headings    :slide:
+- use explicit headings to make it clear what the point of the section is
+- headings of the same level should be grammatically parallel
+
+*** Notes                                :notes:
+Contact and website example
+
+** How to title your headings    :slide:
+- use explicit headings to make it clear what the point of the section is
+- verbs are clearer and more forceful than nouns
+- longer, more informative headings are clearer
+- headings of the same level should be grammatically parallel
+- questions for the board should be phrased as questions
+- recommendations should be phrased as recommendations
+
+** Demo: How to title your headings    :slide:
+#+BEGIN_QUOTE
+*Adjust Agent Events, Roles, and Education*
+
+*Deal Writing Agents:*  Agents report that relocatees tour homes inefficiently at the start of their search because they have not yet narrowed their neighborhood focus. We recommend creating a new event called a “Neighborhood Consultation” that would delight customers, reduce customer search time and increase  tour-to-close conversion. We think the event will, at minimum increase conversion from an estimated 30% to 32%, generating ~200 more closes per year and increasing revenue by $2M.
+#+END_QUOTE
+
+
+
+*** Notes                                :notes:
+If a section of the document is recommending that a particular action be taken, it's clearer if the heading itself is phrased as a recommendation. Generally, using verbs is clearer and more forceful than listing nouns.
+
+Take the heading *Deal Writing Agents*. This section is actually making an important recommendation: that Redfin should begin offering Neighborhood Consultations. But this is not apparent from the heading. I changed the heading to *Begin offering Neighborhood Consultations* to make it more clear what point is being made.
+
+** Demo: How to title your headings    :slide:
+#+BEGIN_QUOTE
+*Begin offering "Neighborhood Consultations"*
+
+One thing that makes relocating customers different is that they don't know what neighborhood to move to in their new city. Indeed, agents report that relocatees tour homes inefficiently at the start of their search because they have not yet narrowed their neighborhood focus.
+
+We recommend creating a new event called a "Neighborhood Consultation," which would delight customers, reduce customer search time, and increase tour-to-close conversion. We think the event will, at minimum increase conversion from an estimated 30% to 32%, generating ~200 more closes per year and increasing revenue by $2M.
+#+END_QUOTE
+
+
+
+** Demo: How to title your headings    :slide:
+#+BEGIN_QUOTE
+*Adjust Agent Events, Roles, and Education*
+
+*Support Agents and Relocation Coordinators*
+Support Agents rarely book both a tour and listing consult for the same customer. This is an incentive-related problem that applies broadly, but it is a particularly acute issue with reloc ating customers. This is both because relocatees are unfamiliar with their destination city and because Support Agents don't know DWAs or booking protocols outside their market.
+
+We recommend creating a HUB-based Relocation Coordinator (RC) role. The RC will be an expert in booking all event types for any Redfin market and will be familiar with our relocation-specific resources, such as Opportunity Score and neighborhood pages. Support Agents and Tour Coordinators will route relocation calls to the RC who could set up the appropriate events in both regions. At first, this might be a part time position for 3-4 Support Agents. Alternatively, if the proposed Redfin VIP program is implemented, the role could be handled by a VIP Agent. The VIP program has also specified an algorithm-based tool which would allow a VIP Agent or RC to find and schedule the right agent in any market. We strongly support the development of this tool.
+
+#+END_QUOTE
+
+*** Notes        :notes:
+Likewise, the heading "Support Agents and Relocation Coordinators" is also hiding an important recommendation: that Redfin should add the role of Relocation Coordinator. I changed the heading to *Add a Relocation Coordinator role*. This is a key recommendation of the document, and it should be labeled clearly so the reader knows what's in the section and where it fits into the larger argument.
+
+** Demo: How to title your headings  :slide:
+#+BEGIN_QUOTE
+*Add a "Relocation Coordinator" role*
+Support Agents rarely book both a tour and listing consult for the same customer. This is an incentive-related problem that applies broadly, but it is a particularly acute issue with relocating customers. This is both because relocatees are unfamiliar with their destination city and because Support Agents don't know DWAs or booking protocols outside their market.
+
+We recommend creating a HUB-based Relocation Coordinator role. The Relocation Coordinator will be an expert in booking all event types for any Redfin market and will be familiar with our relocation-specific resources, such as Opportunity Score and neighborhood pages. Support Agents and Tour Coordinators will route relocation calls to the Relocation Coordinator, who will then set up the appropriate events in both regions.
+#+END_QUOTE
+
+
+* 1:00–10:30
 
 * 11:45–12:45 - Lunch Break
 * *Lunch 11:45–12:45* :slide:full:
@@ -1138,19 +1203,16 @@ Goal 2: Writing with the reader in mind
 
 
 ** Explicitness clarity :slide:
-Learning objective: Write with explicitness clarity
-
-*** TODO Sentence workshop            :slide:
-(using examples from Redfin Relocation, Mortgage
-  Update, and Direct Marketing: How Big Can It Get?)
-
+*Learning objective:* Write with explicitness and clarity
 
 ** Explicitness: orienting the reader
 Don't just walk up to someone and start spewing numbers. Tell them why you're telling them!
 
 topic sentences, not just random data
 
+#+BEGIN_QUOTE
 Through July 2016 we have spent $4.5M on digital media, up 134% YoY and +24% compared to our original 2016 budget. We project the cohort from January through July will drive $17.1M in revenue, up +162% YoY over the same period last year.
+#+END_QUOTE
 
 *** the reader should know the significance
 Why are you telling me this? Otherwise I'll tune out
@@ -1172,22 +1234,25 @@ Thinkaloud: I don't understand, I'm not oriented, I need a topic sentence, what 
 *** transferable strategies
 So what do I want you to take away from this?
 1. Topic sentences
-2. Tell the reader why they need to do this
+2. Tell the reader why they need to know this
 # explicitly through me naming it
 
 
 ** clarity: sentence workshop
+#+BEGIN_QUOTE
 *Reach in-market home-buyers and sellers for the least money*: We're dependent on Google and Facebook for our overall performance. 67.4% of 2016 paid contacts come from those sites. By the end of 2017, we'll add additional ad networks like Criteo or Yahoo and at least 50% of contacts will come from other sites. This goal is dependent on scaling search on Bing and proving out display ads.
+#+END_QUOTE
+*** Notes                                :notes:
 - what the hell does this mean? It does not at all say what it means.
 - I don't mean, can you figure it out and try to piece it together because you know the business
 
 Topic sentence must be specific still, not vague, confusing, ambiguous, imprecise
 
-
+** Use precise language
 Expand Advertising on Mobile: Mobile traffic represents 61% of total site traffic. However, none of our Redfin listing campaigns on Facebook, and only 14% of paid search ads outside of Seattle, are on mobile. By the end of 2017, we'll have launched all campaigns in all markets on mobile devices. To get there, we'll need support from search, apps, and customer growth to improve conversion on our mobile web and apps in 2017 so we can bid more aggressively on mobile. We may never get mobile conversion to the same level as desktop, but every bit helps.
 
 
-*** Vague language
+** Vague language
 Throughout the document, there's a lot of vague and confusing language. Here are a few examples.
 
 : "Redfin does not meaningfully identify relocatees"
@@ -1198,10 +1263,10 @@ What does it mean to identify them meaningfully? How is this different from simp
 
 What does it mean to service these customers "cleanly"? That's not a standard term and it's not clear what it means. I think what this sentence is really trying to say is this: "We don't provide an easy way for clients who have already worked with Redfin in one city to start working with us again in their new city when they start looking to buy a place."
 
-*** Transferable strategies: what to look for :slide:
+** Transferable strategies: what to look for :slide:
 
 
-*** transferable strategies
+** transferable strategies
 So what do I want you to take away from this?
 - use precise words
 - use active verbs rather than to be verbs when possible
@@ -1219,18 +1284,18 @@ As the great writing teacher William Zinsser said, the essence of writing is rew
 In this section I teach employees how to go back after they've written a draft and read it with fresh eyes; how to compare a document to the original outline and look for holes; how to trim the fat and leave only what's needed; tricks like printing out a hardcopy and using a different colored pen; and how to "switch modes" from creator to critic so you can look for vague, confusing, or insufficiently supported passages and address them.
 
 
-*** Examples and non-examples :slide:
+** Examples and non-examples           :slide:
 using examples from Redfin Relocation, Mortgage
   Update, and Direct Marketing: How Big Can It Get?)
 
-*** transferable strategies
-**** tricks for concision
+** transferable strategies
+*** tricks for concision
 - print it out and use a red pen
 
-**** switch modes
+*** switch modes
 From writer to editor
 
-**** edit with fresh eyes
+*** edit with fresh eyes
 imagine it's someone else and leave mean comments for yourself
 "What the hell are you trying to say here?"
 
@@ -1252,9 +1317,9 @@ The objective isn't to notice these things so that you never need to trim in the
 
 * 2:15–3:00
 
-** Application: Action planning :slide:
+** Application: Action planning        :slide:
 
-*** Review sample proposal :slide:
+*** Review sample proposal            :slide:
 e.g. they need to start with the question method because they really haven't defined what they're trying to convince the reader of
 
 Look at relocation proposal
@@ -1477,3 +1542,8 @@ Principle: use only what you need. Don't include everything you know, include on
 Now we're going to do this. The reason we're doing this is because it's contribution to xyz. We're going to a few things that will carry us toward that objective. First I'm going to model, then you're going to practice.
 
 In a very long session, that's very important, so they know where they're going and why.
+
+* TODO critical questions
+
+based on the answers developed in the question method and
+ [[https://www.google.com/url?q=https://docs.google.com/document/d/1wunl9i31PyRLWQOb0KLH0MlpGWBCIuiaYW2Q2EyfrI0/edit&sa=D&ust=1487465741146000&usg=AFQjCNE6n3JZy-bGWvm86vQQpC15Pgv2Tw][Redfin's own template]]
