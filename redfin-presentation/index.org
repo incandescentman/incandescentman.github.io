@@ -1,0 +1,1340 @@
+* title card
+#+TITLE: Writing Clear Proposals
+#+AUTHOR: Jay Dixit
+#+BEGIN_EXPORT HTML
+<div class="initial_prompt">
+<h1 class="begin">Type <strong>T</strong> to begin the slideshow.</h1>
+</div>
+#+END_EXPORT
+
+* 9:00–9:30
+
+** Welcome          :slide:
+
+** *Writing* Clear Proposals           :slide:
+Jay Dixit \\
+*New York Writers' Intensive* \\
+Storytelling Classes - Writing Workshops - Coaching \\
+[[mailto:jay@newyorkwritersintensive.com][jay@newyorkwritersintensive.com]] \\
+[[http://newyorkwritersintensive.com][newyorkwritersintensive.com]]
+#+HTML: <p><img style="display: inline; position: relative; top: 5px;" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0> @jaydixit </p>
+
+** Agenda                              :slide:
+
+** Introductions :slide:
+
+** Goals and learning objectives       :slide:
+*** *Goal 1:* Apply analytical thinking to the proposal planning process :slide:
+- Learn to use and apply the question method, a
+ technique for identifying the structure and major points of a
+ document by asking and answering a series of analytical questions
+- Use the question method to articulate the purpose
+ of the document
+- Use the question method to define the key points
+ for each section
+- Use the question method to formulate a logical
+ structure
+
+*** *Goal 2:* Write with the reader in mind :slide:
+- Write with clarity and precision
+- Trim for concision
+
+
+** Learnings methods                   :slide:
+- lecture
+- modeling
+- practice
+
+*** Notes                                                             :notes:
+You'll be rewriting the document you brought
+
+you're coming with a draft of what you're working on. we'll start from scratch, start from the very beginning so we can not only improve the current proposal, but so we can know how to start proposals from scratch in the future. you might feel like you already did this, but the point of this isn't just to perfect what you already did, but to teach you a new way of approaching this in the future.
+
+
+** *Criteria for success:* What makes a proposal good? :slide:
+1. *Rigorous*. You've asked and answered the right questions.
+2. *Organized*. Structured so as to make it easy to follow the logic behind it.
+3. *Clear*. Written in a direct way such that it's easy for the reviewer to understand.
+4. *Concise*. Doesn't ramble or repeat. Gets to the point quickly. No extraneous information.
+5. *Data-driven*. Provides data demonstrating why the plan is expected to succeed.
+
+
+* 9:30–10:00
+
+** Organized                           :slide:
+ #+BEGIN_QUOTE
+*Organized*. Structured so as to make it easy to follow the logic behind it.
+#+END_QUOTE
+
+** Thinking about structure                         :slide:
+#+BEGIN_EXPORT HTML
+<CENTER><iframe src="redfin-originals/RedfinRelocation-ForJay-original.pdf" width="800" height="800" style="zoom: 1.2"></iframe> </CENTER>
+#+END_EXPORT
+
+
+
+*** Notes                                :notes:
+Example: Redfin relocation
+Let's look at the structure of this
+
+** Practice: What's the structure?     :slide:darkbloom:
+#+BEGIN_EXPORT HTML
+<CENTER><iframe src="redfin-originals/RedfinRelocation-ForJay-original.pdf" width="800" height="800" style="zoom: 1.2"></iframe> </CENTER>
+#+END_EXPORT
+
+*** Notes                                :notes:
+Write out the structure
+use the headings to create an outline of this document so that we can look at the structure from a high level
+
+They can get the idea of this, start grappling with it
+
+5 minutes, get as far as you can
+
+Then I'll reveal the answer:
+
+Get them to create this:
+
+use the headings that are already there
+
+Look at the document, describe the flow of information
+
+When I step back from it, and I try to answer these questions:
+
+- What's the flow of information?
+- What is this document intended to do?
+- What does each section represent?
+
+It's unclear.
+
+** Original structure     :slide:small:
+- Executive Summary
+  - Our Immediate Recommendations
+  - Future Recommendation
+- About the Relocation Customer
+  - Relocating customers are a large segment of good contacts with different needs
+  - Relocating Home Buyers are Under-Represented at Redfin
+- Contact Conversion and Improved Customer Experience
+  - Improve Identification of Relocatees in Agent Tools
+  - Create 3rd Party Referral Fee Policy
+- Adjust Agent Events, Roles, and Education
+  - Deal Writing Agents
+  - Support Agents and Relocation Coordinators
+- Improve Website UX for Relocatees
+  - Reduce Friction for Customers to Contact Agents in Another Market
+  - Relocation Pages and Tools
+- Contact Generation
+  - Partner with MOVE Guides
+  - Targeted Consumer Marketing
+  - Partnering with corporate talent teams to reach employees
+
+** Practice: Interpreting the structure :slide:darkbloom:
+- What's the objective of this document and the main point it's making?
+- What's the logic progression of the document?
+- What's the main point of each section?
+
+** Debrief: The benefits of an explicit structure :slide:small:
+- Executive Summary
+  - Our Immediate Recommendations
+  - Future Recommendation
+- About the Relocation Customer
+  - Relocating customers are a large segment of good contacts with different needs
+  - Relocating Home Buyers are Under-Represented at Redfin
+- Contact Conversion and Improved Customer Experience
+  - Improve Identification of Relocatees in Agent Tools
+  - Create 3rd Party Referral Fee Policy
+- Adjust Agent Events, Roles, and Education
+  - Deal Writing Agents
+  - Support Agents and Relocation Coordinators
+- Improve Website UX for Relocatees
+  - Reduce Friction for Customers to Contact Agents in Another Market
+  - Relocation Pages and Tools
+- Contact Generation
+  - Partner with MOVE Guides
+  - Targeted Consumer Marketing
+  - Partnering with corporate talent teams to reach employees
+
+*** Notes                                :notes:
+
+If it's a good structure, you could step away from it and say something like:
+
+First it gave me the problem
+then a strategy for solving it
+then three steps for the strategy
+then evidence why each of those steps will be work
+
+
+** Critique: Original structure :slide:small:
+- Executive Summary
+  - Our Immediate Recommendations
+  - Future Recommendation
+- About the Relocation Customer
+  - Relocating customers are a large segment of good contacts with different needs
+  - Relocating Home Buyers are Under-Represented at Redfin
+- Contact Conversion and Improved Customer Experience
+  - Improve Identification of Relocatees in Agent Tools
+  - Create 3rd Party Referral Fee Policy
+- Adjust Agent Events, Roles, and Education
+  - Deal Writing Agents
+  - Support Agents and Relocation Coordinators
+- Improve Website UX for Relocatees
+  - Reduce Friction for Customers to Contact Agents in Another Market
+  - Relocation Pages and Tools
+- Contact Generation
+  - Partner with MOVE Guides
+  - Targeted Consumer Marketing
+  - Partnering with corporate talent teams to reach employees
+
+*** Notes                                :notes:
+
+Glancing at this structure, it's hard to tell what conclusion is being argued for and what points are being made in support of that conclusion. Here's my revised structure.
+
+I don't even know if it's a proposal for a strategy to do, or if it's a summary of how the company is structured?
+
+It's hard for me to see from these headings what the flow of the document is
+
+
+** Critique: Original structure          :slide:small:
+- Executive Summary
+  - Our Immediate Recommendations
+  - Future Recommendation
+- About the Relocation Customer
+  - Relocating customers are a large segment of good contacts with different needs
+  - Relocating Home Buyers are Under-Represented at Redfin
+- *Contact Conversion and Improved Customer Experience*
+  - Improve Identification of Relocatees in Agent Tools
+  - Create 3rd Party Referral Fee Policy
+- Adjust Agent Events, Roles, and Education
+  - Deal Writing Agents
+  - Support Agents and Relocation Coordinators
+- Improve Website UX for Relocatees
+  - Reduce Friction for Customers to Contact Agents in Another Market
+  - Relocation Pages and Tools
+- Contact Generation
+  - Partner with MOVE Guides
+  - Targeted Consumer Marketing
+  - Partnering with corporate talent teams to reach employees
+
+
+** Critique: Original structure                  :slide:small:
+- Executive Summary
+  - Our Immediate Recommendations
+  - Future Recommendation
+- About the Relocation Customer
+  - Relocating customers are a large segment of good contacts with different needs
+  - Relocating Home Buyers are Under-Represented at Redfin
+- Contact Conversion and Improved Customer Experience
+  - Improve Identification of Relocatees in Agent Tools
+  - Create 3rd Party Referral Fee Policy
+- Adjust Agent Events, Roles, and Education
+  - *Deal Writing Agents*
+  - Support Agents and Relocation Coordinators
+- Improve Website UX for Relocatees
+  - Reduce Friction for Customers to Contact Agents in Another Market
+  - Relocation Pages and Tools
+- Contact Generation
+  - Partner with MOVE Guides
+  - Targeted Consumer Marketing
+  - Partnering with corporate talent teams to reach employees
+
+
+** Critique: Original structure     :slide:small:
+- Executive Summary
+  - Our Immediate Recommendations
+  - Future Recommendation
+- About the Relocation Customer
+  - Relocating customers are a large segment of good contacts with different needs
+  - Relocating Home Buyers are Under-Represented at Redfin
+- Contact Conversion and Improved Customer Experience
+  - Improve Identification of Relocatees in Agent Tools
+  - Create 3rd Party Referral Fee Policy
+- Adjust Agent Events, Roles, and Education
+  - Deal Writing Agents
+  - Support Agents and Relocation Coordinators
+- Improve Website UX for Relocatees
+  - Reduce Friction for Customers to Contact Agents in Another Market
+  - *Relocation Pages and Tools*
+- Contact Generation
+  - Partner with MOVE Guides
+  - Targeted Consumer Marketing
+  - Partnering with corporate talent teams to reach employees
+
+
+** Revised structure                   :slide:
+#+BEGIN_EXPORT HTML
+<CENTER><iframe src="redfin-originals/Relocation-Revised.pdf" width="800" height="800" style="zoom: 1.2"></iframe> </CENTER>
+#+END_EXPORT
+
+
+** Revised structure      :slide:small:
+- Executive summary
+  - Immediate recommendations
+  - A future recommendation
+  - Financial projections
+- *Relocating customers are a significant opportunity for Redfin*
+  - Relocating customers are a large segment of good contacts
+  - Relocating buyers and sellers are good customers for Redfin
+  - Redfin fails to capture leads among relocating home buyers
+  - Redfin fails to convert relocating customers
+  - Redfin is uniquely positioned to win relocating customers
+- *Objective #1: Increase conversion rate of relocating buyers and sellers*
+  - Improve identification of relocating customers in Agent Tools
+  - Implement a standard referral fee for third-party referrals
+  - Begin offering "Neighborhood Consultations"
+  - Add a "Relocation Coordinator" role
+  - Add relocation content and features to the Redfin website
+    - Enable relocating customers to contact agents in their destination city
+    - Add website content for relocating customers
+- *Objective #2: Generate leads among relocating buyers and sellers*
+  - Partner with MOVE Guides
+  - Begin targeted consumer marketing of relocating customers
+  - Partner with corporate talent recruiters
+  - Begin a Redfin Business Ambassador program
+
+** Practice: Interpreting the structure :slide:darkbloom:
+- What's the objective of this document and the main point it's making?
+- What's the logic progression of the document?
+- What's the main point of each section?
+
+
+*** Answer key                        :notes:
+Now look at what I did this
+
+Divide yourself into 2-man groups
+find a partner, someone whom you deeply love, and
+Now take 3 minutes, say to your partner in
+
+- what's the flow?
+- what is each section
+- what's the relationship between sections?
+
+** Debrief: The benefits of an explicit structure :slide:small:
+- Executive summary
+  - Immediate recommendations
+  - A future recommendation
+  - Financial projections
+- *Relocating customers are a significant opportunity for Redfin*
+  - Relocating customers are a large segment of good contacts
+  - Relocating buyers and sellers are good customers for Redfin
+  - Redfin fails to capture leads among relocating home buyers
+  - Redfin fails to convert relocating customers
+  - Redfin is uniquely positioned to win relocating customers
+- *Objective #1: Increase conversion rate of relocating buyers and sellers*
+  - Improve identification of relocating customers in Agent Tools
+  - Implement a standard referral fee for third-party referrals
+  - Begin offering "Neighborhood Consultations"
+  - Add a "Relocation Coordinator" role
+  - Add relocation content and features to the Redfin website
+    - Enable relocating customers to contact agents in their destination city
+    - Add website content for relocating customers
+- *Objective #2: Generate leads among relocating buyers and sellers*
+  - Partner with MOVE Guides
+  - Begin targeted consumer marketing of relocating customers
+  - Partner with corporate talent recruiters
+  - Begin a Redfin Business Ambassador program
+
+*** Notes                                :notes:
+Listen in on what they say, then relay the correct ones to the whole group
+or do redirection if necessary
+
+
+In the revised version above, I make the logic explicit in the headings, enabling executives to (1) see and understand the argument at a glance, and (2) always know what point is being made in each section.
+
+So you can see that when the structure is strong, it's easy to say what the flow is because
+- structure: each heading is logical and builds on what came before
+- the features that make the structure explicit: the headings are labeled explicitly. So it's easy to navigate
+
+Descriptive headings are a tool to make the structure explicit
+
+
+
+** How do bad documents happen?        :slide:
+*** Notes                                :notes:
+
+Why is it that we sometimes write a document that's not as well thought out as it could be?
+
+It's not because we don't know what we're doing, we don't know the answers, we don't have the insights.
+
+It's not because we're unable to logically think through a strategy. The problem is that a lot of us are not in the habit, mentally, of breaking down our thinking process into discrete steps.
+
+For those of us who aren't naturally analytical thinkers, organizing and writing a document is hard because we don't know where to start.
+
+** Writing with the reader in mind
+*** Notes                                :notes:
+The biggest mistake novice writers make is to write without the reader in mind. Novice writers write while mentally asking questions based on their own needs, questions like, "What do I know? What's all the information I can put in?"
+
+But clear writing requires empathy for the reader.
+
+# I'll talk about a psychology concept called "the curse of knowledge"---the tendency of writers to unwittingly assume that the reader already knows everything they themselves know.
+
+you must keep the reader's needs in mind at all times, asking questions like, "What does the reader *already* know? What does the reader need to know to understand the point I'm making? What evidence is likely to convince a skeptical reader that this is going to work?"
+
+** How *not* to write a document :slide:
+1. The brain dump
+2. The curse of knowledge
+3. Trying to strategize in your head
+
+** *Mistake #1:* The Brain Dump          :slide:
+*** Notes                                :notes:
+What do we do? We sit down and start writing down their thoughts, without organizing first and without any thought about what the reader actually needs to know.
+
+Their thought process might look something like this: "OK, where do I start? Introduction. What should I say in my introduction? I'll need to make three points, what three points can I make?" And so on.
+
+The result is a brain dump, a rambling and disorganized document that's poorly organized, hard to follow, and often riddled with logical holes and unanswered questions.
+
+We just write down what we know and keep going until we can't think of anything else to say.
+
+*** the fridge metaphor
+All the ingredients in your mind
+
+Doing that is kind of like trying to bake a cake by opening your refrigerator, taking out all the food you have in your fridge, beer, mustard, leftover pizza, garlic, chocolate, and putting it in a big bowl. Most of those ingredients aren't necessary! And in fact they'll get in the way. The key to baking a cake is what you leave out!
+
+*** the purpose of the document isn't to communicate what you know
+It's to tell the reader what they need to know.
+
+
+** *Mistake #2:* The curse of knowledge  :slide:
+
+*** Notes                                :notes:
+- what the curse of knowledge is
+- knocking thing
+- Emma Thompson
+
+So what you have to do is ask yourself at every moment, what does the reader know, what does the reader not know?
+- What different terms mean
+- when you assume the reader already knows, unconsciously
+- obviously you *do* have to guess what the reader knows and don't knows. But make those determinations consciously, not automatically
+
+** *Mistake #3:* Trying to strategize in your head :slide:
+
+*** Notes                                :notes:
+Trying to write the finished product directly
+Trying to write down only the words that will appear in the final draft.
+
+e.g. you write "introduction" and then you try to write the first sentence... and then the second sentence and then the third sentence.
+
+Driving in the fog. No! Draw a map!
+
+The main mistake people make is they sit down and try to write the finished product.
+
+It comes out however it comes out.
+
+Mistake: just write down what you know, what you can think of to write. I have all this information, let me just write it down.
+
+Write down a heading?
+
+If you only write down the final product... And doing all the planning, structuring, organizing in your head. Then it's hard to think about what does the reader know, need to know... and when... and how to explain things the best way
+
+wrong.
+
+** right way: be strategic! Think about the reader!
+
+** Outlining isn't enough    :slide:
+** Outlining isn't enough    :slide:
+How do you know what to put in the outline?
+
+*** Notes                                :notes:
+
+Otherwise it's the same problem again. You're trying to write the final draft of the outline in the first go. It's not going to work.
+
+Then you're just passing the same problem down the chain. How do you figure out what to put in your outline?
+
+Before you start outlining, you need to know what the structure *should* be.
+
+You need to plan the structure, weigh options
+
+Before you outline, you need to know what you're trying to say
+
+You need to *think* even before you outline!
+
+Outline strategically!
+
+Reverse outlining. Asking a question.
+
+When you're outlining, you're still kind of in the mode of listing
+
+Yes, you're ordering things, rearranging them...
+
+But you need to dig even deeper than that. You need to be thinking strategically about what to put in or not put in, *how* to present information to the reader
+
+It means you're trying to do all that thinking in your head
+
+** *Thinking* is the *first* step to clear writing :slide:
+- The main problem with business writing is a lack of clarity
+- Writing is thinking on paper
+- Clear thinking → clear writing
+
+*** Notes                                :notes:
+- If the writing is sloppy, the thinking is sloppy too
+- clear writing requires clear thinking
+- *writing is thinking on paper*
+- it's a lack of clarity not only in the sentences, but in the thinking itself
+- I teach a method for clear thinking
+
+** How to think analytically :slide:
+Analytical thinking is the process of asking and answering questions.
+
+*** Notes                                :notes:
+How do you think clearly, analytically, strategically?
+
+
+Thinking is just asking and answering questions
+- do the whole Tony robbins thing
+
+Analytical thinking is the process of asking and answering questions.
+
+If I can figure out what questions to ask, I find I often already know the answers.
+
+*Analytical thinking is really just the process of asking and answering questions*. If you can ask the right questions and then answer them, that means you have a logical argument.
+
+
+** How to write clearly :slide:
+*asking good questions → good answers → clear thinking → clear writing*
+
+** A technique for thinking clearly :slide:
+*** Notes                                :notes:
+
+Is what I'll teach you here today
+
+** First step: Create two separate documents :slide:
+1. Your *thinking* file
+2. The document you'll present to the reader
+*** Notes                                :notes:
+1. Your *thinking* file. You figuring out for yourself what to put in and how to communicate it, ordering. This isn't even a draft. This is strategy. your notes to yourself
+2. The document you'll present to the reader. First draft, second draft.
+
+** The NYWI method           :slide:
+1. Think
+2. Outline
+3. Write
+4. Rewrite (for clarity)
+5. Trim (for concision)
+
+** The NYWI method      :slide:
+1. Think strategically and analytically using the *question method*
+   - Ask the right questions
+   - Answer those questions
+2. Outline
+3. Write
+4. Rewrite (for clarity)
+5. Trim (for concision)
+
+** How do you know what the right questions are? :slide:
+
+** The question method        :slide:
+
+*** Notes                                :notes:
+The question method is a tool I developed to prompt employees to ask and answer the right questions. The goal is to give you a step-by-step process for thinking analytically.
+
+Analytical thinking is the process of asking and answering questions.
+
+** The question method    :slide:
+1. Start by writing: "What question is this document trying to answer?"
+2. Whenever you know the answer to a question, write down the answer.
+3. If you /don't/ know the answer, think what other question you'd need to answer to get there. Write down that new question.
+4. As new questions arise, write those down too.
+5. Go to #2.
+6. Continue asking and answering questions until all questions are answered and you can't think of any more relevant questions.
+
+*** Notes        :notes:
+The question method is a tool I developed to prompt employees to ask and answer the right questions. The goal is to give you a step-by-step process for thinking analytically.
+
+By the end of the process, you'll have a comprehensive list of questions and answers you can draw on in writing your document.
+
+See how you don't even get to an answer until you really drill down into the questions
+
+To figure out what the important questions are
+
+* Demonstration: The question method
+:PROPERTIES:
+:VISIBILITY:folded:
+:END:
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+      - The objective is to increase our market share throughout the country.
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+      - The objective is to increase our market share throughout the country.
+        - *OK, so will the plan succeed in increasing our market share?*
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+      - The objective is to increase our market share throughout the country.
+        - *OK, so will the plan succeed in increasing our market share?*
+        - Yes, we think it might.
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+      - The objective is to increase our market share throughout the country.
+        - *OK, so will the plan succeed in increasing our market share?*
+        - Yes, we think it might.
+          - *Why do we think it might? What data do we have?*
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+      - The objective is to increase our market share throughout the country.
+        - *OK, so will the plan succeed in increasing our market share?*
+        - Yes, we think it might.
+          - *Why do we think it might? What data do we have?*
+          - We think this approach might increase our market share because our consumer research is telling us that sellers are price conscious and want to save as much money as possible on the sale. So, we have a hypothesis that maybe if we cut our commission to 1%, which is 33% to 50% off the standard commission that other agents charge, we might increase our market share.
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+      - The objective is to increase our market share throughout the country.
+        - *OK, so will the plan succeed in increasing our market share?*
+        - Yes, we think it might.
+          - *Why do we think it might? What data do we have?*
+          - We think this approach might increase our market share because our consumer research is telling us that sellers are price conscious and want to save as much money as possible on the sale. So, we have a hypothesis that maybe if we cut our commission to 1%, which is 33% to 50% off the standard commission that other agents charge, we might increase our market share.
+            - *OK, and have we tested this hypothesis?*
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+      - The objective is to increase our market share throughout the country.
+        - *OK, so will the plan succeed in increasing our market share?*
+        - Yes, we think it might.
+          - *Why do we think it might? What data do we have?*
+          - We think this approach might increase our market share because our consumer research is telling us that sellers are price conscious and want to save as much money as possible on the sale. So, we have a hypothesis that maybe if we cut our commission to 1%, which is 33% to 50% off the standard commission that other agents charge, we might increase our market share.
+            - *OK, and have we tested this hypothesis?*
+            - Yes, we tested it for 2 years in a few smaller markets.
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+      - The objective is to increase our market share throughout the country.
+        - *OK, so will the plan succeed in increasing our market share?*
+        - Yes, we think it might.
+          - *Why do we think it might? What data do we have?*
+          - We think this approach might increase our market share because our consumer research is telling us that sellers are price conscious and want to save as much money as possible on the sale. So, we have a hypothesis that maybe if we cut our commission to 1%, which is 33% to 50% off the standard commission that other agents charge, we might increase our market share.
+            - *OK, and have we tested this hypothesis?*
+            - Yes, we tested it for 2 years in a few smaller markets.
+              - *OK, and what did those tests find?*
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+      - The objective is to increase our market share throughout the country.
+        - *OK, so will the plan succeed in increasing our market share?*
+        - Yes, we think it might.
+          - *Why do we think it might? What data do we have?*
+          - We think this approach might increase our market share because our consumer research is telling us that sellers are price conscious and want to save as much money as possible on the sale. So, we have a hypothesis that maybe if we cut our commission to 1%, which is 33% to 50% off the standard commission that other agents charge, we might increase our market share.
+            - *OK, and have we tested this hypothesis?*
+            - Yes, we tested it for 2 years in a few smaller markets.
+              - *OK, and what did those tests find?*
+              - That test found that we did indeed grow market share faster in the markets where we reduced our commissions.
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+      - The objective is to increase our market share throughout the country.
+        - *OK, so will the plan succeed in increasing our market share?*
+        - Yes, we think it might.
+          - *Why do we think it might? What data do we have?*
+          - We think this approach might increase our market share because our consumer research is telling us that sellers are price conscious and want to save as much money as possible on the sale. So, we have a hypothesis that maybe if we cut our commission to 1%, which is 33% to 50% off the standard commission that other agents charge, we might increase our market share.
+            - *OK, and have we tested this hypothesis?*
+            - Yes, we tested it for 2 years in a few smaller markets.
+              - *OK, and what did those tests find?*
+              - That test found that we did indeed grow market share faster in the markets where we reduced our commissions.
+                - *OK, and do we have any data suggesting that we shouldn't reduce our commissions or that it wouldn't work?*
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+      - The objective is to increase our market share throughout the country.
+        - *OK, so will the plan succeed in increasing our market share?*
+        - Yes, we think it might.
+          - *Why do we think it might? What data do we have?*
+          - We think this approach might increase our market share because our consumer research is telling us that sellers are price conscious and want to save as much money as possible on the sale. So, we have a hypothesis that maybe if we cut our commission to 1%, which is 33% to 50% off the standard commission that other agents charge, we might increase our market share.
+            - *OK, and have we tested this hypothesis?*
+            - Yes, we tested it for 2 years in a few smaller markets.
+              - *OK, and what did those tests find?*
+              - That test found that we did indeed grow market share faster in the markets where we reduced our commissions.
+                - *OK, and do we have any data suggesting that we shouldn't reduce our commissions or that it wouldn't work?*
+                  - No, the experiment we ran pointed strongly in favor of reducing our commissions.
+
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+      - The objective is to increase our market share throughout the country.
+        - *OK, so will the plan succeed in increasing our market share?*
+        - Yes, we think it might.
+          - *Why do we think it might? What data do we have?*
+          - We think this approach might increase our market share because our consumer research is telling us that sellers are price conscious and want to save as much money as possible on the sale. So, we have a hypothesis that maybe if we cut our commission to 1%, which is 33% to 50% off the standard commission that other agents charge, we might increase our market share.
+            - *OK, and have we tested this hypothesis?*
+            - Yes, we tested it for 2 years in a few smaller markets.
+              - *OK, and what did those tests find?*
+              - That test found that we did indeed grow market share faster in the markets where we reduced our commissions.
+                - *OK, and do we have any data suggesting that we shouldn't reduce our commissions or that it wouldn't work?*
+                  - No, the experiment we ran pointed strongly in favor of reducing our commissions.
+                    - *OK, and are there any downsides to reducing our commissions?*
+
+
+** Demonstration: The question method  :slide:small:
+- *What question is this document trying to answer?*
+- The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
+  - *OK, so, should we?*
+  - To answer that question, we need to ask: Is that plan likely to succeed?
+    - *So, is it? likely to succeed?*
+    - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
+      - *OK, so what is the objective?*
+      - The objective is to increase our market share throughout the country.
+        - *OK, so will the plan succeed in increasing our market share?*
+        - Yes, we think it might.
+          - *Why do we think it might? What data do we have?*
+          - We think this approach might increase our market share because our consumer research is telling us that sellers are price conscious and want to save as much money as possible on the sale. So, we have a hypothesis that maybe if we cut our commission to 1%, which is 33% to 50% off the standard commission that other agents charge, we might increase our market share.
+            - *OK, and have we tested this hypothesis?*
+            - Yes, we tested it for 2 years in a few smaller markets.
+              - *OK, and what did those tests find?*
+              - That test found that we did indeed grow market share faster in the markets where we reduced our commissions.
+                - *OK, and do we have any data suggesting that we shouldn't reduce our commissions or that it wouldn't work?*
+                  - No, the experiment we ran pointed strongly in favor of reducing our commissions.
+                    - *OK, and are there any downsides to reducing our commissions?*
+                    - etc
+
+** Practice: The question method :slide:darkbloom:
+Run the question method on the document you brought
+
+* Questions checklist
+
+** *Questions checklist:* Have you answered the critical questions? :slide:
+
+** *Questions checklist:* Have you answered the critical questions? :slide:
+What are some critical questions?
+
+** *Questions checklist:* Have you answered the critical questions? :slide:
+- What's my goal in this document?
+- What am I trying to say?
+- Where are we today, where do we want to be in the future?
+- How do I propose that we get there?
+- What's the problem I'm trying to solve?
+- What solution am I proposing?
+- Why do I think this will work?
+- What evidence do I have to back up my assertions?
+- How will we keep track of progress, assess performance?
+
+*** Notes                :notes:
+Do an audit of what you just wrote. It should address all of these questions. If not, answer them separately.
+
+Each of these questions will spur other questions.
+
+You can repeat the question method for any of these.
+
+
+** *Questions checklist:* For a *memo*     :slide:
+What are some critical questions?
+
+** *Questions checklist:* For a *memo*     :slide:
+- How will we win?
+- What's the plan?
+
+** *Questions checklist:* For an *update*  :slide:
+What are some critical questions?
+
+** *Questions checklist:* For an *update*  :slide:
+- What's our current status?
+
+# make this list shorter. The standard questions.
+
+** *Questions checklist:* Writing with the reader in mind
+What are some critical questions?
+
+** *Questions checklist:* Writing with the reader in mind
+- What does the reader need to know?
+- What does the reader want to know?
+- What does the reader already know?
+- What is the reader skeptical about?
+- What's my strategy for explaining this in a way that's clear and easy to understand?
+
+** Practice: Answering the critical questions
+Run the questions checklist on the document you brought
+
+* 10:30–10:45
+** *Break* 10:30–10:45                   :slide:full:
+[[./img/light-ocean_00428591.jpg]]
+
+* 10:45–11:45
+** Structuring a document :slide:
+Learning objective: Use the question method to formulate a logical
+structure
+
+** Logical Structure
+Outlining and organizing
+
+How to organize a document in a logical way.
+
+** Practice: Creating a hierarchical document structure :slide:darkbloom:
+Take the answers you did in the question method
+
+based on the answers developed in the question method and
+ [[https://www.google.com/url?q=https://docs.google.com/document/d/1wunl9i31PyRLWQOb0KLH0MlpGWBCIuiaYW2Q2EyfrI0/edit&sa=D&ust=1487465741146000&usg=AFQjCNE6n3JZy-bGWvm86vQQpC15Pgv2Tw][Redfin's own template]]
+
+** TODO create an outline
+assemble your list of important questions, both the standard ones and the ones you generated. Only the ones that are relevant to the objective of the doc
+put them in order
+that's your outline
+
+** Using accurate headings
+If a section of the document is recommending that a particular action be taken, it's clearer if the heading itself is phrased as a recommendation. Generally, using verbs is clearer and more forceful than listing nouns.
+
+Take the heading *Deal Writing Agents*. This section is actually making an important recommendation: that Redfin should begin offering Neighborhood Consultations. But this is not apparent from the heading. I changed the heading to *Begin offering Neighborhood Consultations* to make it more clear what point is being made.
+
+Likewise, the heading "Support Agents and Relocation Coordinators" is also hiding an important recommendation: that Redfin should add the role of Relocation Coordinator. I changed the heading to *Add a Relocation Coordinator role*. This is a key recommendation of the document, and it should be labeled clearly so the reader knows what's in the section and where it fits into the larger argument.
+
+*** heading names
+Make the logical structure of their documents explicit by titling each section using the point it is making. The reader shouldn't have to guess to try to figure out what the section is about.
+
+If you use heading names that say what point is being made, it
+
+1. Makes it easier for the writer to organize the document
+2. Makes it easy for the reviewer to quickly grasp the logic of the document at a glance.
+
+(Incidentally, if the actual writing of these documents is done in Google Drive, I advise students to turn on [[https://i.imur.com/dNTxas2.png][Document Outline Mode]] to make it easy to see the logical structure as you're creating it.)
+
+I reorganized the document so as to make the structure more logical and explicit. Here's a before/after.
+
+*** sanity checks: are they parallel with each other?
+
+*** use of a colon: like this
+
+*** longer, more informative headings are better
+
+*** if it's a recommendation, it should start with a verb
+
+
+* 1:00–10:30
+** TODO The intrasection question method :slide:
+Learning objective
+Use the question method to define the key points *within
+*each section*
+
+Now when you've done this for the whole document, you do the same thing for each section. Macro/ micro
+
+the question method is mirrored on a micro scale.
+
+The starting point for each is, what question am I trying to answer in this section?
+
+
+If you're confused by document structure, here's the thing you need to remember: Each section must be asking and answering a question.
+
+I want to teach you to say to yourself, as they're creating the document structure, "This section answers the question: What steps would we need to take to implement this plan?" "This section answers the question: Why do I think this plan will work?"
+
+Every section must be asking and answering a question
+
+
+** all documents should be FAQ's
+You don't have to include the questions
+- every section should be answering a question
+
+*** How do I use the question method to define key points? :slide:
+*** Practice: what am I saying in each of these paragraphs? :slide:
+*** Debrief :slide:
+
+* Significance - telling the reader why they're reading what they're reading
+** TODO Never make the reader read something without telling them why it's important.
+
+For writing to be clear, the reader must not only understand the information, but must also why each piece of information is *relevant to the broader argument*. To put it another way: A proposal document should make a series of points, not just provide background information.
+
+The reader has to know why they need to know this
+
+*** relocation example - relevance
+For example, the "About the Relocation Customer" section is confusing because it's not clear how the information is relevant. Take this part:
+
+: "Relocatees have three traits that make them different from people moving within the same city... (1) They don't know where to move in their new city."
+
+What point is being made here? The reader will read this and think, "OK, and...? OK, so relocating customers don't know where to move in their new city. So what? What about it?"
+
+But instead of going on to provide a "so what" and explain why this information is significant, the document goes on to list other factoids about relocating customers.
+
+It seems like the information in the "About the Relocation customer" section is merely background for what is to come later. But if you want the reader to register information, it should be provided only at the point where it's relevant, not before.
+
+To me, the place where the information above is actually relevant is later, in the section recommending that Redfin begin offering Neighborhood Consultations. In that part of the document, it does make sense to point out that relocating customers don't know where to move in their new city. In this context, the information actually is relevant because it's a statement about a problem with the current way of doing things---a problem to which Neighborhood Consultations are the solution.
+
+** and it should be a question the reader has
+Not just a random question they don't care about like "what are some facts about relocating customers?"
+
+The reader does not have the question
+- OK what are some fun facts about relocation customers
+
+What the reader's question actually is is:
+- OK what's your plan again
+- and what's the strategy for implementing it?
+- and what's the evidence that it's going to work?
+- and what's the problem again with the way we're doing it now?
+
+* 11:45–12:45 - Lunch Break
+* *Lunch 11:45–12:45* :slide:full:
+[[./img/vacation_time-wallpaper-1920x1080.jpg]]
+
+* 12:45–1:00
+
+
+** Agenda               :slide:
+
+
+** Opening and framing :slide:
+Goal 2: Writing with the reader in mind
+
+** *Paragraphs:* What does it mean to write with the reader in mind? :slide:
+- Orient the reader within a sentence or paragraph
+- Curse of knowledge
+- Need to know basis
+
+** *Structure:* What does it mean to write with the reader in mind? :slide:
+- Need to know basis
+- Easy to follow the structure
+
+
+* 1:00–1:30
+
+
+** Explicitness clarity :slide:
+Learning objective: Write with explicitness clarity
+
+*** TODO Sentence workshop            :slide:
+(using examples from Redfin Relocation, Mortgage
+  Update, and Direct Marketing: How Big Can It Get?)
+
+
+** Explicitness: orienting the reader
+Don't just walk up to someone and start spewing numbers. Tell them why you're telling them!
+
+topic sentences, not just random data
+
+Through July 2016 we have spent $4.5M on digital media, up 134% YoY and +24% compared to our original 2016 budget. We project the cohort from January through July will drive $17.1M in revenue, up +162% YoY over the same period last year.
+
+*** the reader should know the significance
+Why are you telling me this? Otherwise I'll tune out
+
+#+BEGIN_QUOTE
+We've also developed standardized templates for every campaign we run. This has allowed us to automate how we publish our Redfin listings on Google and Facebook and how we launch campaigns in new markets. This cut another six hours per week of manual time and let us update our listing advertisements daily instead of weekly. We could even update them every hour in busy listing seasons! Investing in automation is critical so we can invest more in media and less in headcount as we grow.
+#+END_QUOTE
+
+So what? Why do I care? Just so your job is easier? So it's more fun? So you can take longer lunch breaks?
+
+
+So is this the point? Why is it at the end? You gave us a meaningless list...
+
+
+**** Notes                           :notes:
+Thinkaloud: I don't understand, I'm not oriented, I need a topic sentence, what if I started it this way, OK that's much clearer
+# implicitly through me modeling it
+
+*** transferable strategies
+So what do I want you to take away from this?
+1. Topic sentences
+2. Tell the reader why they need to do this
+# explicitly through me naming it
+
+
+** clarity: sentence workshop
+*Reach in-market home-buyers and sellers for the least money*: We're dependent on Google and Facebook for our overall performance. 67.4% of 2016 paid contacts come from those sites. By the end of 2017, we'll add additional ad networks like Criteo or Yahoo and at least 50% of contacts will come from other sites. This goal is dependent on scaling search on Bing and proving out display ads.
+- what the hell does this mean? It does not at all say what it means.
+- I don't mean, can you figure it out and try to piece it together because you know the business
+
+Topic sentence must be specific still, not vague, confusing, ambiguous, imprecise
+
+
+Expand Advertising on Mobile: Mobile traffic represents 61% of total site traffic. However, none of our Redfin listing campaigns on Facebook, and only 14% of paid search ads outside of Seattle, are on mobile. By the end of 2017, we'll have launched all campaigns in all markets on mobile devices. To get there, we'll need support from search, apps, and customer growth to improve conversion on our mobile web and apps in 2017 so we can bid more aggressively on mobile. We may never get mobile conversion to the same level as desktop, but every bit helps.
+
+
+*** Vague language
+Throughout the document, there's a lot of vague and confusing language. Here are a few examples.
+
+: "Redfin does not meaningfully identify relocatees"
+
+What does it mean to identify them meaningfully? How is this different from simply identifying them?
+
+: "We don't cleanly service a client who has worked with Redfin in one market and wants to buy in another."
+
+What does it mean to service these customers "cleanly"? That's not a standard term and it's not clear what it means. I think what this sentence is really trying to say is this: "We don't provide an easy way for clients who have already worked with Redfin in one city to start working with us again in their new city when they start looking to buy a place."
+
+*** Transferable strategies: what to look for :slide:
+
+
+*** transferable strategies
+So what do I want you to take away from this?
+- use precise words
+- use active verbs rather than to be verbs when possible
+- avoid nominalizations
+# explicitly through me naming it
+
+* 1:30–2:00
+
+** Trimming :slide:
+Learning objective: Trim for concision
+
+** Editing and trimming
+As the great writing teacher William Zinsser said, the essence of writing is rewriting. The reality is that revising and editing makes the difference between writing that's clear, tight, and concise vs. writing that's meandering.
+
+In this section I teach employees how to go back after they've written a draft and read it with fresh eyes; how to compare a document to the original outline and look for holes; how to trim the fat and leave only what's needed; tricks like printing out a hardcopy and using a different colored pen; and how to "switch modes" from creator to critic so you can look for vague, confusing, or insufficiently supported passages and address them.
+
+
+*** Examples and non-examples :slide:
+using examples from Redfin Relocation, Mortgage
+  Update, and Direct Marketing: How Big Can It Get?)
+
+*** transferable strategies
+**** tricks for concision
+- print it out and use a red pen
+
+**** switch modes
+From writer to editor
+
+**** edit with fresh eyes
+imagine it's someone else and leave mean comments for yourself
+"What the hell are you trying to say here?"
+
+ - does this add any meaning?
+ - or does this mean exactly the same thing without these extra words
+
+Trimming is easy, it's just a matter of remembering to do that as an additional step at the end.
+
+What did you notice yourself trimming most often. Get to know yourself as a writer, you add adverbs to things, you have some prepositional phrases
+
+The objective isn't to notice these things so that you never need to trim in the future. The objective is to add trimmin to your checklist of things to do. It's necessary step. You always need to trim.
+
+*** Practice: What can I delete? :slide:
+
+* 2:00–2:15 - Break
+
+** *Break* 2:00–2:15                     :slide:full:
+[[./img/Maldives_Hotels_Resorts_LUX_Maldives_Spa_WellBeing.jpg]]
+
+* 2:15–3:00
+
+** Application: Action planning :slide:
+
+*** Review sample proposal :slide:
+e.g. they need to start with the question method because they really haven't defined what they're trying to convince the reader of
+
+Look at relocation proposal
+
+*** Create an action plan for sample proposal :slide:
+
+* 3:15–4:30
+
+** Workshop: Putting it all together   :slide:
+Rewrite the document
+
+* 4:30–5:00
+** Closing :slide:
+
+** Summary of learning :slide:
+
+** Link to ongoing work :slide:
+
+
+
+
+
+** data
+- what claims am I making?
+- what numbers and data can I offer as evidence to support my plan?
+- what numbers suggest the opposite? am I ignoring evidence that would point to the opposite conclusion?
+- what are the risk factors?
+
+
+
+* The End                               :slide:
+
+* setup
+:PROPERTIES:
+:VISIBILITY:folded:
+:END:
+#+TAGS: slide(s) 
+#+TAGS: full
+#+TAGS: darkbloom
+#+TAGS: titlecard
+#+TAGS: noexport
+#+TAGS: small
+
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/common.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/screen.css" media="screen" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/projection.css" media="projection" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/presenter.css" media="presenter" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/jay-org-slideshow.css" />
+
+
+#+BEGIN_EXPORT HTML
+<script type="text/javascript" src="../assets/org-html-slideshow/production/org-html-slideshow.js"></script>
+<script type="text/javascript" src="../assets/org-html-slideshow/production/convert-image-links-to-images.js"></script>
+<script type="text/javascript" src="http://api.html5media.info/1.2.2/html5media.min.js"></script>
+#+END_EXPORT
+
+# Local Variables:
+# org-export-html-style-include-default: nil
+# org-export-html-style-include-scripts: nil
+# buffer-file-coding-system: utf-8-unix
+# End:
+
+* webm test
+
+#+ATTR_HTML: :controls controls :width 880 :preload auto
+#+BEGIN_video
+#+HTML: <source src="/Users/jay/Dropbox./storytelling-assets/Presto-Pixar.webmhd.webm#t=,00:00:30">
+Your browser doesn't work properly.
+#+END_video
+
+
+
+* start/stop
+You can also specify the times in hours:minutes:seconds, such as #t=00:01:05 to start the video at one minute, five seconds in. Or, to only play the first minute of the video, you would specify #t=,00:01:00. You need to make sure Range Requests are supported by your server: check for Accept Ranges: bytes. It's on by default for Apache and many other servers, but worth checking.
+
+
+
+* webm test
+
+#+ATTR_HTML: :controls controls :width 880
+#+BEGIN_video
+#+HTML: <source src="/Users/jay/Dropbox/storytelling-assets/Presto-Pixar.webmhd.webm">
+Your browser doesn't work work properly.
+#+END_video
+
+
+* image test
+#+ATTR_HTML alt="zoomed image."
+#+ATTR_HTML: width="300" style="border:2px;"
+[[https://upload.wikimedia.org/wikipedia/en/2/24/GNU_Emacs_W32.png]]
+
+
+* YouTube
+#+HTML: <iframe width="1280" height="720" src="http://www.youtube.com/embed/_koHLssT-pg" frameborder="0" allowfullscreen></iframe>
+
+** notes :notes:
+- oh and btw Jude Law was there
+
+* PDF
+#+BEGIN_EXPORT HTML
+<CENTER><iframe src="/Users/jay/Dropbox/storytelling-assets/Storytelling-Your-Way-to-a-Better-Job-or-a-Stronger-Startup–The-New-York-Times.pdf" width="800" height="800" style="zoom: 1.2"></iframe> </CENTER>
+#+END_EXPORT
+
+** Harvard Business Review
+#+BEGIN_EXPORT HTML
+<CENTER><iframe src="/Users/jay/Dropbox/storytelling-assets/The-Irresistible-Power-of-Storytelling-as-a-Strategic-Business-Tool.pdf" width="800" height="800" style="zoom: 1.3;"></iframe> </CENTER>
+#+END_EXPORT
+
+https://hbr.org/resources/images/article_assets/2014/03/freytagpyramid.gif
+
+** What is a story?
+A series of events?
+
+** What is a story?
+This thing?
+[[/Users/jay/Dropbox/storytelling-assets/images/rising-action.jpg]]
+
+** What is a story?
+A beginning, middle, and end?
+
+[[/Users/jay/Dropbox/presentations/slideshows-canonical/WeWork/img/aristotle.png]] \\
+
+** What is a story?
+1. Have a beginning
+2. And a middle
+3. Finally, add an end
+4. That's it?
+
+*** Notes                :notes:
+
+that's like saying "you make it smooth, and creamy, and sweet, and chocolatey."
+right. thanks a lot, asshole. HOW DO I DO THAT?
+give me the fucking recipe dickweed!
+
+* mp3
+
+#+BEGIN_EXPORT HTML
+<audio class="center" src="/Users/jay/Music/iTunes/iTunes%20Media/Music/Jay%20Dixit/Jay%20Dixit's%20Album/Cringe.mp3" controls preload></audio>
+#+END_EXPORT
+
+*** Notes                               :notes:
+Clip: "Cringe"
+
+* webm
+#+BEGIN_EXPORT HTML
+<div class="jayvideo">
+<video class="center" src="/Users/jay/Dropbox/storytelling-assets/Presto-Pixar.webmhd.webm" controls preload="auto" width="1024" height="576" ></video></div>
+#+END_EXPORT
+
+* executive summary
+Do I have an executive summary at the beginning that states in one paragraph my recommendations or conclusions?
+
+* ask for what you want
+Am I clear with the board on the type of guidance or response we seek? Highlight areas where we have less certainty, and would like the board's advice.
+
+
+* The headings should be the steps of the argument
+
+* the curse of knowledge
+- curse of knowledge
+- curse of knowledge study
+
+First get everything on the page, trim it out later. Need to make sure everything is on the page first.
+
+
+** Clear
+#+BEGIN_QUOTE
+Do I assume the reader has any prior knowledge of Redfin's business? Many board members serve on seven or eight boards, and appreciate our assuming they know or remember very little. It is hard to be concise, and still to explain Redfin as if to a newcomer, but that is our challenge. Do I use acronyms or jargon? Please write so that an intelligent person who is new to Redfin's business can understand you.
+#+END_QUOTE
+
+** how to structure an argument
+Using evidence
+
+** the points should form an argument
+If you read them together
+?
+
+** Practice: reverse engineering the structure of a document
+- write down what the structure is
+- what's the main point of this paragraph
+- what's the main point of this other paragraph
+- write the main point of each graph in a sentence
+
+now let's read those sentences in sequence. so they make sense?
+
+
+** TODO give examples of curse of knowledge
+
+** TODO and of brain dump
+
+Goldilocks
+how do you know?
+By always asking yourself: do they know this? Do they need to know this? For each thing.
+
+** concision
+Defining what question each section is asking is also very helpful for keeping the plan concise. Ask yourself: What information should you include in a section? Answer: Only the information necessary to answer the question the section is asking.
+
+** Practice                            :slide:
+Create a hierarchical document structure based on the answers developed in the question method
+
+** Writing Clear Sentences
+This is the unit on actually writing sentences. How to write clear sentences; how to avoid major mistakes; and advice for writing strong and forceful sentences (use declaratory sentences with strong verbs, give examples, be specific and concrete). This unit can be longer or shorter depending on people's skill level. Ideally it would be based on workshopping passages from employees' actual proposal documesentences to work on problem areas.
+
+
+* TODO think about (and notate and color code visually) which parts are me talking and which parts are them doing an activity
+If it's too much lecture at a stretch, think of "checking for understanding" activities / applications / checks for understanding I can insert
+
+* how to go from the question method to the outline
+Work this out
+
+* TODO fix timing
+* DONE fix timing on agenda
+
+* TODO the reader is on a need to know basis
+Principle: use only what you need. Don't include everything you know, include only what the reader needs to know to (1) understand your plan, and (2) evaluate its merits
+
+
+* explicit
+Now we're going to do this. The reason we're doing this is because it's contribution to xyz. We're going to a few things that will carry us toward that objective. First I'm going to model, then you're going to practice.
+
+In a very long session, that's very important, so they know where they're going and why.
