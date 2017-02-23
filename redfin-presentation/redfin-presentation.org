@@ -802,6 +802,100 @@ To figure out what the important questions are
                     - *OK, and are there any downsides to reducing our commissions?*
                     - etc
 
+** Demonstration: The question method   :slide:
+
+*What's the objective of this document?*
+
+** Demonstration: The question method   :slide:
+
+*What's the objective of this document?*
+- To lay out a strategy for doing a better job of capturing value from relocating customers.
+
+** Demonstration: The question method  :slide:
+
+*Why do we want to do a better job?*
+
+** Demonstration: The question method  :slide:
+
+*Why do we want to do a better job?*
+- we're not doing a good job of capturing them now
+
+** Demonstration: The question method  :slide:
+
+*Why do we want to do a better job?*
+- we're not doing a good job of capturing them now
+- because they're a huge opportunity
+
+** Demonstration: The question method  :slide:
+
+*How are we not doing a good job of capturing them now?*
+
+** Demonstration: The question method  :slide:
+
+*How are we not doing a good job of capturing them now?*
+- we're not capturing new leads
+
+** Demonstration: The question method  :slide:
+
+*How are we not doing a good job of capturing them now?*
+- we're not capturing new leads
+- we're not converting
+
+** Demonstration: The question method  :slide:
+
+*Why do we think they're a huge opportunity?*
+
+** Demonstration: The question method  :slide:
+
+*Why do we think they're a huge opportunity?*
+- relocating customers are a large segment of good contacts
+- relocating customers are good customers for us
+- we're uniquely positioned to win relocating customers
+
+** Demonstration: The question method  :slide:
+
+*Well OK so what could we do better?*
+
+** Demonstration: The question method  :slide:
+
+*Well OK so what could we do better?*
+  - generating leads
+
+** Demonstration: The question method  :slide:
+
+*Well OK so what could we do better?*
+  - generating leads
+  - converting existing leads
+
+** Demonstration: The question method  :slide:
+
+*What's our strategy for doing better in those two areas?*
+
+** Demonstration: The question method  :slide:
+*What's our strategy for doing better in those two areas?*
+- to increase conversion rates:
+
+** Demonstration: The question method  :slide:
+*What's our strategy for doing better in those two areas?*
+- to increase conversion rates:
+  - Improve identification of relocating customers in Agent Tools
+  - Implement a standard referral fee for third-party referrals
+  - Begin offering "neighborhood consultations"
+  - Add a "Relocation Coordinator" role
+  - Add relocation content and features to the Redfin website
+
+** Demonstration: The question method  :slide:
+*What's our strategy for doing better in those two areas?*
+- for generating leads
+
+** Demonstration: The question method  :slide:
+*What's our strategy for doing better in those two areas?*
+- for generating leads
+  - Partner with MOVE Guides
+  - Begin targeted consumer marketing of relocating customers
+  - Partner with corporate talent recruiters
+  - Begin a Redfin Business Ambassador program
+
 ** Practice: The question method :slide:darkbloom:
 Run the question method on the document you brought
 
@@ -865,7 +959,7 @@ Run the questions checklist on the document you brought
 
 * 10:45–11:45
 ** Structuring a document :slide:
-Learning objective: Use the question method to formulate a logical
+*Learning objective:* Use the question method to formulate a logical
 structure
 
 ** Logical Structure
@@ -874,10 +968,54 @@ Outlining and organizing
 How to organize a document in a logical way.
 
 ** Practice: Creating a hierarchical document structure :slide:darkbloom:
-Take the answers you did in the question method
+- Take the questions from the question method
+- Put them in a logical order
+- Identify relevant subquestions
+
+** Example
 
 based on the answers developed in the question method and
  [[https://www.google.com/url?q=https://docs.google.com/document/d/1wunl9i31PyRLWQOb0KLH0MlpGWBCIuiaYW2Q2EyfrI0/edit&sa=D&ust=1487465741146000&usg=AFQjCNE6n3JZy-bGWvm86vQQpC15Pgv2Tw][Redfin's own template]]
+
+** converting question method to an outline
+
+** Question method                     :slide:
+
+What's the objective of this document?
+To lay out a strategy for doing a better job of capturing value from relocating customers.
+
+Why do we want to do a better job?
+- we're not doing a good job of capturing them now
+- because they're a huge opportunity
+
+How are we not doing a good job of capturing them now?
+- we're not capturing new leads
+- we're not converting
+
+Why do we think they're a huge opportunity?
+- relocating customers are a large segment of good contacts
+- relocating customers are good customers for us
+- we're uniquely positioned to win relocating customers
+
+Well OK so what could we do better?
+  - generating leads
+  - converting existing leads
+
+What's our plan for doing better in those two areas?
+
+- to increase conversion rates
+  - Improve identification of relocating customers in Agent Tools
+  - Implement a standard referral fee for third-party referrals
+  - Begin offering "neighborhood consultations"
+  - Add a "Relocation Coordinator" role
+  - Add relocation content and features to the Redfin website
+
+- for generating leads
+  - Partner with MOVE Guides
+  - Begin targeted consumer marketing of relocating customers
+  - Partner with corporate talent recruiters
+  - Begin a Redfin Business Ambassador program
+
 
 ** TODO create an outline
 assemble your list of important questions, both the standard ones and the ones you generated. Only the ones that are relevant to the objective of the doc
@@ -885,6 +1023,7 @@ put them in order
 that's your outline
 
 ** Using accurate headings
+
 If a section of the document is recommending that a particular action be taken, it's clearer if the heading itself is phrased as a recommendation. Generally, using verbs is clearer and more forceful than listing nouns.
 
 Take the heading *Deal Writing Agents*. This section is actually making an important recommendation: that Redfin should begin offering Neighborhood Consultations. But this is not apparent from the heading. I changed the heading to *Begin offering Neighborhood Consultations* to make it more clear what point is being made.
