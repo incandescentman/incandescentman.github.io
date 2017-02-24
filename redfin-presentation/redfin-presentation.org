@@ -544,38 +544,38 @@ See how you don't even get to an answer until you really drill down into the que
 
 To figure out what the important questions are
 
-* Demonstration: The question method
+* Demo: The question method
 :PROPERTIES:
 :VISIBILITY:folded:
 :END:
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
 
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
 
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
   - To answer that question, we need to ask: Is that plan likely to succeed?
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
   - To answer that question, we need to ask: Is that plan likely to succeed?
     - *So, is it? likely to succeed?*
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -583,7 +583,7 @@ To figure out what the important questions are
     - *So, is it? likely to succeed?*
     - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -592,7 +592,7 @@ To figure out what the important questions are
     - To answer that question, we need to ask: Succeed at what? What's the objective of the plan?
       - *OK, so what is the objective?*
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -602,7 +602,7 @@ To figure out what the important questions are
       - *OK, so what is the objective?*
       - The objective is to increase our market share throughout the country.
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -613,7 +613,7 @@ To figure out what the important questions are
       - The objective is to increase our market share throughout the country.
         - *OK, so will the plan succeed in increasing our market share?*
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -625,7 +625,7 @@ To figure out what the important questions are
         - *OK, so will the plan succeed in increasing our market share?*
         - Yes, we think it might.
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -638,7 +638,7 @@ To figure out what the important questions are
         - Yes, we think it might.
           - *Why do we think it might? What data do we have?*
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -652,7 +652,7 @@ To figure out what the important questions are
           - *Why do we think it might? What data do we have?*
           - We think this approach might increase our market share because our consumer research is telling us that sellers are price conscious and want to save as much money as possible on the sale. So, we have a hypothesis that maybe if we cut our commission to 1%, which is 33% to 50% off the standard commission that other agents charge, we might increase our market share.
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -667,7 +667,7 @@ To figure out what the important questions are
           - We think this approach might increase our market share because our consumer research is telling us that sellers are price conscious and want to save as much money as possible on the sale. So, we have a hypothesis that maybe if we cut our commission to 1%, which is 33% to 50% off the standard commission that other agents charge, we might increase our market share.
             - *OK, and have we tested this hypothesis?*
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -683,7 +683,7 @@ To figure out what the important questions are
             - *OK, and have we tested this hypothesis?*
             - Yes, we tested it for 2 years in a few smaller markets.
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -700,7 +700,7 @@ To figure out what the important questions are
             - Yes, we tested it for 2 years in a few smaller markets.
               - *OK, and what did those tests find?*
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -718,7 +718,7 @@ To figure out what the important questions are
               - *OK, and what did those tests find?*
               - That test found that we did indeed grow market share faster in the markets where we reduced our commissions.
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -737,7 +737,7 @@ To figure out what the important questions are
               - That test found that we did indeed grow market share faster in the markets where we reduced our commissions.
                 - *OK, and do we have any data suggesting that we shouldn't reduce our commissions or that it wouldn't work?*
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -758,7 +758,7 @@ To figure out what the important questions are
                   - No, the experiment we ran pointed strongly in favor of reducing our commissions.
 
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -780,7 +780,7 @@ To figure out what the important questions are
                     - *OK, and are there any downsides to reducing our commissions?*
 
 
-** Demonstration: The question method  :slide:small:
+** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 - The question this document is trying to answer is: Should we reduce our agents' commission to 1% nationwide?
   - *OK, so, should we?*
@@ -802,80 +802,80 @@ To figure out what the important questions are
                     - *OK, and are there any downsides to reducing our commissions?*
                     - etc
 
-** Demonstration: The question method   :slide:
+** Demo: The question method   :slide:
 
 - *What's the objective of this document?*
 
-** Demonstration: The question method   :slide:
+** Demo: The question method   :slide:
 
 - *What's the objective of this document?*
   - To lay out a strategy for doing a better job of capturing value from relocating customers.
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 
 - *Why do we want to do a better job?*
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 
 - *Why do we want to do a better job?*
   - we're not doing a good job of capturing them now
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 
 - *Why do we want to do a better job?*
   - we're not doing a good job of capturing them now
   - because they're a huge opportunity
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 
 - *How are we not doing a good job of capturing them now?*
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 
 - *How are we not doing a good job of capturing them now?*
   - we're not capturing new leads
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 
 - *How are we not doing a good job of capturing them now?*
   - we're not capturing new leads
   - we're not converting
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 
 - *Why do we think they're a huge opportunity?*
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 
 - *Why do we think they're a huge opportunity?*
   - relocating customers are a large segment of good contacts
   - relocating customers are good customers for us
   - we're uniquely positioned to win relocating customers
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 
 - *Well OK so what could we do better?*
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 
 - *Well OK so what could we do better?*
   - generating leads
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 
 - *Well OK so what could we do better?*
   - generating leads
   - converting existing leads
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 
 - *What's our strategy for doing better in those two areas?*
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 - *What's our strategy for doing better in those two areas?*
    - to increase conversion rates:
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 - *What's our strategy for doing better in those two areas?*
   - to increase conversion rates:
     - Improve identification of relocating customers in Agent Tools
@@ -884,11 +884,11 @@ To figure out what the important questions are
     - Add a "Relocation Coordinator" role
     - Add relocation content and features to the Redfin website
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 - *What's our strategy for doing better in those two areas?*
   - for generating leads
 
-** Demonstration: The question method  :slide:
+** Demo: The question method  :slide:
 - *What's our strategy for doing better in those two areas?*
   - for generating leads
     - Partner with MOVE Guides
@@ -1182,9 +1182,7 @@ We recommend creating a HUB-based Relocation Coordinator role. The Relocation Co
 
 * 12:45–1:00
 
-
 ** Agenda               :slide:
-
 
 ** Opening and framing :slide:
 Goal 2: Writing with the reader in mind
@@ -1198,23 +1196,23 @@ Goal 2: Writing with the reader in mind
 - Need to know basis
 - Easy to follow the structure
 
-
 * 1:00–1:30
 
-
-** Explicitness clarity :slide:
+** Explicitness and clarity               :slide:
 *Learning objective:* Write with explicitness and clarity
 
-** Explicitness: orienting the reader
-Don't just walk up to someone and start spewing numbers. Tell them why you're telling them!
-
-topic sentences, not just random data
+** *Explicitness:* Orienting the reader
 
 #+BEGIN_QUOTE
 Through July 2016 we have spent $4.5M on digital media, up 134% YoY and +24% compared to our original 2016 budget. We project the cohort from January through July will drive $17.1M in revenue, up +162% YoY over the same period last year.
 #+END_QUOTE
 
-*** the reader should know the significance
+*** Notes                                :notes:
+Don't just walk up to someone and start spewing numbers. Tell them why you're telling them!
+
+topic sentences, not just random data
+
+** the reader should know the significance
 Why are you telling me this? Otherwise I'll tune out
 
 #+BEGIN_QUOTE
@@ -1231,7 +1229,7 @@ So is this the point? Why is it at the end? You gave us a meaningless list...
 Thinkaloud: I don't understand, I'm not oriented, I need a topic sentence, what if I started it this way, OK that's much clearer
 # implicitly through me modeling it
 
-*** transferable strategies
+** transferable strategies
 So what do I want you to take away from this?
 1. Topic sentences
 2. Tell the reader why they need to know this
@@ -1248,22 +1246,8 @@ So what do I want you to take away from this?
 
 Topic sentence must be specific still, not vague, confusing, ambiguous, imprecise
 
-** Use precise language
-Expand Advertising on Mobile: Mobile traffic represents 61% of total site traffic. However, none of our Redfin listing campaigns on Facebook, and only 14% of paid search ads outside of Seattle, are on mobile. By the end of 2017, we'll have launched all campaigns in all markets on mobile devices. To get there, we'll need support from search, apps, and customer growth to improve conversion on our mobile web and apps in 2017 so we can bid more aggressively on mobile. We may never get mobile conversion to the same level as desktop, but every bit helps.
 
-
-** Precision                           :slide:
-#+BEGIN_QUOTE
-*Improve Identification of Relocatees in Agent Tools*
-Currently, Redfin does not meaningfully identify relocatees. We want to find and measure them to better ensure they get the right service and to inform future relocation-focused strategies.
-#+END_QUOTE
-
-*** Notes                                :notes:
-
-What does it mean to identify them meaningfully? How is this different from simply identifying them?
-
-
-** Precision              :slide:
+** Demo: Use precise words :slide:
 #+BEGIN_QUOTE
 *Reduce Friction for Customers to Contact Agents in Another Market*
 We don’t cleanly service a client who has worked with Redfin in one market and wants to buy in another. This customer is surprisingly common.
@@ -1275,16 +1259,21 @@ What does it mean to service these customers "cleanly"? That's not a standard te
 
 
 
-** Precision              :slide:
+** Demo: Use precise words             :slide:
 #+BEGIN_QUOTE
 Currently, we don't provide an easy way for relocating clients who have already worked with Redfin to start working with us again in their new city. Yet these customers are surprisingly common.
 #+END_QUOTE
 
+** Demo: Use active verbs rather than "to be" verbs :slide:
 
-** Transferable strategies: what to look for :slide:
+** Demo: Avoid nominalizations :slide:
 
 
-** transferable strategies
+** What to look for                    :slide:
+- use precise words
+- use active verbs rather than to be verbs
+- avoid nominalizations
+
 *** Notes                                :notes:
 
 So what do I want you to take away from this?
@@ -1305,18 +1294,12 @@ As the great writing teacher William Zinsser said, the essence of writing is rew
 
 In this section I teach employees how to go back after they've written a draft and read it with fresh eyes; how to compare a document to the original outline and look for holes; how to trim the fat and leave only what's needed; tricks like printing out a hardcopy and using a different colored pen; and how to "switch modes" from creator to critic so you can look for vague, confusing, or insufficiently supported passages and address them.
 
-** Examples and non-examples           :slide:
-using examples from Redfin Relocation, Mortgage
-  Update, and Direct Marketing: How Big Can It Get?)
-
-** transferable strategies
-*** tricks for concision
+** Transferable strategies: tricks for concision
 - print it out and use a red pen
+- switch modes
+- edit with fresh eyes
+*** Notes                                :notes:
 
-*** switch modes
-From writer to editor
-
-*** edit with fresh eyes
 imagine it's someone else and leave mean comments for yourself
 "What the hell are you trying to say here?"
 
@@ -1348,9 +1331,8 @@ Look at relocation proposal
 *** Create an action plan for sample proposal :slide:
 
 * 3:15–4:30
-
 ** Workshop: Putting it all together   :slide:
-Rewrite the document
+Rewrite the document you brought.
 
 * 4:30–5:00
 ** Closing :slide:
@@ -1363,21 +1345,13 @@ Rewrite the document
 
 
 
-** data
-- what claims am I making?
-- what numbers and data can I offer as evidence to support my plan?
-- what numbers suggest the opposite? am I ignoring evidence that would point to the opposite conclusion?
-- what are the risk factors?
-
-
-
 * The End                               :slide:
 
 * setup
 :PROPERTIES:
 :VISIBILITY:folded:
 :END:
-#+TAGS: slide(s) 
+#+TAGS: slide(s)
 #+TAGS: full
 #+TAGS: darkbloom
 #+TAGS: titlecard
@@ -1491,9 +1465,6 @@ Clip: "Cringe"
 <video class="center" src="/Users/jay/Dropbox/storytelling-assets/Presto-Pixar.webmhd.webm" controls preload="auto" width="1024" height="576" ></video></div>
 #+END_EXPORT
 
-* executive summary
-Do I have an executive summary at the beginning that states in one paragraph my recommendations or conclusions?
-
 * ask for what you want
 Am I clear with the board on the type of guidance or response we seek? Highlight areas where we have less certainty, and would like the board's advice.
 
@@ -1549,17 +1520,11 @@ This is the unit on actually writing sentences. How to write clear sentences; ho
 * TODO think about (and notate and color code visually) which parts are me talking and which parts are them doing an activity
 If it's too much lecture at a stretch, think of "checking for understanding" activities / applications / checks for understanding I can insert
 
-* how to go from the question method to the outline
-Work this out
-
-* TODO fix timing
-* DONE fix timing on agenda
-
 * TODO the reader is on a need to know basis
 Principle: use only what you need. Don't include everything you know, include only what the reader needs to know to (1) understand your plan, and (2) evaluate its merits
 
 
-* explicit
+* be explicit
 Now we're going to do this. The reason we're doing this is because it's contribution to xyz. We're going to a few things that will carry us toward that objective. First I'm going to model, then you're going to practice.
 
 In a very long session, that's very important, so they know where they're going and why.
