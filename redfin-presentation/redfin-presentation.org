@@ -1252,21 +1252,41 @@ Topic sentence must be specific still, not vague, confusing, ambiguous, imprecis
 Expand Advertising on Mobile: Mobile traffic represents 61% of total site traffic. However, none of our Redfin listing campaigns on Facebook, and only 14% of paid search ads outside of Seattle, are on mobile. By the end of 2017, we'll have launched all campaigns in all markets on mobile devices. To get there, we'll need support from search, apps, and customer growth to improve conversion on our mobile web and apps in 2017 so we can bid more aggressively on mobile. We may never get mobile conversion to the same level as desktop, but every bit helps.
 
 
-** Vague language
-Throughout the document, there's a lot of vague and confusing language. Here are a few examples.
+** Precision                           :slide:
+#+BEGIN_QUOTE
+*Improve Identification of Relocatees in Agent Tools*
+Currently, Redfin does not meaningfully identify relocatees. We want to find and measure them to better ensure they get the right service and to inform future relocation-focused strategies.
+#+END_QUOTE
 
-: "Redfin does not meaningfully identify relocatees"
+*** Notes                                :notes:
 
 What does it mean to identify them meaningfully? How is this different from simply identifying them?
 
-: "We don't cleanly service a client who has worked with Redfin in one market and wants to buy in another."
 
-What does it mean to service these customers "cleanly"? That's not a standard term and it's not clear what it means. I think what this sentence is really trying to say is this: "We don't provide an easy way for clients who have already worked with Redfin in one city to start working with us again in their new city when they start looking to buy a place."
+** Precision              :slide:
+#+BEGIN_QUOTE
+*Reduce Friction for Customers to Contact Agents in Another Market*
+We don’t cleanly service a client who has worked with Redfin in one market and wants to buy in another. This customer is surprisingly common.
+#+END_QUOTE
+
+*** Notes                                :notes:
+
+What does it mean to service these customers "cleanly"? That's not a standard term and it's not clear what it means.
+
+
+
+** Precision              :slide:
+#+BEGIN_QUOTE
+Currently, we don't provide an easy way for relocating clients who have already worked with Redfin to start working with us again in their new city. Yet these customers are surprisingly common.
+#+END_QUOTE
+
 
 ** Transferable strategies: what to look for :slide:
 
 
 ** transferable strategies
+*** Notes                                :notes:
+
 So what do I want you to take away from this?
 - use precise words
 - use active verbs rather than to be verbs when possible
@@ -1275,14 +1295,15 @@ So what do I want you to take away from this?
 
 * 1:30–2:00
 
-** Trimming :slide:
-Learning objective: Trim for concision
+** Editing and trimming                   :slide:
+*Learning objective:* Trim for concision
 
-** Editing and trimming
+** Editing and trimming                :slide:
+*** Notes                                :notes:
+
 As the great writing teacher William Zinsser said, the essence of writing is rewriting. The reality is that revising and editing makes the difference between writing that's clear, tight, and concise vs. writing that's meandering.
 
 In this section I teach employees how to go back after they've written a draft and read it with fresh eyes; how to compare a document to the original outline and look for holes; how to trim the fat and leave only what's needed; tricks like printing out a hardcopy and using a different colored pen; and how to "switch modes" from creator to critic so you can look for vague, confusing, or insufficiently supported passages and address them.
-
 
 ** Examples and non-examples           :slide:
 using examples from Redfin Relocation, Mortgage
@@ -1306,7 +1327,7 @@ Trimming is easy, it's just a matter of remembering to do that as an additional 
 
 What did you notice yourself trimming most often. Get to know yourself as a writer, you add adverbs to things, you have some prepositional phrases
 
-The objective isn't to notice these things so that you never need to trim in the future. The objective is to add trimmin to your checklist of things to do. It's necessary step. You always need to trim.
+The objective isn't to notice these things so that you never need to trim in the future. The objective is to add trimming to your checklist of things to do. It's necessary step. You always need to trim.
 
 *** Practice: What can I delete? :slide:
 
