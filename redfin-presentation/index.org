@@ -77,7 +77,7 @@ you're coming with a draft of what you're working on. we'll start from scratch, 
 Example: Redfin relocation
 Let's look at the structure of this
 
-** Practice: What's the structure?     :slide:darkbloom:
+** Practice: What's the structure?     :slide:
 #+BEGIN_EXPORT HTML
 <CENTER><iframe src="redfin-originals/RedfinRelocation-ForJay-original.pdf" width="800" height="800" style="zoom: 1.2"></iframe> </CENTER>
 #+END_EXPORT
@@ -127,7 +127,7 @@ It's unclear.
   - Targeted Consumer Marketing
   - Partnering with corporate talent teams to reach employees
 
-** Practice: Interpreting the structure :slide:darkbloom:
+** Practice: Interpreting the structure :slide:
 - What's the objective of this document and the main point it's making?
 - What's the logic progression of the document?
 - What's the main point of each section?
@@ -290,7 +290,7 @@ It's hard for me to see from these headings what the flow of the document is
   - Partner with corporate talent recruiters
   - Begin a Redfin Business Ambassador program
 
-** Practice: Interpreting the structure :slide:darkbloom:
+** Practice: Interpreting the structure :slide:
 - What's the objective of this document and the main point it's making?
 - What's the logic progression of the document?
 - What's the main point of each section?
@@ -902,7 +902,7 @@ To figure out what the important questions are
     - Partner with corporate talent recruiters
     - Begin a Redfin Business Ambassador program
 
-** Practice: The question method :slide:darkbloom:
+** Practice: The question method :slide:
 Run the question method on the document you brought
 
 * Questions checklist
@@ -974,7 +974,7 @@ Outlining and organizing
 
 How to organize a document in a logical way.
 
-** Creating a hierarchical document structure :slide:darkbloom:
+** Creating a hierarchical document structure :slide:
 - Take the questions from the question method
 - Put them in a logical order
 - Identify relevant subquestions
@@ -1042,7 +1042,7 @@ Create an outline
 *** Notes                                :notes:
 If you're confused by document structure, here's the thing you need to remember: Each section must be asking and answering a question.
 
-** Practice: Create a hierarchical document structure :slide:darkbloom:
+** Practice: Create a hierarchical document structure :slide:
 
 * within each section
 
