@@ -20,6 +20,7 @@ Storytelling Classes - Writing Workshops - Coaching \\
 #+HTML: <p><img style="display: inline; position: relative; top: 5px;" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0> @jaydixit </p>
 
 ** Agenda                              :slide:
+- What makes
 
 ** Introductions :slide:
 
@@ -48,7 +49,9 @@ Storytelling Classes - Writing Workshops - Coaching \\
 *** Notes                                                             :notes:
 You'll be rewriting the document you brought
 
-you're coming with a draft of what you're working on. we'll start from scratch, start from the very beginning so we can not only improve the current proposal, but so we can know how to start proposals from scratch in the future. you might feel like you already did this, but the point of this isn't just to perfect what you already did, but to teach you a new way of approaching this in the future.
+you're coming with a draft of what you're working on. we'll start from scratch, start from the very beginning so we can not only improve the current proposal, but so we can know how to start proposals from scratch in the future.
+
+you might feel like you already did this, but the point of this isn't just to perfect what you already did, but to teach you a new way of approaching this in the future.
 
 
 ** *Criteria for success:* What makes a proposal good? :slide:
@@ -57,7 +60,6 @@ you're coming with a draft of what you're working on. we'll start from scratch, 
 3. *Clear*. Written in a direct way such that it's easy for the reviewer to understand.
 4. *Concise*. Doesn't ramble or repeat. Gets to the point quickly. No extraneous information.
 5. *Data-driven*. Provides data demonstrating why the plan is expected to succeed.
-
 
 * 9:30–10:00
 
@@ -71,8 +73,6 @@ you're coming with a draft of what you're working on. we'll start from scratch, 
 <CENTER><iframe src="redfin-originals/RedfinRelocation-ForJay-original.pdf" width="800" height="800" style="zoom: 1.2"></iframe> </CENTER>
 #+END_EXPORT
 
-
-
 *** Notes                                :notes:
 Example: Redfin relocation
 Let's look at the structure of this
@@ -83,28 +83,9 @@ Let's look at the structure of this
 #+END_EXPORT
 
 *** Notes                                :notes:
-Write out the structure
-use the headings to create an outline of this document so that we can look at the structure from a high level
-
-They can get the idea of this, start grappling with it
-
-5 minutes, get as far as you can
-
-Then I'll reveal the answer:
-
-Get them to create this:
-
-use the headings that are already there
-
-Look at the document, describe the flow of information
-
-When I step back from it, and I try to answer these questions:
-
-- What's the flow of information?
-- What is this document intended to do?
-- What does each section represent?
-
-It's unclear.
+- Write out the structure
+- use the headings to create an outline of this document so that we can look at the structure from a high level
+- 5 minutes, get as far as you can
 
 ** Original structure     :slide:small:
 - Executive Summary
@@ -154,6 +135,19 @@ It's unclear.
   - Partnering with corporate talent teams to reach employees
 
 *** Notes                                :notes:
+Get them to create this:
+
+use the headings that are already there
+
+Look at the document, describe the flow of information
+
+When I step back from it, and I try to answer these questions:
+
+- What's the flow of information?
+- What is this document intended to do?
+- What does each section represent?
+
+It's unclear.
 
 If it's a good structure, you could step away from it and say something like:
 
@@ -393,6 +387,11 @@ It's to tell the reader what they need to know.
 
 
 ** *Mistake #2:* The curse of knowledge  :slide:
+The tapping experiment
+
+** *Mistake #2:* The curse of knowledge  :slide:
+#+HTML: <iframe width="1280" height="720" src="http://www.youtube.com/embed/hERzvxp5ab0" frameborder="0" allowfullscreen></iframe>
+
 
 *** Notes                                :notes:
 - what the curse of knowledge is
@@ -426,11 +425,9 @@ If you only write down the final product... And doing all the planning, structur
 
 wrong.
 
-** right way: be strategic! Think about the reader!
 
-** Outlining isn't enough    :slide:
-** Outlining isn't enough    :slide:
-How do you know what to put in the outline?
+** *Mistake #3:* Trying to strategize in your head :slide:
+Outlining isn't enough.
 
 *** Notes                                :notes:
 
@@ -471,6 +468,7 @@ It means you're trying to do all that thinking in your head
 - I teach a method for clear thinking
 
 ** How to think analytically :slide:
+** How to think analytically :slide:
 Analytical thinking is the process of asking and answering questions.
 
 *** Notes                                :notes:
@@ -490,11 +488,6 @@ If I can figure out what questions to ask, I find I often already know the answe
 ** How to write clearly :slide:
 *asking good questions → good answers → clear thinking → clear writing*
 
-** A technique for thinking clearly :slide:
-*** Notes                                :notes:
-
-Is what I'll teach you here today
-
 ** First step: Create two separate documents :slide:
 1. Your *thinking* file
 2. The document you'll present to the reader
@@ -510,7 +503,7 @@ Is what I'll teach you here today
 5. Trim (for concision)
 
 ** The NYWI method      :slide:
-1. Think strategically and analytically using the *question method*
+1. Think (strategically and analytically)
    - Ask the right questions
    - Answer those questions
 2. Outline
@@ -519,6 +512,16 @@ Is what I'll teach you here today
 5. Trim (for concision)
 
 ** How do you know what the right questions are? :slide:
+
+** The NYWI method      :slide:
+1. Think strategically and analytically
+   - Ask the right questions
+     - *The question method*
+   - Answer those questions
+2. Outline
+3. Write
+4. Rewrite (for clarity)
+5. Trim (for concision)
 
 ** The question method        :slide:
 
@@ -907,6 +910,17 @@ Run the question method on the document you brought
 
 * Questions checklist
 
+** The NYWI method      :slide:
+1. Think (strategically and analytically)
+   - Ask the right questions
+     - The question method
+     - Failsafe: *Questions checklist*
+   - Answer those questions
+2. Outline
+3. Write
+4. Rewrite (for clarity)
+5. Trim (for concision)
+
 ** *Questions checklist:* Have you answered the critical questions? :slide:
 
 ** *Questions checklist:* Have you answered the critical questions? :slide:
@@ -914,14 +928,11 @@ What are some critical questions?
 
 ** *Questions checklist:* Have you answered the critical questions? :slide:
 - What's my goal in this document?
-- What am I trying to say?
-- Where are we today, where do we want to be in the future?
-- How do I propose that we get there?
 - What's the problem I'm trying to solve?
 - What solution am I proposing?
-- Why do I think this will work?
+- Where are we today, where do we want to be in the future?
+- How do I propose that we get there, and why do I think this will work?
 - What evidence do I have to back up my assertions?
-- How will we keep track of progress, assess performance?
 
 *** Notes                :notes:
 Do an audit of what you just wrote. It should address all of these questions. If not, answer them separately.
@@ -930,24 +941,25 @@ Each of these questions will spur other questions.
 
 You can repeat the question method for any of these.
 
+** *Questions checklist:* Business reviews
+- What did you do?
+- How did it perform?
+- What did you learn?
 
-** *Questions checklist:* For a *memo*     :slide:
+** *Questions checklist:* Business reviews - Results :slide:
+- What did you do?
+- How did it perform?
+- What did you learn?
+
+** *Questions checklist:* Memos :slide:
 What are some critical questions?
 
-** *Questions checklist:* For a *memo*     :slide:
-- How will we win?
-- What's the plan?
+** *Questions checklist:* Memos - *Why It Matters* :slide:
+- Why does this area matter?
+- Why should we take on this initiative?
 
-** *Questions checklist:* For an *update*  :slide:
-What are some critical questions?
-
-** *Questions checklist:* For an *update*  :slide:
-- What's our current status?
-
-# make this list shorter. The standard questions.
-
-** *Questions checklist:* Writing with the reader in mind
-What are some critical questions?
+** *Questions checklist:* Memos - *How We Win* :slide:
+What unique advantages does Redfin have that will enable us to succeed and become a dominant player?
 
 ** *Questions checklist:* Writing with the reader in mind
 - What does the reader need to know?
@@ -1019,6 +1031,12 @@ Create an outline
 - put them in order
 - that's your outline
 
+** Convert the questions into statements or recommendations :slide:
+
+** Convert the questions into statements or recommendations :slide:
+The headings should form the steps of the argument.
+
+
 ** Creating a hierarchical document structure :slide:small:
 - *Relocating customers are a significant opportunity for Redfin*
   - Relocating customers are a large segment of good contacts
@@ -1048,29 +1066,51 @@ If you're confused by document structure, here's the thing you need to remember:
 
 * question method
 ** Using the question method within each section :slide:
-*Learning objective:* Use the question method to define the key points *within each section*
+*Learning objective:*
+Use the question method to define the key points *within each section*
 
 *** Notes                             :notes:
 Now when you've done this for the whole document, you do the same thing for each section. Macro/ micro
 
 the question method is mirrored on a micro scale.
 
+** How do I use the question method to define key points? :slide:
+
 ** All documents are FAQs              :slide:
 Every section must be asking and answering a question.
 *** Notes                             :notes:
 
 ** Using the question method within each section :slide:
-Your stating point is always the same: *What question am I trying to answer in this section?*
+Your stating point is always the same:
+*What question am I trying to answer in this section?*
 
 *** Notes                             :notes:
 I want to teach you to say to yourself, as they're creating the document structure, "This section answers the question: What steps would we need to take to implement this plan?" "This section answers the question: Why do I think this plan will work?"
 
-** How do I use the question method to define key points? :slide:
-** Practice: what am I saying in each of these paragraphs? :slide:
+** Practice: What am I saying in each of these paragraphs? :slide:
+
 ** Debrief                             :slide:
 
 * Explicitness
-** *Explicitness:* telling the reader why they're reading what they're reading :slide:
+
+** *Goal 2:* Writing with the reader in mind :slide:
+1. Structure and content
+2. Paragraphs
+
+** *Goal 2:* Writing with the reader in mind :slide:
+1. *Structure and content*
+2. Paragraphs
+
+** *Structure:* What does it mean to write with the reader in mind? :slide:
+- Easy to follow the structure
+
+** *Structure:* What does it mean to write with the reader in mind? :slide:
+- Easy to follow the structure
+- Need to know basis
+*** Notes                                :notes:
+So what makes the structure easy to follow?
+
+** *Explicitness:* Telling the reader why they're reading what they're reading :slide:
 Never make the reader read something without telling them why it's important.
 
 *** Notes                             :notes:
@@ -1078,10 +1118,12 @@ For writing to be clear, the reader must not only understand the information, bu
 
 The reader has to know why they need to know this
 
-**** relocation example---relevance
-For example, the "About the Relocation Customer" section is confusing because it's not clear how the information is relevant. Take this part:
+** *Explicitness:* Telling the reader why they're reading what they're reading :slide:
 
 : "Relocatees have three traits that make them different from people moving within the same city... (1) They don't know where to move in their new city."
+
+*** Notes                                :notes:
+For example, the "About the Relocation Customer" section is confusing because it's not clear how the information is relevant. Take this part:
 
 What point is being made here? The reader will read this and think, "OK, and...? OK, so relocating customers don't know where to move in their new city. So what? What about it?"
 
@@ -1091,11 +1133,10 @@ It seems like the information in the "About the Relocation customer" section is 
 
 To me, the place where the information above is actually relevant is later, in the section recommending that Redfin begin offering Neighborhood Consultations. In that part of the document, it does make sense to point out that relocating customers don't know where to move in their new city. In this context, the information actually is relevant because it's a statement about a problem with the current way of doing things---a problem to which Neighborhood Consultations are the solution.
 
-*** and it should be a question the reader has
-Not just a random question they don't care about like "what are some facts about relocating customers?"
+** Each section should answer a question the reader actually has
+*** Notes                                :notes:
 
-The reader does not have the question
-- OK what are some fun facts about relocation customers
+Not just a random question they don't care about like "what are some facts about relocating customers?"
 
 What the reader's question actually is is:
 - OK what's your plan again
@@ -1103,19 +1144,19 @@ What the reader's question actually is is:
 - and what's the evidence that it's going to work?
 - and what's the problem again with the way we're doing it now?
 
+I'm not saying this information isn't important. It's just not important here.
 
 * Heading workshop
 ** Heading workshop                    :slide:
 
 ** How to title your headings    :slide:
 - use explicit headings to make it clear what the point of the section is
+
 *** Notes                                :notes:
-Make the logical structure of their documents explicit by titling each section using the point it is making. The reader shouldn't have to guess to try to figure out what the section is about.
+Contact and website example
 
-If you use heading names that say what point is being made, it
-
-1. Makes it easier for the writer to organize the document
-2. Makes it easy for the reviewer to quickly grasp the logic of the document at a glance.
+- Makes it easier for the writer to organize the document
+- Makes it easy for the reviewer to quickly grasp the logic of the document at a glance.
 
 ** How to title your headings    :slide:
 - use explicit headings to make it clear what the point of the section is
@@ -1126,13 +1167,35 @@ Contact and website example
 
 ** How to title your headings    :slide:
 - use explicit headings to make it clear what the point of the section is
+- headings of the same level should be grammatically parallel
+- verbs are clearer and more forceful than nouns
+
+** How to title your headings    :slide:
+- use explicit headings to make it clear what the point of the section is
+- headings of the same level should be grammatically parallel
 - verbs are clearer and more forceful than nouns
 - longer, more informative headings are clearer
+
+
+** How to title your headings    :slide:
+- use explicit headings to make it clear what the point of the section is
 - headings of the same level should be grammatically parallel
+- verbs are clearer and more forceful than nouns
+- longer, more informative headings are clearer
+- questions for the board should be phrased as questions
+
+
+** How to title your headings    :slide:
+- use explicit headings to make it clear what the point of the section is
+- headings of the same level should be grammatically parallel
+- verbs are clearer and more forceful than nouns
+- longer, more informative headings are clearer
 - questions for the board should be phrased as questions
 - recommendations should be phrased as recommendations
 
 ** Demo: How to title your headings    :slide:
+
+** Demo: Original heading :slide:
 #+BEGIN_QUOTE
 *Adjust Agent Events, Roles, and Education*
 
@@ -1146,7 +1209,7 @@ If a section of the document is recommending that a particular action be taken, 
 
 Take the heading *Deal Writing Agents*. This section is actually making an important recommendation: that Redfin should begin offering Neighborhood Consultations. But this is not apparent from the heading. I changed the heading to *Begin offering Neighborhood Consultations* to make it more clear what point is being made.
 
-** Demo: How to title your headings    :slide:
+** Demo: Revised heading :slide:
 #+BEGIN_QUOTE
 *Begin offering "Neighborhood Consultations"*
 
@@ -1156,8 +1219,7 @@ We recommend creating a new event called a "Neighborhood Consultation," which wo
 #+END_QUOTE
 
 
-
-** Demo: How to title your headings    :slide:
+** Demo: Original heading :slide:
 #+BEGIN_QUOTE
 *Adjust Agent Events, Roles, and Education*
 
@@ -1171,7 +1233,7 @@ We recommend creating a HUB-based Relocation Coordinator (RC) role. The RC will 
 *** Notes        :notes:
 Likewise, the heading "Support Agents and Relocation Coordinators" is also hiding an important recommendation: that Redfin should add the role of Relocation Coordinator. I changed the heading to *Add a Relocation Coordinator role*. This is a key recommendation of the document, and it should be labeled clearly so the reader knows what's in the section and where it fits into the larger argument.
 
-** Demo: How to title your headings  :slide:
+** Demo: Revised heading :slide:
 #+BEGIN_QUOTE
 *Add a "Relocation Coordinator" role*
 Support Agents rarely book both a tour and listing consult for the same customer. This is an incentive-related problem that applies broadly, but it is a particularly acute issue with relocating customers. This is both because relocatees are unfamiliar with their destination city and because Support Agents don't know DWAs or booking protocols outside their market.
@@ -1188,70 +1250,39 @@ We recommend creating a HUB-based Relocation Coordinator role. The Relocation Co
 
 * 12:45–1:00
 
-** Agenda               :slide:
-
-** Opening and framing :slide:
-Goal 2: Writing with the reader in mind
-
-** *Paragraphs:* What does it mean to write with the reader in mind? :slide:
-- Orient the reader within a sentence or paragraph
-- Curse of knowledge
-- Need to know basis
-
-** *Structure:* What does it mean to write with the reader in mind? :slide:
-- Need to know basis
-- Easy to follow the structure
-
-* 1:00–1:30
+** *Goal 2:* Writing with the reader in mind :slide:
+1. Structure and content
+2. *Paragraphs*
 
 ** Explicitness and clarity               :slide:
 *Learning objective:* Write with explicitness and clarity
 
-** *Explicitness:* Orienting the reader
+** Clarity                             :slide:
+#+BEGIN_QUOTE
+Do I assume the reader has any prior knowledge of Redfin's business? Many board members serve on seven or eight boards, and appreciate our assuming they know or remember very little. It is hard to be concise, and still to explain Redfin as if to a newcomer, but that is our challenge. Do I use acronyms or jargon? Please write so that an intelligent person who is new to Redfin's business can understand you.
+#+END_QUOTE
+
+** *Explicitness:* Orienting the reader  :slide:
+
+** *Explicitness:* Orienting the reader  :slide:
 
 #+BEGIN_QUOTE
 Through July 2016 we have spent $4.5M on digital media, up 134% YoY and +24% compared to our original 2016 budget. We project the cohort from January through July will drive $17.1M in revenue, up +162% YoY over the same period last year.
 #+END_QUOTE
 
-*** Notes                                :notes:
+*** Notes                             :notes:
 Don't just walk up to someone and start spewing numbers. Tell them why you're telling them!
 
 topic sentences, not just random data
 
-** the reader should know the significance
-Why are you telling me this? Otherwise I'll tune out
-
-#+BEGIN_QUOTE
-We've also developed standardized templates for every campaign we run. This has allowed us to automate how we publish our Redfin listings on Google and Facebook and how we launch campaigns in new markets. This cut another six hours per week of manual time and let us update our listing advertisements daily instead of weekly. We could even update them every hour in busy listing seasons! Investing in automation is critical so we can invest more in media and less in headcount as we grow.
-#+END_QUOTE
-
-So what? Why do I care? Just so your job is easier? So it's more fun? So you can take longer lunch breaks?
-
-
-So is this the point? Why is it at the end? You gave us a meaningless list...
-
-
-**** Notes                           :notes:
 Thinkaloud: I don't understand, I'm not oriented, I need a topic sentence, what if I started it this way, OK that's much clearer
 # implicitly through me modeling it
 
-** transferable strategies
-So what do I want you to take away from this?
+** *Explicitness:* Orienting the reader
 1. Topic sentences
 2. Tell the reader why they need to know this
-# explicitly through me naming it
 
-
-** clarity: sentence workshop
-#+BEGIN_QUOTE
-*Reach in-market home-buyers and sellers for the least money*: We're dependent on Google and Facebook for our overall performance. 67.4% of 2016 paid contacts come from those sites. By the end of 2017, we'll add additional ad networks like Criteo or Yahoo and at least 50% of contacts will come from other sites. This goal is dependent on scaling search on Bing and proving out display ads.
-#+END_QUOTE
-*** Notes                                :notes:
-- what the hell does this mean? It does not at all say what it means.
-- I don't mean, can you figure it out and try to piece it together because you know the business
-
-Topic sentence must be specific still, not vague, confusing, ambiguous, imprecise
-
+** *Clarity:* Use precise words :slide:
 
 ** Demo: Use precise words :slide:
 #+BEGIN_QUOTE
@@ -1263,30 +1294,21 @@ We don’t cleanly service a client who has worked with Redfin in one market and
 
 What does it mean to service these customers "cleanly"? That's not a standard term and it's not clear what it means.
 
-
-
 ** Demo: Use precise words             :slide:
 #+BEGIN_QUOTE
 Currently, we don't provide an easy way for relocating clients who have already worked with Redfin to start working with us again in their new city. Yet these customers are surprisingly common.
 #+END_QUOTE
 
-** Demo: Use active verbs rather than "to be" verbs :slide:
+** Demo: Avoid nominalizations :slide:
+Use active verbs rather than "to be" verbs
+
+** Practice: Avoid nominalizations     :slide:
+Use active verbs rather than "to be" verbs
+
+: The rise of the planet's temperature is a result of global warming.
 
 ** Demo: Avoid nominalizations :slide:
-
-
-** What to look for                    :slide:
-- use precise words
-- use active verbs rather than to be verbs
-- avoid nominalizations
-
-*** Notes                                :notes:
-
-So what do I want you to take away from this?
-- use precise words
-- use active verbs rather than to be verbs when possible
-- avoid nominalizations
-# explicitly through me naming it
+See document: Direct Marketing - How Big Can It Get?
 
 * 1:30–2:00
 
@@ -1298,7 +1320,8 @@ So what do I want you to take away from this?
 
 As the great writing teacher William Zinsser said, the essence of writing is rewriting. The reality is that revising and editing makes the difference between writing that's clear, tight, and concise vs. writing that's meandering.
 
-In this section I teach employees how to go back after they've written a draft and read it with fresh eyes; how to compare a document to the original outline and look for holes; how to trim the fat and leave only what's needed; tricks like printing out a hardcopy and using a different colored pen; and how to "switch modes" from creator to critic so you can look for vague, confusing, or insufficiently supported passages and address them.
+*** Notes                                :notes:
+Trimming is easy. Just cross out whatever you can.
 
 ** Transferable strategies: tricks for concision
 - print it out and use a red pen
@@ -1314,11 +1337,15 @@ imagine it's someone else and leave mean comments for yourself
 
 Trimming is easy, it's just a matter of remembering to do that as an additional step at the end.
 
-What did you notice yourself trimming most often. Get to know yourself as a writer, you add adverbs to things, you have some prepositional phrases
-
 The objective isn't to notice these things so that you never need to trim in the future. The objective is to add trimming to your checklist of things to do. It's necessary step. You always need to trim.
 
-*** Practice: What can I delete? :slide:
+*** Demo: What can I delete?          :slide:
+#+ATTR_HTML: :controls controls :width 880 :preload auto
+#+BEGIN_video
+#+HTML: <source src="/Users/jay/Downloads/strangers.webmsd.webm">
+Your browser doesn't work properly.
+#+END_video
+
 
 * 2:00–2:15 - Break
 
@@ -1329,16 +1356,17 @@ The objective isn't to notice these things so that you never need to trim in the
 
 ** Application: Action planning        :slide:
 
-*** Review sample proposal            :slide:
-e.g. they need to start with the question method because they really haven't defined what they're trying to convince the reader of
+** Create an action plan for sample proposal :slide:
+
+*** Notes                                :notes:
+E.g. they need to start with the question method because they really haven't defined what they're trying to convince the reader of
 
 Look at relocation proposal
 
-*** Create an action plan for sample proposal :slide:
-
 * 3:15–4:30
 ** Workshop: Putting it all together   :slide:
-Rewrite the document you brought.
+- rewrite the document you brought
+- 1:1 conferences
 
 * 4:30–5:00
 ** Closing :slide:
@@ -1475,26 +1503,11 @@ Clip: "Cringe"
 Am I clear with the board on the type of guidance or response we seek? Highlight areas where we have less certainty, and would like the board's advice.
 
 
-* The headings should be the steps of the argument
-
 * the curse of knowledge
 - curse of knowledge
 - curse of knowledge study
 
 First get everything on the page, trim it out later. Need to make sure everything is on the page first.
-
-
-** Clear
-#+BEGIN_QUOTE
-Do I assume the reader has any prior knowledge of Redfin's business? Many board members serve on seven or eight boards, and appreciate our assuming they know or remember very little. It is hard to be concise, and still to explain Redfin as if to a newcomer, but that is our challenge. Do I use acronyms or jargon? Please write so that an intelligent person who is new to Redfin's business can understand you.
-#+END_QUOTE
-
-** how to structure an argument
-Using evidence
-
-** the points should form an argument
-If you read them together
-?
 
 ** Practice: reverse engineering the structure of a document
 - write down what the structure is
@@ -1505,8 +1518,6 @@ If you read them together
 now let's read those sentences in sequence. so they make sense?
 
 
-** TODO give examples of curse of knowledge
-
 ** TODO and of brain dump
 
 Goldilocks
@@ -1516,15 +1527,9 @@ By always asking yourself: do they know this? Do they need to know this? For eac
 ** concision
 Defining what question each section is asking is also very helpful for keeping the plan concise. Ask yourself: What information should you include in a section? Answer: Only the information necessary to answer the question the section is asking.
 
-** Practice                            :slide:
-Create a hierarchical document structure based on the answers developed in the question method
-
 ** Writing Clear Sentences
 This is the unit on actually writing sentences. How to write clear sentences; how to avoid major mistakes; and advice for writing strong and forceful sentences (use declaratory sentences with strong verbs, give examples, be specific and concrete). This unit can be longer or shorter depending on people's skill level. Ideally it would be based on workshopping passages from employees' actual proposal documesentences to work on problem areas.
 
-
-* TODO think about (and notate and color code visually) which parts are me talking and which parts are them doing an activity
-If it's too much lecture at a stretch, think of "checking for understanding" activities / applications / checks for understanding I can insert
 
 * TODO the reader is on a need to know basis
 Principle: use only what you need. Don't include everything you know, include only what the reader needs to know to (1) understand your plan, and (2) evaluate its merits
@@ -1535,7 +1540,3 @@ Now we're going to do this. The reason we're doing this is because it's contribu
 
 In a very long session, that's very important, so they know where they're going and why.
 
-* TODO critical questions
-
-based on the answers developed in the question method and
- [[https://www.google.com/url?q=https://docs.google.com/document/d/1wunl9i31PyRLWQOb0KLH0MlpGWBCIuiaYW2Q2EyfrI0/edit&sa=D&ust=1487465741146000&usg=AFQjCNE6n3JZy-bGWvm86vQQpC15Pgv2Tw][Redfin's own template]]

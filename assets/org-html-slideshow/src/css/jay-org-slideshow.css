@@ -277,11 +277,7 @@ h1:first-letter, h2:first-letter, h3:first-letter, h4:first-letter {
  text-transform: capitalize;
 }
 
-.darkbloom span.todo.Practice_ {
-  color: yellow;
-}
-
-.small span.todo.Critique_, span.todo.Demo_,span.todo.Workshop_ {
+.small span.todo.Critique_, span.todo.Demo_,span.todo.Workshop_, span.todo.Practice_ {
     color: red;
     text-shadow: none;
 }
