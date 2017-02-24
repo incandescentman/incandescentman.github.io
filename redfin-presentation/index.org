@@ -548,6 +548,7 @@ To figure out what the important questions are
 :PROPERTIES:
 :VISIBILITY:folded:
 :END:
+
 ** Demo: The question method  :slide:small:
 - *What question is this document trying to answer?*
 
@@ -801,6 +802,11 @@ To figure out what the important questions are
                   - No, the experiment we ran pointed strongly in favor of reducing our commissions.
                     - *OK, and are there any downsides to reducing our commissions?*
                     - etc
+
+** Demo: The question method :slide:
+#+BEGIN_EXPORT HTML
+<CENTER><iframe src="redfin-originals/RedfinRelocation-ForJay-original.pdf" width="800" height="800" style="zoom: 1.2"></iframe> </CENTER>
+#+END_EXPORT
 
 ** Demo: The question method   :slide:
 
