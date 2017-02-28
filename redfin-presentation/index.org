@@ -426,8 +426,8 @@ If you only write down the final product... And doing all the planning, structur
 wrong.
 
 
-** *Mistake #3:* Trying to strategize in your head :slide:
-Outlining isn't enough.
+
+** Outlining isn't enough.             :slide:
 
 *** Notes                                :notes:
 
