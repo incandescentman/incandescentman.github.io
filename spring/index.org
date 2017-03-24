@@ -26,8 +26,7 @@ Bring: Feel free to bring drinks or food if you like \\
 
 
 * export settings                                          :ARCHIVE:noexport:
-#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='http://dixit.ca/css/evite.css' />
-#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='/Users/jay/Dropbox/web-design/custom-css/evite.css' /> 
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='/Users/jay/Dropbox/github/incandescentman.github.io/assets/css/thedefense.css' />
 #+OPTIONS:   H:6 num:nil toc:nil :nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+HTML_HEAD: <meta property="og:title" content="Bill Burr Viewing Party" />
 #+HTML_HEAD: <meta property="og:url" content="http://incandescentman.github.io/bill-burr/bill-burr-walk-your-way-out.jpg" />
