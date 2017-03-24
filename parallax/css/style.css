@@ -43,6 +43,11 @@ section.module.parallax h1, div.outline-2.parallax h1 {
 }
 
 
+div.outline-2 {
+ max-width: 80%;
+ margin:2em auto 2em auto;
+}
+
 
 @media all and (min-width: 600px) {
   section.module h2, div.outline-2  h2 {
@@ -55,10 +60,6 @@ section.module.parallax h1, div.outline-2.parallax h1 {
     font-size: 96px;
   }
 
-div.outline-2 {
- max-width: 80%;
- margin:2em auto 2em auto;
-}
 
 }
 
