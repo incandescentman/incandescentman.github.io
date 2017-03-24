@@ -14,11 +14,11 @@ section.module.parallax-3 {
 <div class="wrapper">
  <div class="info-bar">
   <div class="container">
-   <a class="icon cmn-tut" data-title="Back To Tutorial" href="http://callmenick.com/?p=718"></a>
-   <a class="icon cmn-prev" data-title="Pevious Demo---Revealing Content Overlays With CSS3 Transitions" href="http://callmenick.com/tutorial-demos/revealing-content-overlays/"></a>
-   <!-- <a class="icon cmn-next" data-title="Next Demo---" href="http://callmenick.com/tutorial-demos/..."></a> -->
-   <a class="icon cmn-download" data-title="Download Source" href="http://callmenick.com/tutorial-demos/simple-parallax-effect/simple-parallax-effect-source.zip"></a>
-   <a class="icon cmn-archive" data-title="Tutorial Archives" href="http://callmenick.com/category/tutorials/"></a>
+   <a class="icon cmn-tut" data-title="Back To Tutorial" href="http://jaydixit.com/?p=718"></a>
+   <a class="icon cmn-prev" data-title="Pevious Demo---Revealing Content Overlays With CSS3 Transitions" href="http://jaydixit.com/tutorial-demos/revealing-content-overlays/"></a>
+   <!-- <a class="icon cmn-next" data-title="Next Demo---" href="http://jaydixit.com/tutorial-demos/..."></a> -->
+   <a class="icon cmn-download" data-title="Download Source" href="http://jaydixit.com/tutorial-demos/simple-parallax-effect/simple-parallax-effect-source.zip"></a>
+   <a class="icon cmn-archive" data-title="Tutorial Archives" href="http://jaydixit.com/category/tutorials/"></a>
   </div>
  </div>
 <section class="module parallax parallax-1">
@@ -173,31 +173,31 @@ modi?
     <aside>
      <nav>
       <ul>
-       <li><a href="http://callmenick.com/">Welcome</a></li>
-       <li><a href="http://callmenick.com/category/tutorials">Tutorials</a></li>
-       <li><a href="http://callmenick.com/category/snippets">Snippets</a></li>
-       <li><a href="http://callmenick.com/category/articles">Articles</a></li>
-       <li><a href="http://callmenick.com/category/resources">Resources</a></li>
+       <li><a href="http://jaydixit.com/">Welcome</a></li>
+       <li><a href="http://jaydixit.com/category/tutorials">Tutorials</a></li>
+       <li><a href="http://jaydixit.com/category/snippets">Snippets</a></li>
+       <li><a href="http://jaydixit.com/category/articles">Articles</a></li>
+       <li><a href="http://jaydixit.com/category/resources">Resources</a></li>
       </ul>
      </nav>
     </aside>
     <aside>
      <nav>
       <ul>
-       <li><a href="http://callmenick.com/archive/">Archive</a></li>
-       <li><a href="http://callmenick.com/about">About</a></li>
-       <li><a href="http://callmenick.com/contact">Contact</a></li>
-       <li><a href="http://callmenick.com/subscribe">Subscribe</a></li>
+       <li><a href="http://jaydixit.com/archive/">Archive</a></li>
+       <li><a href="http://jaydixit.com/about">About</a></li>
+       <li><a href="http://jaydixit.com/contact">Contact</a></li>
+       <li><a href="http://jaydixit.com/subscribe">Subscribe</a></li>
       </ul>
      </nav>
     </aside>
     <aside class="logo">
-     <a href="http://callmenick.com/"><img alt="Tutorials, Snippets, Resources, and Articles for Web Design and Web Development" onerror="this.src=logo.png" src="img/core/logo.svg"></a>
+     <a href="http://jaydixit.com/"><img alt="Tutorials, Snippets, Resources, and Articles for Web Design and Web Development" onerror="this.src=../assets/images/lighthouse-inverted.jpg" SRC="../assets/images/lighthouse-inverted.jpg"></a>
     </aside>
    </div>
    <div class="copyright">
     <small>
-     &copy; 2014, Nick Salloum<br><a href="http://callmenick.com">callmenick.com</a>
+     &copy; 2017, Jay Dixit<br><a href="http://jaydixit.com">jaydixit.com</a>
     </small>
    </div>
   </div>

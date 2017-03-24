@@ -59,9 +59,11 @@ section.module.parallax h1, div.outline-2.parallax h1 {
   section.module.parallax h1, div.outline-2 .parallax h1 {
     font-size: 160px;
   }
-}
 
 div.outline-2 {
-  max-width: 50%;
-  margin:2em auto 2em auto;
+ max-width: 50%;
+ margin:2em auto 2em auto;
 }
+
+}
+
