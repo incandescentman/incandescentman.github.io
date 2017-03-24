@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title></title>
-<meta name="generator" content="Org mode">
-<meta name="author" content="Jay Dixit">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/style.css">
-<script src="js/modernizr.js"></script>
-</head>
-<body>
-<div id="content">
+
+#+BEGIN_EXPORT HTML
 <div class="wrapper">
 
  <div class="info-bar">
@@ -31,11 +18,11 @@
    </section>
 <section class="module content">
   <div class="container">
+#+END_EXPORT
 
-<div id="outline-container-org790f1fb" class="outline-2">
-<h2 id="org790f1fb">1 Lorem Ipsum Dolor</h2>
-<div class="outline-text-2" id="text-org790f1fb">
-<p>
+* 1 Lorem Ipsum Dolor
+
+
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
 consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci
 ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum!
@@ -43,9 +30,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
 veritatis, facere aliquid itaque tempore consequatur nihil sint enim
 aliquam id saepe magnam totam repellat placeat a fugit nulla molestias
 voluptas.
-</p>
 
-<p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum
 distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam
 in repudiandae architecto placeat, illum atque quasi explicabo, culpa,
@@ -53,9 +38,7 @@ molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut
 quaerat, quasi iste voluptate et dolorem atque sed neque voluptates,
 molestias dolor enim!
-</p>
 
-<p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit
 tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam,
 molestias nesciunt modi, at debitis maxime sunt et quo quas labore
@@ -63,9 +46,7 @@ perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil
 distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam
 excepturi corporis!
-</p>
 
-<p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius
 harum atque unde nihil aut quam provident sunt, iste error vitae
 suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem
@@ -73,9 +54,9 @@ ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae
 impedit officia quis odit rerum sequi, explicabo commodi illum suscipit,
 tempore eum doloremque quae obcaecati tempora quidem neque sapiente
 modi?
-</p>
 
 
+#+BEGIN_EXPORT HTML
 
 </div>
    </section>
@@ -85,16 +66,15 @@ modi?
      <h1>Rise</h1>
     </div>
    </section>
+#+END_EXPORT
 
+#+BEGIN_EXPORT html
 <section class="module content">
  <div class="container">
-</div>
-</div>
 
-<div id="outline-container-org2611db8" class="outline-2">
-<h2 id="org2611db8">2 Lorem Ipsum Dolor</h2>
-<div class="outline-text-2" id="text-org2611db8">
-<p>
+#+END_EXPORT
+
+* 2 Lorem Ipsum Dolor
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
 consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci
 ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum!
@@ -102,9 +82,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
 veritatis, facere aliquid itaque tempore consequatur nihil sint enim
 aliquam id saepe magnam totam repellat placeat a fugit nulla molestias
 voluptas.
-</p>
 
-<p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum
 distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam
 in repudiandae architecto placeat, illum atque quasi explicabo, culpa,
@@ -112,9 +90,7 @@ molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut
 quaerat, quasi iste voluptate et dolorem atque sed neque voluptates,
 molestias dolor enim!
-</p>
 
-<p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit
 tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam,
 molestias nesciunt modi, at debitis maxime sunt et quo quas labore
@@ -122,9 +98,7 @@ perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil
 distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam
 excepturi corporis!
-</p>
 
-<p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius
 harum atque unde nihil aut quam provident sunt, iste error vitae
 suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem
@@ -132,34 +106,49 @@ ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae
 impedit officia quis odit rerum sequi, explicabo commodi illum suscipit,
 tempore eum doloremque quae obcaecati tempora quidem neque sapiente
 modi?
-</p>
 
-</div>
+#+BEGIN_EXPORT HTML
+  </div>
+#+END_EXPORT
 
-</div>
+#+BEGIN_EXPORT HTML
+  </div>
+#+END_EXPORT
 
-<div class="section module parallax parallax-3">
+#+BEGIN_EXPORT HTML
+  <div class="section module parallax parallax-3">
+#+END_EXPORT
 
-<div class="container">
-</div>
-</div>
+#+BEGIN_EXPORT HTML
+  <div class="container">
+#+END_EXPORT
 
-<div id="outline-container-orgea3dc1a" class="outline-2">
-<h2 id="calm"><a id="orgea3dc1a"></a>Calm</h2>
-<div class="outline-text-2" id="text-calm">
-</div>
+* Calm
+  :PROPERTIES:
+  :CUSTOM_ID: calm
+  :END:
 
-</div>
+#+BEGIN_EXPORT HTML
+  </div>
+#+END_EXPORT
 
-<div class="section module content">
+#+BEGIN_EXPORT HTML
+  </div>
+#+END_EXPORT
 
-<div class="container">
-</div>
+#+BEGIN_EXPORT HTML
+  <div class="section module content">
+#+END_EXPORT
 
-<div id="outline-container-org69084b1" class="outline-3">
-<h3 id="lorem-ipsum-dolor-2"><a id="org69084b1"></a>Lorem Ipsum Dolor</h3>
-<div class="outline-text-3" id="text-lorem-ipsum-dolor-2">
-<p>
+#+BEGIN_EXPORT HTML
+  <div class="container">
+#+END_EXPORT
+
+** Lorem Ipsum Dolor
+   :PROPERTIES:
+   :CUSTOM_ID: lorem-ipsum-dolor-2
+   :END:
+
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
 consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci
 ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum!
@@ -167,9 +156,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
 veritatis, facere aliquid itaque tempore consequatur nihil sint enim
 aliquam id saepe magnam totam repellat placeat a fugit nulla molestias
 voluptas.
-</p>
 
-<p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum
 distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam
 in repudiandae architecto placeat, illum atque quasi explicabo, culpa,
@@ -177,9 +164,7 @@ molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut
 quaerat, quasi iste voluptate et dolorem atque sed neque voluptates,
 molestias dolor enim!
-</p>
 
-<p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit
 tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam,
 molestias nesciunt modi, at debitis maxime sunt et quo quas labore
@@ -187,9 +172,7 @@ perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil
 distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam
 excepturi corporis!
-</p>
 
-<p>
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius
 harum atque unde nihil aut quam provident sunt, iste error vitae
 suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem
@@ -197,51 +180,62 @@ ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae
 impedit officia quis odit rerum sequi, explicabo commodi illum suscipit,
 tempore eum doloremque quae obcaecati tempora quidem neque sapiente
 modi?
-</p>
 
-</div>
+#+BEGIN_EXPORT HTML
+  </div>
+#+END_EXPORT
 
-</div>
+#+BEGIN_EXPORT HTML
+  </div>
+#+END_EXPORT
 
-<div class="container">
+#+BEGIN_EXPORT HTML
+  <div class="container">
+#+END_EXPORT
 
-<div class="asides clearfix">
+#+BEGIN_EXPORT HTML
+  <div class="asides clearfix">
+#+END_EXPORT
 
-<ul class="org-ul">
-<li><a href="http://callmenick.com/">Welcome</a></li>
-<li><a href="http://callmenick.com/category/tutorials">Tutorials</a></li>
-<li><a href="http://callmenick.com/category/snippets">Snippets</a></li>
-<li><a href="http://callmenick.com/category/articles">Articles</a></li>
-<li><a href="http://callmenick.com/category/resources">Resources</a></li>
+-  [[http://callmenick.com/][Welcome]]
+-  [[http://callmenick.com/category/tutorials][Tutorials]]
+-  [[http://callmenick.com/category/snippets][Snippets]]
+-  [[http://callmenick.com/category/articles][Articles]]
+-  [[http://callmenick.com/category/resources][Resources]]
 
-<li><a href="http://callmenick.com/archive/">Archive</a></li>
-<li><a href="http://callmenick.com/about">About</a></li>
-<li><a href="http://callmenick.com/contact">Contact</a></li>
-<li><a href="http://callmenick.com/subscribe">Subscribe</a></li>
-</ul>
+-  [[http://callmenick.com/archive/][Archive]]
+-  [[http://callmenick.com/about][About]]
+-  [[http://callmenick.com/contact][Contact]]
+-  [[http://callmenick.com/subscribe][Subscribe]]
 
-<p>
-[[<object type="image/svg+xml" data="http://callmenick.com/%5D%5B%5B%5Bimg/core/logo.svg" class="org-svg">
-Sorry, your browser does not support SVG.</object>]]]]
-</p>
+[[http://callmenick.com/][[[img/core/logo.svg]]]]
 
-</div>
+#+BEGIN_EXPORT HTML
+  </div>
+#+END_EXPORT
 
-<div class="copyright">
+#+BEGIN_EXPORT HTML
+  <div class="copyright">
+#+END_EXPORT
 
-<p>
-© 2014, Nick Salloum<br>
-<a href="http://callmenick.com">callmenick.com</a>
-</p>
+© 2014, Nick Salloum\\
+[[http://callmenick.com][callmenick.com]]
 
-</div>
+#+BEGIN_EXPORT HTML
+  </div>
+#+END_EXPORT
 
-</div>
+#+BEGIN_EXPORT HTML
+  </div>
+#+END_EXPORT
 
-</div>
-</div>
-</div>
-</div>
-</div>
-</body>
-</html>
+#+BEGIN_EXPORT HTML
+  </div>
+#+END_EXPORT
+
+
+
+#+HTML_HEAD: <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+#+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
+#+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
+#+HTML_HEAD: <script src="js/modernizr.js"></script>

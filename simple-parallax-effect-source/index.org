@@ -1,4 +1,3 @@
-
 #+BEGIN_EXPORT HTML
 <div class="wrapper">
 
@@ -18,6 +17,7 @@
    </section>
 <section class="module content">
   <div class="container">
+
 #+END_EXPORT
 
 * 1 Lorem Ipsum Dolor
@@ -57,10 +57,8 @@ modi?
 
 
 #+BEGIN_EXPORT HTML
-
 </div>
    </section>
-
    <section class="module parallax parallax-2">
     <div class="container">
      <h1>Rise</h1>
@@ -108,43 +106,22 @@ tempore eum doloremque quae obcaecati tempora quidem neque sapiente
 modi?
 
 #+BEGIN_EXPORT HTML
-  </div>
-#+END_EXPORT
-
-#+BEGIN_EXPORT HTML
-  </div>
-#+END_EXPORT
-
-#+BEGIN_EXPORT HTML
-  <div class="section module parallax parallax-3">
-#+END_EXPORT
-
-#+BEGIN_EXPORT HTML
+</div>
+  </section>
+  <section class="module parallax parallax-3">
   <div class="container">
-#+END_EXPORT
-
-* Calm
-  :PROPERTIES:
-  :CUSTOM_ID: calm
-  :END:
-
-#+BEGIN_EXPORT HTML
+   <h1>Calm</h1>
   </div>
+  </section>
 #+END_EXPORT
 
-#+BEGIN_EXPORT HTML
-  </div>
+#+BEGIN_EXPORT html
+<section class="module content">
+ <div class="container">
+
 #+END_EXPORT
 
-#+BEGIN_EXPORT HTML
-  <div class="section module content">
-#+END_EXPORT
-
-#+BEGIN_EXPORT HTML
-  <div class="container">
-#+END_EXPORT
-
-** Lorem Ipsum Dolor
+** 3 Lorem Ipsum Dolor
    :PROPERTIES:
    :CUSTOM_ID: lorem-ipsum-dolor-2
    :END:
@@ -181,59 +158,51 @@ impedit officia quis odit rerum sequi, explicabo commodi illum suscipit,
 tempore eum doloremque quae obcaecati tempora quidem neque sapiente
 modi?
 
-#+BEGIN_EXPORT HTML
-  </div>
-#+END_EXPORT
 
-#+BEGIN_EXPORT HTML
-  </div>
-#+END_EXPORT
+#+BEGIN_EXPORT html
+</div>
+   </section>
 
-#+BEGIN_EXPORT HTML
+ </main><!-- /main -->
+
+ <footer>
   <div class="container">
-#+END_EXPORT
-
-#+BEGIN_EXPORT HTML
-  <div class="asides clearfix">
-#+END_EXPORT
-
--  [[http://callmenick.com/][Welcome]]
--  [[http://callmenick.com/category/tutorials][Tutorials]]
--  [[http://callmenick.com/category/snippets][Snippets]]
--  [[http://callmenick.com/category/articles][Articles]]
--  [[http://callmenick.com/category/resources][Resources]]
-
--  [[http://callmenick.com/archive/][Archive]]
--  [[http://callmenick.com/about][About]]
--  [[http://callmenick.com/contact][Contact]]
--  [[http://callmenick.com/subscribe][Subscribe]]
-
-[[http://callmenick.com/][[[img/core/logo.svg]]]]
-
-#+BEGIN_EXPORT HTML
+   <div class="asides clearfix">
+    <aside>
+     <nav>
+      <ul>
+       <li><a href="http://callmenick.com/">Welcome</a></li>
+       <li><a href="http://callmenick.com/category/tutorials">Tutorials</a></li>
+       <li><a href="http://callmenick.com/category/snippets">Snippets</a></li>
+       <li><a href="http://callmenick.com/category/articles">Articles</a></li>
+       <li><a href="http://callmenick.com/category/resources">Resources</a></li>
+      </ul>
+     </nav>
+    </aside>
+    <aside>
+     <nav>
+      <ul>
+       <li><a href="http://callmenick.com/archive/">Archive</a></li>
+       <li><a href="http://callmenick.com/about">About</a></li>
+       <li><a href="http://callmenick.com/contact">Contact</a></li>
+       <li><a href="http://callmenick.com/subscribe">Subscribe</a></li>
+      </ul>
+     </nav>
+    </aside>
+    <aside class="logo">
+     <a href="http://callmenick.com/"><img alt="Tutorials, Snippets, Resources, and Articles for Web Design and Web Development" onerror="this.src=logo.png" src="img/core/logo.svg"></a>
+    </aside>
+   </div>
+   <div class="copyright">
+    <small>
+     &copy; 2014, Nick Salloum<br><a href="http://callmenick.com">callmenick.com</a>
+    </small>
+   </div>
   </div>
+ </footer><!-- /footer -->
+
+</div><!-- /#wrapper -->
 #+END_EXPORT
-
-#+BEGIN_EXPORT HTML
-  <div class="copyright">
-#+END_EXPORT
-
-© 2014, Nick Salloum\\
-[[http://callmenick.com][callmenick.com]]
-
-#+BEGIN_EXPORT HTML
-  </div>
-#+END_EXPORT
-
-#+BEGIN_EXPORT HTML
-  </div>
-#+END_EXPORT
-
-#+BEGIN_EXPORT HTML
-  </div>
-#+END_EXPORT
-
-
 
 #+HTML_HEAD: <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
 #+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
