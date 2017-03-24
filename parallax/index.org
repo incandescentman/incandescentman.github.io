@@ -41,7 +41,7 @@ header::before {
   top: 0;
   display: block;
   background-color: #8a8;
-  background-image: url(/Users/jay/Dropbox/github/incandescentman.github.io/bill-burr/bill-burr-walk-your-way-out.jpg);
+  background-image: url(./bill-burr-walk-your-way-out.jpg);
   background-size: cover;
   -webkit-transform-origin: center center 0;
   -webkit-transform: translateZ(-1px) scale(2);
