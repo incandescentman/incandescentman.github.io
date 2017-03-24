@@ -20,7 +20,7 @@
   <div class="container">
 #+END_EXPORT
 
-* Lorem Ipsum Dolor
+* 1 Lorem Ipsum Dolor
 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
@@ -57,39 +57,24 @@ modi?
 
 
 #+BEGIN_EXPORT HTML
-  </div>
+
 </div>
-<div class="section module parallax parallax-2">
-<div class="container">
+   </section>
+
+   <section class="module parallax parallax-2">
+    <div class="container">
+     <h1>Rise</h1>
+    </div>
+   </section>
 #+END_EXPORT
 
+#+BEGIN_EXPORT html
+<section class="module content">
+ <div class="container">
 
-* Rise
-  :PROPERTIES:
-  :CUSTOM_ID: rise
-  :END:
-
-#+BEGIN_EXPORT HTML
-  </div>
 #+END_EXPORT
 
-#+BEGIN_EXPORT HTML
-  </div>
-#+END_EXPORT
-
-#+BEGIN_EXPORT HTML
-  <div class="section module content">
-#+END_EXPORT
-
-#+BEGIN_EXPORT HTML
-  <div class="container">
-#+END_EXPORT
-
-** Lorem Ipsum Dolor
-   :PROPERTIES:
-   :CUSTOM_ID: lorem-ipsum-dolor-1
-   :END:
-
+* 2 Lorem Ipsum Dolor
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
 consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci
 ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum!
