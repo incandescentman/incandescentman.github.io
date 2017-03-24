@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'GaramondPremierProDisplay';
+    src: url('garamondpremrpro-disp.eot');
+    src: url('garamondpremrpro-disp.eot') format('embedded-opentype'),
+         url('garamondpremrpro-disp.woff') format('woff'),
+         url('garamondpremrpro-disp.ttf') format('truetype'),
+         url('garamondpremrpro-disp.svg#GaramondPremierProDisplay') format('svg');
+}

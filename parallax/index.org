@@ -1,13 +1,13 @@
 #+BEGIN_EXPORT HTML
 <style>
 section.module.parallax-1 {
- background-image: url("../img/demo/_small/1.jpg");
+ background-image: url("./img/demo/_small/1.jpg");
 }
 section.module.parallax-2 {
- background-image: url("../img/demo/_small/2.jpg");
+ background-image: url("./img/demo/_small/2.jpg");
 }
 section.module.parallax-3 {
- background-image: url("../img/demo/_small/3.jpg");
+ background-image: url("./img/demo/_small/3.jpg");
 }
 </style>
 
@@ -26,8 +26,6 @@ section.module.parallax-3 {
      <h1>Serene</h1>
     </div>
    </section>
-<section class="module content">
-  <div class="container">
 
 #+END_EXPORT
 
@@ -69,18 +67,13 @@ modi?
 
 #+BEGIN_EXPORT HTML
 </div>
+</div>
    </section>
    <section class="module parallax parallax-2">
     <div class="container">
      <h1>Rise</h1>
     </div>
    </section>
-#+END_EXPORT
-
-#+BEGIN_EXPORT html
-<section class="module content">
- <div class="container">
-
 #+END_EXPORT
 
 * 2 Lorem Ipsum Dolor
@@ -118,21 +111,17 @@ modi?
 
 #+BEGIN_EXPORT HTML
 </div>
-  </section>
-  <section class="module parallax parallax-3">
+</div>
+   </section>
+<section class="module parallax parallax-3">
   <div class="container">
    <h1>Calm</h1>
   </div>
+</div>
   </section>
 #+END_EXPORT
 
-#+BEGIN_EXPORT html
-<section class="module content">
- <div class="container">
-
-#+END_EXPORT
-
-** 3 Lorem Ipsum Dolor
+* 3 Lorem Ipsum Dolor
    :PROPERTIES:
    :CUSTOM_ID: lorem-ipsum-dolor-2
    :END:
@@ -171,6 +160,8 @@ modi?
 
 
 #+BEGIN_EXPORT html
+
+</div>
 </div>
    </section>
 

@@ -1,3 +1,67 @@
+
+
+@font-face {
+ font-family: 'Garamond Premier Pro';
+ src: url('../../assets/actual-good-fonts/garamondpremrpro-webfont.eot');
+ src: url('../../assets/actual-good-fonts/garamondpremrpro-webfont.eot?#iefix') format('embedded-opentype'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-webfont.woff') format('woff'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-webfont.ttf') format('truetype'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-webfont.svg#garamond_premr_proregular') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+
+
+@font-face {
+ font-family: 'Garamond Premier Pro Bold';
+ src: url('../../assets/actual-good-fonts/garamondpremrpro-bd-webfont.eot');
+ src: url('../../assets/actual-good-fonts/garamondpremrpro-bd-webfont.eot?#iefix') format('embedded-opentype'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-bd-webfont.woff') format('woff'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-bd-webfont.ttf') format('truetype'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-bd-webfont.svg#garamond_premr_probold') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'Garamond Premier Pro Bold Italic';
+ src: url('../../assets/actual-good-fonts/garamondpremrpro-bdit-webfont.eot');
+ src: url('../../assets/actual-good-fonts/garamondpremrpro-bdit-webfont.eot?#iefix') format('embedded-opentype'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-bdit-webfont.woff') format('woff'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-bdit-webfont.ttf') format('truetype'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-bdit-webfont.svg#garamond_premr_probold_italic') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'Garamond Premier Pro Italic';
+ src: url('../../assets/actual-good-fonts/garamondpremrpro-it-webfont.eot');
+ src: url('../../assets/actual-good-fonts/garamondpremrpro-it-webfont.eot?#iefix') format('embedded-opentype'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-it-webfont.woff') format('woff'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-it-webfont.ttf') format('truetype'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-it-webfont.svg#garamond_premr_proitalic') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+
+
+@font-face {
+ font-family: 'Garamond Premier Pro Display';
+ src: url('../../assets/actual-good-fonts/garamondpremrpro-disp.eot');
+ src: url('../../assets/actual-good-fonts/garamondpremrpro-disp.eot?#iefix') format('embedded-opentype'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-disp.woff') format('woff'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-disp.ttf') format('truetype'),
+   url('../../assets/actual-good-fonts/garamondpremrpro-disp.svg#garamond_premr_proitalic') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+
+
+
 /* ============================================================
   RESET - http://meyerweb.com/eric/tools/css/reset/
 ============================================================ */
@@ -73,9 +137,10 @@ table {
 ============================================================ */
 body {
   background-color: #b4b4b4;
+  background-color: #FFF;
   color: #787878;
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 14px;
+  font-family: "Garamond Premier Pro", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -241,6 +306,8 @@ header .social a:hover {
   FOOTER
 ============================================================ */
 footer {
+background-color: #b4b4b4;
+
   padding: 20px 0;
 }
 footer .asides {
