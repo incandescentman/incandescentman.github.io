@@ -23,7 +23,7 @@ section.module.parallax-3 {
 
 <section class="module parallax parallax-1">
     <div class="container">
-     <h1>Rainy Day Cocktails</h1>
+     <h1>Rainy Day</h1>
     </div>
    </section>
 
