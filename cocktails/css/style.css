@@ -28,7 +28,7 @@ section.module.content, div.outline-2.content {
   padding: 40px 0;
 }
 section.module.parallax, div.outline-2.parallax {
-  height: 600px;
+    height: 600px;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -38,18 +38,7 @@ section.module.parallax, div.outline-2.parallax {
   background-size: contain;
 }
 
-section.module.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
-  line-height: 600px;
-  font-weight: 700;
-  text-align: center;
-  font-weight:normal;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-
-div.outline-2.parallax h1 {
+section.module.parallax h1, div.outline-2.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 48px;
   line-height: 600px;
