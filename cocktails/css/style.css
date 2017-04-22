@@ -29,13 +29,13 @@ section.module.content, div.outline-2.content {
 }
 section.module.parallax, div.outline-2.parallax {
   height: 600px;
-  background-position: 50% 50%;
+  background-position: 0 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 section.module.parallax h1, div.outline-2.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
