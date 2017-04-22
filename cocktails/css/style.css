@@ -1,5 +1,4 @@
 
-
 /* ============================================================
   SECTIONS
 ============================================================ */
@@ -78,7 +77,8 @@ div.outline-2 {
 
 
 @media all and (max-width: 750px) {
-/* CSS rules here for screens lower than 750px */
+    /* CSS rules here for screens lower than 750px */
+
 
     .container {
     display:none;
@@ -86,7 +86,12 @@ div.outline-2 {
 
 
     section.module.parallax h1, div.outline-2.parallax h1
-    display:none;
+{ display:none;
     }
 
+
+
 }
+
+
+
