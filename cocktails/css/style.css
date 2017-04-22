@@ -84,4 +84,9 @@ div.outline-2 {
     display:none;
     }
 
+
+    section.module.parallax h1, div.outline-2.parallax h1
+    display:none;
+    }
+
 }
