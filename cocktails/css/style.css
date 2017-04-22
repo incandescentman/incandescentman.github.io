@@ -8,13 +8,8 @@ section.module:last-child, div.outline-2:last-child {
 }
 section.module h2, div.outline-2 h2 {
   margin-bottom: 40px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  font-weight:bold;
+  font-family: "Roboto Slab", serif;
   font-size: 30px;
-  margin-bottom: 0.5em;
-}
-
-
 }
 section.module p, div.outline-2 p {
   margin-bottom: 40px;
@@ -28,7 +23,7 @@ section.module.content, div.outline-2.content {
   padding: 40px 0;
 }
 section.module.parallax, div.outline-2.parallax {
-    height: 600px;
+  height: 600px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -37,7 +32,6 @@ section.module.parallax, div.outline-2.parallax {
   -o-background-size: cover;
   background-size: cover;
 }
-
 section.module.parallax h1, div.outline-2.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 48px;
@@ -71,10 +65,7 @@ div.outline-2 {
 
 
 @media all and (min-width: 960px) {
-  section.module.parallax h1 {
-      font-size: 160px;
-}
-div.outline-2 .parallax h1 {
+  section.module.parallax h1, div.outline-2 .parallax h1 {
     font-size: 160px;
   }
 

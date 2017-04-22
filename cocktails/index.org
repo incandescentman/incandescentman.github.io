@@ -1,5 +1,3 @@
-# images should be 12x5
-
 #+BEGIN_EXPORT HTML
 <style>
 section.module.parallax-1 {
@@ -25,39 +23,46 @@ section.module.parallax-3 {
 
 <section class="module parallax parallax-1">
     <div class="container">
-     <h1>Rainy day</h1>
+     <h1>Serene</h1>
     </div>
    </section>
 
 #+END_EXPORT
 
-* You're invited...
-
-Friends,
-
-Join me tomorrow at my place to finally watch the new Bill Burr special.
-
-So many times I've felt tempted to watch it on my own, but decided no, it'll be more fun to watch it with my friends who also love Bill Burr.
-
-Looking forward to seeing you all.
-
-Go fuck yourselves, \\
-Jay \\
-\\
-
-*When*: Friday, March 17, 7:30pm \\
-*Where*: [[https://goo.gl/maps/deaqUaSuWNA2][22 Saint Marks Place Apt. D New York NY 10003]] \\
-*Map*: https://goo.gl/maps/deaqUaSuWNA2 \\
-Bring: Feel free to bring drinks or food if you like \\
-*Friends*: Friends are welcome, especially if they're Bill Burr fans \\
-*RSVP*: [[mailto:jay@newyorkwritersintensive.com][jay@newyorkwritersintensive.com]]
+* 1 Lorem Ipsum Dolor
 
 
-#+BEGIN_EXPORT HTML
-<audio autoplay class="center" src="bill-burr-chimpanzees.mp3" controls preload></audio>
-#+END_EXPORT
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci
+ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+veritatis, facere aliquid itaque tempore consequatur nihil sint enim
+aliquam id saepe magnam totam repellat placeat a fugit nulla molestias
+voluptas.
 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum
+distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam
+in repudiandae architecto placeat, illum atque quasi explicabo, culpa,
+molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut
+quaerat, quasi iste voluptate et dolorem atque sed neque voluptates,
+molestias dolor enim!
 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit
+tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam,
+molestias nesciunt modi, at debitis maxime sunt et quo quas labore
+perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil
+distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam
+excepturi corporis!
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius
+harum atque unde nihil aut quam provident sunt, iste error vitae
+suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem
+ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae
+impedit officia quis odit rerum sequi, explicabo commodi illum suscipit,
+tempore eum doloremque quae obcaecati tempora quidem neque sapiente
+modi?
 
 
 #+BEGIN_EXPORT HTML
@@ -206,5 +211,4 @@ modi?
 #+HTML_HEAD: <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
 #+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
 #+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
-#+HTML_HEAD: <link rel="stylesheet" href="css/parallax-jay.css">
 #+HTML_HEAD: <script src="js/modernizr.js"></script>
