@@ -32,7 +32,7 @@ section.module.parallax-3 {
 * Rainy Day Cocktails
 Friends,
 
-Today is a very auspicious day, for it marks Brinda's triumphant return after almost two weeks away in California. On this serene and rainy spring evening, nothing would make us happier than to drink alcohol in the company of friends. Please join us.
+Today is a very auspicious day, for it marks Brinda's triumphant return after almost two weeks in California. On this serene and rainy April day, nothing would make us happier than to drink alcohol in the company of good friends. So please join us this evening in raising a glass to friendship, good cheer, and the soft rains of spring.
 
 Looking forward to seeing you all.
 
@@ -51,7 +51,7 @@ Jay
    </section>
    <section class="module parallax parallax-2">
     <div class="container">
-     <h1>Until then!</h1>
+     <h1>Until then...</h1>
     </div>
    </section>
 #+END_EXPORT
