@@ -1,22 +1,210 @@
-* Cocktails on Saint Marks 
-http://drinkboston.com/wp-content/uploads/2009/09/early1900s-bartender.jpg 
-Since it seems that everyone has their own plans for later in the evening, I'll be having people over for early cocktails on Saint Marks so we can all be together as a family one last time before 2015 takes its final bow. 
+# images should be 12x5
 
-Nota bene, this is not a New Year's party but a pre-New-Years pre-party. We'll be gathering at the unfashionably early hour of 5:00pm to toast the year ahead before adjourning promptly at 8:00 and scattering across the boroughs. 
+#+BEGIN_EXPORT HTML
+<style>
+section.module.parallax-1 {
+ background-image: url("img/1.jpg");
+}
+section.module.parallax-2 {
+ background-image: url("img/2.jpg");
+}
+section.module.parallax-3 {
+ background-image: url("img/3.jpg");
+}
+</style>
 
-The house will offer a limited menu of cocktails of gin, mezcal, and moonshine. Your own civilian contributions of spirits and snacks are welcome but by no means required. Friends are also welcome.
+<div class="wrapper">
 
-Looking forward to seeing you all. 
+<!--   <div class="info-bar"> -->
+<!--   <div class="container"> -->
+<!--    <a class="icon cmn-tut" data-title="Jay Dixit" href="http://jaydixit.com/></a> -->
 
-Until then!
+<!-- <a class="icon cmn-prev" data-title="Pevious Demo Revealing Content Overlays With CSS3 Transitions" href="http://jaydixit.com"></a>  -->
+<!--   </div> -->
+<!--  </div> -->
 
-Jay
+<section class="module parallax parallax-1">
+    <div class="container">
+     <h1></h1>
+    </div>
+   </section>
 
+#+END_EXPORT
+
+* You're invited...
+
+Friends,
+
+Join me tomorrow at my place to finally watch the new Bill Burr special.
+
+So many times I've felt tempted to watch it on my own, but decided no, it'll be more fun to watch it with my friends who also love Bill Burr.
+
+Looking forward to seeing you all.
+
+Go fuck yourselves, \\
+Jay \\
+\\
+
+*When*: Friday, March 17, 7:30pm \\
 *Where*: [[https://goo.gl/maps/deaqUaSuWNA2][22 Saint Marks Place Apt. D New York NY 10003]] \\
 *Map*: https://goo.gl/maps/deaqUaSuWNA2 \\
-*When*: 5:00pm today \\
+Bring: Feel free to bring drinks or food if you like \\
+*Friends*: Friends are welcome, especially if they're Bill Burr fans \\
+*RSVP*: [[mailto:jay@newyorkwritersintensive.com][jay@newyorkwritersintensive.com]]
 
-* export settings                                          :ARCHIVE:noexport:
-#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='http://dixit.ca/css/evite.css' />
-#+OPTIONS:   H:6 num:nil toc:nil :nil @:t ::t |:t ^:t -:t f:t *:t <:t
- 
+
+#+BEGIN_EXPORT HTML
+<audio autoplay class="center" src="bill-burr-chimpanzees.mp3" controls preload></audio>
+#+END_EXPORT
+
+
+
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+   </section>
+   <section class="module parallax parallax-2">
+    <div class="container">
+     <h1>Rise</h1>
+    </div>
+   </section>
+#+END_EXPORT
+
+* 2 Lorem Ipsum Dolor
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci
+ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+veritatis, facere aliquid itaque tempore consequatur nihil sint enim
+aliquam id saepe magnam totam repellat placeat a fugit nulla molestias
+voluptas.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum
+distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam
+in repudiandae architecto placeat, illum atque quasi explicabo, culpa,
+molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut
+quaerat, quasi iste voluptate et dolorem atque sed neque voluptates,
+molestias dolor enim!
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit
+tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam,
+molestias nesciunt modi, at debitis maxime sunt et quo quas labore
+perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil
+distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam
+excepturi corporis!
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius
+harum atque unde nihil aut quam provident sunt, iste error vitae
+suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem
+ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae
+impedit officia quis odit rerum sequi, explicabo commodi illum suscipit,
+tempore eum doloremque quae obcaecati tempora quidem neque sapiente
+modi?
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+   </section>
+<section class="module parallax parallax-3">
+  <div class="container">
+   <h1>Calm</h1>
+  </div>
+</div>
+  </section>
+#+END_EXPORT
+
+* 3 Lorem Ipsum Dolor
+   :PROPERTIES:
+   :CUSTOM_ID: lorem-ipsum-dolor-2
+   :END:
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci
+ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+veritatis, facere aliquid itaque tempore consequatur nihil sint enim
+aliquam id saepe magnam totam repellat placeat a fugit nulla molestias
+voluptas.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum
+distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam
+in repudiandae architecto placeat, illum atque quasi explicabo, culpa,
+molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut
+quaerat, quasi iste voluptate et dolorem atque sed neque voluptates,
+molestias dolor enim!
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit
+tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam,
+molestias nesciunt modi, at debitis maxime sunt et quo quas labore
+perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil
+distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam
+excepturi corporis!
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius
+harum atque unde nihil aut quam provident sunt, iste error vitae
+suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem
+ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae
+impedit officia quis odit rerum sequi, explicabo commodi illum suscipit,
+tempore eum doloremque quae obcaecati tempora quidem neque sapiente
+modi?
+
+
+#+BEGIN_EXPORT html
+
+</div>
+</div>
+   </section>
+
+ </main><!-- /main -->
+
+ <footer>
+  <div class="container">
+
+   <!-- <div class="asides clearfix"> -->
+   <!--  <aside> -->
+   <!--   <nav> -->
+   <!--    <ul> -->
+   <!--     <li><a href="http://jaydixit.com/">Welcome</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/tutorials">Tutorials</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/snippets">Snippets</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/articles">Articles</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/resources">Resources</a></li> -->
+   <!--    </ul> -->
+   <!--   </nav> -->
+   <!--  </aside> -->
+   <!--  <aside> -->
+   <!--   <nav> -->
+   <!--    <ul> -->
+   <!--     <li><a href="http://jaydixit.com/archive/">Archive</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/about">About</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/contact">Contact</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/subscribe">Subscribe</a></li> -->
+   <!--    </ul> -->
+   <!--   </nav> -->
+   <!--  </aside> -->
+   <!--  <aside class="logo"> -->
+   <!--   <a href="http://jaydixit.com/"><img alt="Tutorials, Snippets, Resources, and Articles for Web Design and Web Development" onerror="this.src=../assets/images/lighthouse-inverted.jpg" SRC="../assets/images/lighthouse-inverted.jpg"></a> -->
+   <!--  </aside> -->
+   <!-- </div> -->
+
+   <div class="copyright">
+    <small>
+<a href="http://jaydixit.com">jaydixit.com</a>
+    </small>
+   </div>
+  </div>
+ </footer><!-- /footer -->
+
+</div><!-- /#wrapper -->
+#+END_EXPORT
+
+#+HTML_HEAD: <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+#+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
+#+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
+#+HTML_HEAD: <link rel="stylesheet" href="css/parallax-jay.css">
+#+HTML_HEAD: <script src="js/modernizr.js"></script>

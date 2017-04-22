@@ -1,0 +1,14 @@
+div.outline-text-2 p {
+    margin-bottom: 1em;
+}
+
+div.outline-text-2 p strong {
+    font-weight: bold;
+    color: red;
+}
+
+div.outline-text-2 p a {
+    color: #05ADF3;
+}
+
+
