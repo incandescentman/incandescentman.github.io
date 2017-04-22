@@ -38,7 +38,8 @@ section.module.parallax h1, div.outline-2.parallax h1 {
   line-height: 600px;
   font-weight: 700;
   text-align: center;
-text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-weight: normal;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 
