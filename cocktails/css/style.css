@@ -22,8 +22,7 @@ section.module.content, div.outline-2.content {
   padding: 40px 0;
 }
 section.module.parallax, div.outline-2.parallax {
-    min-height: 10em;
-
+    min-height: 8em;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
