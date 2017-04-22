@@ -22,14 +22,14 @@ section.module.content, div.outline-2.content {
   padding: 40px 0;
 }
 section.module.parallax, div.outline-2.parallax {
-  height: 600px;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+    min-height:200px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
 }
 section.module.parallax h1, div.outline-2.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
@@ -77,7 +77,7 @@ div.outline-2 {
 
 
 @media all and (max-width: 750px) {
-    /* CSS rules here for screens lower than 750px */
+    /* CSS rules here target only screens lower than 750px */
 
 
     .container {
@@ -95,3 +95,12 @@ div.outline-2 {
 
 
 
+
+
+  @media all and (min-width: 750px) {
+/* CSS rules here target only screens above 750px */
+section.module.parallax, div.outline-2.parallax {
+  height: 600px;
+}
+
+  }
