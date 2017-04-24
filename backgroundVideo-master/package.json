@@ -1,0 +1,27 @@
+{
+  "name": "background-video",
+  "version": "2.0.1",
+  "description": "backgroundVideo makes your HTML5 `<video>` behave like the CSS property `background-size: cover`, making it fully responsive and scaling to aspect ratio. backgroundVideo also has parallax options.",
+  "main": "dist/backgroundVideo.js",
+  "scripts": {
+    "bablify": "./node_modules/.bin/babel src/backgroundVideo.js > dist/backgroundVideo.js",
+    "uglify": "./node_modules/.bin/uglifyjs dist/backgroundVideo.js -o dist/backgroundVideo.js",
+    "build": "npm run bablify && npm run uglify"
+  },
+  "keywords": [
+    "video",
+    "parallax",
+    "background video",
+    "hero"
+  ],
+  "author": "Sam Linnett <linnettsam@gmail.com> (http://www.samlinnett.com)",
+  "licence": "MIT",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.18.0",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-preset-es2015": "^6.16.0",
+    "uglify-js": "^2.7.3"
+  }
+}

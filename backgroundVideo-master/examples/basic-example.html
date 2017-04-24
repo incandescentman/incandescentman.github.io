@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Background Parallax Video</title>
+  <link href="../css/normalize.css" rel="stylesheet" />
+  <link href="../css/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <main style="height: 1500px">
+    <video class="bv-video"></video>
+  </main>
+  <script src="../dist/backgroundVideo.js"></script>
+  <script>
+    const backgroundVideo = new BackgroundVideo('.bv-video', {
+      src: [
+        '../videos/sample.mp4',
+        '../videos/sample.webm'
+      ],
+      onReady: function () {
+        // Use onReady() to prevent flickers or force loading state
+        const vidParent = document.querySelector(`.${this.bvVideoWrapClass}`);
+        vidParent.classList.add('bv-video-wrap--ready');
+      }
+    });
+  </script>
+</body>
+</html>
