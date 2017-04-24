@@ -109,3 +109,7 @@ Jay
 #+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
 #+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
 #+HTML_HEAD: <script src="js/modernizr.js"></script>
+#+HTML_HEAD: <meta property="og:title" content="Rainy Day Cocktails" />
+#+HTML_HEAD: <meta property="og:description" content="Please join us for a very special evening.">
+#+HTML_HEAD: <meta property="og:image" content="img/1.jpg"/>
+#+HTML_HEAD: <meta property="og:url" content="index.html"/>

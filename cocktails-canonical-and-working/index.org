@@ -96,6 +96,14 @@ modi?
 <section class="module parallax parallax-3">
   <div class="container">
    <h1>Calm</h1>
+<video id="myVideo" controls>
+  <source src="/Users/jay/Downloads/The.Girl.he.Dragon.Tattoo.2011.720p.BluRay.x264.YIFY-researcher.mp4" type="video/mp4">
+  <source src="video.ogg" type="video/ogg">
+  Your browser does not support the video element.
+</video>
+<script>
+  document.getElementById("myVideo").width=document.body.offsetWidth;
+</script>
   </div>
 </div>
   </section>
