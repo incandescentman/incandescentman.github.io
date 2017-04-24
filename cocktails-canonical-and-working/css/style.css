@@ -15,6 +15,7 @@ section.module p, div.outline-2 p {
   font-size: 16px;
   font-weight: 300;
 }
+
 section.module p:last-child, div.outline-2 p:last-child {
   margin-bottom: 0;
 }
@@ -81,6 +82,7 @@ div.outline-2 {
     /* CSS rules here target only screens lower than 750px */
 
 
+
     .container {
     display:none;
     }
@@ -90,6 +92,9 @@ div.outline-2 {
 { display:none;
     }
 
+section.module p, div.outline-2 p {
+  font-size: 120%;
+}
 
 
 }
