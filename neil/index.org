@@ -4,10 +4,10 @@ section.module.parallax-1 {
  background-image: url("img/1.jpg");
 }
 section.module.parallax-2 {
- background-image: url("img/1.jpg");
+ background-image: url("img/2.jpg");
 }
 section.module.parallax-3 {
- background-image: url("img/1.jpg");
+ background-image: url("img/3.jpg");
 }
 </style>
 
@@ -23,16 +23,16 @@ section.module.parallax-3 {
 
 <section class="module parallax parallax-1">
     <div class="container">
-     <h1>Rainy Day Cocktails</h1>
+     <h1>Mezcal and Mirth</h1>
     </div>
    </section>
 
 #+END_EXPORT
 
-* Rainy Day Cocktails
+* A very Neil Dixit birthday
 Friends,
 
-Today is a very auspicious day, for it marks Brinda's triumphant return after almost two weeks away in California. On this serene and rainy spring evening, nothing would make us happier than to drink alcohol in the company of friends. Please join us.
+On Wednesday Neil will turn birthday for the birthdayth time. Please join us in celebrating the very special birthday that is Neil Dixit's birthday. The evening will begin with a mezcal tasting, in which. On this serene and rainy spring evening, nothing would make us happier than to drink alcohol in the company of friends. Please join us.
 
 Looking forward to seeing you all.
 
@@ -42,7 +42,7 @@ Jay
 
 *Where*: [[https://goo.gl/maps/deaqUaSuWNA2][22 Saint Marks Place Apt. D New York NY 10003]] \\
 *Map*: https://goo.gl/maps/deaqUaSuWNA2 \\
-*When*: 7:00pm today \\
+*When*: Wednesday, May 3, 7:00pm \\
 
 
 #+BEGIN_EXPORT HTML
@@ -51,7 +51,7 @@ Jay
    </section>
    <section class="module parallax parallax-2">
     <div class="container">
-     <h1>Rise</h1>
+     <h1>You're invited...</h1>
     </div>
    </section>
 #+END_EXPORT
@@ -95,7 +95,7 @@ modi?
    </section>
 <section class="module parallax parallax-3">
   <div class="container">
-   <h1>Calm</h1>
+   <h1>Until then...</h1>
   </div>
 </div>
   </section>
@@ -192,6 +192,12 @@ modi?
 #+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
 #+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
 #+HTML_HEAD: <script src="js/modernizr.js"></script>
+#+HTML_HEAD: <meta property="og:title" content="Rainy Day Cocktails" />
+#+HTML_HEAD: <meta property="og:description" content="Please join us for a very special evening.">
+#+HTML_HEAD: <meta property="og:image" content="img/1.jpg"/>
+#+HTML_HEAD: <meta property="og:url" content="index.html"/>
+
+
 
 * video :noexport:
 
