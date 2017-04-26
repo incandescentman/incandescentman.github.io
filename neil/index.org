@@ -1,122 +1,207 @@
-#+TITLE: Merry Christmas
-#+AUTHOR: Jay Dixit
+#+BEGIN_EXPORT HTML
+<style>
+section.module.parallax-1 {
+ background-image: url("img/1.jpg");
+}
+section.module.parallax-2 {
+ background-image: url("img/1.jpg");
+}
+section.module.parallax-3 {
+ background-image: url("img/1.jpg");
+}
+</style>
 
-#+BEGIN_HTML
-<div class="initial_prompt">
-<h1 class="begin">Type <strong>T</strong> to begin the slideshow.</h1>
+<div class="wrapper">
+
+<!--   <div class="info-bar"> -->
+<!--   <div class="container"> -->
+<!--    <a class="icon cmn-tut" data-title="Jay Dixit" href="http://jaydixit.com/></a> -->
+
+<!-- <a class="icon cmn-prev" data-title="Pevious Demo Revealing Content Overlays With CSS3 Transitions" href="http://jaydixit.com"></a>  -->
+<!--   </div> -->
+<!--  </div> -->
+
+<section class="module parallax parallax-1">
+    <div class="container">
+     <h1>Rainy Day Cocktails</h1>
+    </div>
+   </section>
+
+#+END_EXPORT
+
+* Rainy Day Cocktails
+Friends,
+
+Today is a very auspicious day, for it marks Brinda's triumphant return after almost two weeks away in California. On this serene and rainy spring evening, nothing would make us happier than to drink alcohol in the company of friends. Please join us.
+
+Looking forward to seeing you all.
+
+Until then!
+
+Jay
+
+*Where*: [[https://goo.gl/maps/deaqUaSuWNA2][22 Saint Marks Place Apt. D New York NY 10003]] \\
+*Map*: https://goo.gl/maps/deaqUaSuWNA2 \\
+*When*: 7:00pm today \\
+
+
+#+BEGIN_EXPORT HTML
 </div>
-#+END_HTML
+</div>
+   </section>
+   <section class="module parallax parallax-2">
+    <div class="container">
+     <h1>Rise</h1>
+    </div>
+   </section>
+#+END_EXPORT
+
+* 2 Lorem Ipsum Dolor
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci
+ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+veritatis, facere aliquid itaque tempore consequatur nihil sint enim
+aliquam id saepe magnam totam repellat placeat a fugit nulla molestias
+voluptas.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum
+distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam
+in repudiandae architecto placeat, illum atque quasi explicabo, culpa,
+molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut
+quaerat, quasi iste voluptate et dolorem atque sed neque voluptates,
+molestias dolor enim!
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit
+tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam,
+molestias nesciunt modi, at debitis maxime sunt et quo quas labore
+perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil
+distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam
+excepturi corporis!
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius
+harum atque unde nihil aut quam provident sunt, iste error vitae
+suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem
+ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae
+impedit officia quis odit rerum sequi, explicabo commodi illum suscipit,
+tempore eum doloremque quae obcaecati tempora quidem neque sapiente
+modi?
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+   </section>
+<section class="module parallax parallax-3">
+  <div class="container">
+   <h1>Calm</h1>
+  </div>
+</div>
+  </section>
+#+END_EXPORT
+
+* 3 Lorem Ipsum Dolor
+   :PROPERTIES:
+   :CUSTOM_ID: lorem-ipsum-dolor-2
+   :END:
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
+consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci
+ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+veritatis, facere aliquid itaque tempore consequatur nihil sint enim
+aliquam id saepe magnam totam repellat placeat a fugit nulla molestias
+voluptas.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cum
+distinctio eum asperiores rem enim fugit eaque voluptas est laboriosam
+in repudiandae architecto placeat, illum atque quasi explicabo, culpa,
+molestias!Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Reprehenderit voluptas, aperiam quae provident, recusandae rem quis. Ut
+quaerat, quasi iste voluptate et dolorem atque sed neque voluptates,
+molestias dolor enim!
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam odit
+tempore, quibusdam impedit deserunt. Natus quisquam, facilis numquam,
+molestias nesciunt modi, at debitis maxime sunt et quo quas labore
+perferendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+Unde delectus laborum doloremque recusandae, debitis maxime a! Nihil
+distinctio ex, cumque tempore ea voluptas omnis odit, quaerat natus nam
+excepturi corporis!
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eius
+harum atque unde nihil aut quam provident sunt, iste error vitae
+suscipit dolores cupiditate totam, eum quae alias! Dicta, nisi.Lorem
+ipsum dolor sit amet, consectetur adipisicing elit. Voluptate beatae
+impedit officia quis odit rerum sequi, explicabo commodi illum suscipit,
+tempore eum doloremque quae obcaecati tempora quidem neque sapiente
+modi?
 
 
-* Merry Christmas!                                                    :slide: 
-*Dear Neil*, \\
-*Merry Christmas!* \\ 
-*Love*, \\ 
-*Sunjay*
+#+BEGIN_EXPORT html
 
-Press right arrow to continue
-→ 
+</div>
+</div>
+   </section>
 
-* Merry Christmas!                                                    :slide: 
-http://www.magic4walls.com/wp-content/uploads/2014/12/christmas-reindeer-Santa-Claus-new-year-2015-vector-New-York-desktop.jpg 
+ </main><!-- /main -->
 
-* Merry Christmas!                                                    :slide:
-http://christmascardsayingss.com/wp-content/uploads/2015/11/Merry-Christmas-Photos.jpg 
+ <footer>
+  <div class="container">
 
-* Merry Christmas!                                                    :slide:
-http://orig13.deviantart.net/7e42/f/2012/346/4/1/rockefeller_center_tree_ny_2012_by_paws720-d5nv51r.jpg 
+   <!-- <div class="asides clearfix"> -->
+   <!--  <aside> -->
+   <!--   <nav> -->
+   <!--    <ul> -->
+   <!--     <li><a href="http://jaydixit.com/">Welcome</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/tutorials">Tutorials</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/snippets">Snippets</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/articles">Articles</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/resources">Resources</a></li> -->
+   <!--    </ul> -->
+   <!--   </nav> -->
+   <!--  </aside> -->
+   <!--  <aside> -->
+   <!--   <nav> -->
+   <!--    <ul> -->
+   <!--     <li><a href="http://jaydixit.com/archive/">Archive</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/about">About</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/contact">Contact</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/subscribe">Subscribe</a></li> -->
+   <!--    </ul> -->
+   <!--   </nav> -->
+   <!--  </aside> -->
+   <!--  <aside class="logo"> -->
+   <!--   <a href="http://jaydixit.com/"><img alt="Tutorials, Snippets, Resources, and Articles for Web Design and Web Development" onerror="this.src=../assets/images/lighthouse-inverted.jpg" SRC="../assets/images/lighthouse-inverted.jpg"></a> -->
+   <!--  </aside> -->
+   <!-- </div> -->
 
-* Merry Christmas!                                                    :slide:
+   <div class="copyright">
+    <small>
+<a href="http://jaydixit.com">jaydixit.com</a>
+    </small>
+   </div>
+  </div>
+ </footer><!-- /footer -->
 
-http://www.christmaseve-2015.com/wp-content/uploads/2015/12/Merry-Christmas-And-Happy-New-Year-Wallpaper-1.jpg 
+</div><!-- /#wrapper -->
+#+END_EXPORT
 
-* Merry Christmas!                                                    :slide:
-http://i.imgur.com/EJq7gSp.jpg 
+#+HTML_HEAD: <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+#+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
+#+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
+#+HTML_HEAD: <script src="js/modernizr.js"></script>
 
+* video :noexport:
 
-* Christmas Present :slide: 
-http://images4.fanpop.com/image/photos/22200000/Christmas-gifts-christmas-gifts-22231228-2048-2048.jpg 
-
-* Shoes :slide: 
-http://www.wufashion.com/wp-content/uploads/2014/12/leather-shoes-5.jpg 
-
-
-* Sneakers                                                            :slide: 
-https://dobetter.files.wordpress.com/2008/06/running-shoes-sm.jpg 
-
-
-* Question and answer :slide:
-
-#+BEGIN_HTML
-<embed src="3.pdf" Width="800px" height="2100px"> 
-#+END_HTML 
-
-
-* Sneaker advice                                                      :slide:
-
-#+BEGIN_HTML
-<embed src="2.pdf" Width="800px" height="2100px"> 
-#+END_HTML 
-
-
-* Merry Christmas *→*                                                 :slide: 
-http://www.magic4walls.com/wp-content/uploads/2014/12/christmas-reindeer-Santa-Claus-new-year-2015-vector-New-York-desktop.jpg 
-
-
-* Killshot:slide:
-
-Introduced some 30 years ago, the original Killshot rolled out as low-profile tennis shoes. To give it our own spin, we updated the upper with sleek leather and suede and cast it in exclusive colors for some serious one-of-a-kind appeal.
-
-- Leather, suede upper. 
-- Cotton laces.
-- Padded footbed.
-- Natural gum rubber sole.
-- Import.
-
-
-* Nike Killshot 2 :slide: 
-file:img/85231_WT0002.jpeg 
-
-
-* Scroll down using trackpad :slide: 
-file:img/85231_WT0002_d1.jpeg 
-
-*→* 
-
-* Click through the gallery below :slide:
-
-#+BEGIN_HTML
-<a class="embedly-card" data-card-key="5a5f778983654664b58c992abf623e2c" data-card-controls="0" data-card-theme="dark" data-card-width="600" href="http://imgur.com/gallery/X5Z5q">Killshot</a>
-<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script> 
-#+END_HTML 
-
-
-** The End                                                            :slide:
-
-* If you don't like them there's also these :slide: 
-http://refreshstyle.com/blog/wp-content/uploads/2015/05/the-drop-date-adidas-stan-smith-otf.jpg 
-
-#+OPTIONS: num:nil toc:nil tags:t
-
-#+TAGS: slide(is )
-
-#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/common.css" />
-#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/screen.css" media="screen" />
-#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/projection.css" media="projection" />
-#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/presenter.css" media="presenter" />
-#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="../assets/org-html-slideshow/src/css/jay-org-slideshow.css"/>
-
-
-
-#+BEGIN_HTML
-<script type="text/javascript" src="../assets/org-html-slideshow/production/org-html-slideshow.js"></script>
-
-<script async src="http://cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script> 
-#+END_HTML
-
-# Local Variables:
-# org-html-head-include-default-style: nil
-# org-html-head-include-scripts: nil
-# buffer-file-coding-system: utf-8-unix
-# End:
-
+#+BEGIN_EXPORT html
+<video id="myVideo" controls autoplay>
+ <source src="/Users/jay/Downloads/The.Girl.he.Dragon.Tattoo.2011.720p.BluRay.x264.YIFY-researcher.mp4" type="video/mp4">
+ <source src="video.ogg" type="video/ogg">
+ Your browser does not support the video element.
+</video>
+<script>
+ document.getElementById("myVideo").width=document.body.offsetWidth;
+</script>
+#+END_EXPORT
