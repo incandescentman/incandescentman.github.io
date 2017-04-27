@@ -45,6 +45,10 @@ Jay
 *The Map*: [[https://goo.gl/maps/HsKu8XZqAFE2][https://goo.gl/maps/HsKu8XZqAFE2]] \\
 *The Time*: Wednesday, May 3, 7:00pm \\
 
+#+BEGIN_EXPORT HTML
+<audio autoplay class="center" src="warm-shadow.mp3" controls preload></audio>
+#+END_EXPORT
+
 
 #+BEGIN_EXPORT HTML
 </div>
@@ -137,6 +141,9 @@ Source: [[https://books.google.com/books?id=0FpnqTGxykIC][Drink: A Cultural Hist
 </div><!-- /#wrapper -->
 #+END_EXPORT
 
+
+
+#+MACRO: event-url neil
 #+HTML_HEAD: <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
 #+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
 #+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
@@ -144,7 +151,7 @@ Source: [[https://books.google.com/books?id=0FpnqTGxykIC][Drink: A Cultural Hist
 #+HTML_HEAD: <meta property="og:title" content="Mezcal and Mirth" />
 #+HTML_HEAD: <meta property="og:description" content="Drinks on a warm spring night">
 #+HTML_HEAD: <meta property="og:image" content="img/2.jpg"/>
-#+HTML_HEAD: <meta property="og:url" content="index.html"/>
+#+HTML_HEAD: <meta property="og:url" content="http://dixit.ca/{{{event-url}}}"/>
 
 
 
