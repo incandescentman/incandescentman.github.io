@@ -1,20 +1,60 @@
 #+BEGIN_EXPORT HTML
 <style>
 section.module.parallax-1 {
- background-image: url("img/1.jpg");
+ background-image: url("exports/1.jpg");
 }
 section.module.parallax-2 {
- background-image: url("img/2.jpg");
+ background-image: url("exports/2.jpg");
 }
 section.module.parallax-3 {
- background-image: url("img/3.jpg");
+ background-image: url("exports/3.jpg");
 }
-section.module.parallax-4{
- background-image: url("img/4.jpg");
+section.module.parallax-1{
+ background-image: url("exports/4.jpg");
 }
 
 section.module.parallax-5{
- background-image: url("img/5.jpg");
+ background-image: url("exports/5.jpg");
+}
+
+section.module.parallax-6{
+ background-image: url("exports/6.jpg");
+}
+
+section.module.parallax-7{
+ background-image: url("exports/7.jpg");
+}
+
+section.module.parallax-8{
+ background-image: url("exports/8.jpg");
+}
+
+section.module.parallax-9{
+ background-image: url("exports/9.jpg");
+}
+
+section.module.parallax-10{
+ background-image: url("exports/10.jpg");
+}
+
+section.module.parallax-11{
+ background-image: url("exports/11.jpg");
+}
+
+section.module.parallax-12{
+ background-image: url("exports/12.jpg");
+}
+
+section.module.parallax-13{
+ background-image: url("exports/13.jpg");
+}
+
+section.module.parallax-14{
+ background-image: url("exports/14.jpg");
+}
+
+section.module.parallax-15{
+ background-image: url("exports/15.jpg");
 }
 
 
@@ -91,6 +131,18 @@ Jay
 </div>
 </div>
   </section>
+<section class="module parallax parallax-2">
+ <div class="container">
+  <h1>Until then...</h1>
+ </div>
+</div>
+ </section>
+#+END_EXPORT
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+  </section>
 <section class="module parallax parallax-4">
  <div class="container">
   <h1>Until then...</h1>
@@ -102,8 +154,136 @@ Jay
 #+BEGIN_EXPORT HTML
 </div>
 </div>
- </section>
+  </section>
 <section class="module parallax parallax-5">
+ <div class="container">
+  <h1>Until then...</h1>
+ </div>
+</div>
+ </section>
+#+END_EXPORT
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+  </section>
+<section class="module parallax parallax-6">
+ <div class="container">
+  <h1>Until then...</h1>
+ </div>
+</div>
+ </section>
+#+END_EXPORT
+
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+  </section>
+<section class="module parallax parallax-7">
+ <div class="container">
+  <h1>Until then...</h1>
+ </div>
+</div>
+ </section>
+#+END_EXPORT
+
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+  </section>
+<section class="module parallax parallax-8">
+ <div class="container">
+  <h1>Until then...</h1>
+ </div>
+</div>
+ </section>
+#+END_EXPORT
+
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+  </section>
+<section class="module parallax parallax-9">
+ <div class="container">
+  <h1>Until then...</h1>
+ </div>
+</div>
+ </section>
+#+END_EXPORT
+
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+  </section>
+<section class="module parallax parallax-10">
+ <div class="container">
+  <h1>Until then...</h1>
+ </div>
+</div>
+ </section>
+#+END_EXPORT
+
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+  </section>
+<section class="module parallax parallax-11">
+ <div class="container">
+  <h1>Until then...</h1>
+ </div>
+</div>
+ </section>
+#+END_EXPORT
+
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+  </section>
+<section class="module parallax parallax-12">
+ <div class="container">
+  <h1>Until then...</h1>
+ </div>
+</div>
+ </section>
+#+END_EXPORT
+
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+  </section>
+<section class="module parallax parallax-13">
+ <div class="container">
+  <h1>Until then...</h1>
+ </div>
+</div>
+ </section>
+#+END_EXPORT
+
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+  </section>
+<section class="module parallax parallax-14">
+ <div class="container">
+  <h1>Until then...</h1>
+ </div>
+</div>
+ </section>
+#+END_EXPORT
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+ </section>
+<section class="module parallax parallax-15">
  <div class="container">
  <h1>Until then...</h1>
  </div>
@@ -170,7 +350,7 @@ Jay
 #+HTML_HEAD: <script src="js/modernizr.js"></script>
 #+HTML_HEAD: <meta property="og:title" content="Mezcal and Mirth" />
 #+HTML_HEAD: <meta property="og:description" content="Drinks on a warm spring night">
-#+HTML_HEAD: <meta property="og:image" content="img/2.jpg"/>
+#+HTML_HEAD: <meta property="og:image" content="exports/2.jpg"/>
 #+HTML_HEAD: <meta property="og:url" content="http://dixit.ca/{{{event-url}}}"/>
 
 
