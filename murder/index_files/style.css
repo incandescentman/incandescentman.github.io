@@ -1,0 +1,208 @@
+.calibre {
+    display: block
+    }
+.calibre1 {
+    display: block;
+    font-size: 1.125em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    text-align: center
+    }
+.calibre2 {
+    display: block;
+    font-size: 1.48148em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.83em;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    text-align: center
+    }
+.calibre3 {
+    display: block;
+    font-size: 1.48148em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.83em;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    text-align: center
+    }
+.calibre4 {
+    display: block;
+    font-size: 1.25926em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    text-align: center
+    }
+.calibre5 {
+    display: block;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: justify;
+    text-indent: 1.5em
+    }
+.calibre6 {
+    font-style: italic
+    }
+.calibre7 {
+    height: auto;
+    max-width: 95%;
+    width: auto
+    }
+.calibre8 {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1.33em;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    text-align: center
+    }
+.calibre9 {
+    display: block;
+    list-style-type: disc;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em
+    }
+.calibre10 {
+    display: list-item
+    }
+.calibre11 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.67em;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    text-align: center
+    }
+.empty-line {
+    display: block;
+    height: 1em;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: justify;
+    text-indent: 1.5em
+    }
+.epub {
+    display: block;
+    font-family: "Font_4c30ab15-40c0-4a17-b1b5-6869aa71fd87";
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0
+    }
+.section_image {
+    display: block;
+    page-break-inside: avoid;
+    text-align: center
+    }
+.title {
+    display: block;
+    font-size: 1.41667em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.83em;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    text-align: center
+    }
+.title1 {
+    display: block;
+    font-size: 1.125em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+    margin-left: 1.5625em;
+    margin-right: 0;
+    margin-top: 1em;
+    page-break-after: avoid;
+    page-break-inside: avoid
+    }
+.titlepage {
+    display: block;
+    page-break-after: always;
+    text-align: center
+    }
+.whitespace {
+    display: block;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-align: center;
+    text-indent: 1.5em
+    }
+
+@page {
+    margin-bottom: 5pt;
+    margin-top: 5pt
+    }
+@font-face {
+    font-style: normal;
+    font-family: Font_4c30ab15-40c0-4a17-b1b5-6869aa71fd87;
+    src: url(OEBPS/fonts/LiberationSerif-Regular.ttf);
+    font-weight: normal
+    }
+@font-face {
+    font-style: italic;
+    font-family: Font_4c30ab15-40c0-4a17-b1b5-6869aa71fd87;
+    src: url(OEBPS/fonts/LiberationSerif-Italic.ttf);
+    font-weight: normal
+    }
+@font-face {
+    font-style: normal;
+    font-family: Font_4c30ab15-40c0-4a17-b1b5-6869aa71fd87;
+    src: url(OEBPS/fonts/LiberationSerif-Bold.ttf);
+    font-weight: bold
+    }
+@font-face {
+    font-style: italic;
+    font-family: Font_4c30ab15-40c0-4a17-b1b5-6869aa71fd87;
+    src: url(OEBPS/fonts/LiberationSerif-BoldItalic.ttf);
+    font-weight: bold
+    }
+@font-face {
+    font-style: italic;
+    font-family: Font_4c30ab15-40c0-4a17-b1b5-6869aa71fd87;
+    src: url(OEBPS/fonts/LiberationSerif-Italic.ttf)
+    }
+
