@@ -1,0 +1,171 @@
+#+BEGIN_EXPORT HTML
+<style>
+section.module.parallax-1 {
+ background-image: url("img/1.jpg");
+}
+section.module.parallax-2 {
+ background-image: url("img/2.jpg");
+}
+section.module.parallax-3 {
+ background-image: url("img/3.jpg");
+}
+section.module.parallax-4 {
+ background-image: url("img/4.jpg");
+}
+
+
+</style>
+
+<div class="wrapper">
+
+<!--   <div class="info-bar"> -->
+<!--   <div class="container"> -->
+<!--    <a class="icon cmn-tut" data-title="Jay Dixit" href="http://jaydixit.com/></a> -->
+
+<!-- <a class="icon cmn-prev" data-title="Pevious Demo Revealing Content Overlays With CSS3 Transitions" href="http://jaydixit.com"></a>  -->
+<!--   </div> -->
+<!--  </div> -->
+
+<section class="module parallax parallax-1">
+    <div class="container">
+     <h2>Moonshine and Vinegar</h2>
+    </div>
+   </section>
+
+#+END_EXPORT
+
+* Summer Birthday Revelry
+Friends,
+
+It's my birthday, and that can mean only one thing: an excuse to gather all my favorite people together to celebrate the start of summer. In the coming months, there will be road trips and picnics, barbecues and beach days, long evenings and warm nights. In anticipation of all this, nothing would make me happier than to revel in the company of my good friends.
+
+My brother Neil has generously offered to host an evening of summer cocktails at his apartment in Williamsburg this Friday. Join us!
+
+*The Thing:* Jay's birthday \\
+*The Place*: [[https://goo.gl/maps/tTtuQYWasfC2][Neil Dixit's apartment]] \\
+*The Address*: 76 N. 7th Street Brooklyn NY, Apt. #2R \\
+*The Time*: Friday June 16, 2017, 7:00pm \\
+
+The house will offer a small menu of gin, mezcal, and moonshine cocktails, as well as some unusual concoctions made with drinking vinegars of wild blueberries, raw honey, lemon, and white pepper. Your own civilian contributions of booze and snacks are likewise welcome but certainly not required. Feel free to invite anyone you like.
+
+Looking forward to seeing you all.
+
+Until then, \\
+Jay
+
+
+#+BEGIN_EXPORT HTML
+<audio autoplay class="center" src="james-blake-retrograde.mp3" controls preload></audio>
+#+END_EXPORT
+
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+   </section>
+   <section class="module parallax parallax-2">
+    <div class="container">
+     <h1>You’re invited…</h1>
+    </div>
+   </section>
+#+END_EXPORT
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+   </section>
+<section class="module parallax parallax-3">
+  <div class="container">
+</div>
+</div>
+  </section>
+#+END_EXPORT
+
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+  </section>
+<section class="module parallax parallax-4">
+ <div class="container">
+<h1>Until then...</h1>
+ </div>
+</div>
+ </section>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+
+</div>
+</div>
+   </section>
+
+ </main><!-- /main -->
+
+ <footer>
+  <div class="container">
+
+   <!-- <div class="asides clearfix"> -->
+   <!--  <aside> -->
+   <!--   <nav> -->
+   <!--    <ul> -->
+   <!--     <li><a href="http://jaydixit.com/">Welcome</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/tutorials">Tutorials</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/snippets">Snippets</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/articles">Articles</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/resources">Resources</a></li> -->
+   <!--    </ul> -->
+   <!--   </nav> -->
+   <!--  </aside> -->
+   <!--  <aside> -->
+   <!--   <nav> -->
+   <!--    <ul> -->
+   <!--     <li><a href="http://jaydixit.com/archive/">Archive</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/about">About</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/contact">Contact</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/subscribe">Subscribe</a></li> -->
+   <!--    </ul> -->
+   <!--   </nav> -->
+   <!--  </aside> -->
+   <!--  <aside class="logo"> -->
+   <!--   <a href="http://jaydixit.com/"><img alt="Tutorials, Snippets, Resources, and Articles for Web Design and Web Development" onerror="this.src=../assets/images/lighthouse-inverted.jpg" SRC="../assets/images/lighthouse-inverted.jpg"></a> -->
+   <!--  </aside> -->
+   <!-- </div> -->
+
+   <div class="copyright">
+    <small>
+<a href="http://jaydixit.com">jaydixit.com</a>
+    </small>
+   </div>
+  </div>
+ </footer><!-- /footer -->
+
+</div><!-- /#wrapper -->
+#+END_EXPORT
+
+
+
+#+MACRO: event-url neil
+#+HTML_HEAD: <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+#+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
+#+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
+#+HTML_HEAD: <script src="js/modernizr.js"></script>
+#+HTML_HEAD: <meta property="og:title" content="Moonshine and Vinegar" />
+#+HTML_HEAD: <meta property="og:description" content="Drinks on a warm spring night">
+#+HTML_HEAD: <meta property="og:image" content="img/3.jpg"/>
+#+HTML_HEAD: <meta property="og:url" content="http://dixit.ca/{{{event-url}}}"/>
+
+
+
+* video :noexport:
+
+#+BEGIN_EXPORT html
+<video id="myVideo" controls autoplay>
+ <source src="/Users/jay/Downloads/The.Girl.he.Dragon.Tattoo.2011.720p.BluRay.x264.YIFY-researcher.mp4" type="video/mp4">
+ <source src="video.ogg" type="video/ogg">
+ Your browser does not support the video element.
+</video>
+<script>
+ document.getElementById("myVideo").width=document.body.offsetWidth;
+</script>
+#+END_EXPORT
