@@ -20,14 +20,19 @@
 }
 .vid-info { width: 33%; margin:auto;background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
 .vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
-.vid-info a { display: block; color: #fff; text-decoration: none; -webkit-transition: .6s background; transition: .6s background; border-bottom: none; }
+.vid-info a { display: inline; color: #fff; text-decoration: none; -webkit-transition: .6s background; transition: .6s background; border-bottom: none; }
 
+.vid-info a:hover {
+color: #FFF;
+    text-shadow: 0 0 150px #FFF, 0 0 60px #FFF, 0 0 10px #FFF; 
+}
 @media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
+  .video-foreground { height: 140%; top: -10%; }
 }
 @media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
+  .video-foreground { width: 140%; }
 }
+
 @media all and (max-width: 600px) {
 .vid-info { width: 90%; padding: .5rem; }
 .vid-info h1 { margin-bottom: .2rem; }
@@ -39,7 +44,7 @@
 @media (max-width: 850px) {
     iframe {display:none;}
 div.video-background {
-    background-image: url("../natbg.com-nature-dark-stormy-night-horses-nightmare-firefox-persona-grass-storm-clouds-sky-horse-rocks-lightning-1080p-wallpaper.jpg") ;
+    background-image: url("best-ghost-stories-bizarre-stories.jpg") ;
 
    -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -48,3 +53,10 @@ div.video-background {
 
 
 }
+
+
+label.add-to-calendar-checkbox:hover {
+    color: #FFF;
+    text-shadow: 0 0 150px #FFF, 0 0 60px #FFF, 0 0 10px #FFF;
+}
+
