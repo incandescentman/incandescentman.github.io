@@ -18,9 +18,9 @@
 	top: 0;
 	color: #fff;
 }
-.vid-info { width: 33%; margin:auto;background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info { width: 33%; margin:auto;background: rgba(0,0,0,0.5); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
 .vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
-.vid-info a { display: block; color: #fff; text-decoration: none; -webkit-transition: .6s background; transition: .6s background; border-bottom: none; }
+.vid-info a { display: inline; color: #fff; text-decoration: none; -webkit-transition: .6s background; transition: .6s background; border-bottom: none; }
 
 @media (min-aspect-ratio: 16/9) {
   .video-foreground { height: 300%; top: -100%; }
@@ -39,12 +39,15 @@
 @media (max-width: 850px) {
     iframe {display:none;}
 div.video-background {
-    background-image: url("../natbg.com-nature-dark-stormy-night-horses-nightmare-firefox-persona-grass-storm-clouds-sky-horse-rocks-lightning-1080p-wallpaper.jpg") ;
+    background-image: url("../new-years-background-8905.jpeg") ;
 
    -webkit-background-size: cover;
    -moz-background-size: cover;
    background-size: cover;
 }
 
+
+audio
+{display:none;}
 
 }
