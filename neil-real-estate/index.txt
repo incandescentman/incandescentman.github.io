@@ -259,9 +259,7 @@
 
 * export settings                     :ARCHIVE:noexport:
 
-#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='/Users/jay/Dropbox/web-design/custom-css/iphone-css-better.css' />
-
-#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='/Users/jay/Dropbox/web-design/custom-css/iphone-css-better.css' />
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='iphone-css-better.css' />
 
 #+OPTIONS:  H:6 num:nil toc:nil :nil @:t ::t |:t ^:t -:t f:t *:t <:t
 
