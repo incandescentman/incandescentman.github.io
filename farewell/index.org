@@ -147,9 +147,9 @@ Jay
 #+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
 #+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
 #+HTML_HEAD: <script src="js/modernizr.js"></script>
-#+HTML_HEAD: <meta property="og:title" content="Moonshine and Vinegar" />
+#+HTML_HEAD: <meta property="og:title" content="The Last Minute Last Hoorah" />
 #+HTML_HEAD: <meta property="og:description" content="Drinks on a warm spring night">
-#+HTML_HEAD: <meta property="og:image" content="img/3.jpg"/>
+#+HTML_HEAD: <meta property="og:image" content="img/1.jpg"/>
 #+HTML_HEAD: <meta property="og:url" content="http://dixit.ca/{{{event-url}}}"/>
 
 
