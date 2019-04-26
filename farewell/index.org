@@ -45,14 +45,18 @@ section.module.parallax-4 {
 
 Friends,
 
-After four amazing years on Saint Marks Place, it's time for me to say goodbye. Come raise a glass with me and help me bid farewell as I begin a new chapter... 
+After four amazing years on Saint Marks Place, it's time to say goodbye. Come help me bid farewell as we clear out my liquor cabinet and toast the end of an era. 
 
-Looking forward to seeing you all!
+Friends welcome. Looking forward to seeing you all!
 
 Jay
 
 
 #+BEGIN_EXPORT HTML
+<BR>
+<center>
+<audio autoplay class="center" src="meetagain.mp3" controls preload></audio> 
+<center> 
 #+END_EXPORT
 
 
@@ -62,7 +66,7 @@ Jay
    </section>
    <section class="module parallax parallax-2">
     <div class="container">
-     <h1>You’re invited…</h1>
+     <h1>Farewell</h1>
     </div>
    </section>
 #+END_EXPORT
