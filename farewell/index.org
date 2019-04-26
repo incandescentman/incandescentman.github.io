@@ -47,7 +47,9 @@ Friends,
 
 After four amazing years on Saint Marks Place, it's time to say goodbye. Come help me bid farewell as we clear out my liquor cabinet and toast the end of an era. 
 
-Friends are welcome. Looking forward to seeing you all!
+Friends welcome. 
+
+Looking forward to seeing you all!
 
 Jay
 
@@ -55,7 +57,7 @@ Jay
 #+BEGIN_EXPORT HTML
 <BR>
 <center>
-<audio autoplay class="center" src="meetagain.mp3" controls preload></audio> 
+<audio class="center" src="meetagain.mp3" controls preload></audio> 
 <center> 
 #+END_EXPORT
 
