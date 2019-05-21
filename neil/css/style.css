@@ -31,11 +31,23 @@ section.module.parallax, div.outline-2.parallax, section.module.parallax.paralla
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
+
 }
 
 section.module.parallax h1, div.outline-2.parallax h1 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  font-weight: normal;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+section.module.parallax h2, div.outline-2.parallax h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 100px;
   line-height: 600px;
   font-weight: 700;
   text-align: center;
