@@ -1,0 +1,115 @@
+#+BEGIN_EXPORT HTML
+<style>
+section.module.parallax-1 {
+ background-image: url("img/1.jpg");
+}
+section.module.parallax-2 {
+ background-image: url("img/2.jpg");
+}
+section.module.parallax-3 {
+ background-image: url("img/3.jpg");
+}
+</style>
+
+<div class="wrapper">
+
+<!--   <div class="info-bar"> -->
+<!--   <div class="container"> -->
+<!--    <a class="icon cmn-tut" data-title="Jay Dixit" href="http://jaydixit.com/></a> -->
+
+<!-- <a class="icon cmn-prev" data-title="Previous Demo Revealing Content Overlays With CSS3 Transitions" href="http://jaydixit.com"></a>  -->
+<!--   </div> -->
+<!--  </div> -->
+
+<section class="module parallax parallax-1">
+    <div class="container">
+     <h1>Movie Night</h1>
+    </div>
+   </section>
+
+#+END_EXPORT
+
+* Movie Night 
+Friends,
+
+Today is a very auspicious day, for it marks Brinda's triumphant return after almost two weeks in California. On this serene and rainy April day, nothing would make us happier than to drink alcohol in the company of good friends. So please join us this evening in raising a glass to friendship, good cheer, and the soft rains of spring.
+
+Looking forward to seeing you all.
+
+Until then!
+
+Jay
+
+*Where*: 166 N 7th Street Brooklyn NY 11211, Apt. 3 \\
+*map*: https://goo.gl/maps/4doG7fg2aeq6Vj5t7 \\
+*When*: 7:00pm today \\
+
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+   </section>
+   <section class="module parallax parallax-2">
+    <div class="container">
+     <h1>Until then...</h1>
+    </div>
+   </section>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+
+</div>
+</div>
+   </section>
+
+ </main><!-- /main -->
+
+ <footer>
+  <div class="container">
+
+   <!-- <div class="asides clearfix"> -->
+   <!--  <aside> -->
+   <!--   <nav> -->
+   <!--    <ul> -->
+   <!--     <li><a href="http://jaydixit.com/">Welcome</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/tutorials">Tutorials</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/snippets">Snippets</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/articles">Articles</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/category/resources">Resources</a></li> -->
+   <!--    </ul> -->
+   <!--   </nav> -->
+   <!--  </aside> -->
+   <!--  <aside> -->
+   <!--   <nav> -->
+   <!--    <ul> -->
+   <!--     <li><a href="http://jaydixit.com/archive/">Archive</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/about">About</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/contact">Contact</a></li> -->
+   <!--     <li><a href="http://jaydixit.com/subscribe">Subscribe</a></li> -->
+   <!--    </ul> -->
+   <!--   </nav> -->
+   <!--  </aside> -->
+   <!--  <aside class="logo"> -->
+   <!--   <a href="http://jaydixit.com/"><img alt="Tutorials, Snippets, Resources, and Articles for Web Design and Web Development" onerror="this.src=../assets/images/lighthouse-inverted.jpg" SRC="../assets/images/lighthouse-inverted.jpg"></a> -->
+   <!--  </aside> -->
+   <!-- </div> -->
+
+   <div class="copyright">
+    <small>
+<a href="http://jaydixit.com">jaydixit.com</a>
+    </small>
+   </div>
+  </div>
+ </footer><!-- /footer -->
+
+</div><!-- /#wrapper -->
+#+END_EXPORT
+
+#+HTML_HEAD: <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+#+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
+#+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
+#+HTML_HEAD: <script src="js/modernizr.js"></script>
+#+HTML_HEAD: <meta property="og:title" content="Movie Night" />
+#+HTML_HEAD: <meta property="og:description" content="Please join us for a very special evening.">
+#+HTML_HEAD: <meta property="og:image" content="img/1.jpg"/>
+#+HTML_HEAD: <meta property="og:url" content="index.html"/>
