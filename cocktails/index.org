@@ -17,7 +17,7 @@ section.module.parallax-3 {
 <!--   <div class="container"> -->
 <!--    <a class="icon cmn-tut" data-title="Jay Dixit" href="http://jaydixit.com/></a> -->
 
-<!-- <a class="icon cmn-prev" data-title="Pevious Demo Revealing Content Overlays With CSS3 Transitions" href="http://jaydixit.com"></a>  -->
+<!-- <a class="icon cmn-prev" data-title="Jay Dixit" href="http://jaydixit.com"></a>  -->
 <!--   </div> -->
 <!--  </div> -->
 
@@ -34,7 +34,7 @@ As we approach the imminent end of summer and the approach of fall, I'm inviting
 
 I'll be mixing 18 batches of Zapatero, a boozy concoction of mezcal, bourbon, and Aztec chocolate bitters. If I can source a bottle of Giffard banana liqueur, I'll may also attempt a scotch cocktail I had once called Les Fleurs du Mal. Feel free to contribute wine, beer, or edible provisions of your own, but let that be not an obligation but a possibility.
 
-If the air is warm and the night invites us, we may even ascend to the rooftop to admire the skyline and celebrate old friends and new beginnings.
+If the air is warm and the night inviting, we may even ascend to the rooftop to admire the skyline and celebrate old friends and new beginnings.
 
 RSVP if you would and of course feel free to bring friends.
 
@@ -44,7 +44,7 @@ Jay
 
 *Where*: [[https://goo.gl/maps/S7hov7YT44mbsjKD8][166 North 7th Street Apt. 3 Brooklyn NY 11211]] \\
 *Map*: [[https://goo.gl/maps/S7hov7YT44mbsjKD8][https://goo.gl/maps/S7hov7YT44mbsjKD8]] \\
-*When*: Friday July 15, 7:00pm \\
+*When*: Friday September 30, 7:00pm \\
 
 
 #+BEGIN_EXPORT HTML
