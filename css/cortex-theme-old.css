@@ -372,6 +372,27 @@ div.outline-text-7 {
 }
 
 
+
+
+
+div dl {
+    position: left;
+}
+
+
+h1.title {
+  text-align:left;
+}
+
+
+div.outline-text-3
+{margin-left: 2.6em;}
+
+
+
+
+/* Make the body a nice central block */
+
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (min-width: 900px) {
   body {
@@ -385,15 +406,3 @@ div.outline-text-7 {
   }
 }
 
-
-
-
-
-Div dl {
-    position: left;
-}
-
-
-h1.title {
-  text-align:left;
-}
