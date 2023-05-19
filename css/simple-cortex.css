@@ -792,3 +792,6 @@ h1:first-letter, h2:first-letter, h3:first-letter, h4:first-letter, h5:first-let
 text-transform:capitalize;
 }
 
+div dl dt {
+  font-weight:700;
+}
