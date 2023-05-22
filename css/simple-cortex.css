@@ -696,7 +696,7 @@ dialog::backdrop {
 
 /* add the hierarchy*/
 div.outline-text-3 {
-    margin-left:0.2em
+    margin-left:1em;
 }
 
 div.outline-text-4{
@@ -794,4 +794,18 @@ text-transform:capitalize;
 
 div dl dt {
   font-weight:700;
+}
+
+
+pre, blockquote {
+    border-radius: 8px;
+    padding: 0 1em 1em;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+div.outline-text-3 {
+    margin-left:5em;
 }
