@@ -809,3 +809,34 @@ pre, blockquote {
 div.outline-text-3 {
     margin-left:5em;
 }
+
+
+
+li > p, li > ul, li > .inlinetask, li > dl {
+    margin-left: 0px;
+}
+
+dd > p, dd > ul, dd > .inlinetask, dd > dl {
+    margin-left: 0px;
+}
+
+
+div dl dt {
+  font-size:125%;
+
+}
+
+div dl dt::first-letter
+{
+  text-transform: capitalize;
+}
+
+
+div blockquote p {
+  font-size:200%;
+  margin:0;
+}
+
+h2 {
+  line-height: 1;
+}
