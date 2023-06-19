@@ -1,6 +1,6 @@
-[[/Users/jay/Dropbox/github/incandescentman.github.io/midsummer/img/1_.png]]
+[[./img/1_.png]]
 
-[[/Users/jay/Dropbox/github/incandescentman.github.io/midsummer/img/1.png]]
+[[./img/1.png]]
 
 
 * A Midsummer Birthday
@@ -21,5 +21,5 @@ Jay
 *Where*: 630 Union St Apt 1F, Brooklyn NY 11215 \\
 *Map*: https://goo.gl/maps/NWKbxJyksZmAazrw6 \\
 
-[[/Users/jay/Dropbox/github/incandescentman.github.io/midsummer/img/3.png]]
+[[./img/3.png]]
 
