@@ -23,3 +23,7 @@ Jay
 
 [[./img/3.png]]
 
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='/Users/jay/Dropbox/github/incandescentman.github.io/css/neocortex.css' #+HTML_HEAD: <meta property="og:title" content="A Midsummer Birthday" />
+#+HTML_HEAD: <meta property="og:description" content="Please join us for a very special evening.">
+#+HTML_HEAD: <meta property="og:image" content="img/1.jpg"/>
+#+HTML_HEAD: <meta property="og:url" content="index.html"/>
