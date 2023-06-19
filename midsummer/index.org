@@ -24,7 +24,7 @@ Jay
 
 [[./img/3.png]]
 
-
+#+TITLE: Midsummer Birthday Revelry
 #+HTML_HEAD: <title>A Midsummer Birthday</title>
 #+HTML_HEAD: <link rel='stylesheet' type='text/css' href='https://incandescentman.github.io/css/neocortex.css'>
 #+HTML_HEAD: <meta property="og:title" content="A Midsummer Birthday" />
