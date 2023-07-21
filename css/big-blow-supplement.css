@@ -1,0 +1,112 @@
+
+
+h4, h5 {
+  font-weight:normal;
+  font-family:Arial, Helvetica, sans-serif
+}
+h3 {font-size:100%;
+font-family:Arial, Helvetica, sans-serif}
+
+h1,h2 {
+font-family:Arial, Helvetica, sans-serif}
+
+a.ui-tabs-anchor {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+span.todo.REJECTED {
+      background-color: #FED5D7;
+    border: 1px solid #FC5158;
+    color: #FC5158;
+}
+
+
+span.done.DONE {
+      color: #FFF;
+      font-weight:bold;
+background-color: #00C310;
+}
+
+
+span.done.REJECTED, span.done.MISSED {
+
+  background-color: #FED5D7;
+  border: 1px solid #FC5158;
+  color: #FC5158;
+
+}
+
+
+.DONEheader {
+text-decoration: none;
+
+}
+
+span.done.DONE:before {
+       content: "✅";
+          margin-left:-2.0em;
+    padding-right:1em;
+}
+
+
+
+
+span.done.REJECTED:before, span.done.MISSED:before {
+       content: "❌";
+          margin-left:-2.0em;
+    padding-right:1em;
+}
+
+
+span.todo.TODO:before {
+    content: "🔲";
+          margin-left:-2.0em;
+    padding-right:1em;
+}
+
+span.todo.QUESTION {
+  color:#D8000C;
+}
+
+span.todo.QUESTION:before {
+       content: "❓";
+          margin-left:-2.0em;
+    padding-right:1em;
+}
+
+
+span.todo.MAYBE {
+  color:#D8000C;
+}
+
+span.todo.MAYBE:before {
+       content: "❓";
+          margin-left:-2.0em;
+    padding-right:1em;
+}
+
+
+
+
+span.ellipsis {
+  color:red;
+}
+
+span.ellipsis:before {
+ content: "More...";
+}
+
+div div p {
+  color:#000;
+}
+
+
+
+li.off {
+  list-style-type: none
+}
+
+li.on {
+  list-style-type: none
+}
