@@ -26,6 +26,7 @@ span.done.DONE {
       color: #FFF;
       font-weight:bold;
 background-color: #00C310;
+
 }
 
 
@@ -81,7 +82,7 @@ span.todo.MAYBE {
 }
 
 span.todo.MAYBE:before {
-       content: "❓";
+       content: "🤔";
           margin-left:-2.0em;
     padding-right:1em;
 }
