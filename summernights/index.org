@@ -1,0 +1,34 @@
+\\
+[[./img/1.png]]
+* Impromptu Wine and Cheese Summer Soirée 🍷🧀💌
+Friends,
+
+In advance of my departure for Rome, I'm putting together an impromptu wine and cheese soirée tonight at 8:00pm.
+
+For the evening's central offering, I've chosen a Grüner Veltliner---a captivating, dry white wine hailing from Austria. A selection of red wines will also be available, each chosen to harmonize with a variety of cheeses. As for a cocktail, classic Negronis will be served, offering a balance to both wine and cheese.
+
+Please feel free to extend the invitation to friends and loved ones, and feel free to bring contributory wines or cheese of your own.
+
+Let's raise a glass to the end of summer!
+
+Until then! \\
+Sunjay
+
+*When*: Today, 8:00pm \\
+*Where*: 166 North 7th Street Apt. 3 Brooklyn NY 11211 \\
+# *Map*: https://goo.gl/maps/NWKbxJyksZmAazrw6 \\
+*RSVP*: [[mailto:jay@jaydixit.com][jay@jaydixit.com]] or (646) 355-8001
+
+[[./img/2.png]]
+
+[[./img/3.png]]
+
+[[./img/5.png]]
+
+#+TITLE: Late Summer Wine and Cheese Soirée 🍷🧀💌
+#+HTML_HEAD: <title>Late Summer Wine and Cheese Soirée</title>
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='https://incandescentman.github.io/css/neocortex.css'>
+#+HTML_HEAD: <meta property="og:title" content="Late Summer Wine and Cheese Soirée" />
+#+HTML_HEAD: <meta property="og:description" content="Please join us for a very special evening.">
+#+HTML_HEAD: <meta property="og:image" content="./img/1_.png"/>
+#+HTML_HEAD: <meta property="og:url" content="index.html"/>

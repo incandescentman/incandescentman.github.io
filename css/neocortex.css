@@ -844,3 +844,8 @@ h2 {
 h1.title {
   display:none;
 }
+
+
+pre.example {
+  padding-top:1em
+}
