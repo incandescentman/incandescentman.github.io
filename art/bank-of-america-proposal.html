@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Proposal</title>
+<meta name="author" content="Jay Dixit" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+/* Global variables. */
+:root,
+::backdrop {
+  /* Set sans-serif & mono fonts */
+  --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+    "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
+    "Helvetica Neue", sans-serif;
+  --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  --standard-border-radius: 5px;
+
+  /* Default (light) theme */
+  --bg: #fff;
+  --accent-bg: #f5f7ff;
+  --text: #212121;
+  --text-light: #585858;
+  --border: #898EA4;
+  --accent: #0d47a1;
+  --code: #d81b60;
+  --preformatted: #444;
+  --marked: #ffdd33;
+  --disabled: #efefef;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root,
+  ::backdrop {
+    color-scheme: dark;
+    --bg: #212121;
+    --accent-bg: #2b2b2b;
+    --text: #dcdcdc;
+    --text-light: #ababab;
+    --accent: #ffb300;
+    --code: #f06292;
+    --preformatted: #ccc;
+    --disabled: #111;
+  }
+  /* Add a bit of transparency so light media isn't so glaring in dark mode */
+  img,
+  video {
+    opacity: 0.8;
+  }
+}
+
+/* Reset box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Reset default appearance */
+textarea,
+select,
+input,
+progress {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+html {
+  /* Set the font globally */
+  font-family: var(--sans-font);
+  scroll-behavior: smooth;
+}
+
+/* Make the body a nice central block */
+body {
+  color: var(--text);
+  background-color: var(--bg);
+  font-size: 1.15rem;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr min(45rem, 90%) 1fr;
+  margin: 0;
+}
+body > * {
+  grid-column: 2;
+}
+
+/* Make the header bg full width, but the content inline with body */
+body > header {
+  background-color: var(--accent-bg);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  padding: 0 0.5rem 2rem 0.5rem;
+  grid-column: 1 / -1;
+}
+
+body > header h1 {
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+
+body > header p {
+  max-width: 40rem;
+  margin: 1rem auto;
+}
+
+/* Add a little padding to ensure spacing is correct between content and header > nav */
+main {
+  padding-top: 1.5rem;
+}
+
+body > footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem 1.5rem 1rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+/* Format headers */
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 0.96rem;
+}
+
+/* Prevent long strings from overflowing container */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Fix line height when title wraps */
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+/* Reduce header size on mobile */
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Format links & buttons */
+a,
+a:visited {
+  color: var(--accent);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button,
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+label[type="button"] {
+  border: none;
+  border-radius: var(--standard-border-radius);
+  background-color: var(--accent);
+  font-size: 1rem;
+  color: var(--bg);
+  padding: 0.7rem 0.9rem;
+  margin: 0.5rem 0;
+
+  /* Ensure buttons use correct font */
+  font-family: inherit;
+}
+
+button[disabled],
+[role="button"][aria-disabled="true"],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"][disabled],
+select[disabled] {
+  cursor: not-allowed;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled,
+button[disabled] {
+  cursor: not-allowed;
+  background-color: var(--disabled);
+  color: var(--text-light)
+}
+
+input[type="range"] {
+  padding: 0;
+}
+
+/* Set the cursor to '?' on an abbreviation and style the abbreviation to show that there is more information underneath */
+abbr[title] {
+  cursor: help;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+button:enabled:hover,
+[role="button"]:not([aria-disabled="true"]):hover,
+input[type="submit"]:enabled:hover,
+input[type="reset"]:enabled:hover,
+input[type="button"]:enabled:hover,
+label[type="button"]:hover {
+  filter: brightness(1.4);
+  cursor: pointer;
+}
+
+button:focus-visible:where(:enabled, [role="button"]:not([aria-disabled="true"])),
+input:enabled:focus-visible:where(
+  [type="submit"],
+  [type="reset"],
+  [type="button"]
+) {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* Format navigation */
+header > nav {
+  font-size: 1rem;
+  line-height: 2;
+  padding: 1rem 0 0 0;
+}
+
+/* Use flexbox to allow items to wrap, as needed */
+header > nav ul,
+header > nav ol {
+  align-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* List items are inline elements, make them behave more like blocks */
+header > nav ul li,
+header > nav ol li {
+  display: inline-block;
+}
+
+header > nav a,
+header > nav a:visited {
+  margin: 0 0.5rem 1rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--standard-border-radius);
+  color: var(--text);
+  display: inline-block;
+  padding: 0.1rem 1rem;
+  text-decoration: none;
+}
+
+header > nav a:hover,
+header > nav a.current,
+header > nav a[aria-current="page"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  cursor: pointer;
+}
+
+/* Reduce nav side on mobile */
+@media only screen and (max-width: 720px) {
+  header > nav a {
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    line-height: 1;
+  }
+}
+
+/* Consolidate box styling */
+aside, details, pre, progress {
+  background-color: var(--accent-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--standard-border-radius);
+  margin-bottom: 1rem;
+}
+
+aside {
+  font-size: 1rem;
+  width: 30%;
+  padding: 0 15px;
+  margin-inline-start: 15px;
+  float: right;
+}
+*[dir="rtl"] aside {
+  float: left;
+}
+
+/* Make aside full-width on mobile */
+@media only screen and (max-width: 720px) {
+  aside {
+    width: 100%;
+    float: none;
+    margin-inline-start: 0;
+  }
+}
+
+article, fieldset, dialog {
+  border: 1px solid var(--border);
+  padding: 1rem;
+  border-radius: var(--standard-border-radius);
+  margin-bottom: 1rem;
+}
+
+article h2:first-child,
+section h2:first-child {
+  margin-top: 1rem;
+}
+
+section {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 1rem;
+  margin: 3rem 0;
+}
+
+/* Don't double separators when chaining sections */
+section + section,
+section:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+section:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+details {
+  padding: 0.7rem 1rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.7rem 1rem;
+  margin: -0.7rem -1rem;
+  word-break: break-all;
+}
+
+details[open] > summary + * {
+  margin-top: 0;
+}
+
+details[open] > summary {
+  margin-bottom: 0.5rem;
+}
+
+details[open] > :last-child {
+  margin-bottom: 0;
+}
+
+/* Format tables */
+table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+td,
+th {
+  border: 1px solid var(--border);
+  text-align: start;
+  padding: 0.5rem;
+}
+
+th {
+  background-color: var(--accent-bg);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  /* Set every other cell slightly darker. Improves readability. */
+  background-color: var(--accent-bg);
+}
+
+table caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Format forms */
+textarea,
+select,
+input {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--standard-border-radius);
+  box-shadow: none;
+  max-width: 100%;
+  display: inline-block;
+}
+label {
+  display: block;
+}
+textarea:not([cols]) {
+  width: 100%;
+}
+
+/* Add arrow to drop-down */
+select:not([multiple]) {
+  background-image: linear-gradient(45deg, transparent 49%, var(--text) 51%),
+    linear-gradient(135deg, var(--text) 51%, transparent 49%);
+  background-position: calc(100% - 15px), calc(100% - 10px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-inline-end: 25px;
+}
+*[dir="rtl"] select:not([multiple]) {
+  background-position: 10px, 15px;
+}
+
+/* checkbox and radio button style */
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: middle;
+  position: relative;
+  width: min-content;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+}
+
+input[type="radio"] {
+  border-radius: 100%;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: var(--accent);
+}
+
+input[type="checkbox"]:checked::after {
+  /* Creates a rectangle with colored right and bottom borders which is rotated to look like a check mark */
+  content: " ";
+  width: 0.18em;
+  height: 0.32em;
+  border-radius: 0;
+  position: absolute;
+  top: 0.05em;
+  left: 0.17em;
+  background-color: transparent;
+  border-right: solid var(--bg) 0.08em;
+  border-bottom: solid var(--bg) 0.08em;
+  font-size: 1.8em;
+  transform: rotate(45deg);
+}
+input[type="radio"]:checked::after {
+  /* creates a colored circle for the checked radio button  */
+  content: " ";
+  width: 0.25em;
+  height: 0.25em;
+  border-radius: 100%;
+  position: absolute;
+  top: 0.125em;
+  background-color: var(--bg);
+  left: 0.125em;
+  font-size: 32px;
+}
+
+/* Makes input fields wider on smaller screens */
+@media only screen and (max-width: 720px) {
+  textarea,
+  select,
+  input {
+    width: 100%;
+  }
+}
+
+/* Set a height for color input */
+input[type="color"] {
+  height: 2.5rem;
+  padding:  0.2rem;
+}
+
+/* do not show border around file selector button */
+input[type="file"] {
+  border: 0;
+}
+
+/* Misc body elements */
+hr {
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: 1rem auto;
+}
+
+mark {
+  padding: 2px 5px;
+  border-radius: var(--standard-border-radius);
+  background-color: var(--marked);
+  color: black;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--standard-border-radius);
+}
+
+figure {
+  margin: 0;
+  display: block;
+  overflow-x: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  margin-inline-start: 2rem;
+  margin-inline-end: 0;
+  margin-block: 2rem;
+  padding: 0.4rem 0.8rem;
+  border-inline-start: 0.35rem solid var(--accent);
+  color: var(--text-light);
+  font-style: italic;
+}
+
+cite {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: normal;
+}
+
+dt {
+    color: var(--text-light);
+}
+
+/* Use mono font for code elements */
+code,
+pre,
+pre span,
+kbd,
+samp {
+  font-family: var(--mono-font);
+  color: var(--code);
+}
+
+kbd {
+  color: var(--preformatted);
+  border: 1px solid var(--preformatted);
+  border-bottom: 3px solid var(--preformatted);
+  border-radius: var(--standard-border-radius);
+  padding: 0.1rem 0.4rem;
+}
+
+pre {
+  padding: 1rem 1.4rem;
+  max-width: 100%;
+  overflow: auto;
+  color: var(--preformatted);
+}
+
+/* Fix embedded code within pre */
+pre code {
+  color: var(--preformatted);
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Progress bars */
+/* Declarations are repeated because you */
+/* cannot combine vendor-specific selectors */
+progress {
+  width: 100%;
+}
+
+progress:indeterminate {
+  background-color: var(--accent-bg);
+}
+
+progress::-webkit-progress-bar {
+  border-radius: var(--standard-border-radius);
+  background-color: var(--accent-bg);
+}
+
+progress::-webkit-progress-value {
+  border-radius: var(--standard-border-radius);
+  background-color: var(--accent);
+}
+
+progress::-moz-progress-bar {
+  border-radius: var(--standard-border-radius);
+  background-color: var(--accent);
+  transition-property: width;
+  transition-duration: 0.3s;
+}
+
+progress:indeterminate::-moz-progress-bar {
+  background-color: var(--accent-bg);
+}
+
+dialog {
+  max-width: 40rem;
+  margin: auto;
+}
+
+dialog::backdrop {
+  background-color: var(--bg);
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 720px) {
+  dialog {
+    max-width: 100%;
+    margin: auto 1em;
+  }
+}
+
+/* Classes for buttons and notices */
+.button,
+.button:visited {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  background: var(--accent);
+  font-size: 1rem;
+  color: var(--bg);
+  padding: 0.7rem 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.button:hover,
+.button:focus {
+  filter: brightness(1.4);
+  cursor: pointer;
+}
+
+.notice {
+  background: var(--accent-bg);
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* add the hierarchy*/
+div.outline-text-3 {
+    margin-left:1em;
+}
+
+div.outline-text-4{
+    margin-left:0.2em
+
+}
+
+div.outline-text-5{
+    margin-left:3em
+}
+
+div.outline-text-6 {
+    margin-left:6em
+}
+
+
+div.outline-text-7 {
+    margin-left:9em
+}
+
+
+
+
+
+div dl dt::after {
+ content: ":";}
+
+
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 4em; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;   margin-bottom: 16px}
+
+
+
+h2
+{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size:3em;
+    line-height: 32px;
+    padding-bottom:0.2em;
+    margin-right:auto ;
+    margin-top:1em;
+  margin-bottom: 0.5em;
+  font-weight:bold;
+}
+
+
+h3 {
+  font-size: 1.3em;
+  margin-left:2em;
+}
+
+h4 {
+  font-size: 1.1em;
+    margin-left: 0.2em;
+}
+
+
+h5
+{
+margin-left:3em
+}
+
+h6
+{
+    margin-left:6em ;
+      font-size: 1em;
+}
+
+h7
+{
+    margin-left:9em ;
+      font-size: 1em;
+      font-weight:bold;
+}
+
+
+li ul li {
+  margin:0;
+}
+
+
+
+h1.title {
+  text-align:left;
+}
+
+
+div.outline-text-3
+{margin-left: 2.6em;}
+
+h1:first-letter, h2:first-letter, h3:first-letter, h4:first-letter, h5:first-letter
+{
+text-transform:capitalize;
+}
+
+div dl dt {
+  font-weight:700;
+}
+
+
+pre, blockquote {
+    border-radius: 8px;
+    padding: 0 1em 1em;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+div.outline-text-3 {
+    margin-left:5em;
+}
+
+
+
+li > p, li > ul, li > .inlinetask, li > dl {
+    margin-left: 0px;
+}
+
+dd > p, dd > ul, dd > .inlinetask, dd > dl {
+    margin-left: 0px;
+}
+
+
+div dl dt {
+  font-size:125%;
+
+}
+
+div dl dt::first-letter
+{
+  text-transform: capitalize;
+}
+
+
+div blockquote p {
+  font-size:200%;
+  margin:0;
+}
+
+h2 {
+  line-height: 1;
+}
+
+
+h1.title {
+  display:none;
+}
+
+
+pre.example {
+  padding-top:1em
+}
+/*]]>*/-->
+</style>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">Proposal</h1>
+</header><nav id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org114a54a">Objective</a></li>
+<li><a href="#org5d7dcad">The Power of Storytelling</a>
+<ul>
+<li><a href="#orgafb92f5">The Challenge: Navigating the Complexity of Financial Communication</a></li>
+<li><a href="#org98a2ee6">The Solution: The Power of Storytelling</a>
+<ul>
+<li><a href="#org713fd44">Abstract version:</a></li>
+<li><a href="#orge6a791d">Storytelling version</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgfa422b9">Proposal</a>
+<ul>
+<li><a href="#org093e74a">Phase 1: Keynote speech</a></li>
+<li><a href="#org7eee654">Phase 2: Interactive training workshops (Optional)</a></li>
+<li><a href="#org5add35d">About The GHOST Method\textsuperscript{®}</a></li>
+</ul>
+</li>
+<li><a href="#org6c9d3f1">About Jay Dixit</a></li>
+</ul>
+</div>
+</nav>
+<div id="outline-container-org114a54a" class="outline-2">
+<h2 id="org114a54a">Objective</h2>
+<div class="outline-text-2" id="text-org114a54a">
+<p>
+<strong>Participants:</strong> Junior analysts, associates, and managing directors working in Bank of America&rsquo;s trading group, investment group, and Global Corporate and Investment Banking
+</p>
+
+<p>
+<strong>Objective:</strong> To enhance communication skills and equip employees with a simple, practical, memorable, and evidence-based storytelling method to communicate more powerfully.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5d7dcad" class="outline-2">
+<h2 id="org5d7dcad">The Power of Storytelling</h2>
+<div class="outline-text-2" id="text-org5d7dcad">
+<p>
+The ability to communicate clearly and powerfully is one of the most important skills in business&#x2014;particularly at a global financial institution like Bank of America.
+</p>
+
+<p>
+Most business communication is too vague, boring, or confusing to be effective. Readers and listeners zone out. Communication stalls and good ideas die.
+</p>
+
+<p>
+The solution is to learn how to be strategic in planning <strong>what information to present and how to structure it</strong>&#x2014;learning to communicate with clarity and impact so listeners are engaged and ideas are clear and easy to understand.
+</p>
+</div>
+
+<div id="outline-container-orgafb92f5" class="outline-3">
+<h3 id="orgafb92f5">The Challenge: Navigating the Complexity of Financial Communication</h3>
+<div class="outline-text-3" id="text-orgafb92f5">
+<p>
+People who work in global banking and markets are faced with a difficult challenge: communicating complex and often technical information in a way that&rsquo;s compelling and easy to understand.
+</p>
+
+<p>
+But even experts lose focus when bombarded with technical jargon and abstractions. The result? A missed opportunity to make a lasting impact.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org98a2ee6" class="outline-3">
+<h3 id="org98a2ee6">The Solution: The Power of Storytelling</h3>
+<div class="outline-text-3" id="text-org98a2ee6">
+<p>
+The human brain isn&rsquo;t wired to engage with abstractions. On the contrary, it&rsquo;s wired to respond to stories.
+</p>
+
+<p>
+Research in psychology and neuroscience reveal that stories activate more parts of the brain than factual information, making the information more memorable.
+</p>
+
+<p>
+For people who work in Bank of America&rsquo;s trading group, investment group, or GCIB, communication skills come into play in two primary scenarios:
+</p>
+
+<ol class="org-ol">
+<li>Writing technical research reports to be read by investors</li>
+<li>Having conversations with peers, managers, or investors about their research</li>
+</ol>
+
+<p>
+When you&rsquo;re talking about a topic as complex and technical as financial research, it&rsquo;s easy to lapse into abstractions and technical language.
+</p>
+
+<p>
+That&rsquo;s a problem. Even subject matter experts, well versed in technical topics, tend to zone out when they hear abstractions and technical language.
+</p>
+
+<p>
+We don&rsquo;t want that to happen. Whether it&rsquo;s a research report or a conversation, we want to grab people&rsquo;s attention, hook them right away, and keep them interested.
+</p>
+
+<p>
+That&rsquo;s where storytelling comes in, enabling people to convey even the densest financial information in a way that&rsquo;s vivid, visual, and emotionally impactful.
+</p>
+
+<p>
+It&rsquo;s not that savvy investors can&rsquo;t grasp technical language. It&rsquo;s that the human brain is wired to respond not to abstractions, but to stories &#x2014; characters and emotions, goals and obstacles, struggles and outcomes.
+</p>
+
+<p>
+A story doesn&rsquo;t have to be long to be effective. The principles of story structure can be applied even in the briefest of contexts.
+</p>
+
+<p>
+Consider an example of the kind of abstract and technical language that&rsquo;s commonly used in financial institutions.
+</p>
+</div>
+
+<div id="outline-container-org713fd44" class="outline-4">
+<h4 id="org713fd44">Abstract version:</h4>
+<div class="outline-text-4" id="text-org713fd44">
+<pre class="example">
+In light of recent policy shifts in the European Union, a comprehensive review of international trade agreements was undertaken, accompanied by in-depth cost scenario calculations. Our findings indicated that recent implementations of European trade tariffs had a material impact on the economics of cross-border transactions, increasing the cost structures associated with exporting goods, and thereby exerting downward pressure on profit margins. Adapting to this new economic landscape necessitated a reevaluation by our clients of existing contractual terms.
+</pre>
+
+
+<p>
+The paragraph above is dense with vague technical jargon and abstractions like &ldquo;recent tariff implementations&rdquo; and &ldquo;materially impacted the economics.&rdquo;
+</p>
+
+<p>
+Through an understanding of storytelling techniques, Bank of America employees will learn how to take an abstract paragraph like the one above and transform it into a concrete and visualizable story &#x2014; one that uses characters and emotions, goals and obstacles not only captivates attention, but to even offer a small emotional payoff at the end.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge6a791d" class="outline-4">
+<h4 id="orge6a791d">Storytelling version</h4>
+<div class="outline-text-4" id="text-orge6a791d">
+<pre class="example">
+When European trade tariffs started making headlines, I had a nagging suspicion they could make cross-border transactions more expensive for our clients. So to test my hunch, I analyzed the new trade agreements one by one, curious to calculate how they'd impact the cost of exporting goods. I was surprised to discover that costs had soared even beyond my worst fears, threatening our clients' profit margins. I immediately alerted our clients, urging them to renegotiate contracts to mitigate these newly inflated costs.
+</pre>
+
+
+<p>
+In the same number of words, the storytelling version walks the listener step by step through the analyst&rsquo;s journey &#x2014; from initially suspecting an issue, to gathering and analyzing data, to drawing a conclusion, and ultimately advising the client.
+</p>
+
+<p>
+Putting information in story form makes it accessible to a broader audience, simplifying complex topics and making the cause and effect clear and easy to understand even for people who aren&rsquo;t experts in international trade finance. Even for experts, a story is more engaging and impactful. It humanizes the analytical work we do at Bank of America, casting the analyst as the protagonist of their own little story &#x2014; one in which a real human being had an idea, asked a question they were curious about, and found an answer that made a real difference for a client.
+</p>
+
+<p>
+Best of all, the principles of storytelling can be applied to any context and any length: from a casual ten-second conversation you have with a fellow analyst to a 20-minute presentation in front of a thousand investors.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgfa422b9" class="outline-2">
+<h2 id="orgfa422b9">Proposal</h2>
+<div class="outline-text-2" id="text-orgfa422b9">
+<p>
+Storytelling.NYC proposes to partner with Bank of America to offer one or both of the following learning experiences:
+</p>
+</div>
+
+<div id="outline-container-org093e74a" class="outline-3">
+<h3 id="org093e74a">Phase 1: Keynote speech</h3>
+<div class="outline-text-3" id="text-org093e74a">
+<p>
+A fast-paced and entertaining 45-minute townhall in which award-winning writer and storytelling teacher Jay Dixit will illuminate powerful storytelling techniques to communicate with clarity, power, and impact. Attendees will understand the principles of effective storytelling and hear examples about how to apply these principles in the context of financial communication.
+</p>
+
+<p>
+My rate for a keynote address is $3,600. This includes:
+</p>
+<ul class="org-ul">
+<li>In-person delivery</li>
+<li>45-minute talk plus Q&amp;A</li>
+<li>Optional advance customization of the keynote based on Bank of America&rsquo;s culture and needs, including 1 x 60-min customization call</li>
+<li>Reference Guide: The GHOST Method\textsuperscript{®} (digital format)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7eee654" class="outline-3">
+<h3 id="org7eee654">Phase 2: Interactive training workshops (Optional)</h3>
+<div class="outline-text-3" id="text-org7eee654">
+<p>
+Through a series of 90-minute interactive training workshops, Jay Dixit will lead Bank of America team members through a deep dive on how to apply storytelling techniques in their own work. The interactive format allows for a combination of teaching, discussion, and individual and group storytelling exercises.
+</p>
+
+<p>
+My rate for a 90-minute workshop is $5,000. This includes:
+</p>
+<ul class="org-ul">
+<li>Delivery of training either in person or Webex</li>
+<li>Customization of workshop content based on Bank of America&rsquo;s specific culture and needs, including 2 x 60-minute strategy calls, plus email discussion and planning, to define strategy and objectives</li>
+<li>Advance customization of slides, curriculum, participant workbooks, and learning sustainment activities based on Bank of America&rsquo;s specific culture and needs</li>
+<li>Integration of Bank of America-specific examples and exercises into slides, curriculum, in-class discussion, and participant workbooks &#x2014; drawing from past Bank of America projects and presentations &#x2014; including both exemplary presentations and cautionary tales</li>
+<li>2 x 60-min sessions of private writing coaching on each of the two workshop days &#x2014; to reinforce learning, answer additional questions, and support participants in applying the techniques to current projects at Bank of America</li>
+<li>Participant workbooks (in digital format), including:
+<ul class="org-ul">
+<li>Research Briefing: The Neuroscience of Attention</li>
+<li>Reference Guides: The Question Method®, The TOWER Method®, and The Art of Creating Curiosity</li>
+</ul></li>
+<li>Post-Delivery learning Sustainment Discussion Guides, including group activities and review exercises, to sustain learning over the long term once the training is over</li>
+</ul>
+
+<p>
+Workshops can accommodate 12 to 25 people. The ideal size is on the smaller side, which allows for a high level of interactivity and individual attention for each participant.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5add35d" class="outline-3">
+<h3 id="org5add35d">About The GHOST Method\textsuperscript{®}</h3>
+<div class="outline-text-3" id="text-org5add35d">
+<p>
+The GHOST Method\textsuperscript{®} is the culmination of Jay Dixit&rsquo;s more than 15 years of research and practice as a writer, psychology and neuroscience consultant, and storytelling teacher. Participants will learn to craft compelling stories they can tell verbally or use in written materials, mastering techniques to captivate attention, ignite curiosity, and move listeners on an emotional level.
+</p>
+
+<p>
+Employees will learn a simple, clear framework they can apply to write and tell compelling stories of their own in the course of their work. They&rsquo;ll understand the principles of what makes a story compelling and will be able to apply storytelling techniques to deliver more captivating presentations, write more engaging emails, and create rapport with clients.
+\vspace{-6pt}
+</p>
+<p>
+<img src="file:///Users/jay/Dropbox/writing/prosperous/bofa/ghost.png" alt="ghost.png">
+\vspace{-12pt}
+By the end of the keynote address, Bank of America leaders and employees will understand such important storytelling principles as:
+</p>
+<ul class="org-ul">
+<li>The psychology of attention, curiosity, and surprise</li>
+<li>How to write and speak with the listener in mind</li>
+<li>How to increase clarity by asking a question before providing the answer</li>
+<li>How to create &ldquo;curiosity gaps&rdquo; to arouse curiosity and interest</li>
+<li></li>
+</ul>
+<p>
+\vspace{-6pt}
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org6c9d3f1" class="outline-2">
+<h2 id="org6c9d3f1">About Jay Dixit</h2>
+<div class="outline-text-2" id="text-org6c9d3f1">
+<p>
+Jay Dixit is a creative writing professor at Yale University and an award-winning speaker, trainer, and writer whose work has appeared in <strong>The New York Times</strong>, <strong>The Washington Post</strong>, <strong>Rolling Stone</strong>, <strong>Harvard Business Review</strong>, <strong>Slate</strong>, <strong>Wired</strong>, and <strong>Psychology Today</strong>.
+</p>
+
+<p>
+Jay studied psychology at Yale University, where he graduated <strong>cum laude</strong> with distinction in the major. His senior thesis in psychology was published in <strong>The Journal of Social Issues</strong> and cited more than 300 times, and one of the magazine articles he wrote for Yale&rsquo;s <strong>The New Journal</strong> as an undergrad is still taught in one of Yale&rsquo;s nonfiction writing seminars.
+</p>
+
+<p>
+Jay got his start as a journalist writing for <strong>Rolling Stone</strong> and covering standup comedy for <strong>The New York Times</strong>, then went on to specialize in psychology and neuroscience. As Senior Editor of <strong>Psychology Today</strong>, Jay covered neuroscience, decision making, behavioral economics, persuasion, and consumer behavior. His work also appears in the anthology <strong>The Best of Technology Writing.</strong>
+</p>
+
+<p>
+Jay teaches storytelling and writing at <strong>Yale University</strong>, and lectures and runs storytelling workshops at events around the country through his company Storytelling.NYC. Jay is also a winner of <strong>The Moth</strong>, a live storytelling competition based in New York City. His story &ldquo;My Father&rsquo;s Love&rdquo; appears on <strong>The Moth Radio Hour</strong> and <strong>NPR</strong> and forms the basis for the short film <strong>In Transit</strong>.
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
