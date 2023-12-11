@@ -37,7 +37,7 @@ Directions: The building is 166 North 7th Street, next to Pressed Juicery.
 #+TITLE: Midwinter Holiday Merriment
 #+HTML_HEAD: <title>Midsummer Birthday Revelry</title>
 #+HTML_HEAD: <link rel='stylesheet' type='text/css' href='https://incandescentman.github.io/css/neocortex.css'>
-#+HTML_HEAD: <meta property="og:title" content="Midsummer Birthday Revelry" />
+#+HTML_HEAD: <meta property="og:title" content="Midwinter Holiday Merriment" />
 #+HTML_HEAD: <meta property="og:description" content="Please join us for a very special evening.">
 #+HTML_HEAD: <meta property="og:image" content="./img/1.JPG"/>
 #+HTML_HEAD: <meta property="og:url" content="index.html"/>
