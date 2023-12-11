@@ -32,7 +32,7 @@ Directions: The building is 166 North 7th Street, next to Pressed Juicery.
 
 [[./img/8.JPG]]
 
-[[/Users/jay/Dropbox/github/incandescentman.github.io/midwinter/img/unreliablenarrator_Canadian_themed_Brooklyn_Christmas_party_wi_4e68762e-3eab-495e-a9a8-87d1afec19b1.PNG]]
+[[./img/unreliablenarrator_Canadian_themed_Brooklyn_Christmas_party_wi_4e68762e-3eab-495e-a9a8-87d1afec19b1.PNG]]
 
 #+TITLE: Midwinter Holiday Merriment
 #+HTML_HEAD: <title>Midsummer Birthday Revelry</title>
