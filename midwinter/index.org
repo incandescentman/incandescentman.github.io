@@ -1,0 +1,44 @@
+[[./img/1.JPG]]
+
+* Midwinter Holiday Merriment
+Friends,
+
+As the days grow shorter and the grim shadow of winter envelops us in its icy embrace, let's come together to defy the darkness.
+
+Amidst the chill winds and long nights, we'll find solace in the warmth of mulled wine and classic cocktails and homemade gingerbread syrup. For my part, I'll be spending the day to confecting making my own favorite Canadian delicacy, [[https://www.wikiwand.com/en/Nanaimo_bars][the Nanaimo Bar]].
+
+Please join me this Friday at my home in Williamsburg. Together we'll raise a glass to friendship, holiday cheer, and defiance of winter's gloom.
+
+[[mailto:jay@jaydixit.com][RSVP]]. Feel free to bring friends and loved ones. As always, your own civilian contributions of wine or spirits are welcome, or feel free to bring your own favorite holiday treats to share.
+
+Hoping to see you there, \\
+Sunjay
+
+
+Details:
+
+When: Friday, December 15 at 7:00pm \\
+Where: 166 North 7th Street Apt. 3, Brooklyn NY 11211 \\
+*RSVP*: [[mailto:jay@jaydixit.com][jay@jaydixit.com]] or (646) 355-8001 \\
+Directions: The building is 166 North 7th Street, next to Pressed Juicery.
+
+[[./img/2.JPG]]
+
+[[./img/3.JPG]][[./img//Users/jay/Dropbox/github/incandescentman.github.io/midwinter/img/unreliablenarrator_Canadian_themed_Brooklyn_Christmas_party_wi_6b0e9364-032d-4d1d-b280-c6a3d056a73b.PNG]]
+[[./img/4.JPG]]
+[[./img/5.JPG]]
+[[./img/6.JPG]]
+[[./img/7.JPG]]
+
+[[./img/8.JPG]]
+
+
+[[/Users/jay/Dropbox/github/incandescentman.github.io/midwinter/img/unreliablenarrator_Canadian_themed_Brooklyn_Christmas_party_wi_4e68762e-3eab-495e-a9a8-87d1afec19b1.PNG]]
+
+#+TITLE: Midwinter Holiday Merriment
+#+HTML_HEAD: <title>Midsummer Birthday Revelry</title>
+#+HTML_HEAD: <link rel='stylesheet' type='text/css' href='https://incandescentman.github.io/css/neocortex.css'>
+#+HTML_HEAD: <meta property="og:title" content="Midsummer Birthday Revelry" />
+#+HTML_HEAD: <meta property="og:description" content="Please join us for a very special evening.">
+#+HTML_HEAD: <meta property="og:image" content="./img/1.JPG"/>
+#+HTML_HEAD: <meta property="og:url" content="index.html"/>
