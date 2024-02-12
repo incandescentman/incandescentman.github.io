@@ -304,11 +304,12 @@ header > nav a[aria-current="page"] {
 }
 
 /* Consolidate box styling */
-aside, details, pre, progress {
+aside, details, pre, progress, blockquote {
   background-color: var(--accent-bg);
   border: 1px solid var(--border);
   border-radius: var(--standard-border-radius);
   margin-bottom: 1rem;
+
 }
 
 aside {
@@ -555,16 +556,6 @@ figcaption {
   margin-bottom: 1rem;
 }
 
-blockquote {
-  margin-inline-start: 2rem;
-  margin-inline-end: 0;
-  margin-block: 2rem;
-  padding: 0.4rem 0.8rem;
-  border-inline-start: 0.35rem solid var(--accent);
-  color: var(--text-light);
-  font-style: italic;
-}
-
 cite {
   font-size: 0.9rem;
   color: var(--text-light);
@@ -580,7 +571,7 @@ code,
 pre,
 pre span,
 kbd,
-samp {
+samp, blockquote {
   font-family: var(--mono-font);
   color: var(--code);
 }
@@ -593,7 +584,7 @@ kbd {
   padding: 0.1rem 0.4rem;
 }
 
-pre {
+pre, blockquote {
   padding: 1rem 1.4rem;
   max-width: 100%;
   overflow: auto;
@@ -801,7 +792,7 @@ pre, blockquote {
     border-radius: 8px;
     padding: 0 1em 1em;
     text-align: left;
-    white-space: pre-wrap;
+    white-space: normal;
     word-wrap: break-word;
 }
 
@@ -847,6 +838,13 @@ h1.title {
 }
 
 
-pre.example {
+pre.example, blockquote {
   padding-top:1em
+}
+
+
+
+blockquote p {
+font-size: 1.15rem !important;
+margin:1em !important;
 }
