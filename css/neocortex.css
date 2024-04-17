@@ -794,6 +794,10 @@ pre, blockquote {
     text-align: left;
     white-space: normal;
     word-wrap: break-word;
+word-wrap:normal!important;
+     white-space: pre-wrap;       /* css-3 */
+     word-wrap: normal;
+
 }
 
 
@@ -847,4 +851,16 @@ pre.example, blockquote {
 blockquote p {
 font-size: 1.15rem !important;
 margin:1em !important;
+}
+
+
+p.verse {
+    color: #111;
+    font: 14px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
+    margin: auto;
+    padding: 20px 0;
+    text-align: left;
+    width: 390px;
+    line-height: 1.5;
+    margin-bottom: 15px;
 }
