@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Timeless</title>
+<meta name="author" content="Jay Dixit" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+/* Global variables. */
+:root,
+::backdrop {
+  /* Set sans-serif & mono fonts */
+  --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+    "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
+    "Helvetica Neue", sans-serif;
+  --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  --standard-border-radius: 5px;
+
+  /* Default (light) theme */
+  --bg: #fff;
+  --accent-bg: #f5f7ff;
+  --text: #212121;
+  --text-light: #585858;
+  --border: #898EA4;
+  --accent: #0d47a1;
+  --code: #d81b60;
+  --preformatted: #444;
+  --marked: #ffdd33;
+  --disabled: #efefef;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root,
+  ::backdrop {
+    color-scheme: dark;
+    --bg: #212121;
+    --accent-bg: #2b2b2b;
+    --text: #dcdcdc;
+    --text-light: #ababab;
+    --accent: #ffb300;
+    --code: #f06292;
+    --preformatted: #ccc;
+    --disabled: #111;
+  }
+  /* Add a bit of transparency so light media isn't so glaring in dark mode */
+  img,
+  video {
+    opacity: 0.8;
+  }
+}
+
+/* Reset box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Reset default appearance */
+textarea,
+select,
+input,
+progress {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+html {
+  /* Set the font globally */
+  font-family: var(--sans-font);
+  scroll-behavior: smooth;
+}
+
+/* Make the body a nice central block */
+body {
+  color: var(--text);
+  background-color: var(--bg);
+  font-size: 1.15rem;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr min(45rem, 90%) 1fr;
+  margin: 0;
+}
+body > * {
+  grid-column: 2;
+}
+
+/* Make the header bg full width, but the content inline with body */
+body > header {
+  background-color: var(--accent-bg);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+  padding: 0 0.5rem 2rem 0.5rem;
+  grid-column: 1 / -1;
+}
+
+body > header h1 {
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+
+body > header p {
+  max-width: 40rem;
+  margin: 1rem auto;
+}
+
+/* Add a little padding to ensure spacing is correct between content and header > nav */
+main {
+  padding-top: 1.5rem;
+}
+
+body > footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem 1.5rem 1rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+/* Format headers */
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 0.96rem;
+}
+
+/* Prevent long strings from overflowing container */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Fix line height when title wraps */
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+/* Reduce header size on mobile */
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Format links & buttons */
+a,
+a:visited {
+  color: var(--accent);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button,
+[role="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+label[type="button"] {
+  border: none;
+  border-radius: var(--standard-border-radius);
+  background-color: var(--accent);
+  font-size: 1rem;
+  color: var(--bg);
+  padding: 0.7rem 0.9rem;
+  margin: 0.5rem 0;
+
+  /* Ensure buttons use correct font */
+  font-family: inherit;
+}
+
+button[disabled],
+[role="button"][aria-disabled="true"],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"][disabled],
+select[disabled] {
+  cursor: not-allowed;
+}
+
+input:disabled,
+textarea:disabled,
+select:disabled,
+button[disabled] {
+  cursor: not-allowed;
+  background-color: var(--disabled);
+  color: var(--text-light)
+}
+
+input[type="range"] {
+  padding: 0;
+}
+
+/* Set the cursor to '?' on an abbreviation and style the abbreviation to show that there is more information underneath */
+abbr[title] {
+  cursor: help;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+button:enabled:hover,
+[role="button"]:not([aria-disabled="true"]):hover,
+input[type="submit"]:enabled:hover,
+input[type="reset"]:enabled:hover,
+input[type="button"]:enabled:hover,
+label[type="button"]:hover {
+  filter: brightness(1.4);
+  cursor: pointer;
+}
+
+button:focus-visible:where(:enabled, [role="button"]:not([aria-disabled="true"])),
+input:enabled:focus-visible:where(
+  [type="submit"],
+  [type="reset"],
+  [type="button"]
+) {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+/* Format navigation */
+header > nav {
+  font-size: 1rem;
+  line-height: 2;
+  padding: 1rem 0 0 0;
+}
+
+/* Use flexbox to allow items to wrap, as needed */
+header > nav ul,
+header > nav ol {
+  align-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* List items are inline elements, make them behave more like blocks */
+header > nav ul li,
+header > nav ol li {
+  display: inline-block;
+}
+
+header > nav a,
+header > nav a:visited {
+  margin: 0 0.5rem 1rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--standard-border-radius);
+  color: var(--text);
+  display: inline-block;
+  padding: 0.1rem 1rem;
+  text-decoration: none;
+}
+
+header > nav a:hover,
+header > nav a.current,
+header > nav a[aria-current="page"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  cursor: pointer;
+}
+
+/* Reduce nav side on mobile */
+@media only screen and (max-width: 720px) {
+  header > nav a {
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    line-height: 1;
+  }
+}
+
+/* Consolidate box styling */
+aside, details, pre, progress, blockquote {
+  background-color: var(--accent-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--standard-border-radius);
+  margin-bottom: 1rem;
+
+}
+
+aside {
+  font-size: 1rem;
+  width: 30%;
+  padding: 0 15px;
+  margin-inline-start: 15px;
+  float: right;
+}
+*[dir="rtl"] aside {
+  float: left;
+}
+
+/* Make aside full-width on mobile */
+@media only screen and (max-width: 720px) {
+  aside {
+    width: 100%;
+    float: none;
+    margin-inline-start: 0;
+  }
+}
+
+article, fieldset, dialog {
+  border: 1px solid var(--border);
+  padding: 1rem;
+  border-radius: var(--standard-border-radius);
+  margin-bottom: 1rem;
+}
+
+article h2:first-child,
+section h2:first-child {
+  margin-top: 1rem;
+}
+
+section {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 1rem;
+  margin: 3rem 0;
+}
+
+/* Don't double separators when chaining sections */
+section + section,
+section:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+section:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+details {
+  padding: 0.7rem 1rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.7rem 1rem;
+  margin: -0.7rem -1rem;
+  word-break: break-all;
+}
+
+details[open] > summary + * {
+  margin-top: 0;
+}
+
+details[open] > summary {
+  margin-bottom: 0.5rem;
+}
+
+details[open] > :last-child {
+  margin-bottom: 0;
+}
+
+/* Format tables */
+table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+td,
+th {
+  border: 1px solid var(--border);
+  text-align: start;
+  padding: 0.5rem;
+}
+
+th {
+  background-color: var(--accent-bg);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  /* Set every other cell slightly darker. Improves readability. */
+  background-color: var(--accent-bg);
+}
+
+table caption {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Format forms */
+textarea,
+select,
+input {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--standard-border-radius);
+  box-shadow: none;
+  max-width: 100%;
+  display: inline-block;
+}
+label {
+  display: block;
+}
+textarea:not([cols]) {
+  width: 100%;
+}
+
+/* Add arrow to drop-down */
+select:not([multiple]) {
+  background-image: linear-gradient(45deg, transparent 49%, var(--text) 51%),
+    linear-gradient(135deg, var(--text) 51%, transparent 49%);
+  background-position: calc(100% - 15px), calc(100% - 10px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-inline-end: 25px;
+}
+*[dir="rtl"] select:not([multiple]) {
+  background-position: 10px, 15px;
+}
+
+/* checkbox and radio button style */
+input[type="checkbox"],
+input[type="radio"] {
+  vertical-align: middle;
+  position: relative;
+  width: min-content;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+}
+
+input[type="radio"] {
+  border-radius: 100%;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+  background-color: var(--accent);
+}
+
+input[type="checkbox"]:checked::after {
+  /* Creates a rectangle with colored right and bottom borders which is rotated to look like a check mark */
+  content: " ";
+  width: 0.18em;
+  height: 0.32em;
+  border-radius: 0;
+  position: absolute;
+  top: 0.05em;
+  left: 0.17em;
+  background-color: transparent;
+  border-right: solid var(--bg) 0.08em;
+  border-bottom: solid var(--bg) 0.08em;
+  font-size: 1.8em;
+  transform: rotate(45deg);
+}
+input[type="radio"]:checked::after {
+  /* creates a colored circle for the checked radio button  */
+  content: " ";
+  width: 0.25em;
+  height: 0.25em;
+  border-radius: 100%;
+  position: absolute;
+  top: 0.125em;
+  background-color: var(--bg);
+  left: 0.125em;
+  font-size: 32px;
+}
+
+/* Makes input fields wider on smaller screens */
+@media only screen and (max-width: 720px) {
+  textarea,
+  select,
+  input {
+    width: 100%;
+  }
+}
+
+/* Set a height for color input */
+input[type="color"] {
+  height: 2.5rem;
+  padding:  0.2rem;
+}
+
+/* do not show border around file selector button */
+input[type="file"] {
+  border: 0;
+}
+
+/* Misc body elements */
+hr {
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: 1rem auto;
+}
+
+mark {
+  padding: 2px 5px;
+  border-radius: var(--standard-border-radius);
+  background-color: var(--marked);
+  color: black;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--standard-border-radius);
+}
+
+figure {
+  margin: 0;
+  display: block;
+  overflow-x: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+cite {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-style: normal;
+}
+
+dt {
+    color: var(--text-light);
+}
+
+/* Use mono font for code elements */
+code,
+pre,
+pre span,
+kbd,
+samp, blockquote {
+  font-family: var(--mono-font);
+  color: var(--code);
+}
+
+kbd {
+  color: var(--preformatted);
+  border: 1px solid var(--preformatted);
+  border-bottom: 3px solid var(--preformatted);
+  border-radius: var(--standard-border-radius);
+  padding: 0.1rem 0.4rem;
+}
+
+pre, blockquote {
+  padding: 1rem 1.4rem;
+  max-width: 100%;
+  overflow: auto;
+  color: var(--preformatted);
+}
+
+/* Fix embedded code within pre */
+pre code {
+  color: var(--preformatted);
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Progress bars */
+/* Declarations are repeated because you */
+/* cannot combine vendor-specific selectors */
+progress {
+  width: 100%;
+}
+
+progress:indeterminate {
+  background-color: var(--accent-bg);
+}
+
+progress::-webkit-progress-bar {
+  border-radius: var(--standard-border-radius);
+  background-color: var(--accent-bg);
+}
+
+progress::-webkit-progress-value {
+  border-radius: var(--standard-border-radius);
+  background-color: var(--accent);
+}
+
+progress::-moz-progress-bar {
+  border-radius: var(--standard-border-radius);
+  background-color: var(--accent);
+  transition-property: width;
+  transition-duration: 0.3s;
+}
+
+progress:indeterminate::-moz-progress-bar {
+  background-color: var(--accent-bg);
+}
+
+dialog {
+  max-width: 40rem;
+  margin: auto;
+}
+
+dialog::backdrop {
+  background-color: var(--bg);
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 720px) {
+  dialog {
+    max-width: 100%;
+    margin: auto 1em;
+  }
+}
+
+/* Classes for buttons and notices */
+.button,
+.button:visited {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  background: var(--accent);
+  font-size: 1rem;
+  color: var(--bg);
+  padding: 0.7rem 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.button:hover,
+.button:focus {
+  filter: brightness(1.4);
+  cursor: pointer;
+}
+
+.notice {
+  background: var(--accent-bg);
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* add the hierarchy*/
+div.outline-text-3 {
+    margin-left:1em;
+}
+
+div.outline-text-4{
+    margin-left:0.2em
+
+}
+
+div.outline-text-5{
+    margin-left:3em
+}
+
+div.outline-text-6 {
+    margin-left:6em
+}
+
+
+div.outline-text-7 {
+    margin-left:9em
+}
+
+
+
+
+
+div dl dt::after {
+ content: ":";}
+
+
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 4em; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;   margin-bottom: 16px}
+
+
+
+h2
+{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size:3em;
+    line-height: 32px;
+    padding-bottom:0.2em;
+    margin-right:auto ;
+    margin-top:1em;
+  margin-bottom: 0.5em;
+  font-weight:bold;
+}
+
+
+h3 {
+  font-size: 1.3em;
+  margin-left:2em;
+}
+
+h4 {
+  font-size: 1.1em;
+    margin-left: 0.2em;
+}
+
+
+h5
+{
+margin-left:3em
+}
+
+h6
+{
+    margin-left:6em ;
+      font-size: 1em;
+}
+
+h7
+{
+    margin-left:9em ;
+      font-size: 1em;
+      font-weight:bold;
+}
+
+
+li ul li {
+  margin:0;
+}
+
+
+
+h1.title {
+  text-align:left;
+}
+
+
+div.outline-text-3
+{margin-left: 2.6em;}
+
+h1:first-letter, h2:first-letter, h3:first-letter, h4:first-letter, h5:first-letter
+{
+text-transform:capitalize;
+}
+
+div dl dt {
+  font-weight:700;
+}
+
+
+pre, blockquote {
+    border-radius: 8px;
+    padding: 0 1em 1em;
+    text-align: left;
+    white-space: normal;
+    word-wrap: break-word;
+word-wrap:normal!important;
+     white-space: pre-wrap;       /* css-3 */
+     word-wrap: normal;
+
+}
+
+
+div.outline-text-3 {
+    margin-left:5em;
+}
+
+
+
+li > p, li > ul, li > .inlinetask, li > dl {
+    margin-left: 0px;
+}
+
+dd > p, dd > ul, dd > .inlinetask, dd > dl {
+    margin-left: 0px;
+}
+
+
+div dl dt {
+  font-size:125%;
+
+}
+
+div dl dt::first-letter
+{
+  text-transform: capitalize;
+}
+
+
+div blockquote p {
+  font-size:200%;
+  margin:0;
+}
+
+h2 {
+  line-height: 1;
+}
+
+
+h1.title {
+  display:none;
+}
+
+
+pre.example, blockquote {
+  padding-top:1em
+}
+
+
+
+blockquote p {
+font-size: 1.15rem !important;
+margin:1em !important;
+}
+
+
+p.verse {
+    color: #111;
+    font: 14px Baskerville, "Palatino Linotype", "Times New Roman", Times, serif;
+    margin: auto;
+    padding: 20px 0;
+    text-align: left;
+    width: 390px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+/*]]>*/-->
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<header>
+<h1 class="title">Timeless</h1>
+</header>
+<div id="outline-container-org5599a6e" class="outline-2">
+<h2 id="org5599a6e">Introduction</h2>
+<div class="outline-text-2" id="text-org5599a6e">
+<p>
+Welcome to <strong>Timeless</strong>, an infinitely scrolling calendar designed to help you visualize time continuously as you plan your life.
+</p>
+
+<p>
+This project is an appreciative fork of Continuous Calendar by Evan Wallace (<a href="https://madebyevan.com/calendar/">https://madebyevan.com/calendar/</a>) with some added functionality of my own.
+</p>
+
+
+<figure id="org36b5f5a">
+<img src="https://github.com/incandescentman/scrollandkey/raw/main/2.png" alt="2.png">
+
+</figure>
+</div>
+</div>
+
+<div id="outline-container-org84ed4ea" class="outline-2">
+<h2 id="org84ed4ea">Why</h2>
+<div class="outline-text-2" id="text-org84ed4ea">
+</div>
+<div id="outline-container-orgb96a132" class="outline-3">
+<h3 id="orgb96a132">The Problem: Conceptualizing the future one month at a time</h3>
+<div class="outline-text-3" id="text-orgb96a132">
+<p>
+Traditional digital calendars like MacOS Calendar and Google Calendar segment time into discrete months: You conceptualize the future one month at a time.
+</p>
+
+
+<figure id="orgb568dc6">
+<img src="typical-interface.png" alt="typical-interface.png">
+
+</figure>
+
+<p>
+You&rsquo;re shown a single month&rsquo;s worth of dates. Then, to navigate through time, you click the <code>＞</code> or <code>Next</code> button&#x2026; at which point the current month is replaced by a view of the next month.
+</p>
+
+
+<figure id="orgd81c5d3">
+<img src="nextmonth.png" alt="nextmonth.png">
+
+</figure>
+
+<p>
+Having different months displayed as discrete units in this way doesn&rsquo;t make sense for my brain. It presents time as discontinuous and divided, making it difficult to conceptualize in an intuitive way when events are happening relative to each other.
+</p>
+
+<p>
+With traditional calendars, I find it difficult to plan ahead as I think about the future as I figure out, say, travel dates for an upcoming trip.
+</p>
+
+<p>
+Even calendars that offer the ability to display several months at once still separate dates from one month to the next:
+</p>
+
+
+<figure id="org2dd0a08">
+<img src="mc-simple.png" alt="mc-simple.png">
+
+</figure>
+
+<p>
+Your brain has to do a little mental calculation to grasp that the 31st of one month down at the bottom over here is just one day before the 1st of the next month up there on the right.
+</p>
+
+<p>
+It&rsquo;s not like your brain can&rsquo;t figure it out&#x2026; but it requires a level of abstraction, intellectualizing the concept of time.
+</p>
+
+<p>
+It&rsquo;s like a map that&rsquo;s not to scale. Sure, you can mentally compensate&#x2026; but wouldn&rsquo;t you rather just be able to see at a glance where things are, knowing you can trust your intuitive sense of how far away things are from each other?
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2aa4787" class="outline-3">
+<h3 id="org2aa4787">The Solution: A continuous perspective</h3>
+<div class="outline-text-3" id="text-org2aa4787">
+<p>
+What I want is a calendar that accurately depicts the continuous flow of time, displaying the future as what it is: a continuous series of days.
+</p>
+
+<p>
+Instead of having to click &ldquo;Next,&rdquo; like turning the page of a book, I want to be able to just scroll down to see upcoming events.
+</p>
+
+<p>
+Why are calendars designed in this counterintuitive way? Tradition. In the old days, we hung paper calendars on the wall. Wall space, since it&rsquo;s physical space, is limited. Your wall isn&rsquo;t high enough &#x2013; and you&rsquo;re not tall enough &#x2013; to display 12 months worth of days.
+</p>
+
+<p>
+But we&rsquo;re not in the 12th century anymore (the name of this app notwithstanding). Google Calendar is not a paper calendar. Just as your iPad lets you read a book in &ldquo;Continuous Scroll&rdquo; mode rather than requiring you to manually turn the page every few paragraphs, you can just press the down arrow to read on.
+</p>
+
+<p>
+That&rsquo;s the experience I want for a calendar and I bet I&rsquo;m not the only one.
+</p>
+
+<p>
+To try to solve this problem, I researched and bought various apps that sounded promising, including <a href="https://www.moleskine.com/en-us/shop/moleskine-smart/apps-and-services/timepage/">Timepage by Moleskine</a> and <a href="https://agenda.com/">Agenda</a>. Though interesting approaches, they didn&rsquo;t offer the visually intuitive monthly interface I was looking for.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org69b3261" class="outline-3">
+<h3 id="org69b3261">A Continuous Calendar</h3>
+<div class="outline-text-3" id="text-org69b3261">
+<p>
+Then I stumbled upon <a href="https://madebyevan.com/calendar/">Continuous Calendar</a> by <a href="https://github.com/evanw">Evan Wallace</a>. It was perfect. Exactly what I was looking for: a calendar where I could scroll down and up as I thought about the future and planned my weeks and months. One that displayed time in a visual, intuitive way.
+</p>
+
+
+<figure id="org868fdce">
+<img src="interface.png" alt="interface.png">
+
+</figure>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org53dbc31" class="outline-2">
+<h2 id="org53dbc31">Evan&rsquo;s Original Features</h2>
+<div class="outline-text-2" id="text-org53dbc31">
+<ul class="org-ul">
+<li>Infinite scrolling through months and years, both forward in time (i.e. downward on the scrolling calendar) and backward in time (i.e. upward).</li>
+<li>Click on a day to add calendar events.</li>
+<li>Calendar data stored not on the cloud but within your browser&rsquo;s local storage.</li>
+</ul>
+
+
+<figure id="org363effb">
+<img src="scrolly.gif" alt="scrolly.gif">
+
+</figure>
+</div>
+</div>
+
+<div id="outline-container-orgda809e0" class="outline-2">
+<h2 id="orgda809e0">My Enhancements</h2>
+<div class="outline-text-2" id="text-orgda809e0">
+
+<figure id="org84b070b">
+<img src="https://github.com/incandescentman/scrollandkey/raw/main/3.png" alt="3.png">
+
+<figcaption><span class="figure-number">Figure 1: </span>An illustration of the Timeless interface.</figcaption>
+</figure>
+
+<p>
+I&rsquo;ve taken Evan&rsquo;s original implementation and added a few enhancements of my own:
+</p>
+<ul class="org-ul">
+<li>Added the ability to display days of the week</li>
+<li>Added the ability to display name of month</li>
+<li>Add the ability to save a backup of your stored calendar events as a JSON file; and add the ability to load stored events from said backup file.</li>
+<li>Added an accompanying Python script to take the saved data and convert it into an ICS file that I can import into my MacOS calendar. (This doesn&rsquo;t yet work reliably.)</li>
+<li>European-style calendar: In my mind, the week begins on Monday. Why? Because, for the reasons discussed above, it doesn&rsquo;t make sense to separate Saturday and Sunday into separate weeks. I think of the weekend as a single unit. When I ask myself what I&rsquo;m going to do this weekend, I&rsquo;m thinking about Saturday and Sunday, not Saturday of this week and Sunday of next.</li>
+</ul>
+
+<p>
+I&rsquo;m not a coder. ChatGPT Plus made these changes for me. Here&rsquo;s a record of my conversation with ChatGPT:
+<a href="https://chat.openai.com/share/512d0b31-f773-49a6-8246-2e003f186e6a">https://chat.openai.com/share/512d0b31-f773-49a6-8246-2e003f186e6a</a>
+</p>
+</div>
+
+<div id="outline-container-orgd085edf" class="outline-3">
+<h3 id="orgd085edf">What remains to be done:</h3>
+<div class="outline-text-3" id="text-orgd085edf">
+<ul class="org-ul">
+<li>In order to facilitate exporting calendar data to a calendar app like MacOS calendar, I want to modify the format of saved data to explicitly store the full date of each calendar event.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org35df393" class="outline-2">
+<h2 id="org35df393">Getting Started</h2>
+<div class="outline-text-2" id="text-org35df393">
+<p>
+To get started with <strong>Timeless</strong>:
+</p>
+</div>
+
+<div id="outline-container-orge469f23" class="outline-3">
+<h3 id="orge469f23">Non-expert users</h3>
+<div class="outline-text-3" id="text-orge469f23">
+<ol class="org-ol">
+<li>To download: Click the green <code>&lt;&gt; Code ▼</code> button at the top of this github.com page, then click <code>Download ZIP</code>.</li>
+<li>Unzip the package.</li>
+<li>Open the file <code>timeless.html</code>.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org0a10cbc" class="outline-3">
+<h3 id="org0a10cbc">Expert users</h3>
+<div class="outline-text-3" id="text-org0a10cbc">
+<p>
+Clone the repository and open the HTML file.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">git clone https://github.com/incandescentman/timeless.git
+<span style="color: #006FE0;">cd</span> timeless
+open timeless.html
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org250b8fc" class="outline-2">
+<h2 id="org250b8fc">Usage</h2>
+<div class="outline-text-2" id="text-org250b8fc">
+<p>
+First, open <a href="timeless.html">timeless.html</a>.
+</p>
+</div>
+
+<div id="outline-container-orgd444f87" class="outline-3">
+<h3 id="orgd444f87">Adding Notes</h3>
+<div class="outline-text-3" id="text-orgd444f87">
+<p>
+Click on any day to add a calendar event. A text area will appear where you can enter text. Press RETURN to save the note to local storage, which will automatically adjust the day&rsquo;s cell to accommodate the text.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org147739c" class="outline-3">
+<h3 id="org147739c">Navigating the Calendar</h3>
+<div class="outline-text-3" id="text-org147739c">
+<p>
+Use your mouse wheel or trackpad to scroll through months and years effortlessly. The calendar dynamically loads additional weeks as you scroll, ensuring a smooth and continuous user experience.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org93251eb" class="outline-3">
+<h3 id="org93251eb">Managing Notes</h3>
+<div class="outline-text-3" id="text-org93251eb">
+<p>
+To edit a note, simply click on the existing note text, make changes, and press RETURN to save.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org657c51a" class="outline-3">
+<h3 id="org657c51a">Deletion</h3>
+<div class="outline-text-3" id="text-org657c51a">
+<p>
+To delete a note, clear the text in the text area and click elsewhere or press RETURN.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge4f7606" class="outline-2">
+<h2 id="orge4f7606">Customization</h2>
+<div class="outline-text-2" id="text-orge4f7606">
+<p>
+Timeless is designed to be easily customizable. You can modify the CSS styles in <em>css/style.css</em> to match your aesthetic preferences or adapt the functionality in <em>js/calendar.js</em> to meet specific needs.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0cd367d" class="outline-2">
+<h2 id="org0cd367d">Contributing</h2>
+<div class="outline-text-2" id="text-org0cd367d">
+<p>
+Contributions to <strong>Timeless</strong> are welcome! I need all the help I can get. Please fork the repository, make your changes, and submit a pull request. We appreciate your input and look forward to seeing your creative ideas and improvements.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org063c0c7" class="outline-2">
+<h2 id="org063c0c7">License</h2>
+<div class="outline-text-2" id="text-org063c0c7">
+<p>
+Timeless is released under the MIT License. See the LICENSE file in the repository for full details.
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
