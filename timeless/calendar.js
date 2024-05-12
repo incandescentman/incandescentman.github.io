@@ -1,13 +1,13 @@
 /*
- 📜 Scroll & Key: The Infinitely Scrolling Calendar 📜
+ 📜 Timeless: The Infinitely Scrolling Calendar 📜
+ by Jay Dixit
 
- An appreciative fork of:
-
- Continuous Calendar by Evan Wallace
+ An appreciative fork of Continuous Calendar by Evan Wallace
  (https://madebyevan.com/calendar/)
  License: MIT License (see below)
 
  Copyright (c) 2010 Evan Wallace
+ Copyright (c) 2024 Jay Dixit
 
  Permission is hereby granted, free of charge, to any person
  obtaining a copy of this software and associated documentation
@@ -32,7 +32,6 @@
 */
 
 // TODO: maybe put in a way to go to any date which reloads the calendar at that date
-// TODO: small resizing problem when today box moves to the next day
 // TODO: need a way of exporting/importing data
 
 function nextItemId()
@@ -420,7 +419,7 @@ window.onload = function()
 function showHelp() { document.getElementById('help').style.display = 'block'; }
 function hideHelp() { document.getElementById('help').style.display = 'none'; }
 
-document.write('<div id="header"><a class="button" href="javascript:smoothScrollToToday()">Scroll to today</a><a class="button" href="javascript:showHelp()">Help</a><a class="button" href="javascript:downloadLocalStorageData()">Save Backup</a><a class="button" href="javascript:document.getElementById(\'fileInput\').click()">Load Backup</a></div>');
+document.write('<div id="header"><a href="https://github.com/incandescentman/timeless" target="_blank" class="timeless"  rel="noopener noreferrer">🪐 <span class=bold>Timeless:</span> The Infinite, Infinitely-Scrolling Calendar ✨</a><BR><a class="button" href="javascript:smoothScrollToToday()">Scroll to today 📅</a><a class="button" href="javascript:downloadLocalStorageData()">Save 💾</a><a class="button" href="javascript:document.getElementById(\'fileInput\').click()">Load 📥</a><a class="button" href="javascript:showHelp()">Help ℹ️</a></div>');
 document.write('<input type="file" id="fileInput" style="display: none;" onchange="loadDataFromFile()">');
 document.write('<table id="calendar"></table>');
 document.write('<div id="help"><div><ul><li>Click on a day to add a note</li><li>To delete a note, delete its text</li><li>Use the scroll wheel to move forward or backward in time</li></ul><a class="button" href="javascript:hideHelp()">Close</a></div></div>');

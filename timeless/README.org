@@ -8,7 +8,7 @@ This project is an appreciative fork of Continuous Calendar by Evan Wallace (htt
 
 #+ATTR_HTML: :width 300px
 
-[[https://github.com/incandescentman/scrollandkey/raw/main/2.png]]
+[[file:unreliablenarrator_infinite_future._macos_application_icon_dc535484-c32d-4ba0-a99f-b920d9e44f2b.png]]
 
 * Why
 ** The Problem: Conceptualizing the future one month at a time
@@ -35,6 +35,8 @@ It's not like your brain can't figure it out... but it requires a level of abstr
 It's like a map that's not to scale. Sure, you can mentally compensate... but wouldn't you rather just be able to see at a glance where things are, knowing you can trust your intuitive sense of how far away things are from each other?
 
 ** The Solution: A continuous perspective
+[[file:unreliablenarrator_infinite_future_with_scrolling_calendar_dat_aab1ab6f-609f-41ad-b18c-af1556b51b19.png]]
+
 What I want is a calendar that accurately depicts the continuous flow of time, displaying the future as what it is: a continuous series of days.
 
 Instead of having to click "Next," like turning the page of a book, I want to be able to just scroll down to see upcoming events.
@@ -61,7 +63,8 @@ Then I stumbled upon [[https://madebyevan.com/calendar/][Continuous Calendar]] b
 
 * My Enhancements
 #+CAPTION: An illustration of the Timeless interface.
-[[https://github.com/incandescentman/scrollandkey/raw/main/3.png]]
+
+[[file:unreliablenarrator_infinite_calendar_scrolling_calendar._appli_56f4a6e0-a252-4621-8bb6-7443c1c2933c.png]]
 
 I've taken Evan's original implementation and added a few enhancements of my own:
 - Added the ability to display days of the week
@@ -116,3 +119,4 @@ Contributions to *Timeless* are welcome! I need all the help I can get. Please f
 
 * License
 Timeless is released under the MIT License. See the LICENSE file in the repository for full details.
+

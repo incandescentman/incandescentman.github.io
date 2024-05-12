@@ -1,0 +1,119 @@
+:root {
+  --border-width: 2px;
+  --border-color: black;
+  --header-height: 27px;
+  --shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+#header {
+  line-height: var(--header-height);
+  background: linear-gradient(to bottom, #fff, #f0f0f0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  padding: 5px;
+  text-align: center;
+  border-bottom: var(--border-width) solid var(--border-color);
+  box-shadow: var(--shadow);
+}
+
+#help {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+#help div {
+  text-align: right;
+  margin: 150px auto 0 auto;
+  width: 400px;
+  height: 90px;
+  padding: 20px;
+  color: black;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  background: white;
+}
+
+a.button {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 5px 15px;
+  line-height: 15px;
+  margin-left: 5px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: linear-gradient(to bottom, #FFFFFF, #DFDFDF);
+  transition: all 0.3s;
+}
+
+a.button:hover {
+  background: linear-gradient(to bottom, #E0E0E0, #C0C0C0);
+  box-shadow: var(--shadow);
+}
+
+body, td {
+  background: white;
+  color: black;
+  margin: 0;
+  font: 12px sans-serif;
+}
+
+table {
+  margin: 0 auto;
+  border-spacing: 0;
+  border-left: var(--border-width) solid var(--border-color);
+  border-top: var(--border-width) solid var(--border-color);
+}
+
+td {
+  border-right: var(--border-width) solid var(--border-color);
+  border-bottom: var(--border-width) solid var(--border-color);
+  padding: 3px 15px 20px 3px;
+  text-align: right;
+  vertical-align: top;
+  width: 120px;
+  height: 100px;
+  cursor: pointer;
+}
+
+td.shaded {
+  background: #CFE7FF;
+}
+
+td.today {
+  background-color: #C92228;
+  border: 2px solid #C92228;
+  color: #FFF;
+  font-weight: bold;
+  box-shadow: var(--shadow);
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  font: 12px sans-serif;
+  margin-top: 3px;
+  padding: 5px;
+  background: #CFE7FF;
+  border: 1px solid #5FAFFF;
+  border-radius: 4px;
+  resize: horizontal;
+  outline: none;
+}
+
+td.shaded textarea {
+  background: white;
+}
+
+a:focus {
+  outline: none;
+}
