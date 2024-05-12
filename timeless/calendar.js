@@ -419,7 +419,14 @@ window.onload = function()
 function showHelp() { document.getElementById('help').style.display = 'block'; }
 function hideHelp() { document.getElementById('help').style.display = 'none'; }
 
-document.write('<div id="header"><a href="https://github.com/incandescentman/timeless" target="_blank" class="timeless"  rel="noopener noreferrer">🪐 <span class=bold>Timeless:</span> The Infinite, Infinitely-Scrolling Calendar ✨</a><BR><a class="button" href="javascript:smoothScrollToToday()">Scroll to today 📅</a><a class="button" href="javascript:downloadLocalStorageData()">Save 💾</a><a class="button" href="javascript:document.getElementById(\'fileInput\').click()">Load 📥</a><a class="button" href="javascript:showHelp()">Help ℹ️</a></div>');
+document.write('<div id="header">' +
+    '<a href="https://github.com/incandescentman/timeless" target="_blank" class="timeless" rel="noopener noreferrer">🪐 <span class="bold">Timeless:</span> The Infinite Calendar ✨</a><br>' +
+    '<a class="button" href="javascript:smoothScrollToToday()" data-tooltip="Go to Today">📅</a>' +
+    '<a class="button" href="javascript:document.getElementById(\'fileInput\').click()" data-tooltip="Load Calendar Data">📥</a>' +
+    '<a class="button" href="javascript:downloadLocalStorageData()" data-tooltip="Save Calendar Data">💾</a>' +
+    '<a class="button" href="javascript:showHelp()" data-tooltip="Help">ℹ️</a>' +
+    '</div>');
 document.write('<input type="file" id="fileInput" style="display: none;" onchange="loadDataFromFile()">');
 document.write('<table id="calendar"></table>');
 document.write('<div id="help"><div><ul><li>Click on a day to add a note</li><li>To delete a note, delete its text</li><li>Use the scroll wheel to move forward or backward in time</li></ul><a class="button" href="javascript:hideHelp()">Close</a></div></div>');
+

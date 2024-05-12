@@ -4,7 +4,10 @@
 * Introduction
 Welcome to *Timeless*, an infinitely scrolling calendar designed to help you visualize time continuously as you plan your life.
 
-This project is an appreciative fork of Continuous Calendar by Evan Wallace (https://madebyevan.com/calendar/) with some added functionality of my own.
+Here it is in action:
+[[https://incandescentman.github.io/timeless/][Timeless: The Infinitely Scrolling Calendar 📅✨]]
+
+This project is an appreciative fork of [[https://madebyevan.com/calendar/][Continuous Calendar]] by Evan Wallace with some added functionality of my own.
 
 #+ATTR_HTML: :width 300px
 
