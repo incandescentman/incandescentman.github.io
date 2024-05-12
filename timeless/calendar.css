@@ -144,3 +144,10 @@ a:focus {
 	outline: none;
 }
 
+td.today {
+  background-color: #C92228;
+  border-color: #C92228;
+  color:#FFF;
+  font-weight:bold;
+
+}
