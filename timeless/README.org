@@ -85,7 +85,7 @@ To get started with *Timeless*:
 ** Non-expert users
 1. To download: Click the green ~<> Code ▼~ button at the top of this github.com page, then click ~Download ZIP~.
 2. Unzip the package.
-3. Open the file ~timeless.html~.
+3. Open the file ~index.html~.
 
 ** Expert users
 Clone the repository and open the HTML file.
@@ -93,11 +93,11 @@ Clone the repository and open the HTML file.
 #+BEGIN_SRC sh
 git clone https://github.com/incandescentman/timeless.git
 cd timeless
-open timeless.html
+open index.html
 #+END_SRC
 
 * Usage
-First, open [[file:timeless.html][timeless.html]].
+First, open [[file:index.html][index.html]].
 
 ** Adding Notes
 Click on any day to add a calendar event. A text area will appear where you can enter text. Press RETURN to save the note to local storage, which will automatically adjust the day's cell to accommodate the text.
