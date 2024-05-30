@@ -76,6 +76,86 @@ function storeValueForItemId(itemId) {
     }
 }
 
+function storeValueForItemId(itemId) {
+    var item = document.getElementById(itemId);
+    if (item) {
+        var parentId = item.parentNode.id;
+        localStorage[itemId] = item.value;
+
+        var parentIdsToItemIds = localStorage[parentId] ? localStorage[parentId].split(',') : [];
+        var found = false;
+        for (var i in parentIdsToItemIds) {
+            if (parentIdsToItemIds[i] == itemId) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            parentIdsToItemIds.push(itemId);
+            localStorage[parentId] = parentIdsToItemIds;
+        }
+
+        // Store the timestamp of the last saved event
+        localStorage.setItem('lastSavedTimestamp', Date.now());
+    }
+}
+
+async function shouldLoadOrExport() {
+    try {
+        const handle = await window.showDirectoryPicker();
+        const fileHandle = await handle.getFileHandle('calendar_data.json', { create: false });
+        const file = await fileHandle.getFile();
+        const contents = await file.text();
+        const data = JSON.parse(contents);
+
+        // Get the timestamp from the saved file (assuming it's saved in the file)
+        const fileTimestamp = data.lastSavedTimestamp;
+
+        // Get the last saved timestamp from localStorage
+        const localTimestamp = localStorage.getItem('lastSavedTimestamp');
+
+        if (fileTimestamp && localTimestamp && fileTimestamp > localTimestamp) {
+            // Load data from the file if it is newer
+            loadDataFromFileHandle(fileHandle);
+        } else {
+            // Export data if the local data is newer
+            exportToFileHandle(fileHandle);
+        }
+    } catch (error) {
+        console.error('Error determining whether to load or export', error);
+    }
+}
+
+async function loadDataFromFileHandle(fileHandle) {
+    const file = await fileHandle.getFile();
+    const contents = await file.text();
+    const data = JSON.parse(contents);
+
+    for (var key in data) {
+        if (data.hasOwnProperty(key)) {
+            localStorage.setItem(key, data[key]);
+        }
+    }
+    alert('Data loaded successfully!');
+    location.reload();
+}
+
+async function exportToFileHandle(fileHandle) {
+    const writable = await fileHandle.createWritable();
+    var data = {};
+    for (var key in localStorage) {
+        if (localStorage.hasOwnProperty(key)) {
+            data[key] = localStorage.getItem(key);
+        }
+    }
+    var dataStr = JSON.stringify(data);
+    await writable.write(dataStr);
+    await writable.close();
+    alert('Data saved to iCloud Drive successfully!');
+}
+
+
+
 function removeValueForItemId(itemId) {
     delete localStorage[itemId];
 
@@ -424,6 +504,8 @@ document.write('<div id="header">' +
     '<a class="button" href="javascript:document.getElementById(\'fileInput\').click()" data-tooltip="Load Calendar Data">📥</a>' +
     '<a class="button" href="javascript:downloadLocalStorageData()" data-tooltip="Save Calendar Data">💾</a>' +
     '<a class="button" href="javascript:exportToiCloud()" data-tooltip="Save to iCloud Drive">🌩️</a>' +
+'<a class="button" href="javascript:shouldLoadOrExport()" data-tooltip="Sync Calendar Data">🔄</a>'
+               +
     '<a class="button" href="javascript:showHelp()" data-tooltip="Help">ℹ️</a>' +
     '</div>');
 document.write('<input type="file" id="fileInput" style="display: none;" onchange="loadDataFromFile()">');
