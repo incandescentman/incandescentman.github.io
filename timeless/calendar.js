@@ -100,60 +100,67 @@ function storeValueForItemId(itemId) {
     }
 }
 
+
 async function shouldLoadOrExport() {
-    try {
-        const handle = await window.showDirectoryPicker();
-        const fileHandle = await handle.getFileHandle('calendar_data.json', { create: false });
-        const file = await fileHandle.getFile();
-        const contents = await file.text();
-        const data = JSON.parse(contents);
+  try {
+    const handle = await window.showDirectoryPicker();
+    const fileHandle = await handle.getFileHandle('calendar_data.json', { create: false });
 
-        // Get the timestamp from the saved file (assuming it's saved in the file)
-        const fileTimestamp = data.lastSavedTimestamp;
-
-        // Get the last saved timestamp from localStorage
-        const localTimestamp = localStorage.getItem('lastSavedTimestamp');
-
-        if (fileTimestamp && localTimestamp && fileTimestamp > localTimestamp) {
-            // Load data from the file if it is newer
-            loadDataFromFileHandle(fileHandle);
-        } else {
-            // Export data if the local data is newer
-            exportToFileHandle(fileHandle);
-        }
-    } catch (error) {
-        console.error('Error determining whether to load or export', error);
-    }
-}
-
-async function loadDataFromFileHandle(fileHandle) {
     const file = await fileHandle.getFile();
     const contents = await file.text();
     const data = JSON.parse(contents);
 
-    for (var key in data) {
-        if (data.hasOwnProperty(key)) {
-            localStorage.setItem(key, data[key]);
-        }
+    const fileTimestamp = data.lastSavedTimestamp;
+    const localTimestamp = localStorage.getItem('lastSavedTimestamp');
+
+    if (fileTimestamp && (!localTimestamp || fileTimestamp > localTimestamp)) {
+      // Load data from file if it's newer
+      await loadDataFromFileHandle(fileHandle);
+      location.reload(); // Refresh to show loaded data
+    } else {
+      // Save data to file if local data is newer
+      await exportToFileHandle(fileHandle);
     }
-    alert('Data loaded successfully!');
-    location.reload();
+  } catch (err) {
+    if (err.name === 'AbortError') {
+      console.log('User cancelled file/directory selection');
+    } else {
+      console.error('Error syncing data:', err);
+      alert('There was an error syncing the calendar data. See console for details.');
+    }
+  }
+}
+
+async function loadDataFromFileHandle(fileHandle) {
+  const file = await fileHandle.getFile();
+  const contents = await file.text();
+  const data = JSON.parse(contents);
+
+  for (const key in data) {
+    if (data.hasOwnProperty(key)) {
+      localStorage.setItem(key, data[key]);
+    }
+  }
+
+  alert('Loaded calendar data from file.');
 }
 
 async function exportToFileHandle(fileHandle) {
-    const writable = await fileHandle.createWritable();
-    var data = {};
-    for (var key in localStorage) {
-        if (localStorage.hasOwnProperty(key)) {
-            data[key] = localStorage.getItem(key);
-        }
-    }
-    var dataStr = JSON.stringify(data);
-    await writable.write(dataStr);
-    await writable.close();
-    alert('Data saved to iCloud Drive successfully!');
-}
+  const writable = await fileHandle.createWritable();
 
+  const data = {};
+  for (const key in localStorage) {
+    if (localStorage.hasOwnProperty(key)) {
+      data[key] = localStorage.getItem(key);
+    }
+  }
+  data.lastSavedTimestamp = Date.now();
+
+  await writable.write(JSON.stringify(data));
+  await writable.close();
+
+  alert('Saved calendar data to file.');
+}
 
 
 function removeValueForItemId(itemId) {
