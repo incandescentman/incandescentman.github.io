@@ -73,95 +73,72 @@ function storeValueForItemId(itemId) {
             parentIdsToItemIds.push(itemId);
             localStorage[parentId] = parentIdsToItemIds;
         }
-    }
-}
-
-function storeValueForItemId(itemId) {
-    var item = document.getElementById(itemId);
-    if (item) {
-        var parentId = item.parentNode.id;
-        localStorage[itemId] = item.value;
-
-        var parentIdsToItemIds = localStorage[parentId] ? localStorage[parentId].split(',') : [];
-        var found = false;
-        for (var i in parentIdsToItemIds) {
-            if (parentIdsToItemIds[i] == itemId) {
-                found = true;
-                break;
-            }
-        }
-        if (!found) {
-            parentIdsToItemIds.push(itemId);
-            localStorage[parentId] = parentIdsToItemIds;
-        }
 
         // Store the timestamp of the last saved event
         localStorage.setItem('lastSavedTimestamp', Date.now());
     }
 }
 
-
 async function shouldLoadOrExport() {
-  try {
-    const handle = await window.showDirectoryPicker();
-    const fileHandle = await handle.getFileHandle('calendar_data.json', { create: false });
+    try {
+        const handle = await window.showDirectoryPicker();
+        const fileHandle = await handle.getFileHandle('calendar_data.json', { create: false });
 
+        const file = await fileHandle.getFile();
+        const contents = await file.text();
+        const data = JSON.parse(contents);
+
+        const fileTimestamp = data.lastSavedTimestamp;
+        const localTimestamp = localStorage.getItem('lastSavedTimestamp');
+
+        if (fileTimestamp && (!localTimestamp || fileTimestamp > localTimestamp)) {
+            // Load data from file if it's newer
+            await loadDataFromFileHandle(fileHandle);
+            location.reload(); // Refresh to show loaded data
+        } else {
+            // Save data to file if local data is newer
+            await exportToFileHandle(fileHandle);
+        }
+    } catch (err) {
+        if (err.name === 'AbortError') {
+            console.log('User cancelled file/directory selection');
+        } else {
+            console.error('Error syncing data:', err);
+            alert('There was an error syncing the calendar data. See console for details.');
+        }
+    }
+}
+
+async function loadDataFromFileHandle(fileHandle) {
     const file = await fileHandle.getFile();
     const contents = await file.text();
     const data = JSON.parse(contents);
 
-    const fileTimestamp = data.lastSavedTimestamp;
-    const localTimestamp = localStorage.getItem('lastSavedTimestamp');
-
-    if (fileTimestamp && (!localTimestamp || fileTimestamp > localTimestamp)) {
-      // Load data from file if it's newer
-      await loadDataFromFileHandle(fileHandle);
-      location.reload(); // Refresh to show loaded data
-    } else {
-      // Save data to file if local data is newer
-      await exportToFileHandle(fileHandle);
+    for (const key in data) {
+        if (data.hasOwnProperty(key)) {
+            localStorage.setItem(key, data[key]);
+        }
     }
-  } catch (err) {
-    if (err.name === 'AbortError') {
-      console.log('User cancelled file/directory selection');
-    } else {
-      console.error('Error syncing data:', err);
-      alert('There was an error syncing the calendar data. See console for details.');
-    }
-  }
-}
 
-async function loadDataFromFileHandle(fileHandle) {
-  const file = await fileHandle.getFile();
-  const contents = await file.text();
-  const data = JSON.parse(contents);
-
-  for (const key in data) {
-    if (data.hasOwnProperty(key)) {
-      localStorage.setItem(key, data[key]);
-    }
-  }
-
-  alert('Loaded calendar data from file.');
+    alert('Loaded calendar data from file.');
 }
 
 async function exportToFileHandle(fileHandle) {
-  const writable = await fileHandle.createWritable();
+    const writable = await fileHandle.createWritable();
 
-  const data = {};
-  for (const key in localStorage) {
-    if (localStorage.hasOwnProperty(key)) {
-      data[key] = localStorage.getItem(key);
+    const data = {};
+    for (const key in localStorage) {
+        if (localStorage.hasOwnProperty(key)) {
+            data[key] = localStorage.getItem(key);
+        }
     }
-  }
-  data.lastSavedTimestamp = Date.now();
+    data.lastSavedTimestamp = Date.now();
 
-  await writable.write(JSON.stringify(data));
-  await writable.close();
+    await writable.write(JSON.stringify(data));
+    await writable.close();
 
-  alert('Saved calendar data to file.');
+    alert('Saved calendar data to file.');
 }
-
 
 function removeValueForItemId(itemId) {
     delete localStorage[itemId];
@@ -188,7 +165,6 @@ var lastDate;
 var calendarTableElement;
 var itemPaddingBottom = (navigator.userAgent.indexOf('Firefox') != -1) ? 2 : 0;
 var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
 var daysOfWeek = ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'];
 
 function idForDate(date) {
@@ -335,7 +311,7 @@ function scrollAnimation() {
     if (percent > 1) window.scrollTo(0, goalY);
     else {
         window.scrollTo(0, Math.round(startY + (goalY - startY) * curve(percent)));
-        setTimeout('scrollAnimation()', 10);
+        setTimeout(scrollAnimation, 10);
     }
 }
 
@@ -355,7 +331,7 @@ function smoothScrollToToday() {
     goalY = scrollPositionForElement(document.getElementById(idForDate(todayDate)));
     startY = documentScrollTop();
     startTime = new Date();
-    if (goalY != startY) setTimeout('scrollAnimation()', 10);
+    if (goalY != startY) setTimeout(scrollAnimation, 10);
 }
 
 // TODO: when scrolling down, safari sometimes scrolls down by the exact height of content added
@@ -402,7 +378,7 @@ function loadCalendarAroundDate(seedDate) {
         appendWeek();
     }
 
-    setTimeout('scrollToToday()', 50);
+    setTimeout(scrollToToday, 50);
 }
 
 // Improved download function with key check
@@ -454,9 +430,6 @@ function loadDataFromFile() {
     reader.readAsText(file);
 }
 
-
-
-
 async function exportToiCloud() {
     try {
         // Prompt the user to select a directory
@@ -490,16 +463,12 @@ async function exportToiCloud() {
     }
 }
 
-
-
-
-
 window.onload = function() {
     calendarTableElement = document.getElementById('calendar');
     todayDate = new Date;
 
     loadCalendarAroundDate(todayDate);
-    setInterval('poll()', 100);
+    setInterval(poll, 100);
 }
 
 function showHelp() { document.getElementById('help').style.display = 'block'; }
@@ -510,8 +479,7 @@ document.write('<div id="header">' +
     '<a class="button" href="javascript:smoothScrollToToday()" data-tooltip="Go to Today">📅</a>' +
     '<a class="button" href="javascript:document.getElementById(\'fileInput\').click()" data-tooltip="Load Calendar Data">📥</a>' +
     '<a class="button" href="javascript:downloadLocalStorageData()" data-tooltip="Save to Downloads Folder">💾</a>' +
-'<a class="button" href="javascript:shouldLoadOrExport()" data-tooltip="Sync Calendar Data">🔄</a>'
-               +
+    '<a class="button" href="javascript:shouldLoadOrExport()" data-tooltip="Sync Calendar Data">🔄</a>' +
     '<a class="button" href="javascript:showHelp()" data-tooltip="Help">ℹ️</a>' +
     '</div>');
 document.write('<input type="file" id="fileInput" style="display: none;" onchange="loadDataFromFile()">');

@@ -7,6 +7,16 @@ Welcome to *Timeless*, an infinitely scrolling calendar designed to help you vis
 Here it is in action:
 [[https://incandescentman.github.io/timeless/][Timeless: The Infinitely Scrolling Calendar 📅✨]]
 
+Summary:
+- An infinitely scrolling web calendar app that allows adding notes to any day. New weeks are dynamically added when scrolling, so the calendar expands infinitely in both directions.
+- Data is stored client-side using localStorage, so notes are private.
+- To add a note, you click on a day and start typing. Hitting enter saves the note. To delete a note, you delete its text.
+- It shows the current date highlighted, and automatically scrolls to today's date on load. You can click the calendar button to smoothly scroll to today's date anytime.
+- The calendar shows the full month names and year in the blank space at the end of each month for easier navigation when scrolling far into the past or future.
+- Export the calendar data to a JSON file in your Downloads folder; or import data from your saved JSON file to load previously saved notes.
+- You can choose to sync your data between multiple devices by saving calendar data to a shared drive, such as iCloud, Dropbox, or Google Drive.
+   + The sync button allows syncing the calendar data in a cloud storage directory of your choosing. It compares timestamps to determine whether to load newer data from the file or save newer local data to the file.
+
 This project is an appreciative fork of [[https://madebyevan.com/calendar/][Continuous Calendar]] by Evan Wallace with some added functionality of my own.
 
 #+ATTR_HTML: :width 300px
@@ -86,9 +96,9 @@ https://chat.openai.com/share/512d0b31-f773-49a6-8246-2e003f186e6a
 To get started with *Timeless*:
 
 ** Non-expert users
-1. To download: Click the green ~<> Code ▼~ button at the top of this github.com page, then click ~Download ZIP~.
-2. Unzip the package.
-3. Open the file ~index.html~.
+Visit this page: [[https://incandescentman.github.io/timeless/][Timeless: The Infinitely Scrolling Calendar 📅✨]]
+
+That's it! You can now begin adding events!
 
 ** Expert users
 Clone the repository and open the HTML file.
@@ -100,8 +110,6 @@ open index.html
 #+END_SRC
 
 * Usage
-First, open [[file:index.html][index.html]].
-
 ** Adding Notes
 Click on any day to add a calendar event. A text area will appear where you can enter text. Press RETURN to save the note to local storage, which will automatically adjust the day's cell to accommodate the text.
 
