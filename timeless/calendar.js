@@ -509,12 +509,11 @@ document.write('<div id="header">' +
     '<a href="https://github.com/incandescentman/timeless" target="_blank" class="timeless" rel="noopener noreferrer">🪐 <span class="bold">Timeless:</span> The Infinite Calendar ✨</a><br>' +
     '<a class="button" href="javascript:smoothScrollToToday()" data-tooltip="Go to Today">📅</a>' +
     '<a class="button" href="javascript:document.getElementById(\'fileInput\').click()" data-tooltip="Load Calendar Data">📥</a>' +
-    '<a class="button" href="javascript:downloadLocalStorageData()" data-tooltip="Save Calendar Data">💾</a>' +
-    '<a class="button" href="javascript:exportToiCloud()" data-tooltip="Save to iCloud Drive">🌩️</a>' +
+    '<a class="button" href="javascript:downloadLocalStorageData()" data-tooltip="Save to Downloads Folder">💾</a>' +
 '<a class="button" href="javascript:shouldLoadOrExport()" data-tooltip="Sync Calendar Data">🔄</a>'
                +
     '<a class="button" href="javascript:showHelp()" data-tooltip="Help">ℹ️</a>' +
     '</div>');
 document.write('<input type="file" id="fileInput" style="display: none;" onchange="loadDataFromFile()">');
 document.write('<table id="calendar"></table>');
-document.write('<div id="help"><div><ul><li>Click on a day to add a note</li><li>To delete a note, delete its text</li><li>Use the scroll wheel to move forward or backward in time</li></ul><a class="button" href="javascript:hideHelp()">Close</a></div></div>');
+document.write('<div id="help"><div><ul><li>Click on a day to add a note</li><li>To delete a note, just delete its text</li><li>Scroll to travel forward or backward in time</li></ul><a class="button" href="javascript:hideHelp()">Close</a></div></div>');
