@@ -15,7 +15,6 @@ The above copyright notice and this permission notice shall be included in all c
 The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
 */
 
-
 function nextItemId() {
   localStorage.nextId = localStorage.nextId ? parseInt(localStorage.nextId) + 1 : 0;
   return 'item' + localStorage.nextId;
@@ -191,8 +190,6 @@ function checkItem() {
   }
 }
 
-
-
 function generateItem(parentId, itemId) {
     var item = document.createElement('textarea');
     var parent = document.getElementById(parentId);
@@ -254,6 +251,12 @@ function prependWeek() {
         var day = week.insertCell(0);
         generateDay(day, new Date(firstDate)); // Use a new instance to avoid reference issues
     } while (getAdjustedDayIndex(firstDate) !== 0);
+
+    if (monthName) {
+        var extra = week.insertCell(0);
+        extra.className = 'extra';
+        extra.innerHTML = monthName;
+    }
 }
 
 function appendWeek() {
@@ -269,9 +272,11 @@ function appendWeek() {
         generateDay(day, new Date(lastDate)); // Ensure a new date object is used
     } while (getAdjustedDayIndex(lastDate) !== 6); // Ensure the week ends on Sunday
 
-    var extra = week.insertCell(-1);
-    extra.className = 'extra';
-    extra.innerHTML = monthName;
+    if (monthName) {
+        var extra = week.insertCell(-1);
+        extra.className = 'extra';
+        extra.innerHTML = monthName;
+    }
 }
 
 function scrollPositionForElement(element) {
@@ -436,18 +441,16 @@ async function exportToiCloud() {
         const writable = await fileHandle.createWritable();
 
         // Prepare the data to be saved
-        var data = {};
-        for (var key in localStorage) {
+        const data = {};
+        for (const key in localStorage) {
             if (localStorage.hasOwnProperty(key)) {
                 data[key] = localStorage.getItem(key);
             }
         }
-        var dataStr = JSON.stringify(data);
+        data.lastSavedTimestamp = Date.now();
 
         // Write the data to the file
-        await writable.write(dataStr);
-
-        // Close the writable stream
+        await writable.write(JSON.stringify(data));
         await writable.close();
 
         alert('Data saved to iCloud Drive successfully!');
@@ -465,9 +468,15 @@ window.onload = function() {
     setInterval(poll, 100);
 }
 
-function showHelp() { document.getElementById('help').style.display = 'block'; }
-function hideHelp() { document.getElementById('help').style.display = 'none'; }
+function showHelp() {
+    document.getElementById('help').style.display = 'block';
+}
 
+function hideHelp() {
+    document.getElementById('help').style.display = 'none';
+}
+
+// HTML content injection
 document.write('<div id="header">' +
     '<a href="https://github.com/incandescentman/timeless" target="_blank" class="timeless" rel="noopener noreferrer">🪐 <span class="bold">Timeless:</span> The Infinite Calendar ✨</a><br>' +
     '<a class="button" href="javascript:smoothScrollToToday()" data-tooltip="Go to Today">📅</a>' +
