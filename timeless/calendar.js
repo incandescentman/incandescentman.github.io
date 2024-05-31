@@ -423,6 +423,9 @@ function downloadBackupStorageData() {
   document.body.appendChild(downloadAnchorNode);
   downloadAnchorNode.click();
   downloadAnchorNode.remove();
+
+      // Notify user about the backup
+  alert('A backup of your existing calendar data has been saved to your Downloads folder just in cases.');
 }
 
 
