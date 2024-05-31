@@ -1,105 +1,65 @@
 /*
- 📜 Timeless: The Infinitely Scrolling Calendar 📜
- by Jay Dixit
+📜 Timeless: The Infinitely Scrolling Calendar 📜
+by Jay Dixit
 
- An appreciative fork of Continuous Calendar by Evan Wallace
- (https://madebyevan.com/calendar/)
- License: MIT License (see below)
+An appreciative fork of Continuous Calendar by Evan Wallace (https://madebyevan.com/calendar/)
+License: MIT License (see below)
 
- Copyright (c) 2010 Evan Wallace
- Copyright (c) 2024 Jay Dixit
+Copyright 2010 Evan Wallace
+Copyright 2024 Jay Dixit
 
- Permission is hereby granted, free of charge, to any person
- obtaining a copy of this software and associated documentation
- files (the "Software"), to deal in the Software without
- restriction, including without limitation the rights to use,
- copy, modify, merge, publish, distribute, sublicense, and/or sell
- copies of the Software, and to permit persons to whom the
- Software is furnished to do so, subject to the following
- conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
- The above copyright notice and this permission notice shall be
- included in all copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
- EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
- OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
- NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
- HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
- WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
- OTHER DEALINGS IN THE SOFTWARE.
+The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.
 */
 
-// TODO: maybe put in a way to go to any date which reloads the calendar at that date
-// TODO: need a way of exporting/importing data
 
 function nextItemId() {
-    localStorage.nextId = localStorage.nextId ? parseInt(localStorage.nextId) + 1 : 0;
-    return 'item' + localStorage.nextId;
+  localStorage.nextId = localStorage.nextId ? parseInt(localStorage.nextId) + 1 : 0;
+  return 'item' + localStorage.nextId;
 }
 
 // callback expects a list of objects with the itemId and itemValue properties set
 function lookupItemsForParentId(parentId, callback) {
-    if (localStorage[parentId]) {
-        var parentIdsToItemIds = localStorage[parentId].split(',');
-        var list = [];
+  if (localStorage[parentId]) {
+    var parentIdsToItemIds = localStorage[parentId].split(',');
+    var itemList = [];
 
-        for (var i in parentIdsToItemIds) {
-            var itemId = parentIdsToItemIds[i];
-            var itemValue = localStorage[itemId];
-            list.push({ 'itemId': itemId, 'itemValue': itemValue });
-        }
-
-        callback(list);
+    for (var itemIndex in parentIdsToItemIds) {
+      var itemId = parentIdsToItemIds[itemIndex];
+      var itemValue = localStorage[itemId];
+      itemList.push({ 'itemId': itemId, 'itemValue': itemValue });
     }
+
+    callback(itemList);
+  }
 }
 
 function storeValueForItemId(itemId) {
-    var item = document.getElementById(itemId);
-    if (item) {
-        var parentId = item.parentNode.id;
-        localStorage[itemId] = item.value;
+  var item = document.getElementById(itemId);
+  if (item) {
+    var parentId = item.parentNode.id;
+    localStorage[itemId] = item.value;
 
-        var parentIdsToItemIds = localStorage[parentId] ? localStorage[parentId].split(',') : [];
-        var found = false;
-        for (var i in parentIdsToItemIds) {
-            if (parentIdsToItemIds[i] == itemId) {
-                found = true;
-                break;
-            }
-        }
-        if (!found) {
-            parentIdsToItemIds.push(itemId);
-            localStorage[parentId] = parentIdsToItemIds;
-        }
+    var parentIdsToItemIds = localStorage[parentId] ? localStorage[parentId].split(',') : [];
+    var found = false;
+    for (var itemIndex in parentIdsToItemIds) {
+      if (parentIdsToItemIds[itemIndex] == itemId) {
+        found = true;
+        break;
+      }
     }
-}
-
-function storeValueForItemId(itemId) {
-    var item = document.getElementById(itemId);
-    if (item) {
-        var parentId = item.parentNode.id;
-        localStorage[itemId] = item.value;
-
-        var parentIdsToItemIds = localStorage[parentId] ? localStorage[parentId].split(',') : [];
-        var found = false;
-        for (var i in parentIdsToItemIds) {
-            if (parentIdsToItemIds[i] == itemId) {
-                found = true;
-                break;
-            }
-        }
-        if (!found) {
-            parentIdsToItemIds.push(itemId);
-            localStorage[parentId] = parentIdsToItemIds;
-        }
-
-        // Store the timestamp of the last saved event
-        localStorage.setItem('lastSavedTimestamp', Date.now());
+    if (!found) {
+      parentIdsToItemIds.push(itemId);
+      localStorage[parentId] = parentIdsToItemIds;
     }
-}
 
+    // Store the timestamp of the last saved event
+    localStorage.setItem('lastSavedTimestamp', Date.now());
+  }
+}
 
 async function shouldLoadOrExport() {
   try {
@@ -132,54 +92,63 @@ async function shouldLoadOrExport() {
 }
 
 async function loadDataFromFileHandle(fileHandle) {
-  const file = await fileHandle.getFile();
-  const contents = await file.text();
-  const data = JSON.parse(contents);
+  try {
+    const file = await fileHandle.getFile();
+    const contents = await file.text();
+    const data = JSON.parse(contents);
 
-  for (const key in data) {
-    if (data.hasOwnProperty(key)) {
-      localStorage.setItem(key, data[key]);
+    for (const key in data) {
+      if (data.hasOwnProperty(key)) {
+        localStorage.setItem(key, data[key]);
+      }
     }
-  }
 
-  alert('Loaded calendar data from file.');
+    alert('Loaded calendar data from file.');
+  } catch (err) {
+    console.error('Error loading data from file:', err);
+    alert('There was an error loading the calendar data. See console for details.');
+  }
 }
 
 async function exportToFileHandle(fileHandle) {
-  const writable = await fileHandle.createWritable();
+  try {
+    const writable = await fileHandle.createWritable();
 
-  const data = {};
-  for (const key in localStorage) {
-    if (localStorage.hasOwnProperty(key)) {
-      data[key] = localStorage.getItem(key);
+    const data = {};
+    for (const key in localStorage) {
+      if (localStorage.hasOwnProperty(key)) {
+        data[key] = localStorage.getItem(key);
+      }
     }
+    data.lastSavedTimestamp = Date.now();
+
+    await writable.write(JSON.stringify(data));
+    await writable.close();
+
+    alert('Saved calendar data to file.');
+  } catch (err) {
+    console.error('Error saving data to file:', err);
+    alert('There was an error saving the calendar data. See console for details.');
   }
-  data.lastSavedTimestamp = Date.now();
-
-  await writable.write(JSON.stringify(data));
-  await writable.close();
-
-  alert('Saved calendar data to file.');
 }
 
-
 function removeValueForItemId(itemId) {
-    delete localStorage[itemId];
+  delete localStorage[itemId];
 
-    var item = document.getElementById(itemId);
-    if (!item) return;
-    var parentId = item.parentNode.id;
-    if (localStorage[parentId]) {
-        var parentIdsToItemIds = localStorage[parentId].split(',');
-        for (var i in parentIdsToItemIds) {
-            if (parentIdsToItemIds[i] == itemId) {
-                parentIdsToItemIds = parentIdsToItemIds.slice(0, i).concat(parentIdsToItemIds.slice(i + 1));
-                if (parentIdsToItemIds.length) localStorage[parentId] = parentIdsToItemIds;
-                else delete localStorage[parentId];
-                break;
-            }
-        }
+  var item = document.getElementById(itemId);
+  if (!item) return;
+  var parentId = item.parentNode.id;
+  if (localStorage[parentId]) {
+    var parentIdsToItemIds = localStorage[parentId].split(',');
+    for (var itemIndex in parentIdsToItemIds) {
+      if (parentIdsToItemIds[itemIndex] == itemId) {
+        parentIdsToItemIds = parentIdsToItemIds.slice(0, itemIndex).concat(parentIdsToItemIds.slice(itemIndex + 1));
+        if (parentIdsToItemIds.length) localStorage[parentId] = parentIdsToItemIds;
+        else delete localStorage[parentId];
+        break;
+      }
     }
+  }
 }
 
 var todayDate;
@@ -188,40 +157,41 @@ var lastDate;
 var calendarTableElement;
 var itemPaddingBottom = (navigator.userAgent.indexOf('Firefox') != -1) ? 2 : 0;
 var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
 var daysOfWeek = ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'];
 
 function idForDate(date) {
-    return date.getMonth() + '_' + date.getDate() + '_' + date.getFullYear();
+  return date.getMonth() + '_' + date.getDate() + '_' + date.getFullYear();
 }
 
 function recalculateHeight(itemId) {
-    var item = document.getElementById(itemId);
-    if (!item) return; // TODO: why is this sometimes null?
-    item.style.height = '0px'; // item.scrollHeight doesn't shrink on its own
-    item.style.height = item.scrollHeight + itemPaddingBottom + 'px';
+  var item = document.getElementById(itemId);
+  if (!item) return;
+  item.style.height = '0px'; // item.scrollHeight doesn't shrink on its own
+  item.style.height = item.scrollHeight + itemPaddingBottom + 'px';
 }
 
 function keydownHandler(event) {
-    recalculateHeight(this.id);
+  recalculateHeight(this.id);
 
-    if (event.key === "Enter") { // Use event.key which is more readable
-        event.preventDefault(); // Stop the default enter key action (newline)
-        storeValueForItemId(this.id); // Save the item
-        this.blur(); // Force the textarea to lose focus
-        return false; // Stop further processing
-    } else {
-        if (this.storeTimeout) clearTimeout(this.storeTimeout);
-        this.storeTimeout = setTimeout(() => storeValueForItemId(this.id), 1000);
-    }
+  if (event.key === "Enter") {
+    event.preventDefault(); // Stop the default enter key action (newline)
+    storeValueForItemId(this.id); // Save the item
+    this.blur(); // Force the textarea to lose focus
+    return false; // Stop further processing
+  } else {
+    if (this.storeTimeout) clearTimeout(this.storeTimeout);
+    this.storeTimeout = setTimeout(() => storeValueForItemId(this.id), 1000);
+  }
 }
 
 function checkItem() {
-    if (this.value.length == 0) {
-        removeValueForItemId(this.id);
-        this.parentNode.removeChild(this);
-    }
+  if (this.value.length == 0) {
+    removeValueForItemId(this.id);
+    this.parentNode.removeChild(this);
+  }
 }
+
+
 
 function generateItem(parentId, itemId) {
     var item = document.createElement('textarea');
@@ -335,7 +305,7 @@ function scrollAnimation() {
     if (percent > 1) window.scrollTo(0, goalY);
     else {
         window.scrollTo(0, Math.round(startY + (goalY - startY) * curve(percent)));
-        setTimeout('scrollAnimation()', 10);
+        setTimeout(scrollAnimation, 10);
     }
 }
 
@@ -355,7 +325,7 @@ function smoothScrollToToday() {
     goalY = scrollPositionForElement(document.getElementById(idForDate(todayDate)));
     startY = documentScrollTop();
     startTime = new Date();
-    if (goalY != startY) setTimeout('scrollAnimation()', 10);
+    if (goalY != startY) setTimeout(scrollAnimation, 10);
 }
 
 // TODO: when scrolling down, safari sometimes scrolls down by the exact height of content added
@@ -402,7 +372,7 @@ function loadCalendarAroundDate(seedDate) {
         appendWeek();
     }
 
-    setTimeout('scrollToToday()', 50);
+    setTimeout(scrollToToday, 50);
 }
 
 // Improved download function with key check
@@ -454,9 +424,6 @@ function loadDataFromFile() {
     reader.readAsText(file);
 }
 
-
-
-
 async function exportToiCloud() {
     try {
         // Prompt the user to select a directory
@@ -490,28 +457,23 @@ async function exportToiCloud() {
     }
 }
 
-
-
-
-
 window.onload = function() {
     calendarTableElement = document.getElementById('calendar');
     todayDate = new Date;
 
     loadCalendarAroundDate(todayDate);
-    setInterval('poll()', 100);
+    setInterval(poll, 100);
 }
 
 function showHelp() { document.getElementById('help').style.display = 'block'; }
 function hideHelp() { document.getElementById('help').style.display = 'none'; }
 
 document.write('<div id="header">' +
-    '<a href="https://github.com/incandescentman/timeless" target="_blank" class="timeless" rel="noopener noreferrer">🪐 <span class="bold">Timeless test 1:</span> The Infinite Calendar ✨</a><br>' +
+    '<a href="https://github.com/incandescentman/timeless" target="_blank" class="timeless" rel="noopener noreferrer">🪐 <span class="bold">Timeless test 2:</span> The Infinite Calendar ✨</a><br>' +
     '<a class="button" href="javascript:smoothScrollToToday()" data-tooltip="Go to Today">📅</a>' +
     '<a class="button" href="javascript:document.getElementById(\'fileInput\').click()" data-tooltip="Load Calendar Data">📥</a>' +
     '<a class="button" href="javascript:downloadLocalStorageData()" data-tooltip="Save to Downloads Folder">💾</a>' +
-'<a class="button" href="javascript:shouldLoadOrExport()" data-tooltip="Sync Calendar Data">🔄</a>'
-               +
+    '<a class="button" href="javascript:shouldLoadOrExport()" data-tooltip="Sync Calendar Data">🔄</a>' +
     '<a class="button" href="javascript:showHelp()" data-tooltip="Help">ℹ️</a>' +
     '</div>');
 document.write('<input type="file" id="fileInput" style="display: none;" onchange="loadDataFromFile()">');
