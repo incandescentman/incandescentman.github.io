@@ -484,6 +484,7 @@ document.write('<div id="header">' +
     '<a class="button" href="javascript:downloadLocalStorageData()" data-tooltip="Save to Downloads Folder">💾</a>' +
     '<a class="button" href="javascript:shouldLoadOrExport()" data-tooltip="Sync Calendar Data">🔄</a>' +
     '<a class="button" href="javascript:showHelp()" data-tooltip="Help">ℹ️</a>' +
+               '<a class="button" href="https://github.com/incandescentman/timeless" data-tooltip="Version 1.0">🧑🏻‍💻</a>' +
     '</div>');
 document.write('<input type="file" id="fileInput" style="display: none;" onchange="loadDataFromFile()">');
 document.write('<table id="calendar"></table>');
