@@ -74,6 +74,9 @@ async function shouldLoadOrExport() {
     const localTimestamp = localStorage.getItem('lastSavedTimestamp');
 
     if (fileTimestamp && (!localTimestamp || fileTimestamp > localTimestamp)) {
+      // Backup existing localStorage data
+      downloadBackupStorageData();
+
       // Load data from file if it's newer
       await loadDataFromFileHandle(fileHandle);
       location.reload(); // Refresh to show loaded data
@@ -90,6 +93,7 @@ async function shouldLoadOrExport() {
     }
   }
 }
+
 
 async function loadDataFromFileHandle(fileHandle) {
   try {
@@ -109,6 +113,8 @@ async function loadDataFromFileHandle(fileHandle) {
     alert('There was an error loading the calendar data. See console for details.');
   }
 }
+
+
 
 async function exportToFileHandle(fileHandle) {
   try {
@@ -132,6 +138,8 @@ async function exportToFileHandle(fileHandle) {
   }
 }
 
+
+
 function removeValueForItemId(itemId) {
   delete localStorage[itemId];
 
@@ -151,6 +159,8 @@ function removeValueForItemId(itemId) {
   }
 }
 
+
+
 var todayDate;
 var firstDate;
 var lastDate;
@@ -163,12 +173,16 @@ function idForDate(date) {
   return date.getMonth() + '_' + date.getDate() + '_' + date.getFullYear();
 }
 
+
+
 function recalculateHeight(itemId) {
   var item = document.getElementById(itemId);
   if (!item) return;
   item.style.height = '0px'; // item.scrollHeight doesn't shrink on its own
   item.style.height = item.scrollHeight + itemPaddingBottom + 'px';
 }
+
+
 
 function keydownHandler(event) {
   recalculateHeight(this.id);
@@ -183,6 +197,8 @@ function keydownHandler(event) {
     this.storeTimeout = setTimeout(() => storeValueForItemId(this.id), 1000);
   }
 }
+
+
 
 function checkItem() {
   if (this.value.length == 0) {
@@ -328,7 +344,7 @@ function smoothScrollToToday() {
     if (goalY != startY) setTimeout(scrollAnimation, 10);
 }
 
-// TODO: when scrolling down, safari sometimes scrolls down by the exact height of content added
+
 function poll() {
     // add more weeks so you can always keep scrolling
     if (documentScrollTop() < 200) {
@@ -391,6 +407,24 @@ function downloadLocalStorageData() {
     downloadAnchorNode.click();
     downloadAnchorNode.remove();
 }
+
+
+function downloadBackupStorageData() {
+  var data = {};
+  for (var key in localStorage) {
+    if (localStorage.hasOwnProperty(key)) {
+      data[key] = localStorage.getItem(key);
+    }
+  }
+  var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
+  var downloadAnchorNode = document.createElement('a');
+  downloadAnchorNode.setAttribute("href", dataStr);
+  downloadAnchorNode.setAttribute("download", "calendar_data_backup.json");
+  document.body.appendChild(downloadAnchorNode);
+  downloadAnchorNode.click();
+  downloadAnchorNode.remove();
+}
+
 
 // Improved load data function with better feedback
 function loadDataFromFile() {
