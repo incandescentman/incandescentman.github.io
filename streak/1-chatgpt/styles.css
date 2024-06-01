@@ -9,11 +9,16 @@ h1 {
     font-size: 2em;
 }
 .container {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
     max-width: 90%;
     margin: 0 auto;
+}
+.week-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
 }
 .day {
     background-color: #fff;
@@ -38,22 +43,4 @@ h1 {
 }
 .checkmark, .empty-square, .cross {
     font-size: 1.5em;
-}
-.month-row {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-.month {
-    grid-column: span 7;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    font-weight: bold;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    padding: 10px;
-    text-align: right;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

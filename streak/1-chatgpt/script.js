@@ -30,18 +30,16 @@ function parseDate(dateString) {
 
 function processOrgModeData(orgModeData, container) {
     const lines = orgModeData.trim().split('\n');
-    const monthRow = document.createElement('div');
-    monthRow.classList.add('month-row');
+    const weekRow = document.createElement('div');
+    weekRow.classList.add('week-row');
 
     let dayCount = 1;
-    let currentMonth = '';
 
     lines.forEach((line, index) => {
         console.log(`Processing line ${index + 1}: ${line}`);
         if (line.startsWith('*')) {
             const [status, dateString] = line.slice(2).trim().split(' ');
             const date = parseDate(dateString.slice(1, 11));
-            const monthName = date.toLocaleString('en-US', { month: 'short' });
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
 
             const dayElement = document.createElement('div');
@@ -66,20 +64,13 @@ function processOrgModeData(orgModeData, container) {
                 `;
             }
 
-            if (monthName !== currentMonth) {
-                currentMonth = monthName;
-                const monthElement = document.createElement('div');
-                monthElement.classList.add('month');
-                monthElement.textContent = currentMonth;
-                monthRow.appendChild(monthElement);
-            }
-
-            monthRow.appendChild(dayElement);
+            weekRow.appendChild(dayElement);
             dayCount++;
 
-            if ((index + 1) % 7 === 0 || index === lines.length - 1) {
-                container.appendChild(monthRow.cloneNode(true));
-                monthRow.innerHTML = '';
+            // If it's the end of the week or the end of the data, append the weekRow to the container and start a new weekRow
+            if (dayOfWeek === 'Sun' || index === lines.length - 1) {
+                container.appendChild(weekRow.cloneNode(true));
+                weekRow.innerHTML = '';
             }
         }
     });
