@@ -1,3 +1,6 @@
+* DONE <2024-05-27 Mon>
+* DONE <2024-05-28 Tue>
+* DONE <2024-05-29 Wed>
 * DONE <2024-05-30 Thu>
 * DONE <2024-05-31 Fri>
 * MISSED <2024-06-01 Sat>
