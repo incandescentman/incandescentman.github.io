@@ -1,7 +1,246 @@
-The "100 Days of Writing" project is a web-based application that visualizes the progress of a writing challenge spanning 100 days. The application reads data from an org-mode file named progress.org, which contains information about the status of each day's writing task. The data is then processed and displayed on a web page in a calendar-like format.
+* Introduction
+This project visualizes a 100-day writing challenge, displaying the progress in a grid format. Each day is represented as a square, and the status of each day (completed, missed, or to-do) is fetched from an Org-mode file.
 
-The calendar is organized into rows, where each row represents a week starting from Monday and ending on Sunday. Each day is represented by a square, and the square's appearance indicates the status of the writing task for that day. A green square with a checkmark represents a completed task, a red square with a cross represents a missed task, and an empty square represents a pending task.
+Demo:
+https://incandescentman.github.io/streak/
 
-The application also displays the month name to the right of each row, providing a clear visual indication of the month to which the days belong. The calendar is responsive and adjusts its layout based on the available screen width.
+The "100 Days of Writing" project is a web-based application that visualizes the progress of a writing challenge spanning 100 days. The application reads data from an org-mode file named `progress.org`, which contains information about the status of each day's writing task. The data is then processed and displayed on a web page in a calendar format.
+
+The calendar is organized into rows, where each row represents a week starting from Monday and ending on Sunday. A green square with a checkmark represents a completed task, a red square with a cross represents a missed task, and an empty square represents a future day.
+
+The calendar is responsive and adjusts its layout based on the available screen width.
 
 The project aims to provide a simple and intuitive way to track progress during a 100-day writing challenge, helping users stay motivated and accountable.
+
+* Project Structure
+#+begin_src sh
+100-days-of-writing/
+│
+├── index.html # The main HTML file
+├── styles.css # The CSS file for styling
+├── script.js  # The JavaScript file for functionality
+├── progress.org # The Org-mode file containing the progress data
+├── README.md  # This README file
+#+end_src
+
+* Installation
+
+1. Clone the repository:
+
+#+begin_src bash
+  git clone https://incandescentman.github.io/streak.git
+
+  cd 100-days-of-writing
+#+end_src
+* Usage
+
+1. Open `index.html` in your preferred web browser. This file contains the HTML structure of the page.
+
+2. The `script.js` file handles fetching and processing the progress data from the `progress.org` file. Ensure all files are in the same directory for correct functionality.
+
+* Customization
+
+** CSS Customization
+To adjust the appearance of the grid and other elements, you can modify the `styles.css` file. Here are some key classes:
+
+- `.container`: Adjusts the overall grid.
+- `.day`: Styles for each day cell.
+- `.completed`: Styles for completed days.
+- `.missed`: Styles for missed days.
+- `.todo`: Styles for to-do days.
+
+Example CSS snippet:
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  zoom: 2;
+}
+h1 {
+  color: #333;
+  font-size: 2em;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* Ensure each week has 7 equally spaced columns */
+  gap: 0; /* Remove gap between grid items */
+  max-width: 90%;
+  margin: 0 auto;
+}
+.week-row {
+  display: contents; /* Ensures each week row is part of the same grid */
+}
+.day {
+  aspect-ratio: 1 / 1; /* Set the aspect ratio to 1:1 for square cells */
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px; /* Reduced padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 1em; /* Reduced font size */
+  min-height: 100px;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+  border: 1px solid #e0e0e0; /* Add border to define edges of each day */
+  width: 100%; /* Ensure each cell takes full width of its grid column */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.day p {
+  margin: 0;
+  padding: 0;
+}
+
+.completed {
+  background-color: #8bc34a;
+  color: #fff;
+}
+
+.completed p.full-date {
+  color: #fff;
+}
+
+.missed {
+  background-color: #fff;
+  color: #C92228;
+}
+
+.missed p.day-number {
+  color: #333;
+}
+
+.todo {
+  background-color: #fff;
+  color: #333;
+}
+
+.checkmark, .empty-square, .cross {
+  margin-top: 0px; /* Add some space before the icon */
+  font-size: 3.5em; /* Adjusted font size */
+  margin-bottom: -5px; /* Add some space between the icon and the text */
+}
+
+.day-number {
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.full-date {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 12px; /* Add some space below the day number */
+  margin-bottom: 5px; /* Add some space below the date */
+}
+#+end_src
+** JavaScript Customization
+The `script.js` file contains the logic for fetching and processing the Org-mode data. You can customize the behavior by modifying this file.
+
+Example JavaScript snippet:
+
+#+begin_src javascript
+document.addEventListener('DOMContentLoaded', function () {
+  console.log("DOM fully loaded and parsed");
+
+  const container = document.getElementById('dayContainer');
+  if (!container) {
+    console.error("Container element not found!");
+    return;
+  }
+
+  fetch('progress.org')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.text();
+    })
+    .then(data => {
+      console.log('Fetched org-mode data:', data);
+      processOrgModeData(data, container);
+    })
+    .catch(error => {
+      console.error('Error fetching progress.org:', error);
+    });
+});
+
+function parseDate(dateString) {
+  const [year, month, day] = dateString.split('-');
+  return new Date(year, month - 1, day);
+}
+
+function processOrgModeData(orgModeData, container) {
+  const lines = orgModeData.trim().split('\n');
+  let weekRow = document.createElement('div');
+  weekRow.classList.add('week-row');
+
+  let dayCount = 1;
+
+  lines.forEach((line, index) => {
+    console.log(`Processing line ${index + 1}: ${line}`);
+    if (line.startsWith('*')) {
+      const [status, dateString] = line.slice(2).trim().split(' ');
+      const date = parseDate(dateString.slice(1, 11));
+      const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
+      const monthDayYear = date.toLocaleString('en-US', { month: 'short', day: 'numeric' });
+
+      const dayElement = document.createElement('div');
+      dayElement.classList.add('day');
+      if (status === 'DONE') {
+        dayElement.classList.add('completed');
+        dayElement.innerHTML = `
+          <span class="checkmark">✔</span>
+          <p class="day-number">Day ${dayCount}</p>
+          <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
+        `;
+      } else if (status === 'MISSED') {
+        dayElement.classList.add('missed');
+        dayElement.innerHTML = `
+          <span class="cross">✘</span>
+          <p class="day-number">Day ${dayCount}</p>
+          <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
+        `;
+      } else {
+        dayElement.classList.add('todo');
+        dayElement.innerHTML = `
+          <span class="empty-square"></span>
+          <p class="day-number">Day ${dayCount}</p>
+          <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
+        `;
+      }
+
+      weekRow.appendChild(dayElement);
+      dayCount++;
+
+      // If it's the end of the week or the end of the data, append the weekRow to the container and start a new weekRow
+      if (dayOfWeek === 'Sun' || index === lines.length - 1) {
+        container.appendChild(weekRow);
+        weekRow = document.createElement('div');
+        weekRow.classList.add('week-row');
+      }
+    }
+  });
+
+  console.log('Processed org-mode data:', orgModeData);
+  console.log('Generated HTML:', container.innerHTML);
+}
+#+end_src
+* Contributing
+
+Contributions are welcome! Please feel free to submit a pull request.
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some feature'`)
+5. Push to the branch (`git push origin feature-branch`)
+6. Open a pull request
+
+* License
+
+This project is licensed under the MIT License. Feel free to customize or tweak.
