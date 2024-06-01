@@ -34,6 +34,17 @@ h1 {
     font-size: 1.2rem;
 }
 
+.day-number {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 14px;
+    color: #888;
+}
+
 .completed {
     background-color: #8bc34a;
     color: #fff;

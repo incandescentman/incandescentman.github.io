@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Days Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="dayContainer">
+        <div class="month-row">
+            <div class="day completed">
+                <span class="checkmark">✔</span>
+                <p class="day-number">Day 1</p>
+                <p class="date">Mon May 27</p>
+            </div>
+            <div class="day completed">
+                <span class="checkmark">✔</span>
+                <p class="day-number">Day 2</p>
+                <p class="date">Tue May 28</p>
+            </div>
+            <div class="day completed">
+                <span class="checkmark">✔</span>
+                <p class="day-number">Day 3</p>
+                <p class="date">Wed May 29</p>
+            </div>
+            <div class="day completed">
+                <span class="checkmark">✔</span>
+                <p class="day-number">Day 4</p>
+                <p class="date">Thu May 30</p>
+            </div>
+            <div class="day completed">
+                <span class="checkmark">✔</span>
+                <p class="day-number">Day 5</p>
+                <p class="date">Fri May 31</p>
+            </div>
+            <div class="day missed">
+                <span class="cross">✘</span>
+                <p class="day-number">Day 6</p>
+                <p class="date">Sat Jun 1</p>
+            </div>
+            <div class="day missed">
+                <span class="cross">✘</span>
+                <p class="day-number">Day 7</p>
+                <p class="date">Sun Jun 2</p>
+            </div>
+            <div class="month">Jun</div>
+        </div>
+        <!-- Add more month rows and days as needed -->
+        <div class="month-row">
+            <div class="day todo">
+                <span class="empty-square">☐</span>
+                <p class="day-number">Day 99</p>
+                <p class="date">Mon Sep 2</p>
+            </div>
+            <div class="day todo">
+                <span class="empty-square">☐</span>
+                <p class="day-number">Day 100</p>
+                <p class="date">Tue Sep 3</p>
+            </div>
+            <div class="empty-month"></div>
+            <div class="empty-month"></div>
+            <div class="empty-month"></div>
+            <div class="empty-month"></div>
+            <div class="empty-month"></div>
+        </div>
+    </div>
+
+    <p>Version: <span id="version"></span></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

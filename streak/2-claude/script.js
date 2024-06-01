@@ -37,7 +37,7 @@ function processOrgModeData(orgModeData) {
             const [status, dateString] = line.slice(2).trim().split(' ');
             // Parse the date string into a Date object
             const date = parseDate(dateString.slice(1));
-            // Get the month name and day of the week from the date
+            // Get the month name, day of the week, and date of the month from the date
             const monthName = date.toLocaleString('en-US', { month: 'short' });
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
             const dateOfMonth = date.getDate();
@@ -49,19 +49,22 @@ function processOrgModeData(orgModeData) {
                 dayElement.classList.add('completed');
                 dayElement.innerHTML = `
                     <span class="checkmark">✔</span>
-                    <p>Day ${dayCount}: ${dayOfWeek} ${monthName} ${dateOfMonth}</p>
+                    <p class="day-number">Day ${dayCount}</p>
+                    <p class="date">${dayOfWeek} ${monthName} ${dateOfMonth}</p>
                 `;
             } else if (status === 'MISSED') {
                 dayElement.classList.add('missed');
                 dayElement.innerHTML = `
                     <span class="cross">✘</span>
-                    <p>Day ${dayCount}: ${dayOfWeek} ${monthName} ${dateOfMonth}</p>
+                    <p class="day-number">Day ${dayCount}</p>
+                    <p class="date">${dayOfWeek} ${monthName} ${dateOfMonth}</p>
                 `;
             } else {
                 dayElement.classList.add('todo');
                 dayElement.innerHTML = `
                     <span class="empty-square">☐</span>
-                    <p>Day ${dayCount}: ${dayOfWeek} ${monthName} ${dateOfMonth}</p>
+                    <p class="day-number">Day ${dayCount}</p>
+                    <p class="date">${dayOfWeek} ${monthName} ${dateOfMonth}</p>
                 `;
             }
 
