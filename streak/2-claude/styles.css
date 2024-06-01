@@ -16,14 +16,7 @@ h1 {
     align-items: center;
     gap: 1rem;
     margin: 0 auto;
-    max-width:50%;
-}
-
-.month-row {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr) 1fr;
-    gap: 1rem;
-    width: 100%;
+    max-width:80%;
 }
 
 .day {
@@ -35,13 +28,13 @@ h1 {
 }
 
 .day-number {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .date {
-    font-size: 14px;
+    font-size: 16px;
     color: #888;
 }
 
@@ -63,14 +56,24 @@ h1 {
     font-size: 1.5rem;
 }
 
+.month-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+    width: 100%;
+    position: relative;
+    padding-right: 6rem; /* Add padding to the right side of the month row */
+}
+
 .month {
-    text-align:left;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
     font-weight: bold;
-    font-size:4.5rem;
-    padding-left: 0rem;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    white-space: nowrap; /* Prevent the month name from wrapping */
 }
 
 .empty-month {
