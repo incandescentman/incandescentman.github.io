@@ -16,7 +16,18 @@ h1 {
     align-items: center;
     gap: 1rem;
     margin: 0 auto;
-    max-width:1200px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.month-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 1rem;
+    position: relative;
+    padding-right: 10rem; /* Increase the padding to create more space */
 }
 
 .day {
@@ -26,17 +37,19 @@ h1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 1.2rem;
     aspect-ratio: 1 / 1; /* Set the aspect ratio to 1:1 for square cells */
+    flex: 1 0 12%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ddd; /* Optional: add a border to separate the cells */
 }
 
 .day-number {
-    /* font-size: 22px; */
     font-size: clamp(1rem, 5vw, 2rem); /* Responsive font size */
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .date {
-    /* font-size: 16px; */
     font-size: clamp(0.8rem, 3vw, 1.2rem); /* Responsive font size */
     color: #888;
 }
@@ -59,17 +72,6 @@ h1 {
     font-size: 1.5rem;
 }
 
-.month-row {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 1rem;
-    width: 100%;
-    position: relative;
-    padding-right: 10rem; /* Increase the padding to create more space */
-
-
-}
-
 .month {
     position: absolute;
     right: 0;
@@ -79,88 +81,22 @@ h1 {
     font-size: 1.5rem;
     padding-right: 1rem;
     white-space: nowrap; /* Prevent the month name from wrapping */
+    text-align: left;
+    margin-left: 50px;
+    align-self: center;
+    font-size: 300%;
+    text-transform: uppercase;
 }
 
 .empty-month {
     visibility: hidden;
+    flex: 0 0 12%;
 }
 
 footer {
     margin-top: 2rem;
     font-size: 1rem;
     color: #666;
-}
-
-
-
-
-/* Add this to your styles.css */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.month-row {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.day {
-    flex: 1 0 12%;
-    box-sizing: border-box;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ddd; /* Optional: add a border to separate the cells */
-}
-
-.month {
-    flex: 0 0 12%;
-    text-align: center;
-    font-size: 1.2em;
-    margin-left: 10px;
-    align-self: center;
-    font-size:400%;
-
-}
-
-.empty-month {
-    flex: 0 0 12%;
-    visibility: hidden;
-}
-
-
-/* Add this to your styles.css */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.month-row {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.day {
-    flex: 1 0 12%;
-    box-sizing: border-box;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ddd; /* Optional: add a border to separate the cells */
-}
-
-
-.month {
-    flex: 0 0 12%;
-    text-align: left;
-    font-size: 1.2em;
-    margin-left: 50px;
-    align-self: center;
-    font-size:300%;
-    text-transform:uppercase;
 }
 
 .month.invisible {
