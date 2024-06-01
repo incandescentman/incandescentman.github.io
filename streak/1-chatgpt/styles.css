@@ -2,32 +2,49 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f0f0f0;
+    padding: 20px;
 }
-
 h1 {
     color: #333;
+    font-size: 2em;
 }
-
 .container {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 10px;
-    max-width: 800px;
+    max-width: 90%;
     margin: 0 auto;
 }
-
 .day {
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 1.2em;
 }
-
 .completed {
     background-color: #8bc34a;
     color: #fff;
 }
-
-.checkmark {
-    font-size: 24px;
+.missed {
+    background-color: #ff8c8c;
+    color: #fff;
+}
+.checkmark, .empty-square {
+    font-size: 1.5em;
+}
+.month {
+    grid-column: span 1;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: right;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

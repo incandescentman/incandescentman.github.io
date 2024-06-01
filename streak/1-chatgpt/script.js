@@ -1,67 +1,54 @@
-const container = document.getElementById('dayContainer');
-let dayCount = 1;
-let currentMonth = '';
+document.addEventListener('DOMContentLoaded', function () {
+    console.log("DOM fully loaded and parsed");
 
-function parseDate(dateString) {
-    const [year, month, day] = dateString.split('-');
-    return new Date(year, month - 1, day);
-}
+    fetch('progress.org')
+        .then(response => response.text())
+        .then(data => {
+            const lines = data.trim().split('\n');
+            console.log(`Total lines: ${lines.length}`);
 
-function processOrgModeData(orgModeData) {
-    const lines = orgModeData.trim().split('\n');
+            const container = document.getElementById('daysContainer');
+            let dayCount = 1;
+            let currentMonth = '';
 
-    lines.forEach(line => {
-        if (line.startsWith('*')) {
-            const [status, dateString] = line.slice(2).trim().split(' ');
-            const date = parseDate(dateString.slice(1));
-            const formattedDate = date.toLocaleString('en-US', {
-                weekday: 'short',
-                month: 'short',
-                day: 'numeric'
+            lines.forEach((line, index) => {
+                console.log(`Processing line ${index + 1}: ${line}`);
+                const [status, dateInfo] = line.split(' ');
+                const dateMatch = dateInfo.match(/<(\d{4}-\d{2}-\d{2}) (\w{3})>/);
+                if (dateMatch) {
+                    const [fullMatch, date, day] = dateMatch;
+                    const dateObj = new Date(date);
+                    const month = dateObj.toLocaleString('default', { month: 'long' });
+
+                    const dayDiv = document.createElement('div');
+                    dayDiv.classList.add('day');
+                    dayDiv.setAttribute('data-date', date);
+
+                    if (status === 'DONE') {
+                        dayDiv.classList.add('completed');
+                        dayDiv.innerHTML = `<span class="checkmark">✔</span><p>Day ${dayCount}: ${day} ${month} ${dateObj.getDate()}</p>`;
+                    } else if (status === 'MISSED') {
+                        dayDiv.classList.add('missed');
+                        dayDiv.innerHTML = `<span class="empty-square">☒</span><p>Day ${dayCount}: ${day} ${month} ${dateObj.getDate()}</p>`;
+                    } else {
+                        dayDiv.innerHTML = `<span class="empty-square">☐</span><p>Day ${dayCount}: ${day} ${month} ${dateObj.getDate()}</p>`;
+                    }
+
+                    container.appendChild(dayDiv);
+                    console.log(`Added day ${dayCount}`);
+
+                    if (index % 7 === 6 || index === lines.length - 1) {
+                        const monthDiv = document.createElement('div');
+                        monthDiv.classList.add('month');
+                        monthDiv.textContent = month;
+                        container.appendChild(monthDiv);
+                    }
+
+                    dayCount++;
+                }
             });
-            const monthName = date.toLocaleString('en-US', { month: 'long' });
 
-            const dayElement = document.createElement('div');
-            dayElement.classList.add('day');
-            if (status === 'DONE') {
-                dayElement.classList.add('completed');
-                dayElement.innerHTML = `
-                    <span class="checkmark">✔</span>
-                    <p>Day ${dayCount}: ${formattedDate}</p>
-                `;
-            } else if (status === 'MISSED') {
-                dayElement.classList.add('missed');
-                dayElement.innerHTML = `
-                    <span class="cross">✘</span>
-                    <p>Day ${dayCount}: ${formattedDate}</p>
-                `;
-            } else {
-                dayElement.classList.add('todo');
-                dayElement.innerHTML = `
-                    <span class="empty-square">☐</span>
-                    <p>Day ${dayCount}: ${formattedDate}</p>
-                `;
-            }
-
-            if (monthName !== currentMonth) {
-                currentMonth = monthName;
-                const monthElement = document.createElement('div');
-                monthElement.classList.add('month');
-                monthElement.textContent = currentMonth;
-                container.appendChild(monthElement);
-            }
-
-            container.appendChild(dayElement);
-            dayCount++;
-        }
-    });
-}
-
-fetch('progress.org')
-    .then(response => response.text())
-    .then(data => {
-        processOrgModeData(data);
-    })
-    .catch(error => {
-        console.error('Error fetching progress.org:', error);
-    });
+            console.log("All days processed and added");
+        })
+        .catch(error => console.error('Error fetching org file:', error));
+});
