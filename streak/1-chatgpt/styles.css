@@ -29,6 +29,7 @@ h1 {
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
     border: 1px solid #e0e0e0; /* Add border to define edges of each day */
     width: 100%; /* Ensure each cell takes full width of its grid column */
+aspect-ratio: 1 / 1; /* Set the aspect ratio to 1:1 for square cells */
 }
 .completed {
     background-color: #8bc34a;

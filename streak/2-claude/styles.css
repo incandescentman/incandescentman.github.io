@@ -16,7 +16,7 @@ h1 {
     align-items: center;
     gap: 1rem;
     margin: 0 auto;
-    max-width:80%;
+    max-width:1200px;
 }
 
 .day {
@@ -25,16 +25,19 @@ h1 {
     padding: 1rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 1.2rem;
+    aspect-ratio: 1 / 1; /* Set the aspect ratio to 1:1 for square cells */
 }
 
 .day-number {
-    font-size: 22px;
+    /* font-size: 22px; */
+    font-size: clamp(1rem, 5vw, 2rem); /* Responsive font size */
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .date {
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: clamp(0.8rem, 3vw, 1.2rem); /* Responsive font size */
     color: #888;
 }
 
@@ -62,7 +65,9 @@ h1 {
     gap: 1rem;
     width: 100%;
     position: relative;
-    padding-right: 6rem; /* Add padding to the right side of the month row */
+    padding-right: 10rem; /* Increase the padding to create more space */
+
+
 }
 
 .month {
