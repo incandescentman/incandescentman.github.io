@@ -55,11 +55,11 @@ Instead of having to click "Next," like turning the page of a book, I want to be
 
 Why are calendars designed in this counterintuitive way? Tradition. In the old days, we hung paper calendars on the wall. Wall space, since it's physical space, is limited. Your wall isn't high enough -- and you're not tall enough -- to display 12 months worth of days.
 
-But we're not in the 12th century anymore (the name of this app notwithstanding). Google Calendar is not a paper calendar. Just as your iPad lets you read a book in "Continuous Scroll" mode rather than requiring you to manually turn the page every few paragraphs, you can just press the down arrow to read on.
+But we're not in the 12th century anymore. Google Calendar is not a paper calendar. On your laptop or iPad, you can read books in *Continuous Scroll mode*. Instead of requiring you to manually turn the page every ten paragraphs, you can just hit the down arrow to read on.
 
-That's the experience I want for a calendar and I bet I'm not the only one.
+That's the experience I want for a calendar: *A continuous scroll mode, but for time.*
 
-To try to solve this problem, I researched and bought various apps that sounded promising, including [[https://www.moleskine.com/en-us/shop/moleskine-smart/apps-and-services/timepage/][Timepage by Moleskine]] and [[https://agenda.com/][Agenda]]. Though interesting approaches, they didn't offer the visually intuitive monthly interface I was looking for.
+To solve this problem, I researched and bought various apps that sounded promising, including [[https://www.moleskine.com/en-us/shop/moleskine-smart/apps-and-services/timepage/][Timepage by Moleskine]] and [[https://agenda.com/][Agenda]]. Though interesting approaches, they didn't offer the visually intuitive monthly interface I was looking for.
 
 ** A Continuous Calendar
 Then I stumbled upon [[https://madebyevan.com/calendar/][Continuous Calendar]] by [[https://github.com/evanw][Evan Wallace]]. It was perfect. Exactly what I was looking for: a calendar where I could scroll down and up as I thought about the future and planned my weeks and months. One that displayed time in a visual, intuitive way.
