@@ -41,7 +41,7 @@ function processOrgModeData(orgModeData, container) {
             const [status, dateString] = line.slice(2).trim().split(' ');
             const date = parseDate(dateString.slice(1, 11));
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
-            const monthDayYear = date.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+            const monthDayYear = date.toLocaleString('en-US', { month: 'short', day: 'numeric' });
 
             const dayElement = document.createElement('div');
             dayElement.classList.add('day');

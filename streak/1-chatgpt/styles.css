@@ -29,7 +29,10 @@ h1 {
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
     border: 1px solid #e0e0e0; /* Add border to define edges of each day */
     width: 100%; /* Ensure each cell takes full width of its grid column */
-aspect-ratio: 1 / 1; /* Set the aspect ratio to 1:1 for square cells */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .completed {
     background-color: #8bc34a;
@@ -44,7 +47,8 @@ aspect-ratio: 1 / 1; /* Set the aspect ratio to 1:1 for square cells */
     color: #333;
 }
 .checkmark, .empty-square, .cross {
-    font-size: 1.2em; /* Adjusted font size */
+    font-size: 1.5em; /* Adjusted font size */
+    margin-bottom: 10px; /* Add some space between the icon and the text */
 }
 .day-number {
     font-weight: bold;
