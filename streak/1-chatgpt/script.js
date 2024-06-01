@@ -2,8 +2,16 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded and parsed");
 
     fetch('progress.org')
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+        })
         .then(data => {
+            console.log("Fetched data successfully:");
+            console.log(data);
+
             const lines = data.trim().split('\n');
             console.log(`Total lines: ${lines.length}`);
 
@@ -37,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     container.appendChild(dayDiv);
                     console.log(`Added day ${dayCount}`);
 
-                    if (index % 7 === 6 || index === lines.length - 1) {
+                    if ((index + 1) % 7 === 0 || index === lines.length - 1) {
                         const monthDiv = document.createElement('div');
                         monthDiv.classList.add('month');
                         monthDiv.textContent = month;
