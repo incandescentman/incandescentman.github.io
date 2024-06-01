@@ -42,19 +42,18 @@ function processOrgModeData(orgModeData) {
                 `;
             }
 
-            if (monthName !== currentMonth) {
-                currentMonth = monthName;
-                const monthElement = document.createElement('div');
-                monthElement.classList.add('month');
-                monthElement.textContent = currentMonth;
-                monthRow.appendChild(monthElement);
-            }
-
             monthRow.appendChild(dayElement);
             dayCount++;
             daysInWeek++;
 
             if (daysInWeek === 7 || index === lines.length - 1) {
+                if (monthName !== currentMonth) {
+                    currentMonth = monthName;
+                    const monthElement = document.createElement('div');
+                    monthElement.classList.add('month');
+                    monthElement.textContent = currentMonth;
+                    monthRow.appendChild(monthElement);
+                }
                 container.appendChild(monthRow.cloneNode(true));
                 monthRow.innerHTML = '';
                 daysInWeek = 0;
