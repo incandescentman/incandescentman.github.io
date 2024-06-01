@@ -38,7 +38,8 @@ function processOrgModeData(orgModeData) {
             // Parse the date string into a Date object
             const date = parseDate(dateString.slice(1));
             // Get the month name, day of the week, and date of the month from the date
-            const monthName = date.toLocaleString('en-US', { month: 'long' });
+            const monthName = date.toLocaleString('en-US', { month: 'short' });
+            const longmonthName = date.toLocaleString('en-US', { month: 'long' });
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
             const dateOfMonth = date.getDate();
 
@@ -81,7 +82,7 @@ function processOrgModeData(orgModeData) {
                     currentMonth = monthName;
                     const monthElement = document.createElement('div');
                     monthElement.classList.add('month');
-                    monthElement.textContent = currentMonth;
+                    monthElement.textContent = longmonthName;
                     monthRow.appendChild(monthElement);
                 } else {
                     const emptyMonthElement = document.createElement('div');
