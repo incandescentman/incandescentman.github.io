@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     container.appendChild(dayDiv);
                     console.log(`Added day ${dayCount}`);
 
+                    // Add month label at the end of each week or at the end of data
                     if ((index + 1) % 7 === 0 || index === lines.length - 1) {
                         const monthDiv = document.createElement('div');
                         monthDiv.classList.add('month');
