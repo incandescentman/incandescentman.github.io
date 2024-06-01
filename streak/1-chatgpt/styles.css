@@ -10,8 +10,8 @@ h1 {
 }
 .container {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(7, 1fr); /* Ensure each week has 7 equally spaced columns */
+    gap: 0; /* Remove gap between grid items */
     max-width: 90%;
     margin: 0 auto;
 }
@@ -21,13 +21,14 @@ h1 {
 .day {
     background-color: #fff;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px; /* Reduced padding */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1em; /* Reduced font size */
     min-height: 100px;
-    max-width: 150px; /* Added max-width to constrain width */
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    border: 1px solid #e0e0e0; /* Add border to define edges of each day */
+    width: 100%; /* Ensure each cell takes full width of its grid column */
 }
 .completed {
     background-color: #8bc34a;
@@ -42,5 +43,5 @@ h1 {
     color: #333;
 }
 .checkmark, .empty-square, .cross {
-    font-size: 1.5em;
+    font-size: 1.2em; /* Adjusted font size */
 }
