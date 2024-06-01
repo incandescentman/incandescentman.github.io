@@ -45,3 +45,11 @@ h1 {
 .checkmark, .empty-square, .cross {
     font-size: 1.2em; /* Adjusted font size */
 }
+.day-number {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.full-date {
+    font-size: 0.9em;
+    color: #666;
+}
