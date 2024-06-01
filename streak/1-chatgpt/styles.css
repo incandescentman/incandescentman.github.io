@@ -28,6 +28,7 @@ h1 {
     text-align: left;
     font-size: 1.2em;
     min-height: 100px;
+    max-width: 150px; /* Added max-width to constrain width */
     box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 .completed {
