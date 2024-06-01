@@ -10,6 +10,7 @@ versionElement.textContent = version;
 // Initialize variables to keep track of the current day count and month
 let dayCount = 1;
 let currentMonth = '';
+let monthCounter = 0;
 
 // Function to parse a date string in the format 'YYYY-MM-DD'
 function parseDate(dateString) {
@@ -24,7 +25,7 @@ function processOrgModeData(orgModeData) {
     // Split the org-mode data into an array of lines
     const lines = orgModeData.trim().split('\n');
     // Create a container element for a row of days
-    const monthRow = document.createElement('div');
+    let monthRow = document.createElement('div');
     monthRow.classList.add('month-row');
     // Initialize a variable to keep track of the number of days in the current week
     let daysInWeek = 0;
@@ -39,7 +40,7 @@ function processOrgModeData(orgModeData) {
             const date = parseDate(dateString.slice(1));
             // Get the month name, day of the week, and date of the month from the date
             const monthName = date.toLocaleString('en-US', { month: 'short' });
-            const longmonthName = date.toLocaleString('en-US', { month: 'long' });
+            const longMonthName = date.toLocaleString('en-US', { month: 'long' });
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
             const dateOfMonth = date.getDate();
 
@@ -77,22 +78,29 @@ function processOrgModeData(orgModeData) {
 
             // Check if the current week is complete or if it's the last line of data
             if (daysInWeek === 7 || index === lines.length - 1) {
-                // If the month has changed, create a new month element and append it to the row
-                if (monthName !== currentMonth) {
-                    currentMonth = monthName;
-                    const monthElement = document.createElement('div');
-                    monthElement.classList.add('month');
-                    monthElement.textContent = longmonthName;
-                    monthRow.appendChild(monthElement);
-                } else {
-                    const emptyMonthElement = document.createElement('div');
-                    emptyMonthElement.classList.add('empty-month');
-                    monthRow.appendChild(emptyMonthElement);
+                // Create and append the month element at the end of the row
+                const monthElement = document.createElement('div');
+                monthElement.classList.add('month');
+                monthElement.textContent = longMonthName;
+
+                if (monthCounter > 0) {
+                    monthElement.classList.add('invisible');
                 }
+
+                monthRow.appendChild(monthElement);
+
                 // Append the month row to the container and reset the month row and days in week
-                container.appendChild(monthRow.cloneNode(true));
-                monthRow.innerHTML = '';
+                container.appendChild(monthRow);
+                monthRow = document.createElement('div');
+                monthRow.classList.add('month-row');
                 daysInWeek = 0;
+                monthCounter++;
+            }
+
+            // Reset monthCounter if a new month starts
+            if (monthName !== currentMonth) {
+                currentMonth = monthName;
+                monthCounter = 0;
             }
         }
     });
