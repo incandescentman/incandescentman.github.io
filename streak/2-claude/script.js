@@ -38,7 +38,7 @@ function processOrgModeData(orgModeData) {
             // Parse the date string into a Date object
             const date = parseDate(dateString.slice(1));
             // Get the month name, day of the week, and date of the month from the date
-            const monthName = date.toLocaleString('en-US', { month: 'short' });
+            const monthName = date.toLocaleString('en-US', { month: 'long' });
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
             const dateOfMonth = date.getDate();
 

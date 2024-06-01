@@ -9,16 +9,14 @@ h1 {
     font-size: 2em;
 }
 .container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     gap: 10px;
     max-width: 90%;
     margin: 0 auto;
 }
 .week-row {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); /* Ensure each week has 7 equally spaced columns */
-    gap: 10px;
+    display: contents; /* Ensures each week row is part of the same grid */
 }
 .day {
     background-color: #fff;
