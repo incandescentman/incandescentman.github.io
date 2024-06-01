@@ -1,63 +1,74 @@
-document.addEventListener('DOMContentLoaded', function () {
-    console.log("DOM fully loaded and parsed");
+const container = document.getElementById('dayContainer');
+let dayCount = 1;
+let currentMonth = '';
 
-    fetch('progress.org')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+function parseDate(dateString) {
+    const [year, month, day] = dateString.split('-');
+    return new Date(year, month - 1, day);
+}
+
+function processOrgModeData(orgModeData) {
+    const lines = orgModeData.trim().split('\n');
+    const monthRow = document.createElement('div');
+    monthRow.classList.add('month-row');
+
+    lines.forEach((line, index) => {
+        if (line.startsWith('*')) {
+            const [status, dateString] = line.slice(2).trim().split(' ');
+            const date = parseDate(dateString.slice(1));
+            const monthName = date.toLocaleString('en-US', { month: 'short' });
+            const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
+
+            const dayElement = document.createElement('div');
+            dayElement.classList.add('day');
+            if (status === 'DONE') {
+                dayElement.classList.add('completed');
+                dayElement.innerHTML = `
+                    <span class="checkmark">✔</span>
+                    <p>Day ${dayCount}: ${dayOfWeek}</p>
+                `;
+            } else if (status === 'MISSED') {
+                dayElement.classList.add('missed');
+                dayElement.innerHTML = `
+                    <span class="cross">✘</span>
+                    <p>Day ${dayCount}: ${dayOfWeek}</p>
+                `;
+            } else {
+                dayElement.classList.add('todo');
+                dayElement.innerHTML = `
+                    <span class="empty-square">☐</span>
+                    <p>Day ${dayCount}: ${dayOfWeek}</p>
+                `;
             }
-            return response.text();
-        })
-        .then(data => {
-            console.log("Fetched data successfully:");
-            console.log(data);
 
-            const lines = data.trim().split('\n');
-            console.log(`Total lines: ${lines.length}`);
+            if (monthName !== currentMonth) {
+                currentMonth = monthName;
+                const monthElement = document.createElement('div');
+                monthElement.classList.add('month');
+                monthElement.textContent = currentMonth;
+                monthRow.appendChild(monthElement);
+            }
 
-            const container = document.getElementById('daysContainer');
-            let dayCount = 1;
-            let currentMonth = '';
+            monthRow.appendChild(dayElement);
+            dayCount++;
 
-            lines.forEach((line, index) => {
-                console.log(`Processing line ${index + 1}: ${line}`);
-                const [status, dateInfo] = line.split(' ');
-                const dateMatch = dateInfo.match(/<(\d{4}-\d{2}-\d{2}) (\w{3})>/);
-                if (dateMatch) {
-                    const [fullMatch, date, day] = dateMatch;
-                    const dateObj = new Date(date);
-                    const month = dateObj.toLocaleString('default', { month: 'long' });
+            if ((index + 1) % 7 === 0 || index === lines.length - 1) {
+                container.appendChild(monthRow.cloneNode(true));
+                monthRow.innerHTML = '';
+            }
+        }
+    });
 
-                    const dayDiv = document.createElement('div');
-                    dayDiv.classList.add('day');
-                    dayDiv.setAttribute('data-date', date);
+    console.log('Processed org-mode data:', orgModeData);
+    console.log('Generated HTML:', container.innerHTML);
+}
 
-                    if (status === 'DONE') {
-                        dayDiv.classList.add('completed');
-                        dayDiv.innerHTML = `<span class="checkmark">✔</span><p>Day ${dayCount}: ${day} ${month} ${dateObj.getDate()}</p>`;
-                    } else if (status === 'MISSED') {
-                        dayDiv.classList.add('missed');
-                        dayDiv.innerHTML = `<span class="empty-square">☒</span><p>Day ${dayCount}: ${day} ${month} ${dateObj.getDate()}</p>`;
-                    } else {
-                        dayDiv.innerHTML = `<span class="empty-square">☐</span><p>Day ${dayCount}: ${day} ${month} ${dateObj.getDate()}</p>`;
-                    }
-
-                    container.appendChild(dayDiv);
-                    console.log(`Added day ${dayCount}`);
-
-                    // Add month label at the end of each week or at the end of data
-                    if ((index + 1) % 7 === 0 || index === lines.length - 1) {
-                        const monthDiv = document.createElement('div');
-                        monthDiv.classList.add('month');
-                        monthDiv.textContent = month;
-                        container.appendChild(monthDiv);
-                    }
-
-                    dayCount++;
-                }
-            });
-
-            console.log("All days processed and added");
-        })
-        .catch(error => console.error('Error fetching org file:', error));
-});
+fetch('progress.org')
+    .then(response => response.text())
+    .then(data => {
+        console.log('Fetched org-mode data:', data);
+        processOrgModeData(data);
+    })
+    .catch(error => {
+        console.error('Error fetching progress.org:', error);
+    });
