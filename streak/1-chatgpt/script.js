@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded and parsed");
 
+    const container = document.getElementById('dayContainer');
+    if (!container) {
+        console.error("Container element not found!");
+        return;
+    }
+
     fetch('progress.org')
         .then(response => {
             if (!response.ok) {
@@ -10,28 +16,28 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .then(data => {
             console.log('Fetched org-mode data:', data);
-            processOrgModeData(data);
+            processOrgModeData(data, container);
         })
         .catch(error => {
             console.error('Error fetching progress.org:', error);
         });
 });
 
-const container = document.getElementById('dayContainer');
-let dayCount = 1;
-let currentMonth = '';
-
 function parseDate(dateString) {
     const [year, month, day] = dateString.split('-');
     return new Date(year, month - 1, day);
 }
 
-function processOrgModeData(orgModeData) {
+function processOrgModeData(orgModeData, container) {
     const lines = orgModeData.trim().split('\n');
     const monthRow = document.createElement('div');
     monthRow.classList.add('month-row');
 
+    let dayCount = 1;
+    let currentMonth = '';
+
     lines.forEach((line, index) => {
+        console.log(`Processing line ${index + 1}: ${line}`);
         if (line.startsWith('*')) {
             const [status, dateString] = line.slice(2).trim().split(' ');
             const date = parseDate(dateString.slice(1, 11));
@@ -72,14 +78,12 @@ function processOrgModeData(orgModeData) {
             dayCount++;
 
             if ((index + 1) % 7 === 0 || index === lines.length - 1) {
-                if (container) {
-                    container.appendChild(monthRow.cloneNode(true));
-                }
+                container.appendChild(monthRow.cloneNode(true));
                 monthRow.innerHTML = '';
             }
         }
     });
 
     console.log('Processed org-mode data:', orgModeData);
-    console.log('Generated HTML:', container ? container.innerHTML : 'Container not found');
+    console.log('Generated HTML:', container.innerHTML);
 }
