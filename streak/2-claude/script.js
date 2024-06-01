@@ -53,16 +53,20 @@ function processOrgModeData(orgModeData) {
             dayCount++;
 
             if ((index + 1) % 7 === 0 || index === lines.length - 1) {
-                container.appendChild(monthRow);
+                container.appendChild(monthRow.cloneNode(true));
                 monthRow.innerHTML = '';
             }
         }
     });
+
+    console.log('Processed org-mode data:', orgModeData);
+    console.log('Generated HTML:', container.innerHTML);
 }
 
 fetch('progress.org')
     .then(response => response.text())
     .then(data => {
+        console.log('Fetched org-mode data:', data);
         processOrgModeData(data);
     })
     .catch(error => {
