@@ -40,6 +40,7 @@ function processOrgModeData(orgModeData) {
             // Get the month name and day of the week from the date
             const monthName = date.toLocaleString('en-US', { month: 'short' });
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
+            const dateOfMonth = date.getDate();
 
             // Create a day element and add appropriate classes based on the task status
             const dayElement = document.createElement('div');
@@ -48,19 +49,19 @@ function processOrgModeData(orgModeData) {
                 dayElement.classList.add('completed');
                 dayElement.innerHTML = `
                     <span class="checkmark">✔</span>
-          <p>Day ${dayCount}: ${dayOfWeek} ${monthName} ${dateOfMonth}</p>
+                    <p>Day ${dayCount}: ${dayOfWeek} ${monthName} ${dateOfMonth}</p>
                 `;
             } else if (status === 'MISSED') {
                 dayElement.classList.add('missed');
                 dayElement.innerHTML = `
                     <span class="cross">✘</span>
-          <p>Day ${dayCount}: ${dayOfWeek} ${monthName} ${dateOfMonth}</p>
+                    <p>Day ${dayCount}: ${dayOfWeek} ${monthName} ${dateOfMonth}</p>
                 `;
             } else {
                 dayElement.classList.add('todo');
                 dayElement.innerHTML = `
                     <span class="empty-square">☐</span>
-          <p>Day ${dayCount}: ${dayOfWeek} ${monthName} ${dateOfMonth}</p>
+                    <p>Day ${dayCount}: ${dayOfWeek} ${monthName} ${dateOfMonth}</p>
                 `;
             }
 
@@ -84,10 +85,9 @@ function processOrgModeData(orgModeData) {
                     emptyMonthElement.classList.add('empty-month');
                     monthRow.appendChild(emptyMonthElement);
                 }
-            }
                 // Append the month row to the container and reset the month row and days in week
                 container.appendChild(monthRow.cloneNode(true));
-        monthRow.innerHTML = '';
+                monthRow.innerHTML = '';
                 daysInWeek = 0;
             }
         }
