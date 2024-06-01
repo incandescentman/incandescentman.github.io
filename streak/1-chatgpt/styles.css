@@ -39,6 +39,11 @@ h1 {
     background-color: #8bc34a;
     color: #fff;
 }
+
+.completed p.full-date {
+  color:#fff
+}
+
 .missed {
     background-color: #fff;
     color: #C92228;
@@ -48,6 +53,7 @@ h1 {
 {
     color: #333;
 }
+
 
 
 .todo {
