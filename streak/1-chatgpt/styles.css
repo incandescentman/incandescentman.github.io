@@ -17,18 +17,18 @@ h1 {
 }
 .week-row {
     display: grid;
-    grid-template-columns: repeat(7, auto); /* Adjusted to auto to fit content */
+    grid-template-columns: repeat(7, 1fr); /* Ensure each week has 7 equally spaced columns */
     gap: 10px;
 }
 .day {
     background-color: #fff;
     border-radius: 5px;
-    padding: 10px; /* Reduced padding */
+    padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
     font-size: 1.2em;
     min-height: 100px;
-    max-width: 150px; /* Added max-width to constrain width */
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 .completed {
     background-color: #8bc34a;

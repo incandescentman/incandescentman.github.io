@@ -30,7 +30,7 @@ function parseDate(dateString) {
 
 function processOrgModeData(orgModeData, container) {
     const lines = orgModeData.trim().split('\n');
-    const weekRow = document.createElement('div');
+    let weekRow = document.createElement('div');
     weekRow.classList.add('week-row');
 
     let dayCount = 1;
@@ -69,8 +69,9 @@ function processOrgModeData(orgModeData, container) {
 
             // If it's the end of the week or the end of the data, append the weekRow to the container and start a new weekRow
             if (dayOfWeek === 'Sun' || index === lines.length - 1) {
-                container.appendChild(weekRow.cloneNode(true));
-                weekRow.innerHTML = '';
+                container.appendChild(weekRow);
+                weekRow = document.createElement('div');
+                weekRow.classList.add('week-row');
             }
         }
     });
