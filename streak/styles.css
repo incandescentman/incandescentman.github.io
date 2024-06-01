@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+     zoom: 2;
+}
+h1 {
+    color: #333;
+    font-size: 2em;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Ensure each week has 7 equally spaced columns */
+    gap: 0; /* Remove gap between grid items */
+    max-width: 90%;
+    margin: 0 auto;
+}
+.week-row {
+    display: contents; /* Ensures each week row is part of the same grid */
+}
+.day {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px; /* Reduced padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 1em; /* Reduced font size */
+    min-height: 100px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    border: 1px solid #e0e0e0; /* Add border to define edges of each day */
+    width: 100%; /* Ensure each cell takes full width of its grid column */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.completed {
+    background-color: #8bc34a;
+    color: #fff;
+}
+
+.completed p.full-date {
+  color:#fff
+}
+
+.missed {
+    background-color: #fff;
+    color: #C92228;
+}
+
+.missed p.day-number
+{
+    color: #333;
+}
+
+
+
+.todo {
+    background-color:#fff;
+    color: #333;
+}
+.checkmark, .empty-square, .cross {
+    font-size: 3.5em; /* Adjusted font size */
+    margin-bottom: 10px; /* Add some space between the icon and the text */
+}
+.day-number {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.full-date {
+    font-size: 0.9em;
+    color: #666;
+}
