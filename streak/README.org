@@ -1,0 +1,7 @@
+The "100 Days of Writing" project is a web-based application that visualizes the progress of a writing challenge spanning 100 days. The application reads data from an org-mode file named progress.org, which contains information about the status of each day's writing task. The data is then processed and displayed on a web page in a calendar-like format.
+
+The calendar is organized into rows, where each row represents a week starting from Monday and ending on Sunday. Each day is represented by a square, and the square's appearance indicates the status of the writing task for that day. A green square with a checkmark represents a completed task, a red square with a cross represents a missed task, and an empty square represents a pending task.
+
+The application also displays the month name to the right of each row, providing a clear visual indication of the month to which the days belong. The calendar is responsive and adjusts its layout based on the available screen width.
+
+The project aims to provide a simple and intuitive way to track progress during a 100-day writing challenge, helping users stay motivated and accountable.
