@@ -15,8 +15,8 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    max-width: 800px;
     margin: 0 auto;
+    max-width:50%;
 }
 
 .month-row {
