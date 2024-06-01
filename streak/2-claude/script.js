@@ -11,6 +11,7 @@ function processOrgModeData(orgModeData) {
     const lines = orgModeData.trim().split('\n');
     const monthRow = document.createElement('div');
     monthRow.classList.add('month-row');
+    let daysInWeek = 0;
 
     lines.forEach((line, index) => {
         if (line.startsWith('*')) {
@@ -51,22 +52,20 @@ function processOrgModeData(orgModeData) {
 
             monthRow.appendChild(dayElement);
             dayCount++;
+            daysInWeek++;
 
-            if ((index + 1) % 7 === 0 || index === lines.length - 1) {
+            if (daysInWeek === 7 || index === lines.length - 1) {
                 container.appendChild(monthRow.cloneNode(true));
                 monthRow.innerHTML = '';
+                daysInWeek = 0;
             }
         }
     });
-
-    console.log('Processed org-mode data:', orgModeData);
-    console.log('Generated HTML:', container.innerHTML);
 }
 
 fetch('progress.org')
     .then(response => response.text())
     .then(data => {
-        console.log('Fetched org-mode data:', data);
         processOrgModeData(data);
     })
     .catch(error => {
