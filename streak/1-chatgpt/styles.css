@@ -3,6 +3,7 @@ body {
     text-align: center;
     background-color: #f0f0f0;
     padding: 20px;
+     zoom: 2;
 }
 h1 {
     color: #333;
@@ -39,15 +40,22 @@ h1 {
     color: #fff;
 }
 .missed {
-    background-color: #ff8c8c;
-    color: #fff;
-}
-.todo {
     background-color: #fff;
+    color: #C92228;
+}
+
+.missed p.day-number
+{
+    color: #333;
+}
+
+
+.todo {
+    background-color:#fff;
     color: #333;
 }
 .checkmark, .empty-square, .cross {
-    font-size: 1.5em; /* Adjusted font size */
+    font-size: 3.5em; /* Adjusted font size */
     margin-bottom: 10px; /* Add some space between the icon and the text */
 }
 .day-number {
