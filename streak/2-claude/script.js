@@ -95,6 +95,9 @@ function processOrgModeData(orgModeData) {
             }
         }
     });
+
+    // Debugging: Log the entire generated HTML to the console
+    console.log(container.outerHTML);
 }
 
 // Fetch the progress.org file
