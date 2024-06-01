@@ -121,6 +121,8 @@ footer {
     font-size: 1.2em;
     margin-left: 10px;
     align-self: center;
+    font-size:400%;
+
 }
 
 .empty-month {
@@ -150,14 +152,17 @@ footer {
     border: 1px solid #ddd; /* Optional: add a border to separate the cells */
 }
 
+
 .month {
     flex: 0 0 12%;
-    text-align: center;
+    text-align: left;
     font-size: 1.2em;
-    margin-left: 10px;
+    margin-left: 50px;
     align-self: center;
+    font-size:300%;
+    text-transform:uppercase;
 }
 
 .month.invisible {
-    color: #fff; /* Same as background color to make it invisible */
+    color: #f0f0f0; /* Same as background color to make it invisible */
 }
