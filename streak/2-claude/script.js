@@ -87,7 +87,7 @@ function processOrgModeData(orgModeData) {
             }
                 // Append the month row to the container and reset the month row and days in week
                 container.appendChild(monthRow.cloneNode(true));
-        monthRow.innerHTML = ";
+        monthRow.innerHTML = '';
                 daysInWeek = 0;
             }
         }
