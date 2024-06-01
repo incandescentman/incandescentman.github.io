@@ -41,6 +41,7 @@ function processOrgModeData(orgModeData, container) {
             const [status, dateString] = line.slice(2).trim().split(' ');
             const date = parseDate(dateString.slice(1, 11));
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
+            const monthDay = date.toLocaleString('en-US', { month: 'short', day: 'numeric' });
 
             const dayElement = document.createElement('div');
             dayElement.classList.add('day');
@@ -48,19 +49,19 @@ function processOrgModeData(orgModeData, container) {
                 dayElement.classList.add('completed');
                 dayElement.innerHTML = `
                     <span class="checkmark">✔</span>
-                    <p>Day ${dayCount}: ${dayOfWeek}</p>
+                    <p>Day ${dayCount}: ${dayOfWeek} ${monthDay}</p>
                 `;
             } else if (status === 'MISSED') {
                 dayElement.classList.add('missed');
                 dayElement.innerHTML = `
                     <span class="cross">✘</span>
-                    <p>Day ${dayCount}: ${dayOfWeek}</p>
+                    <p>Day ${dayCount}: ${dayOfWeek} ${monthDay}</p>
                 `;
             } else {
                 dayElement.classList.add('todo');
                 dayElement.innerHTML = `
                     <span class="empty-square">☐</span>
-                    <p>Day ${dayCount}: ${dayOfWeek}</p>
+                    <p>Day ${dayCount}: ${dayOfWeek} ${monthDay}</p>
                 `;
             }
 
