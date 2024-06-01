@@ -1,0 +1,11 @@
+const orgModeData = `
+
+* TODO <2024-05-27 Mon>
+* TODO <2024-05-28 Tue>
+* TODO <2024-05-29 Wed>
+* DONE <2024-05-30 Thu>
+* DONE <2024-05-31 Fri>
+* MISSED <2024-06-01 Sat>
+* DONE <2024-06-02 Sun>
+* TODO <2024-06-03 Mon>
+* TODO <2024-06-04 Tue>
