@@ -79,7 +79,12 @@ function processOrgModeData(orgModeData) {
                     monthElement.classList.add('month');
                     monthElement.textContent = currentMonth;
                     monthRow.appendChild(monthElement);
+                } else {
+                    const emptyMonthElement = document.createElement('div');
+                    emptyMonthElement.classList.add('empty-month');
+                    monthRow.appendChild(emptyMonthElement);
                 }
+            }
                 // Append the month row to the container and reset the month row and days in week
                 container.appendChild(monthRow.cloneNode(true));
                 monthRow.innerHTML = '';

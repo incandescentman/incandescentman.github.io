@@ -21,7 +21,7 @@ h1 {
 
 .month-row {
     display: grid;
-    grid-template-columns: repeat(7, 1fr) 0.5fr;
+    grid-template-columns: repeat(7, 1fr) 1fr;
     gap: 1rem;
     width: 100%;
 }
@@ -48,4 +48,14 @@ h1 {
     font-size: 1.5rem;
     text-align: right;
     padding-right: 1rem;
+}
+
+.empty-month {
+    visibility: hidden;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #666;
 }
