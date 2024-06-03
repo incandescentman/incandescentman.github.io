@@ -60,10 +60,10 @@ function processOrgModeData(orgModeData, container) {
                 inCount = true;
             }
 
-            if (inCount && (status === 'TODO' || status === 'DONE' || status === 'MISSED')) {
+            if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
                 dayElement.innerHTML = `
-                    <p class="day-number">Day ${dayCount}</p>
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
+                    <p class="day-number">Day ${dayCount}</p>
                 `;
 
                 if (status === 'DONE') {
