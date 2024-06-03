@@ -56,7 +56,7 @@ function processOrgModeData(orgModeData, container) {
             const dayElement = document.createElement('div');
             dayElement.classList.add('day');
 
-            if (!inCount && status === 'TODO') {
+            if (!inCount && (status === 'TODO' || status === 'DONE' || status === 'MISSED')) {
                 inCount = true;
             }
 
