@@ -31,22 +31,20 @@ function parseDate(dateString) {
     return null;
 }
 
-
-
-
 function processOrgModeData(orgModeData, container) {
     const lines = orgModeData.trim().split('\n');
     let weekRow = document.createElement('div');
     weekRow.classList.add('week-row');
 
     let dayCount = 0;
+    let startRendering = false;
 
     lines.forEach((line, index) => {
         console.log(`Processing line ${index + 1}: ${line}`);
         if (line.startsWith('*')) {
             const parts = line.slice(2).trim().split(' ');
-            const status = parts[0];
-            const dateString = parts[1];
+            const status = parts[0].startsWith('<') ? '' : parts[0];
+            const dateString = parts[0].startsWith('<') ? parts[0] : parts[1];
             const date = parseDate(dateString);
             if (!date) {
                 console.error(`Invalid date format in line: ${line}`);
@@ -59,6 +57,7 @@ function processOrgModeData(orgModeData, container) {
             dayElement.classList.add('day');
 
             if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
+                startRendering = true;
                 dayCount++;
                 dayElement.innerHTML = `
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
