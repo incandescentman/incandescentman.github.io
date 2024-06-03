@@ -74,7 +74,7 @@ function processOrgModeData(orgModeData, container) {
                     dayElement.classList.add('todo');
                     dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
                 }
-            } else {
+            } else if (startRendering) {
                 dayElement.innerHTML = `
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
                 `;
