@@ -34,7 +34,6 @@ function parseDate(dateString) {
 
 
 
-
 function processOrgModeData(orgModeData, container) {
     const lines = orgModeData.trim().split('\n');
     let weekRow = document.createElement('div');
@@ -79,7 +78,6 @@ function processOrgModeData(orgModeData, container) {
             } else {
                 dayElement.innerHTML = `
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
-                    <span class="empty-square">☐</span>
                 `;
             }
 
