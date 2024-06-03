@@ -40,7 +40,7 @@ function processOrgModeData(orgModeData, container) {
     weekRow.classList.add('week-row');
 
     let dayCount = 0;
-    let startRendering = false;
+    let startCounting = false;
 
     lines.forEach((line, index) => {
         console.log(`Processing line ${index + 1}: ${line}`);
@@ -60,8 +60,8 @@ function processOrgModeData(orgModeData, container) {
             dayElement.classList.add('day');
 
             if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
-                if (!startRendering) {
-                    startRendering = true;
+                if (!startCounting) {
+                    startCounting = true;
                     dayCount = 1;
                 } else {
                     dayCount++;
@@ -87,15 +87,13 @@ function processOrgModeData(orgModeData, container) {
                 `;
             }
 
-            if (startRendering) {
-                weekRow.appendChild(dayElement);
+            weekRow.appendChild(dayElement);
 
-                // If it's the end of the week or the end of the data, append the weekRow to the container and start a new weekRow
-                if (dayOfWeek === 'Sun' || index === lines.length - 1) {
-                    container.appendChild(weekRow);
-                    weekRow = document.createElement('div');
-                    weekRow.classList.add('week-row');
-                }
+            // If it's the end of the week or the end of the data, append the weekRow to the container and start a new weekRow
+            if (dayOfWeek === 'Sun' || index === lines.length - 1) {
+                container.appendChild(weekRow);
+                weekRow = document.createElement('div');
+                weekRow.classList.add('week-row');
             }
         }
     });
