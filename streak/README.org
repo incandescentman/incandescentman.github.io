@@ -1,7 +1,7 @@
 * Introduction
 This project offers a visualization of a 100-day writing challenge, elegantly displaying one's progress in a calendar format.
 
-Inspired by the "100 Days of X" challenge, the endeavor is designed to keep one resolute and steadfast, making it particularly beneficial for writers, creatives, and anyone looking to build consistent habits.
+Inspired by the "[[https://www.100daysofx.com/][100 Days of X]]" challenge, the endeavor is designed to keep one resolute and steadfast, making it particularly beneficial for writers, creatives, and anyone looking to build consistent habits.
 
 Demo:
 https://incandescentman.github.io/streak/
@@ -11,7 +11,7 @@ https://incandescentman.github.io/streak/
 * FAQ
 ** Q: Say Jeeves, what is the "100 Days of X" Challenge?
 
-A: Ah, the "100 Days of X" Challenge, sir, is a commendable endeavor where an individual commits to practicing or engaging in a particular activity for a consecutive hundred days. This concept has gained popularity in various spheres, encouraging participants to develop new skills, habits, or projects through consistent daily effort. It could be anything from coding, writing, drawing, or even learning a new language. The objective is to foster discipline, create a sense of accomplishment, and, dare I say, turn one's daily routine into a more productive and enriching experience. Quite the modern take on self-improvement, if I may say so, sir.
+A: Ah, the "100 Days of X" Challenge, sir, is a commendable endeavor where an individual commits to practicing or engaging in a particular activity for one consecutive hundred days. The concept has gained popularity in various spheres, encouraging participants to develop new skills, habits, or projects through consistent daily effort. The chosen activity could be anything from coding, writing, drawing, or even learning a new language. The objective is to foster discipline, engender a sense of accomplishment, and, dare I say, turn one's daily routine into a more productive and enriching experience. Quite the modern take on self-improvement, if I may say so, sir.
 
 ** Q: Jeeves, I have half a mind to commit to a "100 Days of Writing" challenge, and to track my progress on a publicly available web-based calendar, ticking off each day as I go.
 
@@ -22,31 +22,62 @@ A: An excellent notion, sir. Committing to a "100 Days of Writing" challenge wou
 #+BEGIN_EXAMPLE org
 What is "Don't Break the Chain"?
 
-The idea is so simple: When you're trying to form a new habit or accomplish a long-term project, grab a calendar. Ideally, the calendar will be the real deal, physical kind, so you can really see it. Every day, employ the new habit or otherwise work on a step of the project you need to do, then mark an X on the calendar for that day.
+The idea is so simple: When you're trying to form a new habit or accomplish a
+long-term project, grab a calendar. Ideally, the calendar will be the real deal,
+physical kind, so you can really see it. Every day, employ the new habit or
+otherwise work on a step of the project you need to do, then mark an X on the
+calendar for that day.
 
-Right away, you'll get a visual reward from seeing the first X, then the second. Soon enough, you'll have a chain you don't want to break and you've gameified your productivity. People are simple creatures, wired to carry on patterns for silly rewards. It's why Snap streaks are so valuable to teenagers on Snapchat. Breaking a streak, no matter how silly it is, seems /wrong/. Fulfilling the streak feels /right/. It takes a long time to truly build a habit, so you need some kind of marker system to feel a little boost from it every day in the interim. That's why you don't break the chain.
+Right away, you'll get a visual reward from seeing the first X, then the second.
+Soon enough, you'll have a chain you don't want to break and you've gameified
+your productivity. People are simple creatures, wired to carry on patterns for
+silly rewards. It's why Snap streaks are so valuable to teenagers on Snapchat.
+Breaking a streak, no matter how silly it is, seems /wrong/. Fulfilling the
+streak feels /right/. It takes a long time to truly build a habit, so you need
+some kind of marker system to feel a little boost from it every day in the
+interim. That's why you don't break the chain.
 
-Seeing the small wins laid out on the calendar also reminds you how they play into your bigger goals, which can be helpful for motivation. As a bonus, write your goal in big letters on the top of the calendar page, so you always have it top of mind and can see how every day's efforts are leading toward its completion.
+Seeing the small wins laid out on the calendar also reminds you how they play
+into your bigger goals, which can be helpful for motivation. As a bonus, write
+your goal in big letters on the top of the calendar page, so you always have it
+top of mind and can see how every day's efforts are leading toward its
+completion.
 
 Don't Break the Chain's origins
 
-The original tip is attributed to Seinfeld and derived from a conversation he had with software developer Brad Isaac, who secured the hack "when /Seinfeld/ was a new television show" and its titular character was doing real-life open mic nights and promo. Isaac, to his credit, took the intel straight to fledgling blog Lifehacker in 2007.
+The original tip is attributed to Seinfeld and derived from a conversation he
+had with software developer Brad Isaac, who secured the hack "when /Seinfeld/
+was a new television show" and its titular character was doing real-life open
+mic nights and promo. Isaac, to his credit, took the intel straight to fledgling
+blog Lifehacker in 2007.
 
-"One night I was in the club where Seinfeld was working, and before he went on stage, I saw my chance. I had to ask Seinfeld if he had any tips for a young comic," explains Isaac. "He said the way to be a better comic was to create better jokes and the way to create better jokes was to write every day. But his advice was better than that. He had a gem of a leverage technique he used on himself and you can use it to motivate yourself---even when you don't feel like it."
+"One night I was in the club where Seinfeld was working, and before he went on
+stage, I saw my chance. I had to ask Seinfeld if he had any tips for a young
+comic," explains Isaac. "He said the way to be a better comic was to create
+better jokes and the way to create better jokes was to write every day. But his
+advice was better than that. He had a gem of a leverage technique he used on
+himself and you can use it to motivate yourself---even when you don't feel like
+it."
 
-Per Isaac, Seinfeld's advice was "to get a big wall calendar that has a whole year on one page and hang it on a prominent wall," then get "a big red magic marker." According to the 2007 legend, it was Seinfeld himself who repeatedly emphasized the phrase "don't break the chain."
+Per Isaac, Seinfeld's advice was "to get a big wall calendar that has a whole
+year on one page and hang it on a prominent wall," then get "a big red magic
+marker." According to the 2007 legend, it was Seinfeld himself who repeatedly
+emphasized the phrase "don't break the chain."
 #+END_EXAMPLE
 
 A: An admirable and rather ingenious method, sir, to be sure. Jerry Seinfeld's "Don't Break the Chain" technique is a splendid example of leveraging human psychology to foster consistent habits. By marking each day with an X, one creates a visual representation of progress that becomes increasingly motivating as the chain grows.
 
 If I may add, sir, the psychological benefit of seeing a continuous string of successes is not to be underestimated. It transforms the abstract notion of progress into something tangible and visually rewarding. Should you require assistance in obtaining the necessary materials or further advice on structuring your writing regimen, I am at your disposal.
 
+** Q: Jeeves, please draft a README file explaining the calendar's functionality and use.
+
+
 * Functionality
-The "100 Days of Writing" project is a refined web-based application, designed to visualize the progress of a 100-day writing challenge. It meticulously reads data from an org-mode file named ~progress.org~, which catalogues the status of each day's writing endeavor. The data is then processed and displayed on a web page in a neat calendar format.
+Very good, sir. The "100 Days of Writing" project is a refined web-based application, designed to visualize the progress of a 100-day writing challenge. It meticulously reads data from an org-mode text file named ~progress.org~, which catalogues the status of each day's writing endeavor. The data is then processed and displayed on a web page in a tidy calendar format.
 
-The calendar is organized into rows, where each row represents a week, beginning with Monday and concluding with Sunday. A green square adorned with a checkmark signifies a completed task, a red square with a cross denotes a missed task, and an empty square represents a task as yet looming in the future.
+The calendar is organized into the finest rows, where each row represents a week, beginning with Monday and concluding with Sunday. An elegant green square adorned with a checkmark signifies a completed task, a menacing red square with a cross denotes a missed task, and an empty square represents a task as yet looming in the future.
 
-The calendar, in its wisdom, adjusts its layout based on the available screen width, maintaining its elegance across devices.
+The calendar, in its wisdom, responsively adjusts its layout based on the available screen width, maintaining its elegance across devices.
 
 The project aspires to provide a straightforward and intuitive means of tracking progress during a 100-day writing challenge, thereby assisting users in maintaining motivation and accountability.
 
@@ -57,13 +88,14 @@ The project aspires to provide a straightforward and intuitive means of tracking
 ├── index.html # The main HTML file
 ├── styles.css # The CSS file for styling
 ├── script.js  # The JavaScript file for functionality
-├── progress.org # The Org-mode file containing the progress data
+├── progress.org # The Org-mode file containing your progress data
 ├── README.md  # This README file
 #+end_src
 
 * Installation
 
 #+begin_src bash
+
   git clone https://incandescentman.github.io/streak.git
 
   cd 100-days-of-writing
@@ -77,34 +109,25 @@ The project aspires to provide a straightforward and intuitive means of tracking
 Your ~progress.org~ file might resemble the following:
 
 #+begin_example org
-* DONE <2024-05-27 Mon>
-* DONE <2024-05-28 Tue>
-* DONE <2024-05-29 Wed>
-* DONE <2024-05-30 Thu>
-* DONE <2024-05-31 Fri>
-* MISSED <2024-06-01 Sat>
-* DONE <2024-06-02 Sun>
-* DONE <2024-06-03 Mon>
-* DONE <2024-06-04 Tue>
-* DONE <2024-06-05 Wed>
-* DONE <2024-06-06 Thu>
-* DONE <2024-06-07 Fri>
-* DONE <2024-06-08 Sat>
-* DONE <2024-06-09 Sun>
-* TODO <2024-06-10 Mon>
-* TODO <2024-06-11 Tue>
-* TODO <2024-06-12 Wed>
-* TODO <2024-06-13 Thu>
-* TODO <2024-06-14 Fri>
-* TODO <2024-06-15 Sat>
-* TODO <2024-06-16 Sun>
-* TODO <2024-06-17 Mon>
+  * DONE <2024-05-27 Mon>
+  * DONE <2024-05-28 Tue>
+  * DONE <2024-05-29 Wed>
+  * MISSED <2024-05-30 Thu>
+  * DONE <2024-05-31 Fri>
+  * DONE <2024-06-01 Sat>
+  * TODO <2024-06-02 Sun>
+  * TODO <2024-06-03 Mon>
+  * TODO <2024-06-04 Tue>
+  * TODO <2024-06-05 Wed>
+  * TODO <2024-06-06 Thu>
+#+end_example
 
 Add or remove dates and mark each day as TODO, DONE, or MISSED. Future dates that are part of your 100-day challenge should be in the TODO state.
-#+end_example
 
 * Contributing
 Contributions are most welcome! Please feel free to submit a pull request.
 
 * License
-This project is licensed under the MIT License. Feel free to customize or tweak.
+This project is licensed under the MIT License.
+
+I trust you will find this explanation satisfactory, sir. Should you require any further refinements or adjustments, do let me know.
