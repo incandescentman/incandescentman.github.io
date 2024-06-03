@@ -38,14 +38,14 @@ function processOrgModeData(orgModeData, container) {
 
     let dayCount = 1;
     let inCount = false;
-    let firstDateFound = false;
+    let startDate = null;
 
     lines.forEach((line, index) => {
         console.log(`Processing line ${index + 1}: ${line}`);
         if (line.startsWith('*')) {
             const parts = line.slice(2).trim().split(' ');
-            const status = parts[0];
-            const dateString = parts[1];
+            const status = parts[0].startsWith('<') ? '' : parts[0];
+            const dateString = parts[0].startsWith('<') ? parts[0] : parts[1];
             const date = parseDate(dateString);
             if (!date) {
                 console.error(`Invalid date format in line: ${line}`);
@@ -54,40 +54,50 @@ function processOrgModeData(orgModeData, container) {
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
             const monthDayYear = date.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
-            if (!firstDateFound) {
-                firstDateFound = true;
-                inCount = (status === 'TODO' || status === 'DONE' || status === 'MISSED');
+            const dayElement = document.createElement('div');
+            dayElement.classList.add('day');
+
+            if (!inCount && (status === 'TODO' || status === 'DONE' || status === 'MISSED')) {
+                inCount = true;
+                startDate = date;
             }
 
             if (inCount) {
-                const dayElement = document.createElement('div');
-                dayElement.classList.add('day');
+                if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
+                    dayElement.innerHTML = `
+                        <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
+                        <p class="day-number">Day ${dayCount}</p>
+                    `;
 
+                    if (status === 'DONE') {
+                        dayElement.classList.add('completed');
+                        dayElement.innerHTML = `<span class="checkmark">✔</span>` + dayElement.innerHTML;
+                    } else if (status === 'MISSED') {
+                        dayElement.classList.add('missed');
+                        dayElement.innerHTML = `<span class="cross">✘</span>` + dayElement.innerHTML;
+                    } else if (status === 'TODO') {
+                        dayElement.classList.add('todo');
+                        dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
+                    }
+                    dayCount++;
+                } else {
+                    dayElement.innerHTML = `
+                        <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
+                    `;
+                }
+            } else {
                 dayElement.innerHTML = `
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
-                    <p class="day-number">Day ${dayCount}</p>
                 `;
+            }
 
-                if (status === 'DONE') {
-                    dayElement.classList.add('completed');
-                    dayElement.innerHTML = `<span class="checkmark">✔</span>` + dayElement.innerHTML;
-                } else if (status === 'MISSED') {
-                    dayElement.classList.add('missed');
-                    dayElement.innerHTML = `<span class="cross">✘</span>` + dayElement.innerHTML;
-                } else if (status === 'TODO') {
-                    dayElement.classList.add('todo');
-                    dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
-                }
+            weekRow.appendChild(dayElement);
 
-                weekRow.appendChild(dayElement);
-                dayCount++;
-
-                // If it's the end of the week or the end of the data, append the weekRow to the container and start a new weekRow
-                if (dayOfWeek === 'Sun' || index === lines.length - 1) {
-                    container.appendChild(weekRow);
-                    weekRow = document.createElement('div');
-                    weekRow.classList.add('week-row');
-                }
+            // If it's the end of the week or the end of the data, append the weekRow to the container and start a new weekRow
+            if (dayOfWeek === 'Sun' || index === lines.length - 1) {
+                container.appendChild(weekRow);
+                weekRow = document.createElement('div');
+                weekRow.classList.add('week-row');
             }
         }
     });
