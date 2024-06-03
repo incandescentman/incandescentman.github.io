@@ -31,9 +31,6 @@ function parseDate(dateString) {
     return null;
 }
 
-
-
-
 function processOrgModeData(orgModeData, container) {
     const lines = orgModeData.trim().split('\n');
     let weekRow = document.createElement('div');
@@ -62,25 +59,21 @@ function processOrgModeData(orgModeData, container) {
             if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
                 if (!startCounting) {
                     startCounting = true;
-                    dayCount = 1;
-                } else {
-                    dayCount++;
                 }
+                dayCount++;
                 dayElement.innerHTML = `
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
+                    <p class="day-number">Day ${dayCount}</p>
                 `;
 
                 if (status === 'DONE') {
                     dayElement.classList.add('completed');
-                    dayElement.innerHTML += `<p class="day-number">Day ${dayCount}</p>`;
                     dayElement.innerHTML = `<span class="checkmark">✔</span>` + dayElement.innerHTML;
                 } else if (status === 'MISSED') {
                     dayElement.classList.add('missed');
-                    dayElement.innerHTML += `<p class="day-number">Day ${dayCount}</p>`;
                     dayElement.innerHTML = `<span class="cross">✘</span>` + dayElement.innerHTML;
                 } else if (status === 'TODO') {
                     dayElement.classList.add('todo');
-                    dayElement.innerHTML += `<p class="day-number">Day ${dayCount}</p>`;
                     dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
                 }
             } else {
