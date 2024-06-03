@@ -38,7 +38,6 @@ function processOrgModeData(orgModeData, container) {
 
     let dayCount = 1;
     let inCount = false;
-    let startDate = null;
 
     lines.forEach((line, index) => {
         console.log(`Processing line ${index + 1}: ${line}`);
@@ -59,32 +58,25 @@ function processOrgModeData(orgModeData, container) {
 
             if (!inCount && (status === 'TODO' || status === 'DONE' || status === 'MISSED')) {
                 inCount = true;
-                startDate = date;
             }
 
-            if (inCount) {
-                if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
-                    dayElement.innerHTML = `
-                        <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
-                        <p class="day-number">Day ${dayCount}</p>
-                    `;
+            if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
+                dayElement.innerHTML = `
+                    <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
+                    <p class="day-number">Day ${dayCount}</p>
+                `;
 
-                    if (status === 'DONE') {
-                        dayElement.classList.add('completed');
-                        dayElement.innerHTML = `<span class="checkmark">✔</span>` + dayElement.innerHTML;
-                    } else if (status === 'MISSED') {
-                        dayElement.classList.add('missed');
-                        dayElement.innerHTML = `<span class="cross">✘</span>` + dayElement.innerHTML;
-                    } else if (status === 'TODO') {
-                        dayElement.classList.add('todo');
-                        dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
-                    }
-                    dayCount++;
-                } else {
-                    dayElement.innerHTML = `
-                        <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
-                    `;
+                if (status === 'DONE') {
+                    dayElement.classList.add('completed');
+                    dayElement.innerHTML = `<span class="checkmark">✔</span>` + dayElement.innerHTML;
+                } else if (status === 'MISSED') {
+                    dayElement.classList.add('missed');
+                    dayElement.innerHTML = `<span class="cross">✘</span>` + dayElement.innerHTML;
+                } else if (status === 'TODO') {
+                    dayElement.classList.add('todo');
+                    dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
                 }
+                dayCount++;
             } else {
                 dayElement.innerHTML = `
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
