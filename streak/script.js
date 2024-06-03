@@ -24,8 +24,11 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function parseDate(dateString) {
-    const [year, month, day] = dateString.split('-');
-    return new Date(year, month - 1, day);
+    const match = dateString.match(/<(\d{4}-\d{2}-\d{2})/);
+    if (match) {
+        return new Date(match[1]);
+    }
+    return null;
 }
 
 function processOrgModeData(orgModeData, container) {
@@ -40,9 +43,13 @@ function processOrgModeData(orgModeData, container) {
         console.log(`Processing line ${index + 1}: ${line}`);
         if (line.startsWith('*')) {
             const parts = line.slice(2).trim().split(' ');
-            const status = parts[0] === '<' ? '' : parts[0];
-            const dateString = parts[0] === '<' ? parts[0].slice(1, 11) : parts[1].slice(1, 11);
+            const status = parts[0].startsWith('<') ? '' : parts[0];
+            const dateString = parts[0].startsWith('<') ? parts[0] : parts[1];
             const date = parseDate(dateString);
+            if (!date) {
+                console.error(`Invalid date format in line: ${line}`);
+                return;
+            }
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
             const monthDayYear = date.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
@@ -53,7 +60,7 @@ function processOrgModeData(orgModeData, container) {
                 inCount = true;
             }
 
-            if (inCount) {
+            if (inCount && status) {
                 dayElement.innerHTML = `
                     <p class="day-number">Day ${dayCount}</p>
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
