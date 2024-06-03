@@ -31,6 +31,9 @@ function parseDate(dateString) {
     return null;
 }
 
+
+
+
 function processOrgModeData(orgModeData, container) {
     const lines = orgModeData.trim().split('\n');
     let weekRow = document.createElement('div');
@@ -57,8 +60,12 @@ function processOrgModeData(orgModeData, container) {
             dayElement.classList.add('day');
 
             if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
-                startRendering = true;
-                dayCount++;
+                if (!startRendering) {
+                    startRendering = true;
+                    dayCount = 1;
+                } else {
+                    dayCount++;
+                }
                 dayElement.innerHTML = `
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
                     <p class="day-number">Day ${dayCount}</p>
@@ -74,19 +81,21 @@ function processOrgModeData(orgModeData, container) {
                     dayElement.classList.add('todo');
                     dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
                 }
-            } else if (startRendering) {
+            } else {
                 dayElement.innerHTML = `
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
                 `;
             }
 
-            weekRow.appendChild(dayElement);
+            if (startRendering) {
+                weekRow.appendChild(dayElement);
 
-            // If it's the end of the week or the end of the data, append the weekRow to the container and start a new weekRow
-            if (dayOfWeek === 'Sun' || index === lines.length - 1) {
-                container.appendChild(weekRow);
-                weekRow = document.createElement('div');
-                weekRow.classList.add('week-row');
+                // If it's the end of the week or the end of the data, append the weekRow to the container and start a new weekRow
+                if (dayOfWeek === 'Sun' || index === lines.length - 1) {
+                    container.appendChild(weekRow);
+                    weekRow = document.createElement('div');
+                    weekRow.classList.add('week-row');
+                }
             }
         }
     });
