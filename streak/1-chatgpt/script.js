@@ -43,7 +43,7 @@ function processOrgModeData(orgModeData, container) {
         if (line.startsWith('*')) {
             const parts = line.slice(2).trim().split(' ');
             const status = parts[0];
-            const dateString = parts[1];
+            const dateString = parts[parts.length - 1];
             const date = parseDate(dateString);
             if (!date) {
                 console.error(`Invalid date format in line: ${line}`);
