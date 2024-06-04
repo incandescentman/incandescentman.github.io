@@ -37,6 +37,7 @@ function processOrgModeData(orgModeData, container) {
     weekRow.classList.add('week-row');
 
     let dayCount = 0;
+    let firstDate = null;
 
     lines.forEach((line, index) => {
         console.log(`Processing line ${index + 1}: ${line}`);
@@ -49,6 +50,11 @@ function processOrgModeData(orgModeData, container) {
                 console.error(`Invalid date format in line: ${line}`);
                 return;
             }
+
+            if (!firstDate) {
+                firstDate = date;
+            }
+
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
             const monthDayYear = date.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
@@ -56,22 +62,26 @@ function processOrgModeData(orgModeData, container) {
             dayElement.classList.add('day');
 
             if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
-                if (status === 'DONE') {
-                    dayElement.classList.add('completed');
-                    dayElement.innerHTML = `<span class="checkmark">✔</span>`;
-                } else if (status === 'MISSED') {
-                    dayElement.classList.add('missed');
-                    dayElement.innerHTML = `<span class="cross">✘</span>`;
-                } else {
-                    dayElement.innerHTML = `<span class="empty-square">☐</span>`;
-                }
-
                 dayCount++;
-                dayElement.innerHTML += `
+                dayElement.innerHTML = `
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
                     <p class="day-number">Day ${dayCount}</p>
                 `;
+
+                if (status === 'DONE') {
+                    dayElement.classList.add('completed');
+                    dayElement.innerHTML = `<span class="checkmark">✔</span>` + dayElement.innerHTML;
+                } else if (status === 'MISSED') {
+                    dayElement.classList.add('missed');
+                    dayElement.innerHTML = `<span class="cross">✘</span>` + dayElement.innerHTML;
+                } else if (status === 'TODO') {
+                    dayElement.classList.add('todo');
+                    dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
+                }
             } else {
+                if (date < firstDate) {
+                    return;
+                }
                 dayElement.innerHTML = `
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
                     <span class="empty-square">☐</span>
