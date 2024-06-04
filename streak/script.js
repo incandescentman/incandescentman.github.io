@@ -19,7 +19,7 @@ function processOrgModeData(orgModeData, container) {
     weekRow.classList.add('week-row');
 
     let dayCount = 0;
-    let currentWeekDay = 0;
+    let currentWeekDay = 0; // Start on Monday (0)
 
     for (const line of lines) {
         const dateMatch = line.match(/<(\d{4}-\d{2}-\d{2})/);
@@ -29,11 +29,12 @@ function processOrgModeData(orgModeData, container) {
         const date = new Date(dateString);
         const targetWeekDay = date.getDay();
 
-        if (currentWeekDay !== targetWeekDay) {  // Mismatch: Fill in missing days
+        if (currentWeekDay === 0 && targetWeekDay !== 0) { // Start of a new week, but not Monday
+            // Fill in the days until we reach the target weekday
             while (currentWeekDay < targetWeekDay) {
                 weekRow.appendChild(document.createElement('div'));
                 weekRow.lastChild.classList.add('day');
-                currentWeekDay = (currentWeekDay + 1) % 7;
+                currentWeekDay++;
             }
         }
 
@@ -59,7 +60,7 @@ function processOrgModeData(orgModeData, container) {
         }
 
         weekRow.appendChild(dayElement);
-        currentWeekDay = (currentWeekDay + 1) % 7;
+        currentWeekDay = (currentWeekDay + 1) % 7; // Move to the next day (wrapping to 0 for Sunday)
 
         if (currentWeekDay === 0) {
             container.appendChild(weekRow);
