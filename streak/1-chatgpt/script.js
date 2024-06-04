@@ -37,7 +37,6 @@ function processOrgModeData(orgModeData, container) {
     weekRow.classList.add('week-row');
 
     let dayCount = 0;
-    let firstDate = null;
 
     lines.forEach((line, index) => {
         console.log(`Processing line ${index + 1}: ${line}`);
@@ -51,17 +50,13 @@ function processOrgModeData(orgModeData, container) {
                 return;
             }
 
-            if (!firstDate) {
-                firstDate = date;
-            }
-
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
             const monthDayYear = date.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
             const dayElement = document.createElement('div');
             dayElement.classList.add('day');
 
-            if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
+            if (status === 'DONE' || status === 'MISSED' || status === 'TODO') {
                 dayCount++;
                 dayElement.innerHTML = `
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
@@ -79,12 +74,8 @@ function processOrgModeData(orgModeData, container) {
                     dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
                 }
             } else {
-                if (date < firstDate) {
-                    return;
-                }
                 dayElement.innerHTML = `
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
-                    <span class="empty-square">☐</span>
                 `;
             }
 
