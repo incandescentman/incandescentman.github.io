@@ -31,10 +31,11 @@ function parseDate(dateString) {
     return null;
 }
 
+
+
 function processOrgModeData(orgModeData, container) {
     const lines = orgModeData.trim().split('\n');
-    let weekRow = document.createElement('div');
-    weekRow.classList.add('week-row');
+    let weekRow = null;
 
     let dayCount = 0;
     let startCounting = false;
@@ -56,6 +57,10 @@ function processOrgModeData(orgModeData, container) {
             const dayElement = document.createElement('div');
             dayElement.classList.add('day');
 
+            dayElement.innerHTML = `
+                <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
+            `;
+
             if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
                 if (!startCounting) {
                     startCounting = true;
@@ -63,33 +68,29 @@ function processOrgModeData(orgModeData, container) {
                 } else {
                     dayCount++;
                 }
-                dayElement.innerHTML = `
-                    <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
-                    <p class="day-number">Day ${dayCount}</p>
-                `;
 
                 if (status === 'DONE') {
                     dayElement.classList.add('completed');
+                    dayElement.innerHTML += `<p class="day-number">Day ${dayCount}</p>`;
                     dayElement.innerHTML = `<span class="checkmark">✔</span>` + dayElement.innerHTML;
                 } else if (status === 'MISSED') {
                     dayElement.classList.add('missed');
+                    dayElement.innerHTML += `<p class="day-number">Day ${dayCount}</p>`;
                     dayElement.innerHTML = `<span class="cross">✘</span>` + dayElement.innerHTML;
                 } else if (status === 'TODO') {
                     dayElement.classList.add('todo');
+                    dayElement.innerHTML += `<p class="day-number">Day ${dayCount}</p>`;
                     dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
                 }
-            } else {
-                dayElement.innerHTML = `<p class="full-date">${dayOfWeek} ${monthDayYear}</p>`;
+            }
+
+            if (!weekRow || dayOfWeek === 'Mon') {
+                weekRow = document.createElement('div');
+                weekRow.classList.add('week-row');
+                container.appendChild(weekRow);
             }
 
             weekRow.appendChild(dayElement);
-
-            // If it's the end of the week or the end of the data, append the weekRow to the container and start a new weekRow
-            if (dayOfWeek === 'Sun' || index === lines.length - 1) {
-                container.appendChild(weekRow);
-                weekRow = document.createElement('div');
-                weekRow.classList.add('week-row');
-            }
         }
     });
 
