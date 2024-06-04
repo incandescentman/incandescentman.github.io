@@ -1,7 +1,7 @@
 
 * Sunjay's Birthday Soirée
 
-[[file:img/2.png]]
+[[file:img/3.png]]
 
 guys this is a big one!
 
@@ -24,6 +24,8 @@ When: Saturday, June 8 at 5:30pm \\
 Where: 50 Bridge Street, Unit #307, Brooklyn NY 11201 \\
 *RSVP*: [[mailto:jay@jaydixit.com][jay@jaydixit.com]] or (646) 355-8001 \\
 Directions: F to York Street
+
+[[file:img/2.png]]
 
 #+TITLE: Sunjay's Birthday Soirée
 #+HTML_HEAD: <title> Sunjay's Birthday Soirée </title>
