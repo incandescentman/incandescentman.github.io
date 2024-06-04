@@ -37,7 +37,6 @@ function processOrgModeData(orgModeData, container) {
     weekRow.classList.add('week-row');
 
     let dayCount = 0;
-    let firstDate = null;
 
     lines.forEach((line, index) => {
         console.log(`Processing line ${index + 1}: ${line}`);
@@ -51,46 +50,35 @@ function processOrgModeData(orgModeData, container) {
                 return;
             }
 
-            if (!firstDate) {
-                firstDate = date;
-            }
-
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
             const monthDayYear = date.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
             const dayElement = document.createElement('div');
-            dayElement.classList.add('day');
 
-            if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
+            if (status === 'DONE') {
                 dayCount++;
-                dayElement.innerHTML = `
+                dayElement.classList.add('day', 'completed');
+                dayElement.innerHTML = `<span class="checkmark">✔</span>
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
-                    <p class="day-number">Day ${dayCount}</p>
-                `;
-
-                if (status === 'DONE') {
-                    dayElement.classList.add('completed');
-                    dayElement.innerHTML = `<span class="checkmark">✔</span>` + dayElement.innerHTML;
-                } else if (status === 'MISSED') {
-                    dayElement.classList.add('missed');
-                    dayElement.innerHTML = `<span class="cross">✘</span>` + dayElement.innerHTML;
-                } else if (status === 'TODO') {
-                    dayElement.classList.add('todo');
-                    dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
-                }
+                    <p class="day-number">Day ${dayCount}</p>`;
+            } else if (status === 'MISSED') {
+                dayCount++;
+                dayElement.classList.add('day', 'missed');
+                dayElement.innerHTML = `<span class="cross">✘</span>
+                    <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
+                    <p class="day-number">Day ${dayCount}</p>`;
+            } else if (status === 'TODO') {
+                dayCount++;
+                dayElement.classList.add('day', 'todo');
+                dayElement.innerHTML = `<span class="empty-square">☐</span>
+                    <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
+                    <p class="day-number">Day ${dayCount}</p>`;
             } else {
-                if (date < firstDate) {
-                    return;
-                }
-                dayElement.innerHTML = `
-                    <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
-                    <span class="empty-square">☐</span>
-                `;
+                dayElement.innerHTML = `<p class="full-date">${dayOfWeek} ${monthDayYear}</p>`;
             }
 
             weekRow.appendChild(dayElement);
 
-            // If it's the end of the week or the end of the data, append the weekRow to the container and start a new weekRow
             if (dayOfWeek === 'Sun' || index === lines.length - 1) {
                 container.appendChild(weekRow);
                 weekRow = document.createElement('div');
