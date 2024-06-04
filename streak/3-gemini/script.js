@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('dayContainer');
+    if (!container) {
+        console.error("Container element not found!");
+        return;
+    }
+
+    fetch('progress.org')
+        .then(response => response.text())
+        .then(data => processOrgModeData(data, container))
+        .catch(error => console.error('Error fetching progress.org:', error));
+});
+
+
 function processOrgModeData(orgModeData, container) {
     const lines = orgModeData.trim().split('\n').filter(line => line.startsWith('*'));
     let weekRow = document.createElement('div');
