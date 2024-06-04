@@ -76,6 +76,7 @@ function processOrgModeData(orgModeData, container) {
                     <p class="full-date">${monthDayYear}</p>
                     <p class="day-number">Day ${dayCount}</p>`;
             } else {
+                dayElement.classList.add('day');
                 dayElement.innerHTML = `<p class="full-date">${monthDayYear}</p>`;
             }
 
