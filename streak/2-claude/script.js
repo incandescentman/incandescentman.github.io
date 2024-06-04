@@ -17,7 +17,6 @@ function processOrgModeData(orgModeData, container) {
     let weekRow = document.createElement('div');
     weekRow.classList.add('week-row');
     let dayCount = 0;
-    let currentWeekDay = new Date(lines[0].match(/<(\d{4}-\d{2}-\d{2})/)[1]).getDay(); // Start on the day of the first entry
 
     for (const line of lines) {
         const dateMatch = line.match(/<(\d{4}-\d{2}-\d{2})/);
@@ -27,20 +26,11 @@ function processOrgModeData(orgModeData, container) {
         const date = new Date(dateString);
         const targetWeekDay = date.getDay(); // Day of the week for the current line
 
-        // Fill in empty days before the current date, but only if it's not the first entry
-        if (dayCount > 0) {
-            while (currentWeekDay < targetWeekDay) {
-                weekRow.appendChild(document.createElement('div'));
-                weekRow.lastChild.classList.add('day');
-                currentWeekDay++;
-
-                if (currentWeekDay === 7) { // Move to the next week if we hit Sunday
-                    container.appendChild(weekRow);
-                    weekRow = document.createElement('div');
-                    weekRow.classList.add('week-row');
-                    currentWeekDay = 0;
-                }
-            }
+        // If it's a new week and the week row is not empty, append the week row to the container
+        if (targetWeekDay === 1 && weekRow.children.length > 0) {
+            container.appendChild(weekRow);
+            weekRow = document.createElement('div');
+            weekRow.classList.add('week-row');
         }
 
         const dayElement = document.createElement('div');
@@ -65,14 +55,6 @@ function processOrgModeData(orgModeData, container) {
         }
 
         weekRow.appendChild(dayElement);
-        currentWeekDay = targetWeekDay + 1; // Move to the next day
-
-        if (currentWeekDay === 7) {
-            container.appendChild(weekRow);
-            weekRow = document.createElement('div');
-            weekRow.classList.add('week-row');
-            currentWeekDay = 0;
-        }
     }
 
     if (weekRow.children.length > 0) {
