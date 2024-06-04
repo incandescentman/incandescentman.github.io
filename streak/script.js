@@ -39,6 +39,7 @@ function processOrgModeData(orgModeData, container) {
 
     let dayCount = 0;
     let startCounting = false;
+    let firstDate = null;
 
     lines.forEach((line, index) => {
         console.log(`Processing line ${index + 1}: ${line}`);
@@ -51,6 +52,11 @@ function processOrgModeData(orgModeData, container) {
                 console.error(`Invalid date format in line: ${line}`);
                 return;
             }
+
+            if (!firstDate) {
+                firstDate = date;
+            }
+
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
             const monthDayYear = date.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
@@ -84,7 +90,7 @@ function processOrgModeData(orgModeData, container) {
                 }
             }
 
-            if (!weekRow || dayOfWeek === 'Mon') {
+            if (!weekRow || date.getDay() === firstDate.getDay()) {
                 weekRow = document.createElement('div');
                 weekRow.classList.add('week-row');
                 container.appendChild(weekRow);
