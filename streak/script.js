@@ -31,15 +31,13 @@ function parseDate(dateString) {
     return null;
 }
 
-
-
 function processOrgModeData(orgModeData, container) {
     const lines = orgModeData.trim().split('\n');
-    let weekRow = null;
+    let weekRow = document.createElement('div');
+    weekRow.classList.add('week-row');
 
     let dayCount = 0;
     let startCounting = false;
-    let firstDate = null;
 
     lines.forEach((line, index) => {
         console.log(`Processing line ${index + 1}: ${line}`);
@@ -52,51 +50,42 @@ function processOrgModeData(orgModeData, container) {
                 console.error(`Invalid date format in line: ${line}`);
                 return;
             }
-
-            if (!firstDate) {
-                firstDate = date;
-            }
-
             const dayOfWeek = date.toLocaleString('en-US', { weekday: 'short' });
             const monthDayYear = date.toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
             const dayElement = document.createElement('div');
             dayElement.classList.add('day');
 
-            dayElement.innerHTML = `
-                <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
-            `;
-
             if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
-                if (!startCounting) {
-                    startCounting = true;
-                    dayCount = 1;
-                } else {
-                    dayCount++;
-                }
+                startCounting = true;
+                dayCount++;
+                dayElement.innerHTML = `
+                    <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
+                    <p class="day-number">Day ${dayCount}</p>
+                `;
 
                 if (status === 'DONE') {
                     dayElement.classList.add('completed');
-                    dayElement.innerHTML += `<p class="day-number">Day ${dayCount}</p>`;
                     dayElement.innerHTML = `<span class="checkmark">✔</span>` + dayElement.innerHTML;
                 } else if (status === 'MISSED') {
                     dayElement.classList.add('missed');
-                    dayElement.innerHTML += `<p class="day-number">Day ${dayCount}</p>`;
                     dayElement.innerHTML = `<span class="cross">✘</span>` + dayElement.innerHTML;
                 } else if (status === 'TODO') {
                     dayElement.classList.add('todo');
-                    dayElement.innerHTML += `<p class="day-number">Day ${dayCount}</p>`;
                     dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
                 }
-            }
-
-            if (!weekRow || date.getDay() === firstDate.getDay()) {
-                weekRow = document.createElement('div');
-                weekRow.classList.add('week-row');
-                container.appendChild(weekRow);
+            } else {
+                dayElement.innerHTML = `<p class="full-date">${dayOfWeek} ${monthDayYear}</p>`;
             }
 
             weekRow.appendChild(dayElement);
+
+            // If it's the end of the week or the end of the data, append the weekRow to the container and start a new weekRow
+            if (dayOfWeek === 'Sun' || index === lines.length - 1) {
+                container.appendChild(weekRow);
+                weekRow = document.createElement('div');
+                weekRow.classList.add('week-row');
+            }
         }
     });
 
