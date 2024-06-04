@@ -17,8 +17,9 @@ function processOrgModeData(orgModeData, container) {
     const lines = orgModeData.trim().split('\n').filter(line => line.startsWith('*'));
     let weekRow = document.createElement('div');
     weekRow.classList.add('week-row');
+
     let dayCount = 0;
-    let currentWeekDay = new Date(lines[0].match(/<(\d{4}-\d{2}-\d{2})/)[1]).getDay(); // Start on the day of the first entry
+    let currentWeekDay = 0; // Start on Monday (0)
 
     for (const line of lines) {
         const dateMatch = line.match(/<(\d{4}-\d{2}-\d{2})/);
@@ -26,22 +27,16 @@ function processOrgModeData(orgModeData, container) {
 
         const dateString = dateMatch[1];
         const date = new Date(dateString);
-        const targetWeekDay = date.getDay(); // Day of the week for the current line
+        const targetWeekDay = date.getDay();
 
-        // Fill in empty days before the current date
-        while (currentWeekDay < targetWeekDay) {
-            weekRow.appendChild(document.createElement('div'));
-            weekRow.lastChild.classList.add('day');
-            currentWeekDay++;
-
-            if (currentWeekDay === 7) { // Move to the next week if we hit Sunday
-                container.appendChild(weekRow);
-                weekRow = document.createElement('div');
-                weekRow.classList.add('week-row');
-                currentWeekDay = 0;
+        if (currentWeekDay === 0 && targetWeekDay !== 0) { // Start of a new week, but not Monday
+            // Fill in the days until we reach the target weekday
+            while (currentWeekDay < targetWeekDay) {
+                weekRow.appendChild(document.createElement('div'));
+                weekRow.lastChild.classList.add('day');
+                currentWeekDay++;
             }
         }
-
 
         const dayElement = document.createElement('div');
         dayElement.classList.add('day');
@@ -65,13 +60,12 @@ function processOrgModeData(orgModeData, container) {
         }
 
         weekRow.appendChild(dayElement);
-        currentWeekDay++; // Move to the next day
+        currentWeekDay = (currentWeekDay + 1) % 7; // Move to the next day (wrapping to 0 for Sunday)
 
-        if (currentWeekDay === 7) {
+        if (currentWeekDay === 0) {
             container.appendChild(weekRow);
             weekRow = document.createElement('div');
             weekRow.classList.add('week-row');
-            currentWeekDay = 0;
         }
     }
 

@@ -1,6 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
-    console.log("DOM fully loaded and parsed");
-
+document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('dayContainer');
     if (!container) {
         console.error("Container element not found!");
@@ -8,19 +6,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     fetch('progress.org')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.text();
-        })
-        .then(data => {
-            console.log('Fetched org-mode data:', data);
-            processOrgModeData(data, container);
-        })
-        .catch(error => {
-            console.error('Error fetching progress.org:', error);
-        });
+        .then(response => response.text())
+        .then(data => processOrgModeData(data, container))
+        .catch(error => console.error('Error fetching progress.org:', error));
 });
 
 function processOrgModeData(orgModeData, container) {
@@ -29,25 +17,34 @@ function processOrgModeData(orgModeData, container) {
     weekRow.classList.add('week-row');
 
     let dayCount = 0;
-    let currentWeekDay = 1; // Start on Monday (0 for Sunday, 1 for Monday)
+    let firstDate = new Date(lines[0].match(/<(\d{4}-\d{2}-\d{2})/)[1]);
+    let currentWeekDay = firstDate.getDay();
+
+    // Adjust if the first entry day is not Monday
+    if (currentWeekDay !== 1) {
+        currentWeekDay = 1; // Set start to Monday
+    }
 
     for (const line of lines) {
         const dateMatch = line.match(/<(\d{4}-\d{2}-\d{2})/);
-        if (!dateMatch) continue; // Skip lines without valid dates
+        if (!dateMatch) continue;
 
         const dateString = dateMatch[1];
         const date = new Date(dateString);
+        const targetWeekDay = (date.getDay() === 0 ? 7 : date.getDay()); // Set Sunday as the last day of the week
 
-        while (currentWeekDay < date.getDay()) { // Fill in empty days before the current date
-            weekRow.appendChild(document.createElement('div'));
-            weekRow.lastChild.classList.add('day');
+        // Fill in empty days before the current date
+        while (currentWeekDay < targetWeekDay) {
+            const emptyDayElement = document.createElement('div');
+            emptyDayElement.classList.add('day');
+            weekRow.appendChild(emptyDayElement);
             currentWeekDay++;
 
-            if (currentWeekDay === 7) { // Move to next week if we hit Sunday
+            if (currentWeekDay > 7) { // Move to the next week if we hit Sunday
                 container.appendChild(weekRow);
                 weekRow = document.createElement('div');
                 weekRow.classList.add('week-row');
-                currentWeekDay = 0;
+                currentWeekDay = 1;
             }
         }
 
@@ -73,17 +70,17 @@ function processOrgModeData(orgModeData, container) {
         }
 
         weekRow.appendChild(dayElement);
-        currentWeekDay++;
+        currentWeekDay++; // Move to the next day
 
-        if (currentWeekDay === 7) { // Move to next week if we hit Sunday
+        if (currentWeekDay > 7) {
             container.appendChild(weekRow);
             weekRow = document.createElement('div');
             weekRow.classList.add('week-row');
-            currentWeekDay = 0;
+            currentWeekDay = 1;
         }
     }
 
-    if (weekRow.children.length > 0) { // Append any remaining days
+    if (weekRow.children.length > 0) {
         container.appendChild(weekRow);
     }
 }
