@@ -33,7 +33,6 @@ function parseDate(dateString) {
 
 
 
-
 function processOrgModeData(orgModeData, container) {
     const lines = orgModeData.trim().split('\n');
     let weekRow = document.createElement('div');
