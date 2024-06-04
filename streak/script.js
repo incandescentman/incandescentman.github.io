@@ -59,8 +59,10 @@ function processOrgModeData(orgModeData, container) {
             if (status === 'TODO' || status === 'DONE' || status === 'MISSED') {
                 if (!startCounting) {
                     startCounting = true;
+                    dayCount = 1;
+                } else {
+                    dayCount++;
                 }
-                dayCount++;
                 dayElement.innerHTML = `
                     <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
                     <p class="day-number">Day ${dayCount}</p>
@@ -77,9 +79,7 @@ function processOrgModeData(orgModeData, container) {
                     dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
                 }
             } else {
-                dayElement.innerHTML = `
-                    <p class="full-date">${dayOfWeek} ${monthDayYear}</p>
-                `;
+                dayElement.innerHTML = `<p class="full-date">${dayOfWeek} ${monthDayYear}</p>`;
             }
 
             weekRow.appendChild(dayElement);
