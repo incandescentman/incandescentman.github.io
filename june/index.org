@@ -1,42 +1,34 @@
-[[./img/1.JPG]]
-* Midwinter Holiday Merriment
-Friends,
 
-As the days grow shorter and the grim shadow of winter envelops us in its icy embrace, let's gather together to defy the darkness.
+* Sunjay's Birthday Soirée
 
-Amidst the chill winds and long nights, we'll find solace in the warmth of mulled wine and classic cocktails. For my part, I'll be spending the day pre-making batches of the Snowdrift (a holiday cocktail of bourbon, cinnamon bitters, and homemade gingerbread syrup) and confecting my own favorite Canadian delicacy, [[https://www.wikiwand.com/en/Nanaimo_bars][the Nanaimo Bar]].
+[[file:img/2.png]]
 
-Please join me this Friday at 7pm at my home in Williamsburg. Together we'll raise our glasses to friendship, holiday cheer, and our triumph over winter's gloom.
+guys this is a big one!
 
-[[mailto:jay@jaydixit.com][RSVP]] so I can get a headcount. Feel free to bring friends and loved ones. As always, your own civilian contributions of wine or spirits are welcome, or feel free to bring your own favorite holiday treats to share.
+I just graduated with my MFA in writing... 🎓 \\
+I just started a new job I've only told a few people about... 🦾 \\
+I just got back from two months in SF... 🌁 \\
+oh and did I mention it's my birthday? 🤯 \\
 
-Hoping to see you there, \\
+so pls join me for a small bday bash to celebrate life and its events and my beloved humans who are in it with me at the beautiful indoor/outdoor space at my brother Neil's apartment in Dumbo.
+
+Paul and Claire will be leading some fun party games / icebreaker questions / conversational storytelling activities. we will also serve unusual bespoke cocktails and food!
+
+[[mailto:jay@jaydixit.com][RSVP]] so I can get a headcount. Your own civilian contributions of favorite snacks or exotic beverages from far-flung tropical/alpine/polar locales are likewise welcome!
+
+until then! \\
 Sunjay
 
-
-Details:
-
-When: Friday, December 15 at 7:00pm \\
-Where: 166 North 7th Street Apt. 3, Brooklyn NY 11211 \\
+RSVP: jay@jaydixit.com or (646) 355-8001 \\
+When: Saturday, June 8 at 5:30pm \\
+Where: 50 Bridge Street, Unit #307, Brooklyn NY 11201 \\
 *RSVP*: [[mailto:jay@jaydixit.com][jay@jaydixit.com]] or (646) 355-8001 \\
-Directions: The building is 166 North 7th Street, next to Pressed Juicery.
+Directions: F to York Street
 
-[[./img/2.JPG]]
-
-[[./img/3.JPG]][[./img/unreliablenarrator_Canadian_themed_Brooklyn_Christmas_party_wi_6b0e9364-032d-4d1d-b280-c6a3d056a73b.PNG]]
-[[./img/4.JPG]]
-[[./img/5.JPG]]
-[[./img/6.JPG]]
-[[./img/7.JPG]]
-
-[[./img/8.JPG]]
-
-[[./img/unreliablenarrator_Canadian_themed_Brooklyn_Christmas_party_wi_4e68762e-3eab-495e-a9a8-87d1afec19b1.PNG]]
-
-#+TITLE: Midwinter Holiday Merriment
-#+HTML_HEAD: <title>Midsummer Birthday Revelry</title>
+#+TITLE: Sunjay's Birthday Soirée
+#+HTML_HEAD: <title> Sunjay's Birthday Soirée </title>
 #+HTML_HEAD: <link rel='stylesheet' type='text/css' href='https://incandescentman.github.io/css/neocortex.css'>
-#+HTML_HEAD: <meta property="og:title" content="Midwinter Holiday Merriment" />
+#+HTML_HEAD: <meta property="og:title" content="Sunjay's Birthday Soirée" />
 #+HTML_HEAD: <meta property="og:description" content="Please join us for a very special evening.">
-#+HTML_HEAD: <meta property="og:image" content="./img/1.JPG"/>
+#+HTML_HEAD: <meta property="og:image" content="./img/2.png"/>
 #+HTML_HEAD: <meta property="og:url" content="index.html"/>
