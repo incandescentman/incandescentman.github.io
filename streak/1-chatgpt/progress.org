@@ -1,3 +1,4 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
 * <2024-05-27 Mon>
 * <2024-05-28 Tue>
 * <2024-05-29 Wed>
