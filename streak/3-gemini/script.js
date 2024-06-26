@@ -5,24 +5,25 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    fetch('progress.org')
+    fetch('progress.html')
         .then(response => response.text())
-        .then(data => processOrgModeData(data, container))
-        .catch(error => console.error('Error fetching progress.org:', error));
+        .then(data => processHtmlData(data, container))
+        .catch(error => console.error('Error fetching progress.html:', error));
 });
 
-
-
-function processOrgModeData(orgModeData, container) {
-    const lines = orgModeData.trim().split('\n').filter(line => line.startsWith('*'));
+function processHtmlData(htmlData, container) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlData, 'text/html');
+    const lines = Array.from(doc.body.children);
 
     let weekRow = document.createElement('div');
     weekRow.classList.add('week-row');
 
     let dayCount = 0;
+    let daysInCurrentRow = 0;
 
     for (const line of lines) {
-        const dateMatch = line.match(/<(\d{4}-\d{2}-\d{2})/);
+        const dateMatch = line.textContent.match(/(\d{4}-\d{2}-\d{2})/);
         if (!dateMatch) continue;
 
         const dateString = dateMatch[1];
@@ -32,9 +33,8 @@ function processOrgModeData(orgModeData, container) {
         dayElement.classList.add('day');
         dayElement.innerHTML = `<p class="full-date">${date.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })}</p>`;
 
-        // Only add "DONE", "MISSED", or "TODO" if present in the line
-        if (line.includes("DONE") || line.includes("MISSED") || line.includes("TODO")) {
-            const status = line.split(' ')[1];
+        const status = line.textContent.split(' ')[0];
+        if (status === 'DONE' || status === 'MISSED' || status === 'TODO') {
             dayCount++;
             dayElement.innerHTML += `<p class="day-number">Day ${dayCount}</p>`;
 
@@ -51,23 +51,39 @@ function processOrgModeData(orgModeData, container) {
         }
 
         weekRow.appendChild(dayElement);
+        daysInCurrentRow++;
 
-        // Start a new week row only if the next date (if any) is a Monday
-        if (lines.indexOf(line) < lines.length - 1) { // Check if there's a next line
-            const nextDateMatch = lines[lines.indexOf(line) + 1].match(/<(\d{4}-\d{2}-\d{2})/);
-            if (nextDateMatch) {
-                const nextDate = new Date(nextDateMatch[1]);
-                if (nextDate.getDay() === 1) { // Monday
-                    container.appendChild(weekRow);
-                    weekRow = document.createElement('div');
-                    weekRow.classList.add('week-row');
-                }
-            }
+        // If we've added 7 days to the current row, add the month column and start a new row
+        if (daysInCurrentRow === 7) {
+            const monthElement = document.createElement('div');
+            monthElement.classList.add('month');
+            monthElement.textContent = date.toLocaleString('en-US', { month: 'long' });
+            weekRow.appendChild(monthElement);
+
+            container.appendChild(weekRow);
+            weekRow = document.createElement('div');
+            weekRow.classList.add('week-row');
+            daysInCurrentRow = 0;
         }
     }
 
     // Append any remaining days in the last week
     if (weekRow.children.length > 0) {
+        // If the last row is not complete, add empty cells to fill it
+        while (daysInCurrentRow < 7) {
+            const emptyElement = document.createElement('div');
+            emptyElement.classList.add('day', 'empty');
+            weekRow.appendChild(emptyElement);
+            daysInCurrentRow++;
+        }
+
+        // Add the month column for the last row
+        const lastDate = new Date(weekRow.lastChild.querySelector('.full-date').textContent);
+        const monthElement = document.createElement('div');
+        monthElement.classList.add('month');
+        monthElement.textContent = lastDate.toLocaleString('en-US', { month: 'long' });
+        weekRow.appendChild(monthElement);
+
         container.appendChild(weekRow);
     }
 }
