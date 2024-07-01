@@ -5,59 +5,80 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    fetch('progress.org')
+    fetch('progress.html')
         .then(response => response.text())
-        .then(data => processOrgModeData(data, container))
-        .catch(error => console.error('Error fetching progress.org:', error));
+        .then(data => processHtmlData(data, container))
+        .catch(error => console.error('Error fetching progress.html:', error));
 });
 
-function processOrgModeData(orgModeData, container) {
-    const lines = orgModeData.trim().split('\n').filter(line => line.startsWith('*') && /<\d{4}-\d{2}-\d{2}/.test(line));
-    const monthNames = ["January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"];
+function processHtmlData(htmlData, container) {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlData, 'text/html');
+    const entries = doc.querySelectorAll('#content .outline-2');
 
-    let currentRow;
+    let weekRow = document.createElement('div');
+    weekRow.classList.add('week-row');
+
     let dayCount = 0;
+    let daysInCurrentRow = 0;
 
-    lines.forEach((line, index) => {
-        if (dayCount % 7 === 0) {
-            currentRow = document.createElement('div');
-            currentRow.className = 'week-row grid grid-cols-8 gap-4';
-            container.appendChild(currentRow);
+    entries.forEach((entry) => {
+        const h2 = entry.querySelector('h2');
+        if (!h2) return;
+
+        const dateMatch = h2.textContent.match(/(\d{4}-\d{2}-\d{2})/);
+        if (!dateMatch) return;
+
+        const dateString = dateMatch[1];
+        const date = new Date(dateString);
+
+        const dayElement = document.createElement('div');
+        dayElement.classList.add('day');
+        dayElement.innerHTML = `<p class="full-date">${date.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })}</p>`;
+
+        const statusSpan = h2.querySelector('span.done, span.todo');
+        if (statusSpan) {
+            const status = statusSpan.classList.contains('done') ? 'DONE' :
+                           statusSpan.classList.contains('todo') && statusSpan.textContent === 'MISSED' ? 'MISSED' : 'TODO';
+
+            dayCount++;
+            dayElement.innerHTML += `<p class="day-number">Day ${dayCount}</p>`;
+
+            if (status === 'DONE') {
+                dayElement.classList.add('completed');
+                dayElement.innerHTML = `<span class="checkmark">✔</span>` + dayElement.innerHTML;
+            } else if (status === 'MISSED') {
+                dayElement.classList.add('missed');
+                dayElement.innerHTML = `<span class="cross">✘</span>` + dayElement.innerHTML;
+            } else if (status === 'TODO') {
+                dayElement.classList.add('todo');
+                dayElement.innerHTML = `<span class="empty-square">☐</span>` + dayElement.innerHTML;
+            }
         }
 
-        const dateMatch = line.match(/<(\d{4}-\d{2}-\d{2})/);
-        if (dateMatch) {
-            const date = new Date(dateMatch[1] + 'T00:00:00'); // Add time to ensure consistent parsing
-            if (isNaN(date.getTime())) {
-                console.error(`Invalid date: ${dateMatch[1]}`);
-                return;
-            }
+        weekRow.appendChild(dayElement);
+        daysInCurrentRow++;
 
-            const dayElement = document.createElement('div');
-            dayElement.classList.add('day');
-            dayElement.innerHTML = `<p class="full-date">${date.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })}</p>`;
-
-            const status = line.split(' ')[1];
-            if (status === 'DONE' || status === 'MISSED' || status === 'TODO') {
-                dayCount++;
-                dayElement.innerHTML += `<p class="day-number">Day ${dayCount}</p>`;
-
-                const statusSymbol = status === 'DONE' ? '✔' : status === 'MISSED' ? '✘' : '☐';
-                const statusClass = status.toLowerCase();
-                dayElement.classList.add(statusClass);
-                dayElement.innerHTML = `<span class="${statusClass}-symbol" aria-hidden="true">${statusSymbol}</span>` + dayElement.innerHTML;
-                dayElement.setAttribute('aria-label', `${status} Day ${dayCount}`);
-            }
-
-            currentRow.appendChild(dayElement);
-
-            if (dayCount % 7 === 0 || index === lines.length - 1) {
-                const monthElement = document.createElement('div');
-                monthElement.className = 'month-name p-4 border rounded bg-blue-100 flex items-center justify-center';
-                monthElement.textContent = monthNames[date.getMonth()];
-                currentRow.appendChild(monthElement);
-            }
+        // If we've added 7 days to the current row, add the month column and start a new row
+        if (daysInCurrentRow === 7) {
+            addMonthColumnAndAppendRow(weekRow, date, container);
+            weekRow = document.createElement('div');
+            weekRow.classList.add('week-row');
+            daysInCurrentRow = 0;
         }
     });
+
+    // Handle the last row if it's not complete
+    if (weekRow.children.length > 0) {
+        const lastDate = new Date(weekRow.lastChild.querySelector('.full-date').textContent);
+        addMonthColumnAndAppendRow(weekRow, lastDate, container);
+    }
+}
+
+function addMonthColumnAndAppendRow(weekRow, date, container) {
+    const monthElement = document.createElement('div');
+    monthElement.classList.add('month');
+    monthElement.textContent = date.toLocaleString('en-US', { month: 'long' });
+    weekRow.appendChild(monthElement);
+    container.appendChild(weekRow);
 }
