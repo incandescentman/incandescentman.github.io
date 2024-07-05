@@ -29,21 +29,42 @@ section.module.parallax-3 {
 
 #+END_EXPORT
 
-* Movie Night 
-Friends,
+* Movie Night
+Movie night tonight at my place in Williamsburg!
 
-Today is a very auspicious day, for it marks Brinda's triumphant return after almost two weeks in California. On this serene and rainy April day, nothing would make us happier than to drink alcohol in the company of good friends. So please join us this evening in raising a glass to friendship, good cheer, and the soft rains of spring.
+We'll be screening /Hit Man/, the new action comedy by Richard Linklater in which a mild-mannered teacher leads a double life as a pretend undercover contract killer.
 
-Looking forward to seeing you all.
+* The Hit List
+Here's tonight's cocktail menu, courtesy of ChatGPT. 🦾
 
-Until then!
+** The Straight Shooter
+A bold bourbon cocktail that hits the mark with subtle sweetness and aromatic bitters.
 
-Jay
+** The Hit and Rum
+A dangerously smooth rum concoction with a killer combination of flavors.
+
+** The Dead Drop
+A mysterious and dark scotch cocktail with coffee liqueur and chocolate bitters.
+
+** The Liquid Asset
+A gin cocktail with elderflower, lemon, and a spatter of soda.
+
+** The Molotov Cocktail
+An explosive tequila cocktail made was lime, agave, and fiery jalapeño.
+
+* Details
+Friends welcome. [[mailto:jay@jaydixit.com][RSVP]] so I can get a body count. Contributions of snacks or beverages are welcome but not required.
+
+Hit man-themed attire optional but encouraged. Dress to kill... or go deep undercover. Just be sure it's executed perfectly. 🤵🏻🔫
 
 *Where*: 166 N 7th Street Brooklyn NY 11211, Apt. 3 \\
-*map*: https://goo.gl/maps/4doG7fg2aeq6Vj5t7 \\
-*When*: 7:00pm today \\
+*Map*: https://goo.gl/maps/4doG7fg2aeq6Vj5t7 \\
+*When*: 7:30pm today (Friday July 5) \\
+Where: 166 North 7th Street Apt. 3, Brooklyn NY 11211 \\
+*RSVP*: [[mailto:jay@jaydixit.com][jay@jaydixit.com]] or (646) 355-8001 \\
+Directions: The building is 166 North 7th Street, next to Pressed Juicery.
 
+Until then!
 
 #+BEGIN_EXPORT HTML
 </div>
@@ -113,3 +134,5 @@ Jay
 #+HTML_HEAD: <meta property="og:description" content="Please join us for a very special evening.">
 #+HTML_HEAD: <meta property="og:image" content="img/1.jpg"/>
 #+HTML_HEAD: <meta property="og:url" content="index.html"/>
+
+#+OPTIONS:  H:5
