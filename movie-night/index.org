@@ -1,13 +1,13 @@
 #+BEGIN_EXPORT HTML
 <style>
 section.module.parallax-1 {
- background-image: url("img/1.jpg");
+ background-image: url("img/1.png");
 }
 section.module.parallax-2 {
- background-image: url("img/2.jpg");
+ background-image: url("img/2.png");
 }
 section.module.parallax-3 {
- background-image: url("img/3.jpg");
+ background-image: url("img/3.png");
 }
 </style>
 
