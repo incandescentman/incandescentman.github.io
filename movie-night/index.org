@@ -7,7 +7,8 @@ section.module.parallax-2 {
  background-image: url("img/2.png");
 }
 section.module.parallax-3 {
- background-image: url("img/3.png");
+ background-image: url("img/3.png
+ ");
 }
 </style>
 
@@ -137,7 +138,7 @@ Sunjay
 #+HTML_HEAD: <script src="js/modernizr.js"></script>
 #+HTML_HEAD: <meta property="og:title" content="Movie Night" />
 #+HTML_HEAD: <meta property="og:description" content="Please join us for a very special evening.">
-#+HTML_HEAD: <meta property="og:image" content="img/1.jpg"/>
+#+HTML_HEAD: <meta property="og:image" content="img/4.png"/>
 #+HTML_HEAD: <meta property="og:url" content="index.html"/>
 
 #+OPTIONS:  H:5
