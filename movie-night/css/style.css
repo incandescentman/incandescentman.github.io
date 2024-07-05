@@ -115,3 +115,7 @@ h3 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin-top:1em;
 }
+
+div p img {
+  max-width:100%;
+}
