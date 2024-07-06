@@ -1,3 +1,4 @@
+
 #+BEGIN_EXPORT HTML
 <style>
 section.module.parallax-1 {
@@ -132,13 +133,13 @@ Sunjay
 </div><!-- /#wrapper -->
 #+END_EXPORT
 
-#+HTML_HEAD: <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans">
 #+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
 #+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
 #+HTML_HEAD: <script src="js/modernizr.js"></script>
 #+HTML_HEAD: <meta property="og:title" content="Movie Night" />
-#+HTML_HEAD: <meta property="og:description" content="Please join us for a very special evening.">
+#+HTML_HEAD: <meta property="og:description" content="You've been invited...">
 #+HTML_HEAD: <meta property="og:image" content="img/4.png"/>
 #+HTML_HEAD: <meta property="og:url" content="index.html"/>
-
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1.0">
 #+OPTIONS:  H:5
