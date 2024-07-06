@@ -26,30 +26,39 @@ section.module.parallax-2 {
  background-image: url("img/2.png");
 }
 section.module.parallax-3 {
- background-image: url("img/3.png
- ");
+ background-image: url("img/3.png");
+}
+.overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: rgba(0, 0, 0, 0.5);
+ z-index: 1;
+}
+.container {
+ position: relative;
+ z-index: 2;
+ padding: 20px;
+}
+h1 {
+ font-size: 3em;
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 </style>
 
 <div class="wrapper">
-
-<!--   <div class="info-bar"> -->
-<!--   <div class="container"> -->
-<!--    <a class="icon cmn-tut" data-title="Jay Dixit" href="http://jaydixit.com/></a> -->
-
-<!-- <a class="icon cmn-prev" data-title="Previous Demo Revealing Content Overlays With CSS3 Transitions" href="http://jaydixit.com"></a>  -->
-<!--   </div> -->
-<!--  </div> -->
-
 <section class="module parallax parallax-1">
+  <div class="overlay"></div>
     <div class="container">
      <h1>Movie Night</h1>
     </div>
    </section>
 
-<div id="outline-container-orgbfa75a5" class="outline-2">
-<h2 id="orgbfa75a5">Movie Night</h2>
-<div class="outline-text-2" id="text-orgbfa75a5">
+<div id="outline-container-orga8ac8da" class="outline-2">
+<h2 id="orga8ac8da">Movie Night</h2>
+<div class="outline-text-2" id="text-orga8ac8da">
 <p>
 Movie night tonight at my place in Williamsburg!
 </p>
@@ -60,53 +69,53 @@ We&rsquo;ll be screening <em>Hit Man</em>, the new action comedy by Richard Link
 </div>
 </div>
 
-<div id="outline-container-orgc4db062" class="outline-2">
-<h2 id="orgc4db062">The Hit List</h2>
-<div class="outline-text-2" id="text-orgc4db062">
+<div id="outline-container-org621de99" class="outline-2">
+<h2 id="org621de99">The Hit List</h2>
+<div class="outline-text-2" id="text-org621de99">
 <p>
 Here&rsquo;s tonight&rsquo;s cocktail menu, courtesy of ChatGPT. 🦾
 </p>
 </div>
 
-<div id="outline-container-org1b8aebf" class="outline-3">
-<h3 id="org1b8aebf">The Straight Shooter</h3>
-<div class="outline-text-3" id="text-org1b8aebf">
+<div id="outline-container-org8f38940" class="outline-3">
+<h3 id="org8f38940">The Straight Shooter</h3>
+<div class="outline-text-3" id="text-org8f38940">
 <p>
 A bold bourbon cocktail that hits the mark with subtle sweetness and aromatic bitters.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgddb302c" class="outline-3">
-<h3 id="orgddb302c">The Hit and Rum</h3>
-<div class="outline-text-3" id="text-orgddb302c">
+<div id="outline-container-org66bc844" class="outline-3">
+<h3 id="org66bc844">The Hit and Rum</h3>
+<div class="outline-text-3" id="text-org66bc844">
 <p>
 A dangerously smooth rum concoction with a killer combination of flavors.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org98a8f02" class="outline-3">
-<h3 id="org98a8f02">The Dead Drop</h3>
-<div class="outline-text-3" id="text-org98a8f02">
+<div id="outline-container-orgcf25587" class="outline-3">
+<h3 id="orgcf25587">The Dead Drop</h3>
+<div class="outline-text-3" id="text-orgcf25587">
 <p>
 A mysterious and dark scotch cocktail with coffee liqueur and chocolate bitters.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org1a09cb0" class="outline-3">
-<h3 id="org1a09cb0">The Liquid Asset</h3>
-<div class="outline-text-3" id="text-org1a09cb0">
+<div id="outline-container-org8492384" class="outline-3">
+<h3 id="org8492384">The Liquid Asset</h3>
+<div class="outline-text-3" id="text-org8492384">
 <p>
 A gin cocktail with elderflower, lemon, and a spatter of soda.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgd161c75" class="outline-3">
-<h3 id="orgd161c75">The Molotov Cocktail</h3>
-<div class="outline-text-3" id="text-orgd161c75">
+<div id="outline-container-org7bf15ca" class="outline-3">
+<h3 id="org7bf15ca">The Molotov Cocktail</h3>
+<div class="outline-text-3" id="text-org7bf15ca">
 <p>
 An explosive tequila cocktail made with lime, agave, and fiery jalapeño.
 </p>
@@ -114,9 +123,9 @@ An explosive tequila cocktail made with lime, agave, and fiery jalapeño.
 </div>
 </div>
 
-<div id="outline-container-org7450071" class="outline-2">
-<h2 id="org7450071">Details</h2>
-<div class="outline-text-2" id="text-org7450071">
+<div id="outline-container-org51516a4" class="outline-2">
+<h2 id="org51516a4">Details</h2>
+<div class="outline-text-2" id="text-org51516a4">
 <p>
 Friends welcome. <a href="mailto:jay@jaydixit.com">RSVP</a> so I can get a body count. Contributions of snacks or beverages are welcome but not required.
 </p>
@@ -143,63 +152,31 @@ Sunjay
 <img src="./img/3.png" alt="3.png">
 </p>
 
-
-
 </div>
 </div>
-   </section>
+  </section>
    <section class="module parallax parallax-2">
+ <div class="overlay"></div>
     <div class="container">
      <h1>Until then...</h1>
     </div>
    </section>
-
-
 </div>
 </div>
-   </section>
+  </section>
 
- </main><!-- /main -->
+ </main>
 
  <footer>
   <div class="container">
-
-   <!-- <div class="asides clearfix"> -->
-   <!--  <aside> -->
-   <!--   <nav> -->
-   <!--    <ul> -->
-   <!--     <li><a href="http://jaydixit.com/">Welcome</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/category/tutorials">Tutorials</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/category/snippets">Snippets</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/category/articles">Articles</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/category/resources">Resources</a></li> -->
-   <!--    </ul> -->
-   <!--   </nav> -->
-   <!--  </aside> -->
-   <!--  <aside> -->
-   <!--   <nav> -->
-   <!--    <ul> -->
-   <!--     <li><a href="http://jaydixit.com/archive/">Archive</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/about">About</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/contact">Contact</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/subscribe">Subscribe</a></li> -->
-   <!--    </ul> -->
-   <!--   </nav> -->
-   <!--  </aside> -->
-   <!--  <aside class="logo"> -->
-   <!--   <a href="http://jaydixit.com/"><img alt="Tutorials, Snippets, Resources, and Articles for Web Design and Web Development" onerror="this.src=../assets/images/lighthouse-inverted.jpg" SRC="../assets/images/lighthouse-inverted.jpg"></a> -->
-   <!--  </aside> -->
-   <!-- </div> -->
-
    <div class="copyright">
-    <small>
-<a href="http://jaydixit.com">jaydixit.com</a>
-    </small>
+   <small><a href="http://jaydixit.com">jaydixit.com</a></small>
    </div>
   </div>
- </footer><!-- /footer -->
-
-</div><!-- /#wrapper -->
+</footer>
+</div>
+</body>
+</html>
 </div>
 </div>
 </div>
