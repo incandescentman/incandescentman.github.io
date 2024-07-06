@@ -131,18 +131,11 @@ a, button {
   transition: all 0.3s ease;
 }
 
-p {
-  max-width:70%;
-}
 
 a:focus, button:focus {
   outline: 2px solid #b4b4b4;
 }
 
-section div h1, h1, {
-  font-family: "Gotham Narrow", Helvetica, Arial, sans-serif;
-
-}
 
 h2
 {font-family: "Gotham Narrow Bold", Helvetica, Arial, sans-serif !important;
@@ -157,4 +150,18 @@ h3 {
 
 strong {
     font-weight:bold;
+}
+
+p {
+  max-width: 70%;
+}
+
+@media all and (max-width: 750px) {
+  p {
+    max-width: 90%;
+  }
+}
+
+section div h1, h1 {
+  font-family: "Adobe Garamond Pro", Garamond, Georgia, serif;
 }
