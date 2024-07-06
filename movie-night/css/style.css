@@ -27,7 +27,9 @@ section.module.parallax, div.outline-2.parallax {
     min-height: 8em;
     background-position: 0 0;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+     transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -118,7 +120,26 @@ h3 {
   margin-top:1em;
 }
 
-div p img {
-  max-width:100%;
+img {
+  height: auto;
+  max-width: 100%;
 }
 
+.button {
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+a, button {
+  transition: all 0.3s ease;
+}
+
+p {
+  max-width:70%;
+}
+
+a:focus, button:focus {
+  outline: 2px solid #b4b4b4;
+}
