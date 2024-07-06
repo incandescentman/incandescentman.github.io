@@ -114,11 +114,6 @@ section.module.parallax, div.outline-2.parallax {
     margin-bottom: 1em;
 }
 
-h3 {
-  font-weight:bold;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin-top:1em;
-}
 
 img {
   height: auto;
@@ -142,4 +137,24 @@ p {
 
 a:focus, button:focus {
   outline: 2px solid #b4b4b4;
+}
+
+section div h1, h1, {
+  font-family: "Gotham Narrow", Helvetica, Arial, sans-serif;
+
+}
+
+h2
+{font-family: "Gotham Narrow Bold", Helvetica, Arial, sans-serif !important;
+
+}
+
+h3 {
+  font-weight:bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin-top:1em;
+}
+
+strong {
+    font-weight:bold;
 }
