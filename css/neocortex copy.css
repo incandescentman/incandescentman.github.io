@@ -87,12 +87,12 @@ body > header {
 }
 
 body > header h1 {
-
+  max-width: 1200px;
   margin: 1rem auto;
 }
 
 body > header p {
-
+  max-width: 40rem;
   margin: 1rem auto;
 }
 
@@ -149,6 +149,24 @@ h3 {
   line-height: 1.1;
 }
 
+/* Reduce header size on mobile */
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
 
 /* Format links & buttons */
 a,
@@ -275,6 +293,15 @@ header > nav a[aria-current="page"] {
   cursor: pointer;
 }
 
+/* Reduce nav side on mobile */
+@media only screen and (max-width: 720px) {
+  header > nav a {
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    line-height: 1;
+  }
+}
 
 /* Consolidate box styling */
 aside, details, pre, progress, blockquote {
@@ -296,6 +323,14 @@ aside {
   float: left;
 }
 
+/* Make aside full-width on mobile */
+@media only screen and (max-width: 720px) {
+  aside {
+    width: 100%;
+    float: none;
+    margin-inline-start: 0;
+  }
+}
 
 article, fieldset, dialog {
   border: 1px solid var(--border);
@@ -393,10 +428,14 @@ input {
   border: 1px solid var(--border);
   border-radius: var(--standard-border-radius);
   box-shadow: none;
-    display: inline-block;
+  max-width: 100%;
+  display: inline-block;
 }
 label {
   display: block;
+}
+textarea:not([cols]) {
+  width: 100%;
 }
 
 /* Add arrow to drop-down */
@@ -462,6 +501,14 @@ input[type="radio"]:checked::after {
   font-size: 32px;
 }
 
+/* Makes input fields wider on smaller screens */
+@media only screen and (max-width: 720px) {
+  textarea,
+  select,
+  input {
+    width: 100%;
+  }
+}
 
 /* Set a height for color input */
 input[type="color"] {
@@ -594,6 +641,12 @@ dialog::backdrop {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 720px) {
+  dialog {
+    max-width: 100%;
+    margin: auto 1em;
+  }
+}
 
 /* Classes for buttons and notices */
 .button,

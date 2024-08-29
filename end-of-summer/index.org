@@ -1,0 +1,77 @@
+#+BEGIN_EXPORT HTML
+<style>
+section.module.parallax-1 {
+ background-image: url("img/1.png");
+}
+section.module.parallax-2 {
+ background-image: url("img/2.png");
+}
+section.module.parallax-3 {
+ background-image: url("img/3.png");
+}
+</style>
+
+<div class="wrapper">
+
+<section class="module parallax parallax-1">
+    <div class="container">
+     <h1>Last Gasp of Summer</h1>
+    </div>
+   </section>
+
+#+END_EXPORT
+
+* Last Gasp of Summer
+You're invited!
+
+Join us for the last gasp of summer.
+
+*Date:* Saturday, August 31, 2024 \\
+*Time:* 5:30pm \\
+*Location:* 50 Bridge Street, Brooklyn, NY Apartment 307 \\
+
+Come and enjoy delightful summer cocktails on our spacious outdoor patio alongside our friendly host, Charlie the dog!
+
+*Note:* Text and images are automatically generated.
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+   </section>
+   <section class="module parallax parallax-2">
+    <div class="container">
+     <h1>Until then...</h1>
+    </div>
+   </section>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+
+</div>
+</div>
+   </section>
+
+ </main><!-- /main -->
+
+ <footer>
+  <div class="container">
+
+   <div class="copyright">
+    <small>
+<a href="http://jaydixit.com">jaydixit.com</a>
+    </small>
+   </div>
+  </div>
+ </footer><!-- /footer -->
+
+</div><!-- /#wrapper -->
+#+END_EXPORT
+
+#+HTML_HEAD: <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+#+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
+#+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
+#+HTML_HEAD: <script src="js/modernizr.js"></script>
+#+HTML_HEAD: <meta property="og:title" content="Last Gasp of Summer" />
+#+HTML_HEAD: <meta property="og:description" content="Please join us for a very special evening.">
+#+HTML_HEAD: <meta property="og:image" content="img/1.png"/>
+#+HTML_HEAD: <meta property="og:url" content="index.html"/>
