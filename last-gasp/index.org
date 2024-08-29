@@ -1,0 +1,134 @@
+
+#+BEGIN_EXPORT HTML
+<style>
+section.module.parallax-1 {
+ background-image: url("img/1.png");
+}
+section.module.parallax-2 {
+ background-image: url("img/2.png");
+}
+section.module.parallax-3 {
+ background-image: url("img/3.png");
+}
+.overlay {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: rgba(0, 0, 0, 0.5);
+ z-index: 1;
+}
+.container {
+ position: relative;
+ z-index: 2;
+ padding: 20px;
+}
+h1 {
+ font-size: 3em;
+ text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+</style>
+
+<div class="wrapper">
+<section class="module parallax parallax-1">
+  <div class="overlay"></div>
+    <div class="container">
+     <h1>Last Gasp</h1>
+    </div>
+   </section>
+
+#+END_EXPORT
+
+* Savor the Last Gasp of Summer
+** You're Invited!
+
+Join us for a delightful evening as we bid farewell to summer with style, sips, and sunshine.
+
+** Event Details
+
+📅 *Date:* Saturday, August 31, 2024 \\
+⏰ *Time:* 5:30 PM onward \\
+📍 *Location:* 50 Bridge Street, Apartment 307, DUMBO, Brooklyn, NY \\
+🗺️ *Map:* [[https://maps.app.goo.gl/Q6pNZpmTHYmQatb3A][View on Google Maps]]
+
+Come relax on our spacious *outdoor patio* overlooking the cityscape, enjoy great company, and don't forget to say hello to *Charlie*, our friendly and charming canine host!
+
+*Friends are welcome!* The more, the merrier as we celebrate the last rays of summer together.
+
+** RSVP
+
+Kindly let us know if you'll be joining us so we can prepare the perfect evening for everyone.
+
+📧 *Email:* [[mailto:jay@jaydixit.com][jay@jaydixit.com]] \\
+📱 *Phone:* (646) 355-8001
+
+/Contributions of snacks or beverages are appreciated but not required. Your presence is the best gift!/
+
+
+** Dress Code
+*Summer Chic:* Embrace those breezy summer vibes one last time with your favorite warm-weather attire. Floral prints, light linens, and vibrant colors are all welcome!
+
+Looking forward to celebrating with you and making unforgettable memories as we toast to the end of a beautiful summer.
+
+*Cheers!* \\
+Sunjay & Charlie 🐾
+
+/Note: This invitation, including all text and images, have been automatically generated for your convenience./
+
+** On the Menu
+Indulge in our handcrafted summer cocktails, each inspired by the essence of the season:
+
+*** 1. Sunset Spritz
+A refreshing blend of sparkling rosé, elderflower, and a hint of fresh grapefruit, capturing the magic of a summer sunset.
+
+*** 2. Tropical Breeze
+An exotic mix of coconut rum, pineapple juice, and a splash of lime, transporting you straight to a beach paradise.
+
+*** 3. Garden Gimlet
+A crisp concoction of gin, fresh cucumber, basil, and a twist of lemon, embodying the freshness of a summer garden.
+
+*** 4. Berry Bliss
+A sweet and tangy fusion of vodka, muddled berries, and a touch of mint, celebrating the season's bounty.
+
+*** 5. Charlie's Choice (Non-Alcoholic)
+A delightful blend of sparkling water, fresh watermelon, and a hint of mint, perfect for those who prefer a sober sip.
+
+#+BEGIN_EXPORT HTML
+</div>
+</div>
+  </section>
+   <section class="module parallax parallax-2">
+ <div class="overlay"></div>
+    <div class="container">
+     <h1>Until then...</h1>
+    </div>
+   </section>
+</div>
+</div>
+  </section>
+
+ </main>
+
+ <footer>
+  <div class="container">
+   <div class="copyright">
+   <small><a href="http://jaydixit.com">jaydixit.com</a></small>
+   </div>
+  </div>
+</footer>
+</div>
+</body>
+</html>
+#+END_EXPORT
+
+#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans">
+#+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
+#+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
+#+HTML_HEAD: <script src="js/modernizr.js"></script>
+#+HTML_HEAD: <meta property="og:title" content="Last Gasp of Summer" />
+#+HTML_HEAD: <meta property="og:description" content="You've been invited...">
+#+HTML_HEAD: <meta property="og:image" content="img/4.png"/>
+#+HTML_HEAD: <meta property="og:url" content="index.html"/>
+#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#+OPTIONS:  H:5
