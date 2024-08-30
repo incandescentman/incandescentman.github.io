@@ -1,0 +1,2 @@
+# Exclude .png files from being ignored in this repository
+!*.png
