@@ -8,7 +8,7 @@ Here it is in action:
 [[https://incandescentman.github.io/timeless/][Timeless: The Infinitely Scrolling Calendar 📅✨]]
 
 #+ATTR_HTML: :width 300px
-[[file:unreliablenarrator_infinite_future._macos_application_icon_dc535484-c32d-4ba0-a99f-b920d9e44f2b.png]]
+[[file:img/unreliablenarrator_infinite_future._macos_application_icon_dc535484-c32d-4ba0-a99f-b920d9e44f2b.png]]
 
 ** Summary:
 - An infinitely scrolling web calendar app that allows adding notes to any day. New weeks are dynamically added when scrolling, so the calendar expands infinitely in both directions.
@@ -26,11 +26,11 @@ This project is an appreciative fork of [[https://madebyevan.com/calendar/][Cont
 ** The Problem: Conceptualizing the future one month at a time
 Traditional digital calendars like MacOS Calendar and Google Calendar segment time into discrete months: You conceptualize the future one month at a time.
 
-[[file:typical-interface.png]]
+[[file:img/typical-interface.png]]
 
 You're shown a single month's worth of dates. Then, to navigate through time, you click the ~＞~ or ~Next~ button... at which point the current month is replaced by a view of the next month.
 
-[[file:nextmonth.png]]
+[[file:img/nextmonth.png]]
 
 Having different months displayed as discrete units in this way doesn't make sense for my brain. It presents time as discontinuous and divided, making it difficult to conceptualize in an intuitive way when events are happening relative to each other.
 
@@ -38,7 +38,7 @@ With traditional calendars, I find it difficult to plan ahead as I think about t
 
 Even calendars that offer the ability to display several months at once still separate dates from one month to the next:
 
-[[file:mc-simple.png]]
+[[file:img/mc-simple.png]]
 
 Your brain has to do a little mental calculation to grasp that the 31st of one month down at the bottom over here is just one day before the 1st of the next month up there on the right.
 
@@ -47,7 +47,7 @@ It's not like your brain can't figure it out... but it requires a level of abstr
 It's like a map that's not to scale. Sure, you can mentally compensate... but wouldn't you rather just be able to see at a glance where things are, knowing you can trust your intuitive sense of how far away things are from each other?
 
 ** The Solution: A continuous perspective
-[[file:unreliablenarrator_infinite_future_with_scrolling_calendar_dat_aab1ab6f-609f-41ad-b18c-af1556b51b19.png]]
+[[file:img/unreliablenarrator_infinite_future_with_scrolling_calendar_dat_aab1ab6f-609f-41ad-b18c-af1556b51b19.png]]
 
 What I want is a calendar that accurately depicts the continuous flow of time, displaying the future as what it is: a continuous series of days.
 
@@ -55,28 +55,28 @@ Instead of having to click "Next," like turning the page of a book, I want to be
 
 Why are calendars designed in this counterintuitive way? Tradition. In the old days, we hung paper calendars on the wall. Wall space, since it's physical space, is limited. Your wall isn't high enough -- and you're not tall enough -- to display 12 months worth of days.
 
-But we're not in the 12th century anymore. Google Calendar is not a paper calendar. On your laptop or iPad, you can read books in *Continuous Scroll mode*. Instead of requiring you to manually turn the page every ten paragraphs, you can just hit the down arrow to read on.
+But we're not in the 12th century anymore (the name of this app notwithstanding). Google Calendar is not a paper calendar. Just as your iPad lets you read a book in "Continuous Scroll" mode rather than requiring you to manually turn the page every few paragraphs, you can just press the down arrow to read on.
 
-That's the experience I want for a calendar: *A continuous scroll mode, but for time.*
+That's the experience I want for a calendar and I bet I'm not the only one.
 
-To solve this problem, I researched and bought various apps that sounded promising, including [[https://www.moleskine.com/en-us/shop/moleskine-smart/apps-and-services/timepage/][Timepage by Moleskine]] and [[https://agenda.com/][Agenda]]. Though interesting approaches, they didn't offer the visually intuitive monthly interface I was looking for.
+To try to solve this problem, I researched and bought various apps that sounded promising, including [[https://www.moleskine.com/en-us/shop/moleskine-smart/apps-and-services/timepage/][Timepage by Moleskine]] and [[https://agenda.com/][Agenda]]. Though interesting approaches, they didn't offer the visually intuitive monthly interface I was looking for.
 
 ** A Continuous Calendar
 Then I stumbled upon [[https://madebyevan.com/calendar/][Continuous Calendar]] by [[https://github.com/evanw][Evan Wallace]]. It was perfect. Exactly what I was looking for: a calendar where I could scroll down and up as I thought about the future and planned my weeks and months. One that displayed time in a visual, intuitive way.
 
-[[file:interface.png]]
+[[file:img/interface.png]]
 
 * Evan's Original Features
 - Infinite scrolling through months and years, both forward in time (i.e. downward on the scrolling calendar) and backward in time (i.e. upward).
 - Click on a day to add calendar events.
 - Calendar data stored not on the cloud but within your browser's local storage.
 
-[[file:scrolly.gif]]
+[[file:img/scrolly.gif]]
 
 * My Enhancements
 #+CAPTION: An illustration of the Timeless interface.
 
-[[file:unreliablenarrator_infinite_calendar_scrolling_calendar._appli_56f4a6e0-a252-4621-8bb6-7443c1c2933c.png]]
+[[file:img/unreliablenarrator_infinite_calendar_scrolling_calendar._appli_56f4a6e0-a252-4621-8bb6-7443c1c2933c.png]]
 
 I've taken Evan's original implementation and added a few enhancements of my own:
 - Added the ability to display days of the week

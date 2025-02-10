@@ -97,12 +97,12 @@ body > header {
 }
 
 body > header h1 {
-  max-width: 1200px;
+
   margin: 1rem auto;
 }
 
 body > header p {
-  max-width: 40rem;
+
   margin: 1rem auto;
 }
 
@@ -159,24 +159,6 @@ h3 {
   line-height: 1.1;
 }
 
-/* Reduce header size on mobile */
-@media only screen and (max-width: 720px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 2.1rem;
-  }
-
-  h3 {
-    font-size: 1.75rem;
-  }
-
-  h4 {
-    font-size: 1.25rem;
-  }
-}
 
 /* Format links & buttons */
 a,
@@ -303,15 +285,6 @@ header > nav a[aria-current="page"] {
   cursor: pointer;
 }
 
-/* Reduce nav side on mobile */
-@media only screen and (max-width: 720px) {
-  header > nav a {
-    border: none;
-    padding: 0;
-    text-decoration: underline;
-    line-height: 1;
-  }
-}
 
 /* Consolidate box styling */
 aside, details, pre, progress, blockquote {
@@ -333,14 +306,6 @@ aside {
   float: left;
 }
 
-/* Make aside full-width on mobile */
-@media only screen and (max-width: 720px) {
-  aside {
-    width: 100%;
-    float: none;
-    margin-inline-start: 0;
-  }
-}
 
 article, fieldset, dialog {
   border: 1px solid var(--border);
@@ -438,14 +403,10 @@ input {
   border: 1px solid var(--border);
   border-radius: var(--standard-border-radius);
   box-shadow: none;
-  max-width: 100%;
-  display: inline-block;
+    display: inline-block;
 }
 label {
   display: block;
-}
-textarea:not([cols]) {
-  width: 100%;
 }
 
 /* Add arrow to drop-down */
@@ -511,14 +472,6 @@ input[type="radio"]:checked::after {
   font-size: 32px;
 }
 
-/* Makes input fields wider on smaller screens */
-@media only screen and (max-width: 720px) {
-  textarea,
-  select,
-  input {
-    width: 100%;
-  }
-}
 
 /* Set a height for color input */
 input[type="color"] {
@@ -651,12 +604,6 @@ dialog::backdrop {
   opacity: 0.8;
 }
 
-@media only screen and (max-width: 720px) {
-  dialog {
-    max-width: 100%;
-    margin: auto 1em;
-  }
-}
 
 /* Classes for buttons and notices */
 .button,
@@ -751,7 +698,7 @@ h3 {
 
 h4 {
   font-size: 1.1em;
-    margin-left: 0.2em;
+    margin-left: 4em;
 }
 
 
@@ -881,10 +828,9 @@ p.verse {
 <div id="content" class="content">
 <header>
 <h1 class="title">Timeless</h1>
-</header>
-<div id="outline-container-org1b2278b" class="outline-2">
-<h2 id="org1b2278b">Introduction</h2>
-<div class="outline-text-2" id="text-org1b2278b">
+</header><div id="outline-container-org82bcc3b" class="outline-1">
+<h1 id="org82bcc3b">Introduction</h1>
+<div class="outline-text-1" id="text-org82bcc3b">
 <p>
 Welcome to <strong>Timeless</strong>, an infinitely scrolling calendar designed to help you visualize time continuously as you plan your life.
 </p>
@@ -895,15 +841,14 @@ Here it is in action:
 </p>
 
 
-<figure id="org4755f07">
-<img src="unreliablenarrator_infinite_future._macos_application_icon_dc535484-c32d-4ba0-a99f-b920d9e44f2b.png" alt="unreliablenarrator_infinite_future._macos_application_icon_dc535484-c32d-4ba0-a99f-b920d9e44f2b.png" width="300px">
+<figure id="orgb3086d2">
+<img src="img/unreliablenarrator_infinite_future._macos_application_icon_dc535484-c32d-4ba0-a99f-b920d9e44f2b.png" alt="unreliablenarrator_infinite_future._macos_application_icon_dc535484-c32d-4ba0-a99f-b920d9e44f2b.png" width="300px">
 
 </figure>
 </div>
-
-<div id="outline-container-org586334c" class="outline-3">
-<h3 id="org586334c">Summary:</h3>
-<div class="outline-text-3" id="text-org586334c">
+<div id="outline-container-org7ba0650" class="outline-2">
+<h2 id="org7ba0650">Summary:</h2>
+<div class="outline-text-2" id="text-org7ba0650">
 <ul class="org-ul">
 <li>An infinitely scrolling web calendar app that allows adding notes to any day. New weeks are dynamically added when scrolling, so the calendar expands infinitely in both directions.</li>
 <li>Data is stored client-side using localStorage, so notes are private.</li>
@@ -923,21 +868,20 @@ This project is an appreciative fork of <a href="https://madebyevan.com/calendar
 </div>
 </div>
 </div>
-
-<div id="outline-container-org2d63b29" class="outline-2">
-<h2 id="org2d63b29">Why</h2>
-<div class="outline-text-2" id="text-org2d63b29">
+<div id="outline-container-orgc6aedf9" class="outline-1">
+<h1 id="orgc6aedf9">Why</h1>
+<div class="outline-text-1" id="text-orgc6aedf9">
 </div>
-<div id="outline-container-orga0f8597" class="outline-3">
-<h3 id="orga0f8597">The Problem: Conceptualizing the future one month at a time</h3>
-<div class="outline-text-3" id="text-orga0f8597">
+<div id="outline-container-orgcc8825c" class="outline-2">
+<h2 id="orgcc8825c">The Problem: Conceptualizing the future one month at a time</h2>
+<div class="outline-text-2" id="text-orgcc8825c">
 <p>
 Traditional digital calendars like MacOS Calendar and Google Calendar segment time into discrete months: You conceptualize the future one month at a time.
 </p>
 
 
-<figure id="org55ca13b">
-<img src="typical-interface.png" alt="typical-interface.png">
+<figure id="orgb651ea8">
+<img src="img/typical-interface.png" alt="typical-interface.png">
 
 </figure>
 
@@ -946,8 +890,8 @@ You&rsquo;re shown a single month&rsquo;s worth of dates. Then, to navigate thro
 </p>
 
 
-<figure id="org82cc7d2">
-<img src="nextmonth.png" alt="nextmonth.png">
+<figure id="org9e99aca">
+<img src="img/nextmonth.png" alt="nextmonth.png">
 
 </figure>
 
@@ -964,8 +908,8 @@ Even calendars that offer the ability to display several months at once still se
 </p>
 
 
-<figure id="org40a224c">
-<img src="mc-simple.png" alt="mc-simple.png">
+<figure id="orga872e16">
+<img src="img/mc-simple.png" alt="mc-simple.png">
 
 </figure>
 
@@ -982,13 +926,12 @@ It&rsquo;s like a map that&rsquo;s not to scale. Sure, you can mentally compensa
 </p>
 </div>
 </div>
+<div id="outline-container-orgc697f08" class="outline-2">
+<h2 id="orgc697f08">The Solution: A continuous perspective</h2>
+<div class="outline-text-2" id="text-orgc697f08">
 
-<div id="outline-container-org26fc960" class="outline-3">
-<h3 id="org26fc960">The Solution: A continuous perspective</h3>
-<div class="outline-text-3" id="text-org26fc960">
-
-<figure id="org90d502f">
-<img src="unreliablenarrator_infinite_future_with_scrolling_calendar_dat_aab1ab6f-609f-41ad-b18c-af1556b51b19.png" alt="unreliablenarrator_infinite_future_with_scrolling_calendar_dat_aab1ab6f-609f-41ad-b18c-af1556b51b19.png">
+<figure id="org4182bcd">
+<img src="img/unreliablenarrator_infinite_future_with_scrolling_calendar_dat_aab1ab6f-609f-41ad-b18c-af1556b51b19.png" alt="unreliablenarrator_infinite_future_with_scrolling_calendar_dat_aab1ab6f-609f-41ad-b18c-af1556b51b19.png">
 
 </figure>
 
@@ -1005,38 +948,36 @@ Why are calendars designed in this counterintuitive way? Tradition. In the old d
 </p>
 
 <p>
-But we&rsquo;re not in the 12th century anymore. Google Calendar is not a paper calendar. On your laptop or iPad, you can read books in <strong>Continuous Scroll mode</strong>. Instead of requiring you to manually turn the page every ten paragraphs, you can just hit the down arrow to read on.
+But we&rsquo;re not in the 12th century anymore (the name of this app notwithstanding). Google Calendar is not a paper calendar. Just as your iPad lets you read a book in &ldquo;Continuous Scroll&rdquo; mode rather than requiring you to manually turn the page every few paragraphs, you can just press the down arrow to read on.
 </p>
 
 <p>
-That&rsquo;s the experience I want for a calendar: <strong>A continuous scroll mode, but for time.</strong>
+That&rsquo;s the experience I want for a calendar and I bet I&rsquo;m not the only one.
 </p>
 
 <p>
-To solve this problem, I researched and bought various apps that sounded promising, including <a href="https://www.moleskine.com/en-us/shop/moleskine-smart/apps-and-services/timepage/">Timepage by Moleskine</a> and <a href="https://agenda.com/">Agenda</a>. Though interesting approaches, they didn&rsquo;t offer the visually intuitive monthly interface I was looking for.
+To try to solve this problem, I researched and bought various apps that sounded promising, including <a href="https://www.moleskine.com/en-us/shop/moleskine-smart/apps-and-services/timepage/">Timepage by Moleskine</a> and <a href="https://agenda.com/">Agenda</a>. Though interesting approaches, they didn&rsquo;t offer the visually intuitive monthly interface I was looking for.
 </p>
 </div>
 </div>
-
-<div id="outline-container-org751ba68" class="outline-3">
-<h3 id="org751ba68">A Continuous Calendar</h3>
-<div class="outline-text-3" id="text-org751ba68">
+<div id="outline-container-orgdd92108" class="outline-2">
+<h2 id="orgdd92108">A Continuous Calendar</h2>
+<div class="outline-text-2" id="text-orgdd92108">
 <p>
 Then I stumbled upon <a href="https://madebyevan.com/calendar/">Continuous Calendar</a> by <a href="https://github.com/evanw">Evan Wallace</a>. It was perfect. Exactly what I was looking for: a calendar where I could scroll down and up as I thought about the future and planned my weeks and months. One that displayed time in a visual, intuitive way.
 </p>
 
 
-<figure id="orga03db65">
-<img src="interface.png" alt="interface.png">
+<figure id="org570f419">
+<img src="img/interface.png" alt="interface.png">
 
 </figure>
 </div>
 </div>
 </div>
-
-<div id="outline-container-org9580885" class="outline-2">
-<h2 id="org9580885">Evan&rsquo;s Original Features</h2>
-<div class="outline-text-2" id="text-org9580885">
+<div id="outline-container-org3ae5688" class="outline-1">
+<h1 id="org3ae5688">Evan&rsquo;s Original Features</h1>
+<div class="outline-text-1" id="text-org3ae5688">
 <ul class="org-ul">
 <li>Infinite scrolling through months and years, both forward in time (i.e. downward on the scrolling calendar) and backward in time (i.e. upward).</li>
 <li>Click on a day to add calendar events.</li>
@@ -1044,19 +985,18 @@ Then I stumbled upon <a href="https://madebyevan.com/calendar/">Continuous Calen
 </ul>
 
 
-<figure id="org27492bb">
-<img src="scrolly.gif" alt="scrolly.gif">
+<figure id="org35c9329">
+<img src="img/scrolly.gif" alt="scrolly.gif">
 
 </figure>
 </div>
 </div>
+<div id="outline-container-org3787e8c" class="outline-1">
+<h1 id="org3787e8c">My Enhancements</h1>
+<div class="outline-text-1" id="text-org3787e8c">
 
-<div id="outline-container-orgeaf8717" class="outline-2">
-<h2 id="orgeaf8717">My Enhancements</h2>
-<div class="outline-text-2" id="text-orgeaf8717">
-
-<figure id="orgeb8a44e">
-<img src="unreliablenarrator_infinite_calendar_scrolling_calendar._appli_56f4a6e0-a252-4621-8bb6-7443c1c2933c.png" alt="unreliablenarrator_infinite_calendar_scrolling_calendar._appli_56f4a6e0-a252-4621-8bb6-7443c1c2933c.png">
+<figure id="orgfeb333d">
+<img src="img/unreliablenarrator_infinite_calendar_scrolling_calendar._appli_56f4a6e0-a252-4621-8bb6-7443c1c2933c.png" alt="unreliablenarrator_infinite_calendar_scrolling_calendar._appli_56f4a6e0-a252-4621-8bb6-7443c1c2933c.png">
 
 </figure>
 
@@ -1076,28 +1016,25 @@ I&rsquo;m not a coder. ChatGPT Plus made these changes for me. Here&rsquo;s a re
 <a href="https://chat.openai.com/share/512d0b31-f773-49a6-8246-2e003f186e6a">https://chat.openai.com/share/512d0b31-f773-49a6-8246-2e003f186e6a</a>
 </p>
 </div>
-
-<div id="outline-container-org16c3805" class="outline-3">
-<h3 id="org16c3805">What remains to be done:</h3>
-<div class="outline-text-3" id="text-org16c3805">
+<div id="outline-container-orgb4a73eb" class="outline-2">
+<h2 id="orgb4a73eb">What remains to be done:</h2>
+<div class="outline-text-2" id="text-orgb4a73eb">
 <ul class="org-ul">
 <li>In order to facilitate exporting calendar data to a calendar app like MacOS calendar, I want to modify the format of saved data to explicitly store the full date of each calendar event.</li>
 </ul>
 </div>
 </div>
 </div>
-
-<div id="outline-container-orgc99229a" class="outline-2">
-<h2 id="orgc99229a">Getting Started</h2>
-<div class="outline-text-2" id="text-orgc99229a">
+<div id="outline-container-org103ac43" class="outline-1">
+<h1 id="org103ac43">Getting Started</h1>
+<div class="outline-text-1" id="text-org103ac43">
 <p>
 To get started with <strong>Timeless</strong>:
 </p>
 </div>
-
-<div id="outline-container-orgeee63ad" class="outline-3">
-<h3 id="orgeee63ad">Non-expert users</h3>
-<div class="outline-text-3" id="text-orgeee63ad">
+<div id="outline-container-orgd7b5095" class="outline-2">
+<h2 id="orgd7b5095">Non-expert users</h2>
+<div class="outline-text-2" id="text-orgd7b5095">
 <p>
 Visit this page: <a href="https://incandescentman.github.io/timeless/">Timeless: The Infinitely Scrolling Calendar 📅✨</a>
 </p>
@@ -1107,10 +1044,9 @@ That&rsquo;s it! You can now begin adding events!
 </p>
 </div>
 </div>
-
-<div id="outline-container-org7eb6280" class="outline-3">
-<h3 id="org7eb6280">Expert users</h3>
-<div class="outline-text-3" id="text-org7eb6280">
+<div id="outline-container-org337e89f" class="outline-2">
+<h2 id="org337e89f">Expert users</h2>
+<div class="outline-text-2" id="text-org337e89f">
 <p>
 Clone the repository and open the HTML file.
 </p>
@@ -1124,69 +1060,62 @@ open index.html
 </div>
 </div>
 </div>
-
-<div id="outline-container-orgac0df63" class="outline-2">
-<h2 id="orgac0df63">Usage</h2>
-<div class="outline-text-2" id="text-orgac0df63">
+<div id="outline-container-org4c8d566" class="outline-1">
+<h1 id="org4c8d566">Usage</h1>
+<div class="outline-text-1" id="text-org4c8d566">
 </div>
-<div id="outline-container-orgb09e236" class="outline-3">
-<h3 id="orgb09e236">Adding Notes</h3>
-<div class="outline-text-3" id="text-orgb09e236">
+<div id="outline-container-orgae2b94a" class="outline-2">
+<h2 id="orgae2b94a">Adding Notes</h2>
+<div class="outline-text-2" id="text-orgae2b94a">
 <p>
 Click on any day to add a calendar event. A text area will appear where you can enter text. Press RETURN to save the note to local storage, which will automatically adjust the day&rsquo;s cell to accommodate the text.
 </p>
 </div>
 </div>
-
-<div id="outline-container-orga853950" class="outline-3">
-<h3 id="orga853950">Navigating the Calendar</h3>
-<div class="outline-text-3" id="text-orga853950">
+<div id="outline-container-org503764f" class="outline-2">
+<h2 id="org503764f">Navigating the Calendar</h2>
+<div class="outline-text-2" id="text-org503764f">
 <p>
 Use your mouse wheel or trackpad to scroll through months and years effortlessly. The calendar dynamically loads additional weeks as you scroll, ensuring a smooth and continuous user experience.
 </p>
 </div>
 </div>
-
-<div id="outline-container-org8ddf846" class="outline-3">
-<h3 id="org8ddf846">Managing Notes</h3>
-<div class="outline-text-3" id="text-org8ddf846">
+<div id="outline-container-orgbb5dab0" class="outline-2">
+<h2 id="orgbb5dab0">Managing Notes</h2>
+<div class="outline-text-2" id="text-orgbb5dab0">
 <p>
 To edit a note, simply click on the existing note text, make changes, and press RETURN to save.
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgeceaeb7" class="outline-3">
-<h3 id="orgeceaeb7">Deletion</h3>
-<div class="outline-text-3" id="text-orgeceaeb7">
+<div id="outline-container-org18fb106" class="outline-2">
+<h2 id="org18fb106">Deletion</h2>
+<div class="outline-text-2" id="text-org18fb106">
 <p>
 To delete a note, clear the text in the text area and click elsewhere or press RETURN.
 </p>
 </div>
 </div>
 </div>
-
-<div id="outline-container-org32d9dbb" class="outline-2">
-<h2 id="org32d9dbb">Customization</h2>
-<div class="outline-text-2" id="text-org32d9dbb">
+<div id="outline-container-orgbfd6476" class="outline-1">
+<h1 id="orgbfd6476">Customization</h1>
+<div class="outline-text-1" id="text-orgbfd6476">
 <p>
 Timeless is designed to be easily customizable. You can modify the CSS styles in <em>css/style.css</em> to match your aesthetic preferences or adapt the functionality in <em>js/calendar.js</em> to meet specific needs.
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgbfe237a" class="outline-2">
-<h2 id="orgbfe237a">Contributing</h2>
-<div class="outline-text-2" id="text-orgbfe237a">
+<div id="outline-container-org0057a7f" class="outline-1">
+<h1 id="org0057a7f">Contributing</h1>
+<div class="outline-text-1" id="text-org0057a7f">
 <p>
 Contributions to <strong>Timeless</strong> are welcome! I need all the help I can get. Please fork the repository, make your changes, and submit a pull request. We appreciate your input and look forward to seeing your creative ideas and improvements.
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgbc6f6ea" class="outline-2">
-<h2 id="orgbc6f6ea">License</h2>
-<div class="outline-text-2" id="text-orgbc6f6ea">
+<div id="outline-container-org7a3b03e" class="outline-1">
+<h1 id="org7a3b03e">License</h1>
+<div class="outline-text-1" id="text-org7a3b03e">
 <p>
 Timeless is released under the MIT License. See the LICENSE file in the repository for full details.
 </p>

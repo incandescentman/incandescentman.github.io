@@ -1,13 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Timeless</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="header">
+    <!-- This is the main header area -->
+    <a href="https://github.com/incandescentman/timeless" target="_blank" class="timeless">
+      🪐 <span class="bold">Timeless:</span> The Infinite Calendar ✨
+    </a>
+    <br/>
 
-<!doctype html>
 
-<html><head>
-  <meta charset="utf8">
-	<title>🪐 Timeless 📅✨</title>
-	<link rel="stylesheet" href="calendar.css" />
-</head><body>
+<div id="header">
+  <!-- Existing header stuff... -->
+  <a class="button" href="javascript:document.getElementById('fileInput').click()" data-tooltip="Load Calendar Data">📥</a>
+  <a class="button" href="javascript:downloadLocalStorageData()" data-tooltip="Save to Downloads">💾</a>
+  <a class="button" href="javascript:smoothScrollToToday()" data-tooltip="Go to Today">📅</a>
+  <a class="button" href="javascript:shouldLoadOrExport()" data-tooltip="Sync to Cloud">🔄</a>
+  <a class="button" href="javascript:showHelp()" data-tooltip="Help">ℹ️</a>
 
-<script src="calendar.js"></script>
-<noscript>Please enable JavaScript.&nbsp; This calendar requires JavaScript to work.</noscript>
+  <input type="file" id="fileInput" style="display: none;" onchange="loadDataFromFile()">
 
-</body></html>
+  <!-- DATE PICKER + Go -->
+  <label for="jumpDate">Jump to date:</label>
+  <input type="date" id="jumpDate" style="max-width: 150px;">
+  <button onclick="jumpToDate()" title="Jump to date">Go</button>
+
+  <!-- UNDO BUTTON -->
+  <button onclick="undoLastChange()" title="Undo last change">Undo</button>
+</div>
+
+
+  </div>
+
+  <!-- The actual calendar table we want to fill -->
+  <table id="calendar"></table>
+
+  <!-- The help overlay -->
+  <div id="help">
+    <div>
+      <ul>
+        <li>Click on a day to add a note</li>
+        <li>To delete a note, just delete its text</li>
+        <li>Scroll to travel forward/backward in time</li>
+      </ul>
+      <a class="button" href="javascript:hideHelp()">Close</a>
+    </div>
+  </div>
+
+  <!-- Load the JS at the end -->
+  <script src="calendar.js"></script>
+</body>
+</html>
