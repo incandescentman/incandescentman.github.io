@@ -5,99 +5,156 @@
 Welcome to *Timeless*, an infinitely scrolling calendar designed to help you visualize time continuously as you plan your life.
 
 Here it is in action:
-[[https://incandescentman.github.io/timeless/][Timeless: The Infinitely Scrolling Calendar 📅✨]]
+[[https://incandescentman.github.io/timeless/][Timeless: The Infinitely Scrolling Calendar 🎡🕰️]]
 
 #+ATTR_HTML: :width 300px
-[[file:img/unreliablenarrator_infinite_future._macos_application_icon_dc535484-c32d-4ba0-a99f-b920d9e44f2b.png]]
+[[file:_img/unreliablenarrator_infinite_future._macos_application_icon_dc535484-c32d-4ba0-a99f-b920d9e44f2b.png]]
 
 ** Summary:
-- An infinitely scrolling web calendar app that allows adding notes to any day. New weeks are dynamically added when scrolling, so the calendar expands infinitely in both directions.
-- Data is stored client-side using localStorage, so notes are private.
-- To add a note, you click on a day and start typing. Hitting enter saves the note. To delete a note, you delete its text.
-- It shows the current date highlighted, and automatically scrolls to today's date on load. You can click the calendar button to smoothly scroll to today's date anytime.
-- The calendar shows the full month names and year in the blank space at the end of each month for easier navigation when scrolling far into the past or future.
-- Export the calendar data to a JSON file in your Downloads folder; or import data from your saved JSON file to load previously saved notes.
-- You can choose to sync your data between multiple devices by saving calendar data to a shared drive, such as iCloud, Dropbox, or Google Drive.
-   + The sync button allows syncing the calendar data in a cloud storage directory of your choosing. It compares timestamps to determine whether to load newer data from the file or save newer local data to the file.
+- A web-based, infinitely scrolling calendar that lets you add notes to any day. New weeks generate dynamically as you scroll, expanding endlessly in both directions. 🔄📖
+- All data is stored client-side using ~localStorage~, ensuring complete privacy. 🔐📝
+- To add a note, just click a day and start typing. Pressing Enter saves it; deleting the text removes it. ✍️🚀
+- The current date is always highlighted, and the calendar auto-scrolls to today upon loading. A calendar button lets you return to today instantly. 📍🎯
+- Month names and years appear in the blank space after each month, making navigation intuitive even when scrolling far ahead or back. 🗓️🔍
+- Export and import calendar data via JSON files, making backups simple. 💾📂
+- Sync across devices by saving your calendar data to a shared drive (iCloud, Dropbox, Google Drive).
+   + The sync button compares timestamps, ensuring newer data is preserved. 🔄🌐
 
-This project is an appreciative fork of [[https://madebyevan.com/calendar/][Continuous Calendar]] by Evan Wallace with some added functionality of my own.
+This project is an appreciative fork of [[https://madebyevan.com/calendar/][Continuous Calendar]] by Evan Wallace, with additional functionality I've added.
 
 * Why
 ** The Problem: Conceptualizing the future one month at a time
-Traditional digital calendars like MacOS Calendar and Google Calendar segment time into discrete months: You conceptualize the future one month at a time.
+Traditional digital calendars like MacOS Calendar and Google Calendar segment time into discrete months: You conceptualize the future one month at a time. 🏗️🧩
 
-[[file:img/typical-interface.png]]
+[[file:_img/typical-interface.png]]
 
-You're shown a single month's worth of dates. Then, to navigate through time, you click the ~＞~ or ~Next~ button... at which point the current month is replaced by a view of the next month.
+You're shown a single month's worth of dates. Then, to navigate through time, you click the ~＞~ or ~Next~ button... at which point the current month is replaced by a view of the next month. 🔄📖
 
-[[file:img/nextmonth.png]]
+[[file:_img/nextmonth.png]]
 
-Having different months displayed as discrete units in this way doesn't make sense for my brain. It presents time as discontinuous and divided, making it difficult to conceptualize in an intuitive way when events are happening relative to each other.
+Having different months displayed as discrete units in this way doesn't make sense for my brain. It presents time as discontinuous and divided, making it difficult to conceptualize in an intuitive way when events are happening relative to each other. 🧠⚡
 
-With traditional calendars, I find it difficult to plan ahead as I think about the future as I figure out, say, travel dates for an upcoming trip.
+With traditional calendars, I find it difficult to plan ahead as I think about the future as I figure out, say, travel dates for an upcoming trip. ✈️🗺️
 
 Even calendars that offer the ability to display several months at once still separate dates from one month to the next:
 
-[[file:img/mc-simple.png]]
+[[file:_img/mc-simple.png]]
 
-Your brain has to do a little mental calculation to grasp that the 31st of one month down at the bottom over here is just one day before the 1st of the next month up there on the right.
+Your brain has to do a little mental calculation to grasp that the 31st of one month down at the bottom over here is just one day before the 1st of the next month up there on the right. 🔍🎭
 
-It's not like your brain can't figure it out... but it requires a level of abstraction, intellectualizing the concept of time.
+It's not like your brain can't figure it out... but it requires a level of abstraction, intellectualizing the concept of time. 🤯📐
 
-It's like a map that's not to scale. Sure, you can mentally compensate... but wouldn't you rather just be able to see at a glance where things are, knowing you can trust your intuitive sense of how far away things are from each other?
+It's like a map that's not to scale. Sure, you can mentally compensate... but wouldn't you rather just be able to see at a glance where things are, knowing you can trust your intuitive sense of how far away things are from each other? 🗺️🎢
 
 ** The Solution: A continuous perspective
-[[file:img/unreliablenarrator_infinite_future_with_scrolling_calendar_dat_aab1ab6f-609f-41ad-b18c-af1556b51b19.png]]
+[[file:_img/unreliablenarrator_infinite_future_with_scrolling_calendar_dat_aab1ab6f-609f-41ad-b18c-af1556b51b19.png]]
 
-What I want is a calendar that accurately depicts the continuous flow of time, displaying the future as what it is: a continuous series of days.
+What I want is a calendar that accurately depicts the continuous flow of time, displaying the future as what it is: a continuous series of days. 🌊🕰️
 
-Instead of having to click "Next," like turning the page of a book, I want to be able to just scroll down to see upcoming events.
+Instead of having to click "Next," like turning the page of a book, I want to be able to just scroll down to see upcoming events. 📜🎡
 
-Why are calendars designed in this counterintuitive way? Tradition. In the old days, we hung paper calendars on the wall. Wall space, since it's physical space, is limited. Your wall isn't high enough -- and you're not tall enough -- to display 12 months worth of days.
+Why are calendars designed in this counterintuitive way? Tradition. In the old days, we hung paper calendars on the wall. Wall space, since it's physical space, is limited. Your wall isn't high enough -- and you're not tall enough -- to display 12 months worth of days. 🏛️📅
 
-But we're not in the 12th century anymore (the name of this app notwithstanding). Google Calendar is not a paper calendar. Just as your iPad lets you read a book in "Continuous Scroll" mode rather than requiring you to manually turn the page every few paragraphs, you can just press the down arrow to read on.
+But we're not in the 12th century anymore (the name of this app notwithstanding). Google Calendar is not a wall calendar. Just as an e-reader lets you scroll continuously instead of flipping pages, why shouldn't a calendar work the same way? 📖🔄
 
-That's the experience I want for a calendar and I bet I'm not the only one.
-
-To try to solve this problem, I researched and bought various apps that sounded promising, including [[https://www.moleskine.com/en-us/shop/moleskine-smart/apps-and-services/timepage/][Timepage by Moleskine]] and [[https://agenda.com/][Agenda]]. Though interesting approaches, they didn't offer the visually intuitive monthly interface I was looking for.
+I figured others might feel the same way, so I looked for solutions.
 
 ** A Continuous Calendar
-Then I stumbled upon [[https://madebyevan.com/calendar/][Continuous Calendar]] by [[https://github.com/evanw][Evan Wallace]]. It was perfect. Exactly what I was looking for: a calendar where I could scroll down and up as I thought about the future and planned my weeks and months. One that displayed time in a visual, intuitive way.
+Then I stumbled upon [[https://madebyevan.com/calendar/][Continuous Calendar]] by [[https://github.com/evanw][Evan Wallace]]. It was perfect. Exactly what I was looking for: a calendar where I could scroll down and up as I thought about the future and planned my weeks and months. One that displayed time in a visual, intuitive way. 🌊🗓️
 
-[[file:img/interface.png]]
+[[file:_img/interface.png]]
 
 * Evan's Original Features
-- Infinite scrolling through months and years, both forward in time (i.e. downward on the scrolling calendar) and backward in time (i.e. upward).
-- Click on a day to add calendar events.
-- Calendar data stored not on the cloud but within your browser's local storage.
+- Infinite scrolling in both directions---past and future. 🔄📆
+- Click on a day to add an event. ✍️📌
+- Data stored locally in your browser for privacy. 🔒💾
 
-[[file:img/scrolly.gif]]
+[[file:_img/scrolly.gif]]
 
 * My Enhancements
-#+CAPTION: An illustration of the Timeless interface.
+#+CAPTION: The *Timeless* interface, now with even more fluidity.
 
-[[file:img/unreliablenarrator_infinite_calendar_scrolling_calendar._appli_56f4a6e0-a252-4621-8bb6-7443c1c2933c.png]]
+[[file:_img/unreliablenarrator_infinite_calendar_scrolling_calendar._appli_56f4a6e0-a252-4621-8bb6-7443c1c2933c.png]]
 
-I've taken Evan's original implementation and added a few enhancements of my own:
-- Added the ability to display days of the week
-- Added the ability to display name of month
-- Add the ability to save a backup of your stored calendar events as a JSON file; and add the ability to load stored events from said backup file.
-- Added an accompanying Python script to take the saved data and convert it into an ICS file that I can import into my MacOS calendar. (This doesn't yet work reliably.)
-- European-style calendar: In my mind, the week begins on Monday. Why? Because, for the reasons discussed above, it doesn't make sense to separate Saturday and Sunday into separate weeks. I think of the weekend as a single unit. When I ask myself what I'm going to do this weekend, I'm thinking about Saturday and Sunday, not Saturday of this week and Sunday of next.
+I built on Evan's work with several key upgrades:
+- Added the option to display days of the week. 🗓️📊
+- Added month names for easier navigation. 🌍📆
+- Implemented backup/export functionality using JSON. 🔄💾
+- Wrote a Python script to convert saved data into an ICS file for import into MacOS Calendar. (Still a work in progress.) 🐍📅
+- *European-style week layout:* Weeks start on *Monday,* because weekends belong together. When I plan *this weekend*, I'm thinking of both Saturday and Sunday, not splitting them up. 📅🇪🇺
 
-I'm not a coder. ChatGPT Plus made these changes for me. Here's a record of my conversation with ChatGPT:
-https://chat.openai.com/share/512d0b31-f773-49a6-8246-2e003f186e6a
+I'm *not* a coder. ChatGPT Plus made these changes for me. Here's my conversation with it:
+[[https://chat.openai.com/share/512d0b31-f773-49a6-8246-2e003f186e6a][See the ChatGPT conversation 🤖📝]]
 
-** What remains to be done:
-- In order to facilitate exporting calendar data to a calendar app like MacOS calendar, I want to modify the format of saved data to explicitly store the full date of each calendar event.
+** 🎉 New Functional Enhancements
 
+** 🔄 Smoother Undo
+Undoing changes used to require a *full page reload.* Now:
+- Undo restores the last saved snapshot *in place*, keeping navigation uninterrupted.
+- The calendar re-renders using ~loadCalendarAroundDate(todayDate)~, so your scroll position stays put.
+- The result? *Faster, smoother undo.* 🏎️🔙
+
+** ✨ Highlight "Clicked" Day
+To confirm when you've added a note:
+- The clicked day *briefly* flashes with a highlight effect (~.clicked-day~ class).
+- The highlight disappears after 500ms, letting you know it worked. 🎆🔍
+
+** 📝 Smarter Multi-Line Input
+Now you can write longer notes *without friction*:
+- *Enter* (no Shift) saves and closes.
+- *Shift+Enter* adds a new line for bullet points or longer thoughts.
+- Quick notes stay quick. Longer notes stay readable. ✏️📜
+
+** 📅 Improved Date Picker
+The "Jump to Date" field now has a practical range:
+~<input type="date" id="jumpDate" min="2000-01-01" max="2050-12-31">~
+- Keeps navigation user-friendly while allowing customization. 🎯📌
+
+
+** Expanded Mini-Calendar Overview
+
+- *Multi-Month Display:* The mini-calendar now shows the previous, current, and next months in a vertically stacked layout.
+- *Clear Month Headers:* Each mini-calendar section includes a header indicating the month and year.
+- *Quick Navigation:* Clicking on any day in these mini-calendars instantly navigates you to that date in the main calendar.
+
+** Enhanced Keyboard Navigation
+
+- *Arrow Key Precision:* Left and right arrow keys now move day by day---crossing week boundaries seamlessly without skipping any dates.
+- *Enter Key for New Entries:* Pressing Enter on the currently highlighted day creates a new note.
+- *Delete Key Functionality:* Pressing Delete while a day is highlighted deletes all entries for that day (with a confirmation prompt), making it easy to manage entries using just the keyboard.
+- *Escape Key in Textareas:* When editing a note, pressing Escape cancels the editing session (by blurring the field).
+
+** Improved Mouse Interaction
+
+- *Single-Click Entry Creation:* Clicking on any empty space within a day cell creates a new note.
+- *Single-Click to Edit:* Clicking on an existing note focuses the textarea for editing.
+- *Restored Classic Behavior:* These changes restore the familiar mouse-based interactions alongside the new keyboard shortcuts.
+
+** Refined Visual and UI Effects
+
+- *Timeless Button Redesign:* The "Timeless" button has been updated with a modern gradient, increased padding, rounded corners, and smooth hover/active effects.
+- *Smooth Animations & Transitions:*
+ - Calendar cells now have refined hover effects with a slight scale-up and deeper shadow.
+ - A subtle ripple effect provides immediate feedback when a cell is clicked.
+ - The overall scrolling animations have been smoothed out for a more polished experience.
+- *Glassmorphism for Notes:* Note textareas now use a semi-transparent background with a blur filter to create a modern frosted-glass look.
+- *Animated Dot Grid Background:* The dot grid background has a slow, subtle movement to add depth without distraction.
+
+** Undo/Redo Functionality
+
+- *Undo Support:* Use Ctrl+Z (or plain "z") to undo the last change.
+- *Redo Support:* Use Ctrl+Shift+Z or Ctrl+Y to redo the last undone change.
+- *Enhanced Editing Control:* These features offer better control during extensive note editing and calendar updates.
+
+** Additional Enhancements
+
+- *Mouse & Keyboard Harmony:* Both mouse interactions and keyboard shortcuts work together seamlessly for adding, editing, and navigating calendar entries.
+- *Infinite Scroll & Responsive Design:* The calendar supports infinite scrolling and adapts smoothly across different devices.
 * Getting Started
-To get started with *Timeless*:
-
 ** Non-expert users
-Visit this page: [[https://incandescentman.github.io/timeless/][Timeless: The Infinitely Scrolling Calendar 📅✨]]
+Simply visit: [[https://incandescentman.github.io/timeless/][Timeless: The Infinitely Scrolling Calendar 🌏🚀]]
 
-That's it! You can now begin adding events!
+Start adding events immediately!
 
 ** Expert users
 Clone the repository and open the HTML file.
@@ -108,25 +165,11 @@ cd timeless
 open index.html
 #+END_SRC
 
-* Usage
-** Adding Notes
-Click on any day to add a calendar event. A text area will appear where you can enter text. Press RETURN to save the note to local storage, which will automatically adjust the day's cell to accommodate the text.
-
-** Navigating the Calendar
-Use your mouse wheel or trackpad to scroll through months and years effortlessly. The calendar dynamically loads additional weeks as you scroll, ensuring a smooth and continuous user experience.
-
-** Managing Notes
-To edit a note, simply click on the existing note text, make changes, and press RETURN to save.
-
-** Deletion
-To delete a note, clear the text in the text area and click elsewhere or press RETURN.
-
 * Customization
-Timeless is designed to be easily customizable. You can modify the CSS styles in /css/style.css/ to match your aesthetic preferences or adapt the functionality in /js/calendar.js/ to meet specific needs.
+Modify the CSS in ~css/style.css~ to match your aesthetic, or tweak functionality in ~js/calendar.js~ to suit your needs. 🎨🔧
 
 * Contributing
-Contributions to *Timeless* are welcome! I need all the help I can get. Please fork the repository, make your changes, and submit a pull request. We appreciate your input and look forward to seeing your creative ideas and improvements.
+All contributions welcome---I need all the help I can get. Fork the repo, make your changes, and submit a pull request. I look forward to seeing what you come up with! 🚀💡
 
 * License
-Timeless is released under the MIT License. See the LICENSE file in the repository for full details.
-
+Timeless is released under the MIT License. See the LICENSE file for details. 📜⚖️
