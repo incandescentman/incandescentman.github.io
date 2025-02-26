@@ -22,26 +22,32 @@
      --shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
      --cell-min-height: 120px;
 
-      /* Light mode colors */
-     --bg-primary: white;
-     --bg-pattern: #e2e8f0;
-     --text-primary: black;
-     --weekend-gradient-from: #f8f9fa;
-     --weekend-gradient-to: #e9ecef;
-     --shaded-month: #CFE7FF;
+      /* Modern Pastel Palette for Light Mode */
+     --bg-primary: #f8f9fa;
+     --bg-pattern: #e0e5ec;
+     --text-primary: #333;
+     --accent: #ff6f61;
+     --weekend-gradient-from: #f0f5f9;
+     --weekend-gradient-to: #d9e2ec;
+     --shaded-month: #e6f7ff;
      --today-gradient-from: rgba(229, 62, 62, 0.9);
      --today-gradient-to: rgba(197, 48, 48, 0.9);
-     --month-boundary: #aaa;
-     --header-gradient-from: #f8f9fa;
-     --header-gradient-to: #e9ecef;
-     --month-heading-bg: white;
+     --month-boundary: #bbb;
+     --header-gradient-from: transparent;
+     --header-gradient-to: transparent;
+     --header-solid-bg: rgba(255,255,255,0.95);
+     --month-heading-bg: rgba(255,255,255,0.8);
      --month-heading-text: #333;
+
+      /* Typography */
+     --font-month-heading: 'Playfair Display', serif;
+     --font-day-number: 'Fira Code', monospace;
     }
 
     /* Dark mode colors */
     body.dark-mode {
      --bg-primary: #222;
-     --bg-pattern: rgba(255, 255, 255, 0.05);
+     --bg-pattern: rgba(255,255,255,0.05);
      --text-primary: #eee;
      --weekend-gradient-from: #303542;
      --weekend-gradient-to: #232731;
@@ -72,7 +78,7 @@
       to   { background-position: 20px 20px; }
     }
 
-    /* Parallax background element */
+    /* Parallax background element with subtle overlay */
     .parallax-bg {
       position: fixed;
       top: 0;
@@ -84,8 +90,16 @@
       z-index: -1;
       pointer-events: none;
     }
+    .parallax-bg::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.05);
+      mix-blend-mode: multiply;
+      pointer-events: none;
+    }
 
-    /* Fixed header styling */
+    /* Fixed header styling with dynamic solid effect */
     #header {
       background: linear-gradient(135deg, var(--header-gradient-from) 0%, var(--header-gradient-to) 100%);
       box-shadow: 0 2px 15px rgba(0,0,0,0.1);
@@ -97,9 +111,14 @@
       height: var(--header-height);
       line-height: var(--header-height);
       z-index: 999;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    #header.solid {
+      background: var(--header-solid-bg);
+      box-shadow: 0 2px 15px rgba(0,0,0,0.2);
     }
 
-    /* Timeless brand link styling */
+    /* Timeless brand link styling and SVG animation support */
     a.timeless {
       font-size: 150%;
       text-decoration: none;
@@ -109,7 +128,7 @@
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       display: inline-block;
-      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+      transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s, background 0.3s;
       margin-top: 10px;
       margin-bottom: 10px;
     }
@@ -124,12 +143,18 @@
       color: #fff;
       box-shadow: 0 3px 6px rgba(0,0,0,0.2);
     }
+    a.timeless svg {
+      transition: transform 0.3s cubic-bezier(0.22,1,0.36,1);
+    }
+    a.timeless:hover svg {
+      transform: rotate(15deg) scale(1.1);
+    }
 
     /* Mini-calendar widget on the left */
     #miniCalendar {
       position: fixed;
       left: 10px;
-      top: 50%;
+      top: 54%;
       transform: translateY(-50%);
       padding: 10px;
       border-radius: 5px;
@@ -137,16 +162,16 @@
       box-shadow: none;
     }
 
-    /* Sticky month header */
+    /* Sticky month header with enlarged font and extra padding */
     #stickyMonthHeader {
       position: fixed;
       top: calc(var(--header-height) + 20px);
       left: 0;
       width: 100%;
-      font-family: 'Playfair Display', serif;
-      font-size: 20px;
+      font-family: var(--font-month-heading);
+      font-size: 32px; /* Increased from 20px */
       font-weight: 600;
-      padding: 5px 20px;
+      padding: 15px 20px; /* Increased padding for more whitespace */
       background: var(--month-heading-bg);
       color: var(--month-heading-text);
       z-index: 998;
@@ -167,7 +192,7 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* Button styling */
+    /* Button styling with cubic-bezier transitions */
     a.button, button {
       font-size: 16px;
       padding: 8px 12px;
@@ -177,7 +202,7 @@
       color: #444;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       margin: 0 5px;
-      transition: all 0.3s;
+      transition: all 0.3s cubic-bezier(0.22,1,0.36,1);
       position: relative;
       text-decoration: none;
       display: inline-block;
@@ -291,8 +316,9 @@
     }
     #calendar td:hover {
       transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 12px rgba(255,111,97,0.5);
       background-color: rgba(0,0,0,0.03);
+      filter: drop-shadow(0 0 4px var(--accent));
     }
     #calendar td.extra {
       cursor: default;
@@ -345,7 +371,7 @@
       margin-bottom: 8px;
     }
     #calendar td.extra {
-      font-family: 'Playfair Display', serif;
+      font-family: var(--font-month-heading);
       font-size: 22px;
       line-height: 1.2;
       color: #000;
@@ -381,11 +407,20 @@
     body.dark-mode #calendar td span {
       color: #aaa;
     }
+    /* Separate styling for numerical day */
+    #calendar td .day-number {
+      font-family: var(--font-day-number);
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+      margin-top: 4px;
+      color: inherit;
+    }
 
-    /* Ripple effect on cell click */
+    /* Ripple effect on cell click with refined animation */
     @keyframes ripple {
-      from { transform: scale(0); opacity: 0.5; }
-      to   { transform: scale(2); opacity: 0; }
+      from { transform: scale(0); opacity: 0.6; }
+      to   { transform: scale(2.5); opacity: 0; }
     }
     #calendar td.clicked-day::after {
       content: "";
@@ -397,7 +432,7 @@
       background: rgba(80,160,255,0.4);
       border-radius: 50%;
       transform: translate(-50%, -50%);
-      animation: ripple 0.6s ease-out;
+      animation: ripple 0.8s ease-out;
       pointer-events: none;
     }
 
@@ -461,7 +496,7 @@
     /* Glassmorphism for notes: frosted glass effect */
     textarea {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
-       font-size:80%;
+      font-size:80%;
       padding: 8px;
       border-radius: 8px;
       background-color: rgba(255,255,255,0.6);
@@ -575,6 +610,7 @@
     }
     .month-grid h3 {
       margin-bottom: 10px;
+      font-family: var(--font-month-heading);
     }
     .month-grid table {
       width: 100%;
@@ -676,11 +712,9 @@
 
   <!-- Fixed header -->
   <div id="header">
-
     <div id="miniCalendar"></div>
-
     <div>
-      <span><strong>Timeless:</strong> The Infinite Calendar 🪐✨ </span>
+      <span class="brand"><strong>Timeless:</strong> The Infinite Calendar 🪐✨ </span>
       <a href="#" class="button" onclick="toggleDarkMode()" data-tooltip="Toggle Dark Mode">🌙</a>
       <a href="#" class="button" onclick="document.getElementById('fileInput').click()" data-tooltip="Import Calendar Data">📥</a>
       <a href="#" class="button" onclick="downloadLocalStorageData()" data-tooltip="Download Calendar Data">💾</a>
@@ -746,17 +780,11 @@
   </div>
 
   <script>
-    /**************************
+    /*************
      * Timeless: The Infinitely Scrolling Calendar
-     *
-     * - Single-click on empty cell => create new note
-     * - Single-click existing note => focus/edit it
-     * - SHIFT+Enter => newline, Enter => save in textareas
-     * - Arrow keys => day-by-day movement across weeks
-     * - Additional enhancements (dark mode, miniCalendar, etc.)
-     **************************/
+     *************/
 
-    /*** CORE VARIABLES & STATE ***/
+    /** CORE VARIABLES & STATE **/
     let systemToday = new Date();
     let todayDate;
     let calendarTableElement;
@@ -776,12 +804,12 @@
     const ROW_ANIMATION_CLASS = 'week-row-animate';
 
     // Days & months
-    const daysOfWeek = ["Mon","Tues","Wed","Thur","Fri","Sat","Sun"];
+    const daysOfWeek = ["Mon","Tues","Wed","Thurs","Fri","Sat","Sun"];
     const months = [
       "January","February","March","April","May","June",
       "July","August","September","October","November","December"
     ];
-    const shortMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+    const shortMonths = ["Jan","Feb","March","April","May","June","July","Aug","Sep","Oct","Nov","Dec"];
 
     // For smooth scrolling
     let startTime, startY, goalY;
@@ -792,7 +820,7 @@
     // Keyboard navigation date
     let keyboardFocusDate = null;
 
-    /*** UTILITY & HELPERS ***/
+    /** UTILITY & HELPERS **/
     function throttle(func, delay) {
       let lastCall = 0;
       return function(...args) {
@@ -819,7 +847,7 @@
       document.getElementById("help").style.display = "none";
     }
 
-    /*** LOADING SPINNER ***/
+    /** LOADING SPINNER **/
     function showLoading() {
       document.getElementById('loadingIndicator').classList.add('active');
     }
@@ -827,7 +855,7 @@
       document.getElementById('loadingIndicator').classList.remove('active');
     }
 
-    /*** TOAST NOTIFICATIONS ***/
+    /** TOAST NOTIFICATIONS **/
     function showToast(message, duration=3000) {
       let toastContainer = document.getElementById('toast-container');
       if (!toastContainer) {
@@ -851,7 +879,7 @@
       }, duration);
     }
 
-    /*** SCROLL & POSITION ***/
+    /** SCROLL & POSITION **/
     function documentScrollTop() {
       return Math.max(document.body.scrollTop, document.documentElement.scrollTop);
     }
@@ -895,7 +923,7 @@
       hideLoading();
     }
 
-    /*** DARK MODE ***/
+    /** DARK MODE **/
     function toggleDarkMode() {
       document.body.classList.toggle("dark-mode");
       if (document.body.classList.contains("dark-mode")) {
@@ -907,7 +935,7 @@
       }
     }
 
-    /*** UNDO/REDO ***/
+    /** UNDO/REDO **/
     function pushUndoState() {
       // Clear redo stack on new action
       redoStack = [];
@@ -962,7 +990,7 @@
       showToast("Redo applied");
     }
 
-    /*** TEXTAREA / NOTES ***/
+    /** TEXTAREA / NOTES **/
     function recalculateHeight(itemId) {
       const ta = document.getElementById(itemId);
       if (!ta) return;
@@ -1011,31 +1039,25 @@
       }
     }
 
-function noteKeyDownHandler(e) {
-  recalculateHeight(this.id);
-
-  // If Escape is pressed, cancel editing by blurring the textarea
-  if (e.key === "Escape") {
-    e.preventDefault();
-    this.blur();
-    return;
-  }
-
-  // SHIFT+Enter => newline; Enter (without Shift) => save and blur
-  if (e.key === "Enter" && !e.shiftKey) {
-    e.preventDefault();
-    storeValueForItemId(this.id);
-    this.blur();
-    return false;
-  } else {
-    // Debounce the auto-save
-    if (!this.debouncedSave) {
-      this.debouncedSave = debounce(() => storeValueForItemId(this.id), 1000);
+    function noteKeyDownHandler(e) {
+      recalculateHeight(this.id);
+      if (e.key === "Escape") {
+        e.preventDefault();
+        this.blur();
+        return;
+      }
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        storeValueForItemId(this.id);
+        this.blur();
+        return false;
+      } else {
+        if (!this.debouncedSave) {
+          this.debouncedSave = debounce(() => storeValueForItemId(this.id), 1000);
+        }
+        this.debouncedSave();
+      }
     }
-    this.debouncedSave();
-  }
-}
-
 
     function noteBlurHandler() {
       if (!this.value.trim()) {
@@ -1068,7 +1090,7 @@ function noteKeyDownHandler(e) {
       }
     }
 
-    /*** RENDERING DAYS ***/
+    /** RENDERING DAYS **/
     function generateDay(dayCell, date) {
       const isWeekend = (date.getDay()===0 || date.getDay()===6);
       if (isWeekend) dayCell.classList.add("weekend");
@@ -1093,14 +1115,10 @@ function noteKeyDownHandler(e) {
 
       dayCell.id = idForDate(date);
       dayCell.innerHTML = `
-        <span>
-          ${daysOfWeek[getAdjustedDayIndex(date)]}
-          ${shortMonths[date.getMonth()]}
-          ${date.getDate()}
-          ${isCurrentSystemDate && !isToday ? '<div class="current-day-dot"></div>' : ''}
-        </span>
+        <span class="day-label">${daysOfWeek[getAdjustedDayIndex(date)]} ${shortMonths[date.getMonth()]}</span>
+        <span class="day-number">${date.getDate()}</span>
+        ${isCurrentSystemDate && !isToday ? '<div class="current-day-dot"></div>' : ''}
       `;
-      // Re-create existing notes
       lookupItemsForParentId(dayCell.id, items => {
         items.forEach(it => {
           const note = generateItem(dayCell.id, it.itemId);
@@ -1112,11 +1130,10 @@ function noteKeyDownHandler(e) {
       });
     }
 
-    /*** MONTH ROWS ***/
+    /** MONTH ROWS **/
     function prependWeek() {
       const row = calendarTableElement.insertRow(0);
       animateRowInsertion(row, 'prepend');
-
       let isMonthBoundary = false;
       do {
         firstDate.setDate(firstDate.getDate()-1);
@@ -1124,29 +1141,23 @@ function noteKeyDownHandler(e) {
         const cell = row.insertCell(0);
         generateDay(cell, new Date(firstDate));
       } while(getAdjustedDayIndex(firstDate)!==0);
-
       if (isMonthBoundary) row.classList.add('month-boundary');
       row.dataset.monthName = months[firstDate.getMonth()] + " " + firstDate.getFullYear();
     }
     function appendWeek() {
       const row = calendarTableElement.insertRow(-1);
       animateRowInsertion(row, 'append');
-
       let isMonthBoundary = false;
       const rowStart = new Date(lastDate);
       rowStart.setDate(rowStart.getDate()+1);
       const rowMonthName = months[rowStart.getMonth()] + " " + rowStart.getFullYear();
-
       do {
         lastDate.setDate(lastDate.getDate()+1);
         if (lastDate.getDate()===1) { isMonthBoundary=true; }
         const cell = row.insertCell(-1);
         generateDay(cell, new Date(lastDate));
       } while(getAdjustedDayIndex(lastDate)!==6);
-
       if (isMonthBoundary) row.classList.add('month-boundary');
-
-      // Rightmost cell => month label
       const extra = row.insertCell(-1);
       extra.className = "extra";
       if (isMonthBoundary) {
@@ -1157,12 +1168,11 @@ function noteKeyDownHandler(e) {
       row.dataset.monthName = rowMonthName;
     }
 
-    /*** STICKY HEADER ***/
+    /** STICKY HEADER **/
     function updateStickyMonthHeader() {
       const rows = document.querySelectorAll('#calendar tr');
       const headerOffset = document.getElementById('header').offsetHeight + 30;
       let visMonth = null;
-
       for (const row of rows) {
         const rect = row.getBoundingClientRect();
         if (rect.top >= headerOffset && rect.top <= window.innerHeight) {
@@ -1182,21 +1192,17 @@ function noteKeyDownHandler(e) {
       }
     }
 
-    /*** YEAR VIEW HELPER ***/
+    /** YEAR VIEW HELPER **/
     function buildYearView(year, container) {
       for (let m=0; m<12; m++) {
         const div = document.createElement('div');
         div.className = 'month-grid';
-
         const h3 = document.createElement('h3');
         h3.textContent = months[m];
         div.appendChild(h3);
-
         const table = document.createElement('table');
         table.style.width = '100%';
         table.style.borderCollapse = 'collapse';
-
-        // day-of-week header
         const headerRow = document.createElement('tr');
         for (let i=0; i<7; i++) {
           const th = document.createElement('th');
@@ -1206,11 +1212,9 @@ function noteKeyDownHandler(e) {
           headerRow.appendChild(th);
         }
         table.appendChild(headerRow);
-
         const firstDay = new Date(year, m, 1);
         let dayOfWeek = getAdjustedDayIndex(firstDay);
         const daysInMonth = new Date(year, m+1, 0).getDate();
-
         let day = 1;
         let row = document.createElement('tr');
         for (let k=0; k<dayOfWeek; k++) {
@@ -1218,7 +1222,6 @@ function noteKeyDownHandler(e) {
           emptyCell.style.padding='3px';
           row.appendChild(emptyCell);
         }
-
         while (day<=daysInMonth) {
           if (dayOfWeek===7) {
             table.appendChild(row);
@@ -1229,7 +1232,6 @@ function noteKeyDownHandler(e) {
           td.textContent=day;
           td.style.padding='3px';
           td.style.textAlign='center';
-
           const currentDate=new Date(year,m,day);
           if (currentDate.getTime()===todayDate.setHours(0,0,0,0)) {
             td.style.backgroundColor='#e53e3e';
@@ -1260,33 +1262,26 @@ function noteKeyDownHandler(e) {
       }
     }
 
-    /*** MINI-CALENDAR (Prev/Current/Next) ***/
+    /** MINI-CALENDAR **/
     function buildMiniCalendar() {
       const mini = document.getElementById("miniCalendar");
       if (!mini) return;
       mini.innerHTML = "";
-
       const currentMonth = todayDate.getMonth();
       const currentYear = todayDate.getFullYear();
       let prevMonth = currentMonth - 1, prevYear = currentYear;
       if (prevMonth<0) { prevMonth=11; prevYear=currentYear-1; }
       let nextMonth = currentMonth+1, nextYear = currentYear;
       if (nextMonth>11) { nextMonth=0; nextYear=currentYear+1; }
-
-      buildMiniCalendarForMonth(mini, prevYear,   prevMonth,   false);
-      buildMiniCalendarForMonth(mini, currentYear,currentMonth,true );
-      buildMiniCalendarForMonth(mini, nextYear,   nextMonth,   false);
+      buildMiniCalendarForMonth(mini, prevYear, prevMonth, false);
+      buildMiniCalendarForMonth(mini, currentYear, currentMonth, true);
+      buildMiniCalendarForMonth(mini, nextYear, nextMonth, false);
     }
     function buildMiniCalendarForMonth(container, year, month, highlightCurrent) {
       const section = document.createElement("div");
       section.style.marginBottom = "10px";
       section.style.padding = "5px";
       section.style.borderRadius = "5px";
-      if (highlightCurrent) {
-        // If you do NOT want a red border, remove or comment this out
-        // section.style.border = "2px solid #e53e3e";
-      }
-
       const monthHeader = document.createElement("div");
       monthHeader.textContent = months[month] + " " + year;
       monthHeader.style.textAlign = "center";
@@ -1294,13 +1289,10 @@ function noteKeyDownHandler(e) {
       monthHeader.style.fontWeight = "bold";
       monthHeader.style.marginBottom = "5px";
       section.appendChild(monthHeader);
-
       const grid = document.createElement("div");
       grid.style.display = "grid";
       grid.style.gridTemplateColumns = "repeat(7, 20px)";
       grid.style.gridGap = "2px";
-
-      // Day-of-week row
       for (let i=0; i<7; i++) {
         const dayCell = document.createElement("div");
         dayCell.textContent = daysOfWeek[i].charAt(0);
@@ -1308,8 +1300,6 @@ function noteKeyDownHandler(e) {
         dayCell.style.textAlign='center';
         grid.appendChild(dayCell);
       }
-
-      // Offset
       const firstDay = new Date(year, month, 1);
       let startDay = firstDay.getDay();
       startDay = (startDay===0) ? 7 : startDay;
@@ -1318,8 +1308,6 @@ function noteKeyDownHandler(e) {
         const empty = document.createElement("div");
         grid.appendChild(empty);
       }
-
-      // Days in month
       const daysInMonth = new Date(year, month+1, 0).getDate();
       for (let d=1; d<=daysInMonth; d++) {
         const cell = document.createElement("div");
@@ -1330,7 +1318,6 @@ function noteKeyDownHandler(e) {
         cell.style.padding='2px';
         cell.style.borderRadius='3px';
         cell.style.backgroundColor='transparent';
-
         if (highlightCurrent && d===todayDate.getDate()) {
           cell.style.backgroundColor='#e53e3e';
           cell.style.color='#fff';
@@ -1349,7 +1336,7 @@ function noteKeyDownHandler(e) {
       buildMiniCalendar();
     }
 
-    /*** KEYBOARD FOCUS LOGIC ***/
+    /** KEYBOARD FOCUS LOGIC **/
     function highlightKeyboardFocusedDay() {
       document.querySelectorAll('.keyboard-focus').forEach(el => el.classList.remove('keyboard-focus'));
       if (!keyboardFocusDate) return;
@@ -1359,15 +1346,12 @@ function noteKeyDownHandler(e) {
         cell.classList.add('keyboard-focus');
       }
     }
-
     function stepDay(delta) {
       if (!keyboardFocusDate) {
         keyboardFocusDate = new Date(todayDate || systemToday);
       }
       keyboardFocusDate.setDate(keyboardFocusDate.getDate() + delta);
       loadCalendarAroundDate(keyboardFocusDate);
-
-      // After load, highlight & optionally scroll
       setTimeout(() => {
         highlightKeyboardFocusedDay();
         const cell = document.getElementById(idForDate(keyboardFocusDate));
@@ -1379,7 +1363,6 @@ function noteKeyDownHandler(e) {
         }
       }, 300);
     }
-
     function createEventInFocusedDay() {
       if (!keyboardFocusDate) {
         showToast("No day is selected");
@@ -1393,7 +1376,6 @@ function noteKeyDownHandler(e) {
       }
       cell.classList.add("clicked-day");
       setTimeout(()=>cell.classList.remove("clicked-day"), 500);
-
       const itemId = nextItemId();
       const note = generateItem(cellId, itemId);
       if (note) {
@@ -1402,8 +1384,6 @@ function noteKeyDownHandler(e) {
         note.focus();
       }
     }
-
-    /* Delete entries for the currently focused day */
     function deleteEntriesForFocusedDay() {
       if (!keyboardFocusDate) {
         showToast("No day is selected");
@@ -1429,17 +1409,14 @@ function noteKeyDownHandler(e) {
       }
     }
 
-    /*** KEYBOARD NAVIGATION ***/
+    /** KEYBOARD NAVIGATION **/
     document.addEventListener("keydown", (e) => {
-      // If user is typing in a note or input, do not override arrow keys
       if (e.target && (e.target.tagName.toLowerCase()==="textarea" ||
                        e.target.tagName.toLowerCase()==="input")) {
         return;
       }
-
       switch (e.key) {
         case "Escape":
-          // Close help or year view, or cancel range selection
           if (document.getElementById("help").style.display==="block") {
             hideHelp(); return;
           }
@@ -1453,16 +1430,13 @@ function noteKeyDownHandler(e) {
             return;
           }
           break;
-
         case "?":
           e.preventDefault();
           const helpElem = document.getElementById("help");
           (helpElem.style.display==="block") ? hideHelp() : showHelp();
           break;
-
         case "z":
         case "Z":
-          // Ctrl+Z => undo
           if (e.ctrlKey || e.metaKey) {
             e.preventDefault();
             undoLastChange();
@@ -1471,68 +1445,51 @@ function noteKeyDownHandler(e) {
             undoLastChange();
           }
           break;
-
-        case "Z":
-          // Ctrl+Shift+Z => redo is also handled above (Z or z)
-          // do nothing special here
-          break;
-
         case "y":
         case "Y":
-          // Ctrl+Y => redo
           if (e.ctrlKey || e.metaKey) {
             e.preventDefault();
             redoLastChange();
           } else {
-            // plain 'y' => toggle year view
             e.preventDefault();
             const yv = document.getElementById("yearViewContainer");
             if (yv.style.display==="block") hideYearView(); else showYearView();
           }
           break;
-
         case "g":
         case "G":
           e.preventDefault();
           const jump = document.getElementById("jumpDate");
           if (jump) jump.focus();
           break;
-
         case "ArrowLeft":
           e.preventDefault();
           stepDay(-1);
           break;
-
         case "ArrowRight":
           e.preventDefault();
           stepDay(1);
           break;
-
         case "ArrowDown":
           if (e.altKey) {
             e.preventDefault();
             jumpOneMonthForward();
           }
           break;
-
         case "Enter":
           e.preventDefault();
           createEventInFocusedDay();
           break;
-
         case "Delete":
           e.preventDefault();
           deleteEntriesForFocusedDay();
           break;
-
         case "t":
         case "T":
           todayDate=new Date(systemToday);
           loadCalendarAroundDate(todayDate);
           break;
-
         default:
-          // Ctrl+D => dark mode
           if ((e.ctrlKey|| e.metaKey) && e.key==="d" && !e.shiftKey && !e.altKey) {
             e.preventDefault();
             toggleDarkMode();
@@ -1541,22 +1498,15 @@ function noteKeyDownHandler(e) {
       }
     });
 
-    /*** SINGLE-CLICK MOUSE HANDLER FOR CREATING NEW NOTES ***/
+    /** SINGLE-CLICK HANDLER FOR NEW NOTES **/
     document.addEventListener("click", (evt) => {
-      // If user clicked on a day cell
       const dayCell = evt.target.closest("td");
       if (!dayCell || !dayCell.id || dayCell.classList.contains("extra")) return;
-
-      // If user clicked on an existing note, do nothing special
-      // The browser will focus it automatically.
       if (evt.target.tagName.toLowerCase() === "textarea") {
         return;
       }
-
-      // Otherwise, user clicked empty space => create new note
       dayCell.classList.add("clicked-day");
       setTimeout(() => dayCell.classList.remove("clicked-day"), 500);
-
       const itemId = nextItemId();
       const note = generateItem(dayCell.id, itemId);
       if (note) {
@@ -1566,7 +1516,7 @@ function noteKeyDownHandler(e) {
       }
     });
 
-    /*** JUMP 1 MONTH ***/
+    /** JUMP 1 MONTH **/
     function jumpOneMonthForward() {
       if (!currentVisibleMonth) return;
       const [monthName, yearStr] = currentVisibleMonth.split(" ");
@@ -1596,7 +1546,7 @@ function noteKeyDownHandler(e) {
       }, 200);
     }
 
-    /*** MISC ***/
+    /** MISC **/
     function jumpToDate() {
       const val = document.getElementById("jumpDate").value;
       if (!val) return;
@@ -1612,7 +1562,7 @@ function noteKeyDownHandler(e) {
       return "item"+ localStorage.nextId;
     }
 
-    /*** RANGE SELECTION ***/
+    /** RANGE SELECTION **/
     function toggleRangeSelection() {
       isSelectingRange = !isSelectingRange;
       if (!isSelectingRange) {
@@ -1627,19 +1577,16 @@ function noteKeyDownHandler(e) {
       rangeEnd = null;
     }
 
-    /*** CALENDAR INITIALIZATION ***/
+    /** CALENDAR INITIALIZATION **/
     function loadCalendarAroundDate(seedDate) {
       showLoading();
       calendarTableElement.innerHTML = "";
       firstDate = new Date(seedDate);
-
-      // find start of that week (Monday)
       while (getAdjustedDayIndex(firstDate)!==0) {
         firstDate.setDate(firstDate.getDate()-1);
       }
       lastDate = new Date(firstDate);
       lastDate.setDate(lastDate.getDate()-1);
-
       appendWeek();
       while (documentScrollHeight() <= window.innerHeight) {
         prependWeek();
@@ -1653,7 +1600,7 @@ function noteKeyDownHandler(e) {
       }, 50);
     }
 
-    /*** PARALLAX BACKGROUND ON SCROLL ***/
+    /** PARALLAX BACKGROUND ON SCROLL **/
     window.addEventListener("scroll", throttle(() => {
       const parallax = document.querySelector(".parallax-bg");
       if (parallax) {
@@ -1661,7 +1608,7 @@ function noteKeyDownHandler(e) {
       }
     }, 20));
 
-    /*** INTERSECTION OBSERVERS (Infinite Scroll) ***/
+    /** INTERSECTION OBSERVERS (Infinite Scroll) **/
     function setupScrollObservers() {
       const opts = { rootMargin: '200px' };
       const topObs = new IntersectionObserver((entries) => {
@@ -1673,7 +1620,6 @@ function noteKeyDownHandler(e) {
           updateStickyMonthHeader();
         }
       }, opts);
-
       const botObs = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
           for (let i=0; i<8; i++) appendWeek();
@@ -1681,11 +1627,8 @@ function noteKeyDownHandler(e) {
           updateStickyMonthHeader();
         }
       }, opts);
-
       topObs.observe(document.getElementById('top-sentinel'));
       botObs.observe(document.getElementById('bottom-sentinel'));
-
-      // Also watch for system day changes
       setInterval(() => {
         const newSys = new Date();
         if (newSys.toDateString()!==systemToday.toDateString()) {
@@ -1706,7 +1649,6 @@ function noteKeyDownHandler(e) {
         for (let i=0; i<8; i++) appendWeek();
         recalculateAllHeights();
       }
-      // Also watch system day changes
       const newSys = new Date();
       if (newSys.toDateString()!==systemToday.toDateString()) {
         systemToday=newSys;
@@ -1716,7 +1658,7 @@ function noteKeyDownHandler(e) {
       }
     }
 
-    /*** HELPER FUNCTIONS ***/
+    /** HELPER FUNCTIONS **/
     function idForDate(date) {
       return date.getMonth() + "_" + date.getDate() + "_" + date.getFullYear();
     }
@@ -1728,7 +1670,7 @@ function noteKeyDownHandler(e) {
     }
     function getAdjustedDayIndex(date) {
       const day = date.getDay();
-      return (day===0) ? 6 : day-1;  // Monday=0,... Sunday=6
+      return (day===0) ? 6 : day-1;
     }
     function animateRowInsertion(row, direction='append') {
       row.classList.add(ROW_ANIMATION_CLASS);
@@ -1742,18 +1684,16 @@ function noteKeyDownHandler(e) {
       }, { once: true });
     }
 
-    /*** INIT ***/
+    /** INIT **/
     window.onload = function() {
       calendarTableElement = document.getElementById("calendar");
       todayDate = new Date(systemToday);
       loadCalendarAroundDate(todayDate);
-
       if ('IntersectionObserver' in window) {
         setupScrollObservers();
       } else {
         setInterval(checkInfiniteScroll, 100);
       }
-
       const j = document.getElementById("jumpDate");
       if (j) {
         const sys = new Date();
@@ -1761,166 +1701,161 @@ function noteKeyDownHandler(e) {
                 + String(sys.getMonth()+1).padStart(2,'0') + "-"
                 + String(sys.getDate()).padStart(2,'0');
       }
-
       if (localStorage.getItem("darkMode")==="enabled") {
         document.body.classList.add("dark-mode");
       }
       setTimeout(recalculateAllHeights, 100);
-
       window.addEventListener('scroll', throttle(updateStickyMonthHeader, 100));
       updateStickyMonthHeader();
+      // Sticky header background toggle on scroll
+      window.addEventListener('scroll', () => {
+        const header = document.getElementById('header');
+        if (window.scrollY > 50) {
+          header.classList.add('solid');
+        } else {
+          header.classList.remove('solid');
+        }
+      });
     };
 
-    /*** FILE IMPORT/EXPORT, etc. ***/
-    /* Keep your existing loadDataFromFile(), downloadLocalStorageData(), shouldLoadOrExport(), etc. */
-    /* not shown here for brevity, but re-insert your code in these placeholders. */
-/**
- * FILE PERSISTENCE
- **/
-function downloadLocalStorageData() {
-  showLoading();
-  const data = {};
-  for (const key in localStorage) {
-    if (localStorage.hasOwnProperty(key)) {
-      data[key] = localStorage.getItem(key);
-    }
-  }
-  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
-  const anchor = document.createElement("a");
-  anchor.setAttribute("href", dataStr);
-  anchor.setAttribute("download", "calendar_data.json");
-  document.body.appendChild(anchor);
-  anchor.click();
-  anchor.remove();
-  setTimeout(() => {
-    hideLoading();
-    showToast("Calendar data downloaded");
-  }, 300);
-}
-
-function loadDataFromFile() {
-  showLoading();
-  const input = document.getElementById("fileInput");
-  if (!input.files.length) {
-    showToast("Please select a file to load");
-    hideLoading();
-    return;
-  }
-  const file = input.files[0];
-  const reader = new FileReader();
-  reader.onload = e => {
-    try {
-      const data = JSON.parse(e.target.result);
-      for (const key in data) {
-        if (data.hasOwnProperty(key)) {
-          localStorage.setItem(key, data[key]);
+    /** FILE IMPORT/EXPORT, etc. **/
+    function downloadLocalStorageData() {
+      showLoading();
+      const data = {};
+      for (const key in localStorage) {
+        if (localStorage.hasOwnProperty(key)) {
+          data[key] = localStorage.getItem(key);
         }
       }
-      showToast("Data loaded successfully!");
-      location.reload();
-    } catch {
-      hideLoading();
-      showToast("Invalid file format. Please select a valid JSON file.");
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
+      const anchor = document.createElement("a");
+      anchor.setAttribute("href", dataStr);
+      anchor.setAttribute("download", "calendar_data.json");
+      document.body.appendChild(anchor);
+      anchor.click();
+      anchor.remove();
+      setTimeout(() => {
+        hideLoading();
+        showToast("Calendar data downloaded");
+      }, 300);
     }
-  };
-  reader.onerror = () => {
-    hideLoading();
-    showToast("There was an error reading the file!");
-  };
-  reader.readAsText(file);
-}
 
-/* For cloud sync (Web File System API). */
-async function shouldLoadOrExport() {
-  showLoading();
-  try {
-    const handle = await window.showDirectoryPicker();
-    const fileHandle = await handle.getFileHandle("calendar_data.json",{create:false});
-    const file = await fileHandle.getFile();
-    const contents = await file.text();
-    const data = JSON.parse(contents);
+    function loadDataFromFile() {
+      showLoading();
+      const input = document.getElementById("fileInput");
+      if (!input.files.length) {
+        showToast("Please select a file to load");
+        hideLoading();
+        return;
+      }
+      const file = input.files[0];
+      const reader = new FileReader();
+      reader.onload = e => {
+        try {
+          const data = JSON.parse(e.target.result);
+          for (const key in data) {
+            if (data.hasOwnProperty(key)) {
+              localStorage.setItem(key, data[key]);
+            }
+          }
+          showToast("Data loaded successfully!");
+          location.reload();
+        } catch {
+          hideLoading();
+          showToast("Invalid file format. Please select a valid JSON file.");
+        }
+      };
+      reader.onerror = () => {
+        hideLoading();
+        showToast("There was an error reading the file!");
+      };
+      reader.readAsText(file);
+    }
 
-    const fileTimestamp = data.lastSavedTimestamp;
-    const localTimestamp = localStorage.getItem("lastSavedTimestamp");
-
-    if (fileTimestamp && (!localTimestamp || fileTimestamp>localTimestamp)) {
-      // local is older => backup local then load from file
-      downloadBackupStorageData();
-      await loadDataFromFileHandle(fileHandle);
-      location.reload();
-    } else {
-      // local is newer => export
-      await exportToFileHandle(fileHandle);
-      hideLoading();
-    }
-  } catch(err) {
-    hideLoading();
-    if (err.name === "AbortError") {
-      console.log("User cancelled file/directory selection");
-    } else {
-      console.error("Error syncing data:", err);
-      showToast("Error syncing calendar data. See console for details.");
-    }
-  }
-}
-function downloadBackupStorageData() {
-  showLoading();
-  const data = {};
-  for (const key in localStorage) {
-    if (localStorage.hasOwnProperty(key)) {
-      data[key] = localStorage.getItem(key);
-    }
-  }
-  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
-  const anchor = document.createElement("a");
-  anchor.setAttribute("href", dataStr);
-  anchor.setAttribute("download", "calendar_data_backup.json");
-  document.body.appendChild(anchor);
-  anchor.click();
-  anchor.remove();
-  setTimeout(() => {
-    hideLoading();
-    showToast("Calendar data backup created", 5000);
-  }, 300);
-}
-async function loadDataFromFileHandle(fileHandle) {
-  try {
-    const file = await fileHandle.getFile();
-    const contents = await file.text();
-    const data = JSON.parse(contents);
-    for (const key in data) {
-      if (data.hasOwnProperty(key)) {
-        localStorage.setItem(key, data[key]);
+    async function shouldLoadOrExport() {
+      showLoading();
+      try {
+        const handle = await window.showDirectoryPicker();
+        const fileHandle = await handle.getFileHandle("calendar_data.json",{create:false});
+        const file = await fileHandle.getFile();
+        const contents = await file.text();
+        const data = JSON.parse(contents);
+        const fileTimestamp = data.lastSavedTimestamp;
+        const localTimestamp = localStorage.getItem("lastSavedTimestamp");
+        if (fileTimestamp && (!localTimestamp || fileTimestamp>localTimestamp)) {
+          downloadBackupStorageData();
+          await loadDataFromFileHandle(fileHandle);
+          location.reload();
+        } else {
+          await exportToFileHandle(fileHandle);
+          hideLoading();
+        }
+      } catch(err) {
+        hideLoading();
+        if (err.name === "AbortError") {
+          console.log("User cancelled file/directory selection");
+        } else {
+          console.error("Error syncing data:", err);
+          showToast("Error syncing calendar data. See console for details.");
+        }
       }
     }
-    showToast("Loaded calendar data from file");
-  } catch(err) {
-    hideLoading();
-    console.error("Error loading data from file:", err);
-    showToast("Error loading calendar data");
-  }
-}
-async function exportToFileHandle(fileHandle) {
-  try {
-    const writable = await fileHandle.createWritable();
-    const data = {};
-    for (const key in localStorage) {
-      if (localStorage.hasOwnProperty(key)) {
-        data[key] = localStorage.getItem(key);
+    function downloadBackupStorageData() {
+      showLoading();
+      const data = {};
+      for (const key in localStorage) {
+        if (localStorage.hasOwnProperty(key)) {
+          data[key] = localStorage.getItem(key);
+        }
+      }
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
+      const anchor = document.createElement("a");
+      anchor.setAttribute("href", dataStr);
+      anchor.setAttribute("download", "calendar_data_backup.json");
+      document.body.appendChild(anchor);
+      anchor.click();
+      anchor.remove();
+      setTimeout(() => {
+        hideLoading();
+        showToast("Calendar data backup created", 5000);
+      }, 300);
+    }
+    async function loadDataFromFileHandle(fileHandle) {
+      try {
+        const file = await fileHandle.getFile();
+        const contents = await file.text();
+        const data = JSON.parse(contents);
+        for (const key in data) {
+          if (data.hasOwnProperty(key)) {
+            localStorage.setItem(key, data[key]);
+          }
+        }
+        showToast("Loaded calendar data from file");
+      } catch(err) {
+        hideLoading();
+        console.error("Error loading data from file:", err);
+        showToast("Error loading calendar data");
       }
     }
-    data.lastSavedTimestamp = Date.now();
-    await writable.write(JSON.stringify(data));
-    await writable.close();
-    showToast("Saved calendar data to file");
-  } catch(err) {
-    hideLoading();
-    console.error("Error saving data to file:", err);
-    showToast("Error saving calendar data");
-  }
-}
-
-
+    async function exportToFileHandle(fileHandle) {
+      try {
+        const writable = await fileHandle.createWritable();
+        const data = {};
+        for (const key in localStorage) {
+          if (localStorage.hasOwnProperty(key)) {
+            data[key] = localStorage.getItem(key);
+          }
+        }
+        data.lastSavedTimestamp = Date.now();
+        await writable.write(JSON.stringify(data));
+        await writable.close();
+        showToast("Saved calendar data to file");
+      } catch(err) {
+        hideLoading();
+        console.error("Error saving data to file:", err);
+        showToast("Error saving calendar data");
+      }
+    }
   </script>
 </body>
 </html>
