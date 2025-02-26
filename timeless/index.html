@@ -736,12 +736,14 @@
   <div id="stickyMonthHeader"></div>
 
 <!-- Help overlay -->
+<!-- Help overlay -->
 <div id="help">
   <div>
     <ul>
       <li>Click on a day (empty space) to add a note (Shift+Enter for multi-line, Enter to save)</li>
       <li>Click on an existing note to focus/edit it</li>
-      <li>Press <code>↑</code> or <code>↓</code> to move vertically by one week when a day is highlighted; otherwise, they scroll normally</li>
+      <li>Press <code>i</code> to toggle keyboard navigation mode (arrow keys then move day-by-day)</li>
+      <li>When in keyboard navigation mode, press <code>↑</code> or <code>↓</code> to move vertically by one week; otherwise they scroll normally</li>
       <li>Press <code>←</code> or <code>→</code> to move day by day (no skipping!)</li>
       <li>Press <code>Enter</code> to add an event to the currently highlighted day</li>
       <li>Press <code>Delete</code> to delete all entries on the highlighted day</li>
@@ -749,7 +751,7 @@
       <li>Press <code>Ctrl+D</code> to toggle dark mode</li>
       <li>Use the Date Range button (📏) to select a range of dates</li>
       <li>Press <code>?</code> to toggle this help overlay</li>
-      <li>Press <code>Esc</code> to close overlays or cancel range selection</li>
+      <li>Press <code>Esc</code> to close overlays or cancel range selection (and exit keyboard navigation mode)</li>
       <li>Press <code>g</code> to focus the "Jump to date" field</li>
       <li>Press <code>y</code> to toggle Year View</li>
       <li>Press <code>Alt+↓</code> to jump one month forward</li>
@@ -1424,105 +1426,133 @@
       }
     }
 
-    /** KEYBOARD NAVIGATION **/
-   document.addEventListener("keydown", (e) => {
-      if (e.target && (e.target.tagName.toLowerCase() === "textarea" ||
-                       e.target.tagName.toLowerCase() === "input")) {
-         return;
+document.addEventListener("keydown", (e) => {
+  if (e.target && (e.target.tagName.toLowerCase() === "textarea" ||
+                   e.target.tagName.toLowerCase() === "input")) {
+    return;
+  }
+  switch (e.key) {
+    case "Escape":
+      if (document.getElementById("help").style.display === "block") {
+        hideHelp();
+        return;
       }
-      switch (e.key) {
-         case "Escape":
-            if (document.getElementById("help").style.display === "block") {
-               hideHelp();
-               return;
-            }
-            if (document.getElementById("yearViewContainer").style.display === "block") {
-               hideYearView();
-               return;
-            }
-            if (isSelectingRange) {
-               clearRangeSelection();
-               isSelectingRange = false;
-               showToast("Range selection cancelled");
-               return;
-            }
-            break;
-         case "?":
-            e.preventDefault();
-            const helpElem = document.getElementById("help");
-            (helpElem.style.display === "block") ? hideHelp() : showHelp();
-            break;
-         case "z":
-         case "Z":
-            if (e.ctrlKey || e.metaKey) {
-               e.preventDefault();
-               undoLastChange();
-            } else {
-               e.preventDefault();
-               undoLastChange();
-            }
-            break;
-         case "y":
-         case "Y":
-            if (e.ctrlKey || e.metaKey) {
-               e.preventDefault();
-               redoLastChange();
-            } else {
-               e.preventDefault();
-               const yv = document.getElementById("yearViewContainer");
-               (yv.style.display === "block") ? hideYearView() : showYearView();
-            }
-            break;
-         case "g":
-         case "G":
-            e.preventDefault();
-            const jump = document.getElementById("jumpDate");
-            if (jump) jump.focus();
-            break;
-         case "ArrowLeft":
-            e.preventDefault();
-            stepDay(-1);
-            break;
-         case "ArrowRight":
-            e.preventDefault();
-            stepDay(1);
-            break;
-         case "ArrowUp":
-            if (keyboardFocusDate) {
-               e.preventDefault();
-               stepDay(-7);
-            }
-            break;
-         case "ArrowDown":
-            if (e.altKey) {
-               e.preventDefault();
-               jumpOneMonthForward();
-            } else if (keyboardFocusDate) {
-               e.preventDefault();
-               stepDay(7);
-            }
-            break;
-         case "Enter":
-            e.preventDefault();
-            createEventInFocusedDay();
-            break;
-         case "Backspace":
-            e.preventDefault();
-            deleteEntriesForFocusedDay();
-            break;
-         case "t":
-         case "T":
-            todayDate = new Date(systemToday);
-            loadCalendarAroundDate(todayDate);
-            break;
-         default:
-            if ((e.ctrlKey || e.metaKey) && e.key === "d" && !e.shiftKey && !e.altKey) {
-               e.preventDefault();
-               toggleDarkMode();
-            }
-            break;
+      if (document.getElementById("yearViewContainer").style.display === "block") {
+        hideYearView();
+        return;
       }
-   });
+      if (isSelectingRange) {
+        clearRangeSelection();
+        isSelectingRange = false;
+        showToast("Range selection cancelled");
+        return;
+      }
+      // Also exit keyboard navigation mode if active
+      if (keyboardFocusDate) {
+        keyboardFocusDate = null;
+        document.querySelectorAll('.keyboard-focus').forEach(el => el.classList.remove('keyboard-focus'));
+        showToast("Keyboard navigation mode deactivated");
+      }
+      break;
+    case "?":
+      e.preventDefault();
+      const helpElem = document.getElementById("help");
+      (helpElem.style.display === "block") ? hideHelp() : showHelp();
+      break;
+    case "i":
+      e.preventDefault();
+      if (!keyboardFocusDate) {
+        // Enter keyboard navigation mode:
+        keyboardFocusDate = new Date(todayDate || systemToday);
+        highlightKeyboardFocusedDay();
+        showToast("Keyboard navigation mode activated");
+      } else {
+        // Exit keyboard navigation mode:
+        keyboardFocusDate = null;
+        document.querySelectorAll('.keyboard-focus').forEach(el => el.classList.remove('keyboard-focus'));
+        showToast("Keyboard navigation mode deactivated");
+      }
+      break;
+    case "q":
+    case "Q":
+      if (keyboardFocusDate) {
+        e.preventDefault();
+        keyboardFocusDate = null;
+        document.querySelectorAll('.keyboard-focus').forEach(el => el.classList.remove('keyboard-focus'));
+        showToast("Keyboard navigation mode deactivated");
+      }
+      break;
+    case "z":
+    case "Z":
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        undoLastChange();
+      } else {
+        e.preventDefault();
+        undoLastChange();
+      }
+      break;
+    case "y":
+    case "Y":
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        redoLastChange();
+      } else {
+        e.preventDefault();
+        const yv = document.getElementById("yearViewContainer");
+        (yv.style.display === "block") ? hideYearView() : showYearView();
+      }
+      break;
+    case "g":
+    case "G":
+      e.preventDefault();
+      const jump = document.getElementById("jumpDate");
+      if (jump) jump.focus();
+      break;
+    case "ArrowLeft":
+      e.preventDefault();
+      stepDay(-1);
+      break;
+    case "ArrowRight":
+      e.preventDefault();
+      stepDay(1);
+      break;
+    case "ArrowUp":
+      if (keyboardFocusDate) {
+        e.preventDefault();
+        stepDay(-7);
+      }
+      break;
+    case "ArrowDown":
+      if (e.altKey) {
+        e.preventDefault();
+        jumpOneMonthForward();
+      } else if (keyboardFocusDate) {
+        e.preventDefault();
+        stepDay(7);
+      }
+      break;
+    case "Enter":
+      e.preventDefault();
+      createEventInFocusedDay();
+      break;
+    case "Backspace":
+      e.preventDefault();
+      deleteEntriesForFocusedDay();
+      break;
+    case "t":
+    case "T":
+      todayDate = new Date(systemToday);
+      loadCalendarAroundDate(todayDate);
+      break;
+    default:
+      if ((e.ctrlKey || e.metaKey) && e.key === "d" && !e.shiftKey && !e.altKey) {
+        e.preventDefault();
+        toggleDarkMode();
+      }
+      break;
+  }
+});
 
     /** SINGLE-CLICK HANDLER FOR NEW NOTES **/
     document.addEventListener("click", (evt) => {
