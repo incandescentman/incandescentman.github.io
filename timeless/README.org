@@ -147,9 +147,30 @@ The "Jump to Date" field now has a practical range:
 - *Enhanced Editing Control:* These features offer better control during extensive note editing and calendar updates.
 
 ** Additional Enhancements
-
 - *Mouse & Keyboard Harmony:* Both mouse interactions and keyboard shortcuts work together seamlessly for adding, editing, and navigating calendar entries.
 - *Infinite Scroll & Responsive Design:* The calendar supports infinite scrolling and adapts smoothly across different devices.
+
+* Visual & UI Enhancements
+In this release, Timeless not only remains a continuous calendar but also becomes a feast for the eyes and smoother to interact with. The following upgrades have been implemented:
+
+** Modern Pastel Palette & Refined Typography
+- *Fresh Color Scheme:* The CSS variables have been updated to use a modern pastel/duotone palette for a soft, elegant look.
+- *Typography Upgrade:* Month headings now use *Playfair Display* for a bold, sophisticated appearance, while day numbers are styled with *Fira Code* to create a clear, monospaced contrast.
+
+** Smooth Hover & Focus Effects
+- *Custom Transitions:* Buttons and day cells now use custom cubic-bezier transitions, resulting in fluid, natural animations.
+- *Soft Glow on Hover:* A subtle glow effect (using the accent color) is applied when hovering over day cells, enhancing interactivity.
+
+** Refined Ripple Animation
+- *Enhanced Feedback:* The ripple effect on cell clicks has been refined with a longer duration and smoother fade-out, providing immediate and polished visual feedback.
+
+** Layout & Structural Tweaks
+- *Parallax Overlay:* A semi-transparent overlay with a blend mode has been added to the parallax background for a "liquid" look that deepens the visual experience.
+- *Sticky Header Dynamics:* The header now starts transparent and transitions to a solid background with a drop shadow when scrolling beyond 50 pixels, ensuring it stays legible and prominent.
+
+** Expanded Header with Increased Whitespace
+- *Larger Header:* The top month and year header has been enlarged, featuring a bigger font size and extra vertical padding.
+- *Improved Readability:* Additional whitespace above and below the header creates a more spacious, visually appealing layout that immediately draws attention to the current period.
 * Getting Started
 ** Non-expert users
 Simply visit: [[https://incandescentman.github.io/timeless/][Timeless: The Infinitely Scrolling Calendar 🌏🚀]]
