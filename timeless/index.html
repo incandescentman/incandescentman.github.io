@@ -1435,7 +1435,8 @@ top: 120px;
         delete localStorage[iso];
       }
     }
-    function noteKeyDownHandler(e) {
+
+   function noteKeyDownHandler(e) {
       recalculateHeight(this.id);
       if (e.ctrlKey || e.metaKey) {
         switch(e.key) {
@@ -2210,168 +2211,177 @@ top: 120px;
       }
     }
 
-    document.addEventListener("keydown", e => {
-      if (
-        e.target &&
-        (e.target.tagName.toLowerCase() === "textarea" || e.target.tagName.toLowerCase() === "input")
-      ) {
+document.addEventListener("keydown", e => {
+  if (
+    e.target &&
+    (e.target.tagName.toLowerCase() === "textarea" || e.target.tagName.toLowerCase() === "input")
+  ) {
+    return;
+  }
+  // Command palette shortcuts:
+  if ((e.key === 'k' && (e.metaKey || e.ctrlKey)) || e.key === '/') {
+    e.preventDefault();
+    showCommandPalette();
+    return;
+  }
+  // Quick date popup
+  if (e.key === 'd' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+    e.preventDefault();
+    showQuickDateInput();
+    return;
+  }
+  // Multi-select
+  if (e.key === 'm') {
+    e.preventDefault();
+    toggleMultiSelectMode();
+    return;
+  }
+  if (isMultiSelectMode) {
+    if (e.key === ' ') {
+      e.preventDefault();
+      toggleDaySelection();
+      return;
+    } else if (e.key === 'c' && e.ctrlKey) {
+      e.preventDefault();
+      performBatchAction('clear');
+      return;
+    } else if (e.key === 'n' && e.ctrlKey) {
+      e.preventDefault();
+      performBatchAction('add');
+      return;
+    }
+  }
+  // Check for Shift+D to download Org events
+  if (e.key === "D" && e.shiftKey && !e.ctrlKey && !e.altKey && !e.metaKey) {
+    e.preventDefault();
+    downloadOrgEvents();
+    return;
+  }
+  switch (e.key) {
+    case "Escape":
+      if (document.getElementById("help").style.display === "block") {
+        hideHelp();
         return;
       }
-      // Command palette shortcuts:
-      if ((e.key === 'k' && (e.metaKey || e.ctrlKey)) || e.key === '/') {
+      if (document.getElementById("yearViewContainer").style.display === "block") {
+        hideYearView();
+        return;
+      }
+      if (isSelectingRange) {
+        clearRangeSelection();
+        isSelectingRange = false;
+        showToast("Range selection cancelled");
+        return;
+      }
+      if (keyboardFocusDate) {
+        keyboardFocusDate = null;
+        document.body.classList.remove('keyboard-nav-active');
+        document.querySelectorAll('.keyboard-focus').forEach(el => el.classList.remove('keyboard-focus'));
+        showToast("Keyboard navigation mode deactivated");
+      }
+      break;
+    case "?":
+      e.preventDefault();
+      const helpElem = document.getElementById("help");
+      helpElem.style.display === "block" ? hideHelp() : showHelp();
+      break;
+    case "i":
+      e.preventDefault();
+      // Only activate keyboard navigation if not already active.
+      if (!document.body.classList.contains('keyboard-nav-active')) {
+        toggleKeyboardNavMode();
+      }
+      break;
+    case "q":
+    case "Q":
+      if (keyboardFocusDate) {
         e.preventDefault();
-        showCommandPalette();
-        return;
+        keyboardFocusDate = null;
+        document.body.classList.remove('keyboard-nav-active');
+        document.querySelectorAll('.keyboard-focus').forEach(el => el.classList.remove('keyboard-focus'));
+        showToast("Keyboard navigation mode deactivated");
       }
-      // Quick date popup
-      if (e.key === 'd' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      break;
+    case "z":
+    case "Z":
+      if (e.ctrlKey && e.shiftKey) {
         e.preventDefault();
-        showQuickDateInput();
-        return;
-      }
-      // Multi-select
-      if (e.key === 'm') {
+        redoLastChange();
+      } else if (e.ctrlKey || e.metaKey) {
         e.preventDefault();
-        toggleMultiSelectMode();
-        return;
+        undoLastChange();
+      } else {
+        e.preventDefault();
+        undoLastChange();
       }
-      if (isMultiSelectMode) {
-        if (e.key === ' ') {
-          e.preventDefault();
-          toggleDaySelection();
-          return;
-        } else if (e.key === 'c' && e.ctrlKey) {
-          e.preventDefault();
-          performBatchAction('clear');
-          return;
-        } else if (e.key === 'n' && e.ctrlKey) {
-          e.preventDefault();
-          performBatchAction('add');
-          return;
-        }
+      break;
+    case "y":
+    case "Y":
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        redoLastChange();
+      } else {
+        e.preventDefault();
+        const yv = document.getElementById("yearViewContainer");
+        yv.style.display === "block" ? hideYearView() : showYearView();
       }
-      switch (e.key) {
-        case "Escape":
-          if (document.getElementById("help").style.display === "block") {
-            hideHelp();
-            return;
-          }
-          if (document.getElementById("yearViewContainer").style.display === "block") {
-            hideYearView();
-            return;
-          }
-          if (isSelectingRange) {
-            clearRangeSelection();
-            isSelectingRange = false;
-            showToast("Range selection cancelled");
-            return;
-          }
-          if (keyboardFocusDate) {
-            keyboardFocusDate = null;
-            document.body.classList.remove('keyboard-nav-active');
-            document.querySelectorAll('.keyboard-focus').forEach(el => el.classList.remove('keyboard-focus'));
-            showToast("Keyboard navigation mode deactivated");
-          }
-          break;
-        case "?":
-          e.preventDefault();
-          const helpElem = document.getElementById("help");
-          helpElem.style.display === "block" ? hideHelp() : showHelp();
-          break;
-        case "i":
-          e.preventDefault();
-          toggleKeyboardNavMode();
-          break;
-        case "q":
-        case "Q":
-          if (keyboardFocusDate) {
-            e.preventDefault();
-            keyboardFocusDate = null;
-            document.body.classList.remove('keyboard-nav-active');
-            document.querySelectorAll('.keyboard-focus').forEach(el => el.classList.remove('keyboard-focus'));
-            showToast("Keyboard navigation mode deactivated");
-          }
-          break;
-        case "z":
-        case "Z":
-          if (e.ctrlKey && e.shiftKey) {
-            e.preventDefault();
-            redoLastChange();
-          } else if (e.ctrlKey || e.metaKey) {
-            e.preventDefault();
-            undoLastChange();
-          } else {
-            e.preventDefault();
-            undoLastChange();
-          }
-          break;
-        case "y":
-        case "Y":
-          if (e.ctrlKey || e.metaKey) {
-            e.preventDefault();
-            redoLastChange();
-          } else {
-            e.preventDefault();
-            const yv = document.getElementById("yearViewContainer");
-            yv.style.display === "block" ? hideYearView() : showYearView();
-          }
-          break;
-        case "g":
-        case "G":
-          e.preventDefault();
-          const jump = document.getElementById("jumpDate");
-          if (jump) {
-            jump.focus();
-          }
-          break;
-        case "ArrowLeft":
-          e.preventDefault();
-          stepDay(-1);
-          break;
-        case "ArrowRight":
-          e.preventDefault();
-          stepDay(1);
-          break;
-        case "ArrowUp":
-          if (e.altKey) {
-            e.preventDefault();
-            jumpOneMonthBackward();
-          } else if (keyboardFocusDate) {
-            e.preventDefault();
-            stepDay(-7);
-          }
-          break;
-        case "ArrowDown":
-          if (e.altKey) {
-            e.preventDefault();
-            jumpOneMonthForward();
-          } else if (keyboardFocusDate) {
-            e.preventDefault();
-            stepDay(7);
-          }
-          break;
-        case "Enter":
-          e.preventDefault();
-          createEventInFocusedDay();
-          break;
-        case "Delete":
-        case "Backspace":
-          e.preventDefault();
-          deleteEntriesForFocusedDay();
-          break;
-        case "t":
-        case "T":
-          todayDate = new Date(systemToday);
-          loadCalendarAroundDate(todayDate);
-          break;
-        default:
-          if ((e.ctrlKey || e.metaKey) && e.key === "d" && !e.shiftKey && !e.altKey) {
-            e.preventDefault();
-            toggleDarkMode();
-          }
-          break;
+      break;
+    case "g":
+    case "G":
+      e.preventDefault();
+      const jump = document.getElementById("jumpDate");
+      if (jump) {
+        jump.focus();
       }
-    });
+      break;
+    case "ArrowLeft":
+      e.preventDefault();
+      stepDay(-1);
+      break;
+    case "ArrowRight":
+      e.preventDefault();
+      stepDay(1);
+      break;
+    case "ArrowUp":
+      if (e.altKey) {
+        e.preventDefault();
+        jumpOneMonthBackward();
+      } else if (keyboardFocusDate) {
+        e.preventDefault();
+        stepDay(-7);
+      }
+      break;
+    case "ArrowDown":
+      if (e.altKey) {
+        e.preventDefault();
+        jumpOneMonthForward();
+      } else if (keyboardFocusDate) {
+        e.preventDefault();
+        stepDay(7);
+      }
+      break;
+    case "Enter":
+      e.preventDefault();
+      createEventInFocusedDay();
+      break;
+    case "Delete":
+    case "Backspace":
+      e.preventDefault();
+      deleteEntriesForFocusedDay();
+      break;
+    case "t":
+    case "T":
+      todayDate = new Date(systemToday);
+      loadCalendarAroundDate(todayDate);
+      break;
+    default:
+      if ((e.ctrlKey || e.metaKey) && e.key === "d" && !e.shiftKey && !e.altKey) {
+        e.preventDefault();
+        toggleDarkMode();
+      }
+      break;
+  }
+});
 
     document.addEventListener("click", evt => {
       const dayCell = evt.target.closest("td");
