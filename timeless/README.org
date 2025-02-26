@@ -171,6 +171,51 @@ In this release, Timeless not only remains a continuous calendar but also become
 ** Expanded Header with Increased Whitespace
 - *Larger Header:* The top month and year header has been enlarged, featuring a bigger font size and extra vertical padding.
 - *Improved Readability:* Additional whitespace above and below the header creates a more spacious, visually appealing layout that immediately draws attention to the current period.
+
+* New enhancements
+What You've Enhanced & Suggestions for Further Improvements
+ 1. New Color & Semantic Palette:
+- You've defined a set of semantic colors (primary, secondary, success, info, warning, danger) and then tied your core variables (e.g. --bg-primary, --accent) to them. This makes the theme more intentional and flexible.
+- Suggestion: You might consider standardizing names (e.g. using either "accent" or "color-primary" consistently) to avoid redundancy.
+ 2. Custom Scrollbar Styling:
+- The new scrollbar rules give a subtle, modern look.
+- Suggestion: Test in various browsers to ensure the effect works well on non-WebKit browsers.
+ 3. Enhanced Mini-Calendar:
+- Your new mini-calendar styling adds extra padding, a frosted (blurred) background, rounded corners, and a soft box-shadow---making it visually distinct and modern.
+- Suggestion: If you want to revert these changes (see next section), you can restore the original minimal styling.
+ 4. Sticky Header Improvements:
+- Increasing the opacity (from 80% to 95%) and using a solid background for the sticky header greatly improves legibility.
+- The larger font and extra vertical padding for the month heading also add clarity and elegance.
+ 5. Dynamic Animations & Effects:
+- You've refined the hover effects for calendar cells (with perspective transforms, subtle shadows, and a "shine" effect on month boundaries).
+- The updated "today" pulse animation with custom keyframes makes the current day stand out without being overwhelming.
+ 6. Enhanced Help Overlay:
+- The help overlay now has increased dimensions, extra padding, rounded corners, and a backdrop blur---making it easier to read and more visually appealing.
+ 7. Additional UI Touches:
+- Animated button icons and a refined loading spinner contribute to a modern, polished feel.
+- Adding tag detection (processing hashtags in notes) is a clever usability and visual enhancement.
+ 8. Keyboard Navigation Mode:
+- The new keyboard navigation mode---toggled via the "i" key, with "q" (or Escape) to exit---provides a clear, dedicated mode for day-by-day navigation.
+- The visual indication (via a body outline) and toast messages make the mode change clear to users.
+
+Below is an example README section describing the new "Download Org-Mode Events" feature, along with an update to the help information:
+
+Download Org-Mode Events
+
+The new Download Org-Mode Events feature allows you to quickly export your upcoming events in a format that is compatible with Emacs Org-mode. When you click the download button, the calendar will scan for events starting from today through the next month and generate a plain text file named timeless-calendar-events.org. The export will include only those dates that have entries, and each date is formatted in the standard Org-mode timestamp style.
+
+Note: Dates with no events are omitted from the export.
+
+Additionally, when you download the events the output is automatically copied to the MacOS clipboard for easy pasting into your Org-mode files.
+
+How It Works
+ - Button: A new button with a download icon (an SVG icon is provided) is added to the header.
+ - Function: Clicking the button triggers the downloadOrgEvents() function, which gathers the event data, formats it according to the Org-mode structure described above, and then:
+ - Saves the output to a file named timeless-calendar-events.org.
+ - Copies the output text to your MacOS clipboard.
+
+By including this functionality, you can easily integrate your calendar events into your Org-mode workflow for better planning and task management.
+
 * Getting Started
 ** Non-expert users
 Simply visit: [[https://incandescentman.github.io/timeless/][Timeless: The Infinitely Scrolling Calendar 🌏🚀]]
