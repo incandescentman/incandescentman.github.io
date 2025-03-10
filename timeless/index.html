@@ -14,57 +14,57 @@
   <style>
     /* CSS Variables for consistent theming */
     :root {
-     --today-gradient-from: rgba(229, 62, 62, 0.9);
-     --today-gradient-to: rgba(197, 48, 48, 0.9);
-     --border-width: 1px;
-     --border-color: black;
-     --header-height: 27px;
-     --shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-     --cell-min-height: 120px;
+    --today-gradient-from: rgba(229, 62, 62, 0.9);
+    --today-gradient-to: rgba(197, 48, 48, 0.9);
+    --border-width: 1px;
+    --border-color: black;
+    --header-height: 27px;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    --cell-min-height: 120px;
       /* Color Palette for Light Mode */
-     --color-primary: #4361ee;
-     --color-secondary: #ff6b6b;
-     --color-success: #2ecc71;
-     --color-info: #3498db;
-     --color-warning: #f39c12;
-     --color-danger: #e74c3c;
-     --color-light: #f8f9fa;
-     --color-dark: #343a40;
+    --color-primary: #4361ee;
+    --color-secondary: #ff6b6b;
+    --color-success: #2ecc71;
+    --color-info: #3498db;
+    --color-warning: #f39c12;
+    --color-danger: #e74c3c;
+    --color-light: #f8f9fa;
+    --color-dark: #343a40;
       /* Semantic color variables */
-     --bg-primary: #f8f9fa;
-     --bg-pattern: #e0e5ec;
-     --text-primary: #333;
-     --accent: var(--color-primary);
-     --weekend-gradient-from: #f0f5f9;
-     --weekend-gradient-to: #d9e2ec;
-     --shaded-month: #e6f7ff;
-     --month-boundary: #bbb;
-     --header-gradient-from: transparent;
-     --header-gradient-to: transparent;
-     --header-solid-bg: rgba(255,255,255,0.95);
-     --month-heading-bg: rgba(255,255,255,0.95);
-     --month-heading-text: #333;
+    --bg-primary: #f8f9fa;
+    --bg-pattern: #e0e5ec;
+    --text-primary: #333;
+    --accent: var(--color-primary);
+    --weekend-gradient-from: #f0f5f9;
+    --weekend-gradient-to: #d9e2ec;
+    --shaded-month: #e6f7ff;
+    --month-boundary: #bbb;
+    --header-gradient-from: transparent;
+    --header-gradient-to: transparent;
+    --header-solid-bg: rgba(255,255,255,0.95);
+    --month-heading-bg: rgba(255,255,255,0.95);
+    --month-heading-text: #333;
       /* Typography */
-     --font-month-heading: 'Playfair Display', serif;
-     --font-day-number: 'Fira Code', monospace;
+    --font-month-heading: 'Playfair Display', serif;
+    --font-day-number: 'Fira Code', monospace;
     }
 
     /* Dark mode colors */
     body.dark-mode {
-     --bg-primary: #222;
-     --bg-pattern: rgba(255,255,255,0.05);
-     --text-primary: #eee;
-     --weekend-gradient-from: #303542;
-     --weekend-gradient-to: #232731;
-     --shaded-month: #2a2a2a;
-     --today-gradient-from: rgba(229, 62, 62, 0.8);
-     --today-gradient-to: rgba(197, 48, 48, 0.8);
-     --month-boundary: #555;
-     --header-gradient-from: #2c3e50;
-     --header-gradient-to: #1a1a2e;
-     --header-solid-bg: rgba(40, 40, 40, 0.95);
-     --month-heading-bg: #2c2c2c;
-     --month-heading-text: #ddd;
+    --bg-primary: #222;
+    --bg-pattern: rgba(255,255,255,0.05);
+    --text-primary: #eee;
+    --weekend-gradient-from: #303542;
+    --weekend-gradient-to: #232731;
+    --shaded-month: #2a2a2a;
+    --today-gradient-from: rgba(229, 62, 62, 0.8);
+    --today-gradient-to: rgba(197, 48, 48, 0.8);
+    --month-boundary: #555;
+    --header-gradient-from: #2c3e50;
+    --header-gradient-to: #1a1a2e;
+    --header-solid-bg: rgba(40, 40, 40, 0.95);
+    --month-heading-bg: #2c2c2c;
+    --month-heading-text: #ddd;
     }
 
     /* Base styles + animated dot grid background */
@@ -179,8 +179,7 @@
     #miniCalendar {
       position: fixed;
       left: 10px;
-top: 120px;
-
+      top: 120px;
       padding: 10px;
       border-radius: 5px;
       background: transparent;
@@ -382,8 +381,8 @@ top: 120px;
       border-radius: 10px;
       padding: 1px;
       background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(255,255,255,0.2));
-     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-     -webkit-mask-composite: xor;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
       mask-composite: exclude;
       pointer-events: none;
     }
@@ -428,19 +427,7 @@ top: 120px;
     tr.month-boundary td:not(.extra) {
       border-top: 2px solid var(--month-boundary) !important;
     }
-   /* tr.month-boundary::after {
-      content: '';
-      position: absolute;
-      left: 0; right: 0; top: 0;
-      height: 2px;
-      background: linear-gradient(90deg, transparent, var(--month-boundary), transparent);
-      animation: shineEffect 2s infinite;
-      } */
-    @keyframes shineEffect {
-      0% { opacity: 0.2; transform: translateX(-100%); }
-      50% { opacity: 1; transform: translateX(0); }
-      100% { opacity: 0.2; transform: translateX(100%); }
-    }
+
     @keyframes pulseToday {
       0% { box-shadow: 0 0 0 0 rgba(var(--today-gradient-from-rgb), 0.4); }
       50% { box-shadow: 0 0 15px 10px rgba(var(--today-gradient-from-rgb), 0.2); }
@@ -462,31 +449,25 @@ top: 120px;
       display: inline-block;
       margin-bottom: 8px;
     }
-#calendar td.extra {
-  font-family: var(--font-month-heading);
-  font-size: 22px;
-  line-height: 1.2;
-  color: #000;
-  opacity: 0.8;
-  font-weight: 400;
-  padding: 0 0 0 15px;
-  vertical-align: middle;
-  box-shadow: none;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-
-  /* Increase width (was 120px). */
-  width: 180px;
-
-  /* Force text to stay on one line. */
-  white-space: nowrap;
-
-  text-align: left;
-  border: none;
-  cursor: auto;
-  min-height: var(--cell-min-height);
-  height: var(--cell-min-height);
-}
-
+    #calendar td.extra {
+      font-family: var(--font-month-heading);
+      font-size: 22px;
+      line-height: 1.2;
+      color: #000;
+      opacity: 0.8;
+      font-weight: 400;
+      padding: 0 0 0 15px;
+      vertical-align: middle;
+      box-shadow: none;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      width: 180px;
+      white-space: nowrap;
+      text-align: left;
+      border: none;
+      cursor: auto;
+      min-height: var(--cell-min-height);
+      height: var(--cell-min-height);
+    }
     #calendar td.extra:hover {
       opacity: 1;
       transform: translateY(0) scale(1.02);
@@ -536,7 +517,7 @@ top: 120px;
       animation: selectDay 0.3s ease-out;
       box-shadow: 0 0 0 2px var(--accent);
     }
-    /* Ripple effect on cell click with refined animation */
+    /* Ripple effect on cell click */
     @keyframes ripple {
       from { transform: scale(0); opacity: 0.6; }
       to   { transform: scale(2.5); opacity: 0; }
@@ -989,7 +970,7 @@ top: 120px;
     }
     @media (max-width:768px) {
       :root {
-       --cell-min-height: 100px;
+      --cell-min-height: 100px;
       }
       #stickyMonthHeader {
         font-size: 24px;
@@ -1117,13 +1098,21 @@ top: 120px;
         </svg>
       </a>
 
+      <!-- Export Emacs Diary (arrow UP) -->
+      <a href="#" class="button" onclick="downloadMarkdownEvents()" data-tooltip="Export Emacs Diary">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <!-- Arrow pointing upward, plus horizontal bar at the bottom -->
+          <path d="M12 16l4-4h-3V4h-2v8H8l4 4zm-7 2h14v2H5v-2z"/>
+        </svg>
+      </a>
 
-<a href="#" class="button" onclick="downloadOrgEvents()" data-tooltip="Download as Text">
-  <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-    <path d="M12 16l4-4h-3V4h-2v8H8l4 4zm-7 2h14v2H5v-2z"/>
-  </svg>
-</a>
-
+      <!-- Import from Emacs Diary (arrow DOWN) -->
+      <a href="#" class="button" onclick="importFromDiaryFile()" data-tooltip="Import from Emacs Diary">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <!-- Exact vertical mirror of the above arrow, with the bar at the top -->
+          <path d="M12 8l4 4h-3v8h-2v-8H8l4-4zm-7-2h14v2H5v-2z"/>
+        </svg>
+      </a>
       <a href="#" class="button" onclick="showHelp()" data-tooltip="Help">
         <svg class="icon" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" fill="none"/>
@@ -1160,8 +1149,7 @@ top: 120px;
         <li>Press <code>t</code> to jump to Today</li>
         <li>Press <code>Ctrl+D</code> to toggle dark mode</li>
         <li>Use the Date Range button (📏) to select a range of dates</li>
-        <li>
-          Press <kbd>Shift+D</kbd> to download upcoming events as text</li>
+        <li>Press <kbd>Shift+D</kbd> to download upcoming events as Markdown</li>
         <li>Press <code>?</code> to toggle this help overlay</li>
         <li>Press <code>Esc</code> to close overlays or cancel range selection (and exit keyboard navigation mode)</li>
         <li>Press <code>g</code> to focus the "Jump to date" field</li>
@@ -1261,16 +1249,22 @@ top: 120px;
       requestAnimationFrame(() => { toast.style.opacity = '1'; });
       setTimeout(() => {
         toast.style.opacity = '0';
-        setTimeout(() => { if (toastContainer.contains(toast)) toastContainer.removeChild(toast); }, 300);
+        setTimeout(() => {
+          if (toastContainer.contains(toast)) toastContainer.removeChild(toast);
+        }, 300);
       }, duration);
     }
     function documentScrollTop() { return Math.max(document.body.scrollTop, document.documentElement.scrollTop); }
     function documentScrollHeight() { return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight); }
-    function curve(x) { return (x < 0.5) ? (4 * x*x*x) : (1 - 4*(1 - x)*(1 - x)*(1 - x)); }
+    function curve(x) {
+      return (x < 0.5) ? (4 * x*x*x) : (1 - 4*(1 - x)*(1 - x)*(1 - x));
+    }
     function scrollAnimation() {
       const percent = (new Date() - startTime) / 1000;
-      if (percent > 1) { window.scrollTo(0, goalY); hideLoading(); }
-      else {
+      if (percent > 1) {
+        window.scrollTo(0, goalY);
+        hideLoading();
+      } else {
         const newY = Math.round(startY + (goalY - startY)*curve(percent));
         window.scrollTo(0, newY);
         setTimeout(scrollAnimation, 10);
@@ -1436,7 +1430,7 @@ top: 120px;
       }
     }
 
-   function noteKeyDownHandler(e) {
+    function noteKeyDownHandler(e) {
       recalculateHeight(this.id);
       if (e.ctrlKey || e.metaKey) {
         switch(e.key) {
@@ -1610,8 +1604,6 @@ top: 120px;
       section.style.padding = "5px";
       section.style.borderRadius = "5px";
 
-      // (REMOVED minHeight = "130px";)
-
       const monthHeader = document.createElement("div");
       monthHeader.textContent = months[month] + " " + year;
       monthHeader.style.textAlign = "center";
@@ -1646,8 +1638,6 @@ top: 120px;
       }
 
       const daysInMonth = new Date(year, month + 1, 0).getDate();
-
-      // Only create as many cells as needed for the actual days:
       for (let d = 1; d <= daysInMonth; d++) {
         const cell = document.createElement("div");
         cell.style.fontSize = '10px';
@@ -1669,7 +1659,6 @@ top: 120px;
         });
         grid.appendChild(cell);
       }
-
       section.appendChild(grid);
       container.appendChild(section);
     }
@@ -2211,177 +2200,182 @@ top: 120px;
       }
     }
 
-document.addEventListener("keydown", e => {
-  if (
-    e.target &&
-    (e.target.tagName.toLowerCase() === "textarea" || e.target.tagName.toLowerCase() === "input")
-  ) {
-    return;
-  }
-  // Command palette shortcuts:
-  if ((e.key === 'k' && (e.metaKey || e.ctrlKey)) || e.key === '/') {
-    e.preventDefault();
-    showCommandPalette();
-    return;
-  }
-  // Quick date popup
-  if (e.key === 'd' && !e.ctrlKey && !e.metaKey && !e.altKey) {
-    e.preventDefault();
-    showQuickDateInput();
-    return;
-  }
-  // Multi-select
-  if (e.key === 'm') {
-    e.preventDefault();
-    toggleMultiSelectMode();
-    return;
-  }
-  if (isMultiSelectMode) {
-    if (e.key === ' ') {
-      e.preventDefault();
-      toggleDaySelection();
-      return;
-    } else if (e.key === 'c' && e.ctrlKey) {
-      e.preventDefault();
-      performBatchAction('clear');
-      return;
-    } else if (e.key === 'n' && e.ctrlKey) {
-      e.preventDefault();
-      performBatchAction('add');
-      return;
-    }
-  }
-  // Check for Shift+D to download Org events
-  if (e.key === "D" && e.shiftKey && !e.ctrlKey && !e.altKey && !e.metaKey) {
-    e.preventDefault();
-    downloadOrgEvents();
-    return;
-  }
-  switch (e.key) {
-    case "Escape":
-      if (document.getElementById("help").style.display === "block") {
-        hideHelp();
+    document.addEventListener("keydown", e => {
+      if (
+        e.target &&
+        (e.target.tagName.toLowerCase() === "textarea" || e.target.tagName.toLowerCase() === "input")
+      ) {
         return;
       }
-      if (document.getElementById("yearViewContainer").style.display === "block") {
-        hideYearView();
+      // Command palette shortcuts:
+      if ((e.key === 'k' && (e.metaKey || e.ctrlKey)) || e.key === '/') {
+        e.preventDefault();
+        showCommandPalette();
         return;
       }
-      if (isSelectingRange) {
-        clearRangeSelection();
-        isSelectingRange = false;
-        showToast("Range selection cancelled");
+      // Quick date popup
+      if (e.key === 'd' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+        e.preventDefault();
+        showQuickDateInput();
         return;
       }
-      if (keyboardFocusDate) {
-        keyboardFocusDate = null;
-        document.body.classList.remove('keyboard-nav-active');
-        document.querySelectorAll('.keyboard-focus').forEach(el => el.classList.remove('keyboard-focus'));
-        showToast("Keyboard navigation mode deactivated");
+      // Multi-select
+      if (e.key === 'm') {
+        e.preventDefault();
+        toggleMultiSelectMode();
+        return;
       }
-      break;
-    case "?":
-      e.preventDefault();
-      const helpElem = document.getElementById("help");
-      helpElem.style.display === "block" ? hideHelp() : showHelp();
-      break;
-    case "i":
-      e.preventDefault();
-      // Only activate keyboard navigation if not already active.
-      if (!document.body.classList.contains('keyboard-nav-active')) {
-        toggleKeyboardNavMode();
+      if (isMultiSelectMode) {
+        if (e.key === ' ') {
+          e.preventDefault();
+          toggleDaySelection();
+          return;
+        } else if (e.key === 'c' && e.ctrlKey) {
+          e.preventDefault();
+          performBatchAction('clear');
+          return;
+        } else if (e.key === 'n' && e.ctrlKey) {
+          e.preventDefault();
+          performBatchAction('add');
+          return;
+        }
       }
-      break;
-    case "q":
-    case "Q":
-      if (keyboardFocusDate) {
-        e.preventDefault();
-        keyboardFocusDate = null;
-        document.body.classList.remove('keyboard-nav-active');
-        document.querySelectorAll('.keyboard-focus').forEach(el => el.classList.remove('keyboard-focus'));
-        showToast("Keyboard navigation mode deactivated");
+
+      // NEW SHIFT+D => Download in Markdown:
+       if (e.key === "D" && e.shiftKey && !e.ctrlKey && !e.altKey && !e.metaKey) {
+          e.preventDefault();
+          downloadMarkdownEvents();
+          return;
+       }
+
+
+
+      switch (e.key) {
+        case "Escape":
+          if (document.getElementById("help").style.display === "block") {
+            hideHelp();
+            return;
+          }
+          if (document.getElementById("yearViewContainer").style.display === "block") {
+            hideYearView();
+            return;
+          }
+          if (isSelectingRange) {
+            clearRangeSelection();
+            isSelectingRange = false;
+            showToast("Range selection cancelled");
+            return;
+          }
+          if (keyboardFocusDate) {
+            keyboardFocusDate = null;
+            document.body.classList.remove('keyboard-nav-active');
+            document.querySelectorAll('.keyboard-focus').forEach(el => el.classList.remove('keyboard-focus'));
+            showToast("Keyboard navigation mode deactivated");
+          }
+          break;
+        case "?":
+          e.preventDefault();
+          const helpElem = document.getElementById("help");
+          helpElem.style.display === "block" ? hideHelp() : showHelp();
+          break;
+        case "i":
+          e.preventDefault();
+          // Only activate keyboard navigation if not already active.
+          if (!document.body.classList.contains('keyboard-nav-active')) {
+            toggleKeyboardNavMode();
+          }
+          break;
+        case "q":
+        case "Q":
+          if (keyboardFocusDate) {
+            e.preventDefault();
+            keyboardFocusDate = null;
+            document.body.classList.remove('keyboard-nav-active');
+            document.querySelectorAll('.keyboard-focus').forEach(el => el.classList.remove('keyboard-focus'));
+            showToast("Keyboard navigation mode deactivated");
+          }
+          break;
+        case "z":
+        case "Z":
+          if (e.ctrlKey && e.shiftKey) {
+            e.preventDefault();
+            redoLastChange();
+          } else if (e.ctrlKey || e.metaKey) {
+            e.preventDefault();
+            undoLastChange();
+          } else {
+            e.preventDefault();
+            undoLastChange();
+          }
+          break;
+        case "y":
+        case "Y":
+          if (e.ctrlKey || e.metaKey) {
+            e.preventDefault();
+            redoLastChange();
+          } else {
+            e.preventDefault();
+            const yv = document.getElementById("yearViewContainer");
+            yv.style.display === "block" ? hideYearView() : showYearView();
+          }
+          break;
+        case "g":
+        case "G":
+          e.preventDefault();
+          const jump = document.getElementById("jumpDate");
+          if (jump) {
+            jump.focus();
+          }
+          break;
+        case "ArrowLeft":
+          e.preventDefault();
+          stepDay(-1);
+          break;
+        case "ArrowRight":
+          e.preventDefault();
+          stepDay(1);
+          break;
+        case "ArrowUp":
+          if (e.altKey) {
+            e.preventDefault();
+            jumpOneMonthBackward();
+          } else if (keyboardFocusDate) {
+            e.preventDefault();
+            stepDay(-7);
+          }
+          break;
+        case "ArrowDown":
+          if (e.altKey) {
+            e.preventDefault();
+            jumpOneMonthForward();
+          } else if (keyboardFocusDate) {
+            e.preventDefault();
+            stepDay(7);
+          }
+          break;
+        case "Enter":
+          e.preventDefault();
+          createEventInFocusedDay();
+          break;
+        case "Delete":
+        case "Backspace":
+          e.preventDefault();
+          deleteEntriesForFocusedDay();
+          break;
+        case "t":
+        case "T":
+          todayDate = new Date(systemToday);
+          loadCalendarAroundDate(todayDate);
+          break;
+        default:
+          // Toggle dark mode with Ctrl+D
+          if ((e.ctrlKey || e.metaKey) && e.key === "d" && !e.shiftKey && !e.altKey) {
+            e.preventDefault();
+            toggleDarkMode();
+          }
+          break;
       }
-      break;
-    case "z":
-    case "Z":
-      if (e.ctrlKey && e.shiftKey) {
-        e.preventDefault();
-        redoLastChange();
-      } else if (e.ctrlKey || e.metaKey) {
-        e.preventDefault();
-        undoLastChange();
-      } else {
-        e.preventDefault();
-        undoLastChange();
-      }
-      break;
-    case "y":
-    case "Y":
-      if (e.ctrlKey || e.metaKey) {
-        e.preventDefault();
-        redoLastChange();
-      } else {
-        e.preventDefault();
-        const yv = document.getElementById("yearViewContainer");
-        yv.style.display === "block" ? hideYearView() : showYearView();
-      }
-      break;
-    case "g":
-    case "G":
-      e.preventDefault();
-      const jump = document.getElementById("jumpDate");
-      if (jump) {
-        jump.focus();
-      }
-      break;
-    case "ArrowLeft":
-      e.preventDefault();
-      stepDay(-1);
-      break;
-    case "ArrowRight":
-      e.preventDefault();
-      stepDay(1);
-      break;
-    case "ArrowUp":
-      if (e.altKey) {
-        e.preventDefault();
-        jumpOneMonthBackward();
-      } else if (keyboardFocusDate) {
-        e.preventDefault();
-        stepDay(-7);
-      }
-      break;
-    case "ArrowDown":
-      if (e.altKey) {
-        e.preventDefault();
-        jumpOneMonthForward();
-      } else if (keyboardFocusDate) {
-        e.preventDefault();
-        stepDay(7);
-      }
-      break;
-    case "Enter":
-      e.preventDefault();
-      createEventInFocusedDay();
-      break;
-    case "Delete":
-    case "Backspace":
-      e.preventDefault();
-      deleteEntriesForFocusedDay();
-      break;
-    case "t":
-    case "T":
-      todayDate = new Date(systemToday);
-      loadCalendarAroundDate(todayDate);
-      break;
-    default:
-      if ((e.ctrlKey || e.metaKey) && e.key === "d" && !e.shiftKey && !e.altKey) {
-        e.preventDefault();
-        toggleDarkMode();
-      }
-      break;
-  }
-});
+    });
 
     document.addEventListener("click", evt => {
       const dayCell = evt.target.closest("td");
@@ -2817,99 +2811,177 @@ document.addEventListener("keydown", e => {
       }, 300);
     }
 
+    /* ---------------------
+       NEW MARKDOWN EXPORT
+   ---------------------- */
 
-function downloadOrgEvents() {
-  // Define the export range: starting today to one month from today.
-  let startDate = new Date();
-  startDate.setHours(0, 0, 0, 0);
-  let endDate = new Date(startDate);
-  endDate.setMonth(endDate.getMonth() + 1);
+// 1) Helper functions you requested:
+// For serializing a directory handle to a string:
+async function serializeDirectoryHandle(dirHandle) {
+  // Request read/write permission if not already granted:
+  await dirHandle.requestPermission({ mode: "readwrite" });
+  // We'll just store the directory's "name", but that won't actually let us re-hydrate
+  // the handle. You truly need "structuredClone" support in an IndexedDB approach.
+  return JSON.stringify({
+    name: dirHandle.name,
+    // (If we had a stable way to store the actual handle in localStorage, we would do it here.)
+  });
+}
 
-  // Start with an empty string for the event output.
-  let orgText = "";
-  let currentDate = new Date(startDate);
-  let currentMonthYear = "";
+// For re-creating the handle from a string:
+async function restoreDirectoryHandle(str) {
+  // Even if we parse the name, there's no official standard to resurrect the real handle.
+  // This function intentionally throws an error as a reminder:
+  throw new Error("In practice, you must store FileSystemDirectoryHandle in IndexedDB for re-hydration!");
+}
 
-  // Iterate day-by-day through the range.
-  while (currentDate <= endDate) {
-    // Get the cell id (using your existing idForDate function)
-    const cellId = idForDate(currentDate);
-    // Look up events stored under this cell's id.
-    const eventList = localStorage[cellId];
-    // Only output the date if there are events.
-    if (eventList) {
-      // If this date's month/year is new, output a new month header.
-      const monthYear = currentDate.toLocaleDateString("en-US", {
-        month: "long",
-        year: "numeric"
-      });
-      if (monthYear !== currentMonthYear) {
-        orgText += `* ${monthYear}\n`;
-        currentMonthYear = monthYear;
-      }
-
-      // Format the date in org-mode format: <YYYY-MM-DD DDD>
-      const year = currentDate.getFullYear();
-      const month = String(currentDate.getMonth() + 1).padStart(2, '0');
-      const day = String(currentDate.getDate()).padStart(2, '0');
-      const dayAbbr = currentDate.toLocaleDateString("en-US", { weekday: "short" });
-      const formattedDate = `<${year}-${month}-${day} ${dayAbbr}>`;
-
-      orgText += `** ${formattedDate}\n`;
-
-      // Get the stored event IDs (comma-separated) and list each event.
-      const eventIds = eventList.split(",");
-      eventIds.forEach(eventId => {
-        const eventText = localStorage[eventId];
-        if (eventText && eventText.trim() !== "") {
-          orgText += `- ${eventText.trim()}\n`;
+// 2) Your existing function, updated to attempt writing directly to a chosen directory:
+async function downloadMarkdownEvents() {
+  // 1) Gather date => [events] from localStorage
+  const dateMap = {};
+  for (let key in localStorage) {
+    if (!localStorage.hasOwnProperty(key)) continue;
+    if (/^\d+_\d+_\d+$/.test(key)) {
+      const itemIds = localStorage[key].split(",");
+      const events = [];
+      for (let eid of itemIds) {
+        const text = localStorage[eid];
+        if (text && text.trim() !== "") {
+          events.push(text.trim());
         }
-      });
-      orgText += "\n"; // Blank line after each day.
+      }
+      if (events.length > 0) {
+        dateMap[key] = events;
+      }
     }
-    // Move to the next day.
-    currentDate.setDate(currentDate.getDate() + 1);
   }
 
-  // Append the settings block at the end.
-  orgText += `* settings :noexport:
-# Customize timestamp formats for this file
-# Local Variables:
-# org-time-stamp-custom-formats: ("%a %b %d" . "<%d/%m/%Y %a %H:%M>")
-# End:
-`;
+  // 2) Build a structure: structured[year][monthIndex] = [{ day, events }]
+  const structured = {};
+  for (let dateKey in dateMap) {
+    const [m, d, y] = dateKey.split("_").map(Number);
+    const dt = new Date(y, m, d);
+    const year = dt.getFullYear();
+    const month = dt.getMonth();
+    const day = dt.getDate();
 
-  // Create a Blob from the output text and trigger the download.
-  const blob = new Blob([orgText], { type: "text/plain;charset=utf-8" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "timeless-calendar-events.org";
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
-  showToast("Org-mode events downloaded!");
+    if (!structured[year]) {
+      structured[year] = {};
+    }
+    if (!structured[year][month]) {
+      structured[year][month] = [];
+    }
+    structured[year][month].push({ day, events: dateMap[dateKey] });
+  }
 
-  // Also copy the output to the clipboard using the Clipboard API.
+  // We'll output lines with headings for each year/month,
+  // plus the day lines and "  - " prefix for events.
+  const months = [
+    "January","February","March","April","May","June",
+    "July","August","September","October","November","December"
+  ];
+  const years = Object.keys(structured).map(Number).sort((a, b) => a - b);
+
+  let mdLines = [];
+
+  // 3) For each year, push "# YEAR"
+  for (let y of years) {
+    mdLines.push(`# ${y}`);
+    // Sort the month's keys (0..11) ascending
+    const monthsInYear = Object.keys(structured[y]).map(Number).sort((a, b) => a - b);
+
+    for (let m of monthsInYear) {
+      // Month heading: "## MonthName YEAR"
+      mdLines.push(`## ${months[m]} ${y}`);
+
+      // Sort days ascending
+      structured[y][m].sort((a, b) => a.day - b.day);
+
+      // For each day, lines like:
+      // "2/18/2025"
+      //   - Fly to SF
+      structured[y][m].forEach(obj => {
+        const dayStr = `${m + 1}/${obj.day}/${y}`;
+        mdLines.push(dayStr);
+        obj.events.forEach(ev => {
+          // Two spaces, then dash => "  - "
+          mdLines.push(`  - ${ev}`);
+        });
+        // Blank line after each day block
+        mdLines.push("");
+      });
+    }
+  }
+
+  // 4) Convert lines to text
+  const finalText = mdLines.join("\n");
+
+  // Check if we have a stored directory handle in localStorage
+  let dirHandle = null;
+  const stored = localStorage.getItem("myDirectoryHandle");
+  if (stored) {
+    // Attempt to restore it
+    try {
+      dirHandle = await restoreDirectoryHandle(stored);
+      // If we get here without error, request permission
+      const perm = await dirHandle.requestPermission({ mode: "readwrite" });
+      if (perm !== "granted") {
+        throw new Error("Permission was not granted for readwrite");
+      }
+    } catch (err) {
+      console.warn("Failed to restore directory handle from storage:", err);
+      dirHandle = null;
+    }
+  }
+
+  // If we have no valid handle, ask user to pick a directory:
+  if (!dirHandle) {
+    try {
+      dirHandle = await window.showDirectoryPicker();
+      const perm = await dirHandle.requestPermission({ mode: "readwrite" });
+      if (perm !== "granted") {
+        showToast("Cannot save without write permission");
+        return;
+      }
+      // Serialize it (though it won't truly re-hydrate from localStorage)
+      const serialized = await serializeDirectoryHandle(dirHandle);
+      localStorage.setItem("myDirectoryHandle", serialized);
+    } catch (err) {
+      console.error("User canceled picking directory or permission denied:", err);
+      showToast("Canceled or no permission to pick directory");
+      return;
+    }
+  }
+
+  // Now write "jay-diary.md" to the chosen directory:
+  try {
+    const fileHandle = await dirHandle.getFileHandle("jay-diary.md", { create: true });
+    const writable = await fileHandle.createWritable();
+    await writable.write(finalText);
+    await writable.close();
+    showToast("Saved 'jay-diary.md' to your chosen folder!");
+  } catch (err) {
+    console.error("Error writing file:", err);
+    showToast("Error writing file to directory");
+  }
+
+  // 5) Optionally copy to clipboard
   if (navigator.clipboard && window.isSecureContext) {
-    navigator.clipboard.writeText(orgText)
-      .then(() => showToast("Org-mode events copied to clipboard!"))
-      .catch(err => console.error("Failed to copy to clipboard:", err));
+    navigator.clipboard.writeText(finalText)
+      .then(() => showToast("Markdown events copied to clipboard!"))
+      .catch(err => console.error("Clipboard copy failed:", err));
   } else {
-    // Fallback for insecure contexts.
-    let textArea = document.createElement("textarea");
-    textArea.value = orgText;
+    // fallback if insecure context
+    const textArea = document.createElement("textarea");
+    textArea.value = finalText;
     textArea.style.position = "fixed";
-    textArea.style.top = "0";
-    textArea.style.left = "0";
     textArea.style.opacity = "0";
     document.body.appendChild(textArea);
     textArea.focus();
     textArea.select();
     try {
       document.execCommand("copy");
-      showToast("Org-mode events copied to clipboard!");
+      showToast("Markdown events copied to clipboard!");
     } catch (err) {
       console.error("Fallback: Unable to copy", err);
     }
@@ -2918,6 +2990,7 @@ function downloadOrgEvents() {
 }
 
 
+    /* REMAINING FILE HANDLING FOR SYNC */
     async function loadDataFromFileHandle(fileHandle) {
       try {
         const file = await fileHandle.getFile();
@@ -2952,6 +3025,119 @@ function downloadOrgEvents() {
         hideLoading();
         console.error("Error saving data to file:", err);
         showToast("Error saving calendar data");
+      }
+    }
+
+    function buildDiaryExportText() {
+      // existing logic from your code
+      let eventsByDate = {};
+      for (const key in localStorage) {
+        if (!localStorage.hasOwnProperty(key)) continue;
+        if (!/^\d+_\d+_\d+$/.test(key)) continue;
+        const eventIds = localStorage[key].split(",");
+        const dayEvents = [];
+        eventIds.forEach(eid => {
+          const text = localStorage[eid];
+          if (text && text.trim() !== "") {
+            dayEvents.push(text.trim());
+          }
+        });
+        if (dayEvents.length > 0) {
+          eventsByDate[key] = dayEvents;
+        }
+      }
+
+      let dateEntries = [];
+      for (let dateKey in eventsByDate) {
+        let [m, d, y] = dateKey.split("_").map(Number);
+        let dateObj = new Date(y, m, d);
+        dateEntries.push({ dateObj, dateKey });
+      }
+      dateEntries.sort((a, b) => a.dateObj - b.dateObj);
+
+      let lines = [];
+      dateEntries.forEach(entry => {
+        const dateObj = entry.dateObj;
+        let [month, day, year] = [
+          dateObj.getMonth() + 1,
+          dateObj.getDate(),
+          dateObj.getFullYear(),
+        ];
+        lines.push(`${month}/${day}/${year}`);
+        eventsByDate[entry.dateKey].forEach(ev => {
+          lines.push(`- ${ev}`);
+        });
+        lines.push("");
+      });
+
+      return lines.join("\n");
+    }
+
+    async function importFromDiaryFile() {
+      try {
+        showLoading();
+        const [handle] = await window.showOpenFilePicker({
+          multiple: false,
+          types: [
+            {
+              description: "Emacs Diary File",
+              accept: { "text/plain": [".org", ".txt"] }
+            }
+          ]
+        });
+        const file = await handle.getFile();
+        const text = await file.text();
+        const lines = text.split(/\r?\n/);
+
+        const dateRegex = /^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/;
+        let currentDateKey = null;
+        let eventsByDate = {};
+
+        for (const rawLine of lines) {
+          let line = rawLine.trim();
+          if (!line || line.startsWith("*")) {
+            continue;
+          }
+          let match = line.match(dateRegex);
+          if (match) {
+            let [, M, D, Y] = match.map(Number);
+            let dateObj = new Date(Y, M - 1, D);
+            currentDateKey = `${dateObj.getMonth()}_${dateObj.getDate()}_${dateObj.getFullYear()}`;
+            if (!eventsByDate[currentDateKey]) {
+              eventsByDate[currentDateKey] = [];
+            }
+            continue;
+          }
+          if (line.startsWith("-")) {
+            let eventText = line.replace(/^-+/, "").trim();
+            if (eventText && currentDateKey) {
+              eventsByDate[currentDateKey].push(eventText);
+            }
+          }
+        }
+
+        pushUndoState();
+        for (let dateKey in eventsByDate) {
+          let existingIds = localStorage[dateKey] ? localStorage[dateKey].split(",") : [];
+          for (let text of eventsByDate[dateKey]) {
+            let isDuplicate = existingIds.some(id => localStorage[id] === text);
+            if (!isDuplicate) {
+              let newId = nextItemId();
+              localStorage[newId] = text;
+              existingIds.push(newId);
+            }
+          }
+          localStorage[dateKey] = existingIds.join(",");
+        }
+
+        hideLoading();
+        showToast("Diary imported successfully!");
+        loadCalendarAroundDate(todayDate);
+
+      } catch (err) {
+        hideLoading();
+        console.error("Import error:", err);
+        showToast("Import canceled or failed.");
       }
     }
   </script>
