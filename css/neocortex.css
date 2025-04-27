@@ -811,3 +811,18 @@ p.verse {
     line-height: 1.5;
     margin-bottom: 15px;
 }
+
+
+span.priority-A {
+    color: red;
+    font-weight: bold;
+}
+
+span.priority-B {
+    color: orange;
+}
+
+span.priority-C {
+    color: green;
+}
+ 
