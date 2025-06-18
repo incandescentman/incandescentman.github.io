@@ -87,12 +87,12 @@ body > header {
 }
 
 body > header h1 {
-
+  max-width: 1200px;
   margin: 1rem auto;
 }
 
 body > header p {
-
+  max-width: 40rem;
   margin: 1rem auto;
 }
 
@@ -149,6 +149,24 @@ h3 {
   line-height: 1.1;
 }
 
+/* Reduce header size on mobile */
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
 
 /* Format links & buttons */
 a,
@@ -275,13 +293,16 @@ header > nav a[aria-current="page"] {
   cursor: pointer;
 }
 
+/* Reduce nav side on mobile */
+@media only screen and (max-width: 720px) {
+  header > nav a {
+    border: none;
+    padding: 0;
+    text-decoration: underline;
+    line-height: 1;
+  }
+}
 
-/* Consolidate box styling */
-aside, details, pre, progress, blockquote {
-  background-color: var(--accent-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--standard-border-radius);
-  margin-bottom: 1rem;
 
 }
 
@@ -296,6 +317,14 @@ aside {
   float: left;
 }
 
+/* Make aside full-width on mobile */
+@media only screen and (max-width: 720px) {
+  aside {
+    width: 100%;
+    float: none;
+    margin-inline-start: 0;
+  }
+}
 
 article, fieldset, dialog {
   border: 1px solid var(--border);
@@ -393,10 +422,14 @@ input {
   border: 1px solid var(--border);
   border-radius: var(--standard-border-radius);
   box-shadow: none;
-    display: inline-block;
+  max-width: 100%;
+  display: inline-block;
 }
 label {
   display: block;
+}
+textarea:not([cols]) {
+  width: 100%;
 }
 
 /* Add arrow to drop-down */
@@ -462,6 +495,14 @@ input[type="radio"]:checked::after {
   font-size: 32px;
 }
 
+/* Makes input fields wider on smaller screens */
+@media only screen and (max-width: 720px) {
+  textarea,
+  select,
+  input {
+    width: 100%;
+  }
+}
 
 /* Set a height for color input */
 input[type="color"] {
@@ -525,7 +566,8 @@ pre,
 pre span,
 kbd,
 samp, blockquote {
-  font-family: var(--mono-font);
+  font-family: var(--sans-font);
+font-weight:bold;
   color: var(--code);
 }
 
@@ -540,7 +582,7 @@ kbd {
 pre, blockquote {
   padding: 1rem 1.4rem;
   max-width: 100%;
-  overflow: auto;
+  overflow: wrap;
   color: var(--preformatted);
 }
 
@@ -594,6 +636,12 @@ dialog::backdrop {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 720px) {
+  dialog {
+    max-width: 100%;
+    margin: auto 1em;
+  }
+}
 
 /* Classes for buttons and notices */
 .button,
@@ -663,7 +711,7 @@ div dl dt::after {
  content: ":";}
 
 
-h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 4em; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: left;   margin-bottom: 16px}
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 4em; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;   margin-bottom: 16px}
 
 
 
@@ -688,7 +736,7 @@ h3 {
 
 h4 {
   font-size: 1.1em;
-    margin-left: 4em;
+    margin-left: 0.2em;
 }
 
 
@@ -735,17 +783,6 @@ div dl dt {
 }
 
 
-pre, blockquote {
-    border-radius: 8px;
-    padding: 0 1em 1em;
-    text-align: left;
-    white-space: normal;
-    word-wrap: break-word;
-word-wrap:normal!important;
-     white-space: pre-wrap;       /* css-3 */
-     word-wrap: normal;
-
-}
 
 
 div.outline-text-3 {
@@ -813,16 +850,8 @@ p.verse {
 }
 
 
-span.priority-A {
-    color: red;
-    font-weight: bold;
-}
-
-span.priority-B {
-    color: orange;
-}
-
-span.priority-C {
-    color: green;
+pre {
+  white-space: pre-wrap;   /* Allows wrapping */
+  word-wrap: break-word;   /* Breaks long words if needed */
 }
  
