@@ -7,18 +7,7 @@
 
 ./SCR-20250606-ocfn.png
 
-** Writing a policy brief
-I spoke to a group of students at Simon Fraser University. They asked about how
- 
-policy-brief/SCR-20250623-mwfd.png
-policy-brief/SCR-20250623-mwgy.png
-policy-brief/SCR-20250623-mwjq.png
-policy-brief/SCR-20250623-mwkq.png
-policy-brief/SCR-20250623-mwlp.png
-policy-brief/SCR-20250623-mwmj.png
-policy-brief/SCR-20250623-mwne.png
-
-** Mob wife
+** Developing an idea for a screenplay
 I was asked to give a talk for Machine Cinema's Gen-Dojo, a group of filmmakers interested in AI. Here's an AI recap of my talk.
 
 Using AI as a Creative Partner --- Not a Replacement
@@ -74,6 +63,17 @@ mob-wife/SCR-20250623-nerp.png
 mob-wife/SCR-20250623-nete.png
 
 mob-wife/SCR-20250623-newc.png
+
+** Writing a policy brief
+I spoke to a group of students at Simon Fraser University. They asked about how to use ChatGPT to support them in writing policy briefs without having it generate the article for them.
+
+policy-brief/SCR-20250623-mwfd.png
+policy-brief/SCR-20250623-mwgy.png
+policy-brief/SCR-20250623-mwjq.png
+policy-brief/SCR-20250623-mwkq.png
+policy-brief/SCR-20250623-mwlp.png
+policy-brief/SCR-20250623-mwmj.png
+policy-brief/SCR-20250623-mwne.png
 
 ** Help Writing a tweet
 [[file:sundance-tweet/SCR-20250623-npvb.png]]

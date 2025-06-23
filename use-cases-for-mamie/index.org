@@ -1,8 +1,8 @@
 * ChatGPT Use Cases for Mamie - Index
 
 - [[file:thinking-of-an-idea.html][Thinking of an idea]]
+- [[file:developing-an-idea-for-a-screenplay.html][Developing an idea for a screenplay]]
 - [[file:writing-a-policy-brief.html][Writing a policy brief]]
-- [[file:mob-wife.html][Mob wife]]
 - [[file:help-writing-a-tweet.html][Help Writing a tweet]]
 - [[file:thank-you-note.html][Thank you note]]
 - [[file:creating-a-whatsapp-group-with-my-friends-for-morning-accountability.html][Creating a WhatsApp group with my friends for morning accountability]]
