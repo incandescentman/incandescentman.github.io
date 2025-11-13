@@ -93,10 +93,14 @@ section.module.parallax-5{
 
 {{{invitation-signature}}}
 
-*When*: {{{event-date}}} \\
-*Where*: [[{{{event-map-url}}}][{{{event-location}}}]] \\
-*Map*: {{{event-map-url}}} \\
-*RSVP*: [[mailto:{{{rsvp-email}}}][{{{rsvp-email}}}]]
+#+BEGIN_EXPORT html
+<p>
+<strong>When</strong>: {{{event-date}}}<br>
+<strong>Where</strong>: <a href="{{{event-map-url}}}">{{{event-location}}}</a><br>
+<strong>Map</strong>: <a href="{{{event-map-url}}}">{{{event-map-url}}}</a><br>
+<strong>RSVP</strong>: <a href="mailto:{{{rsvp-email}}}">{{{rsvp-email}}}</a>
+</p>
+#+END_EXPORT
 
 # Generate Add to Calendar button at http://carlsednaoui.github.io/add-to-calendar-buttons/generator/generator.html
 
