@@ -81,22 +81,31 @@ div.outline-2 {
 @media all and (max-width: 750px) {
     /* CSS rules here target only screens lower than 750px */
 
+    /* Fix parallax for mobile - remove fixed attachment */
+    section.module.parallax, div.outline-2.parallax {
+        background-attachment: scroll;  /* Parallax doesn't work well on mobile */
+        background-size: cover;         /* Cover the section instead of contain */
+        background-position: center center;
+        min-height: 300px;              /* Reasonable mobile height */
+    }
 
+    /* Keep headings visible but make them mobile-friendly */
+    section.module.parallax h1, div.outline-2.parallax h1 {
+        font-size: 2.5em;               /* Smaller but visible */
+        line-height: 1.2;               /* Normal line height */
+        padding: 1em 0;                 /* Add vertical padding */
+    }
 
+    /* Keep containers visible */
     .container {
-    display:none;
+        display: block;                 /* Show containers on mobile */
+        padding: 20px;
     }
 
-
-    section.module.parallax h1, div.outline-2.parallax h1
-{ display:none;
+    /* Increase body text size for readability */
+    section.module p, div.outline-2 p {
+        font-size: 120%;
     }
-
-section.module p, div.outline-2 p {
-  font-size: 120%;
-}
-
-
 }
 
 
