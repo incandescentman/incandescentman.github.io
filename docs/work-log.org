@@ -1,0 +1,63 @@
+#+TITLE: Incandescentman Work Log
+#+AUTHOR: AI Assistant
+#+DESCRIPTION: Daily tracking of work completed on event invitation templates
+
+* 2025-11-13 Thursday - Event Invitation Template Refactoring
+
+** Session Overview
+Refactored event invitation template to use org-mode macros for easy reuse
+
+** Work Completed
+*** Template Analysis
+- Examined existing invitation template at invite-canonical/
+- Reviewed index.org (org-mode source) and index.html (generated output)
+- Analyzed parallax design, calendar integration, audio autoplay, and social metadata
+
+*** Template Improvements Suggested
+- Performance: lazy loading, image optimization, preconnect hints
+- Accessibility: proper title tags, remove audio autoplay, color contrast fixes
+- Mobile responsiveness: fix broken CSS that hides content below 750px
+- Modern CSS: remove vendor prefixes, use CSS custom properties
+- Security: HTTPS links, rel="noopener noreferrer" on external links
+- Calendar integration: modernize from 2018 implementation
+
+*** Macro Implementation
+Converted hardcoded event details to reusable macros (lines 8-32 of index.org):
+- Event titles and headings (5 parallax sections)
+- Invitation text (greeting, body, closing, signature)
+- Date/time (human-readable + ISO format for calendars)
+- Location details (full address + short version)
+- Map URL, RSVP email, audio file
+- Calendar description and social media metadata
+
+*** Additional Improvements
+- Updated HTTP → HTTPS for external links
+- Added rel="noopener noreferrer" to calendar links for security
+- Removed audio autoplay initially, then restored per user request
+- Cleaned up HTML structure with clear section comments
+- Made template ready for easy event creation
+
+** Files Modified
+- /Users/jay/Dropbox/github/incandescentman/invite-canonical/index.org (complete rewrite with macros)
+
+** Impact
+Template is now fully parameterized. To create a new invitation, user only needs to edit the macro definitions at the top (lines 8-32). Everything else updates automatically through the `{{{macro-name}}}` syntax.
+
+** Example Usage
+New event invitation can be created by changing just these lines:
+```org
+#+MACRO: event-title Summer Soirée
+#+MACRO: event-date Saturday, June 21, 8:00pm
+#+MACRO: event-location 456 Broadway, Brooklyn NY 11211
+#+MACRO: rsvp-email jay@jaydixit.com
+# ... etc
+```
+
+All calendar links, headings, social metadata, and content automatically update.
+
+** Testing Instructions
+To test the template:
+1. Export org to HTML in Emacs: Open index.org and run `C-c C-e h h`
+2. View locally: `open invite-canonical/index.html`
+3. Or run local server: `cd invite-canonical && python3 -m http.server 8000`
+   Then visit: http://localhost:8000/index.html

@@ -1,3 +1,54 @@
+#+TITLE: {{{event-title}}}
+#+AUTHOR: Jay Dixit
+
+# ============================================================
+# EVENT CONFIGURATION - EDIT THESE VALUES FOR EACH NEW EVENT
+# ============================================================
+
+#+MACRO: event-title Movie Night
+#+MACRO: event-subtitle Hit Man Screening
+#+MACRO: event-heading-1 Movie Night
+#+MACRO: event-heading-2 Until then...
+
+#+MACRO: movie-title Hit Man
+#+MACRO: movie-description the new action comedy by Richard Linklater in which a mild-mannered teacher leads a double life as a pretend undercover contract killer
+
+#+MACRO: event-intro Movie night tonight at my place in Williamsburg!
+#+MACRO: event-attire Hit man-themed attire optional but encouraged. Dress to kill... or go deep undercover. Just be sure it's executed perfectly. 🤵🏻🔫
+#+MACRO: event-note Friends welcome. Contributions of snacks or beverages are welcome but not required.
+
+#+MACRO: event-date Friday, July 5, 7:30pm
+#+MACRO: event-date-readable 7:30pm today (Friday July 5)
+#+MACRO: event-date-start 20240705T193000
+#+MACRO: event-date-end 20240705T230000
+#+MACRO: event-location 166 N 7th Street Brooklyn NY 11211, Apt. 3
+#+MACRO: event-location-short 166 N 7th St, Brooklyn NY
+#+MACRO: event-directions The building is 166 North 7th Street, next to Pressed Juicery
+#+MACRO: map-url https://goo.gl/maps/4doG7fg2aeq6Vj5t7
+#+MACRO: rsvp-email jay@jaydixit.com
+#+MACRO: rsvp-phone (646) 355-8001
+#+MACRO: signature Sunjay
+
+#+MACRO: calendar-description Movie Night - Hit Man screening at Jay's place in Williamsburg
+#+MACRO: og-description You've been invited to Movie Night
+
+# ============================================================
+# HTML HEAD CONFIGURATION
+# ============================================================
+
+#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans">
+#+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
+#+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
+#+HTML_HEAD: <script src="js/modernizr.js"></script>
+#+HTML_HEAD: <meta property="og:title" content="{{{event-title}}}" />
+#+HTML_HEAD: <meta property="og:description" content="{{{og-description}}}">
+#+HTML_HEAD: <meta property="og:image" content="img/4.png"/>
+#+HTML_HEAD: <meta property="og:url" content="https://jaydixit.com/movie-night/"/>
+#+OPTIONS: H:5
+
+# ============================================================
+# PARALLAX IMAGES & STYLING
+# ============================================================
 
 #+BEGIN_EXPORT HTML
 <style>
@@ -25,8 +76,37 @@ section.module.parallax-3 {
  padding: 20px;
 }
 h1 {
- font-size: 3em;
+ font-size: clamp(2em, 5vw, 3em);
  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.cocktail-recipe {
+ margin: 1em 0;
+ padding: 1em;
+ background: rgba(0, 0, 0, 0.05);
+ border-radius: 8px;
+}
+.cocktail-recipe ul {
+ list-style: disc;
+ margin-left: 1.5em;
+}
+.event-images {
+ display: flex;
+ gap: 20px;
+ margin: 2em 0;
+ flex-wrap: wrap;
+}
+.event-images img {
+ max-width: 100%;
+ height: auto;
+ border-radius: 8px;
+ box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.rsvp-box {
+ background: rgba(255, 255, 255, 0.95);
+ padding: 1.5em;
+ margin: 2em 0;
+ border-radius: 8px;
+ border-left: 4px solid #C92228;
 }
 </style>
 
@@ -34,16 +114,20 @@ h1 {
 <section class="module parallax parallax-1">
   <div class="overlay"></div>
     <div class="container">
-     <h1>Movie Night</h1>
+     <h1>{{{event-heading-1}}}</h1>
     </div>
    </section>
 
 #+END_EXPORT
 
-* Movie Night
-Movie night tonight at my place in Williamsburg!
+# ============================================================
+# MAIN INVITATION CONTENT
+# ============================================================
 
-We'll be screening /Hit Man/, the new action comedy by Richard Linklater in which a mild-mannered teacher leads a double life as a pretend undercover contract killer.
+* {{{event-title}}}
+{{{event-intro}}}
+
+We'll be screening /{{{movie-title}}}/, {{{movie-description}}}.
 
 * The Hit List
 Here's tonight's cocktail menu, courtesy of ChatGPT. 🦾
@@ -51,70 +135,134 @@ Here's tonight's cocktail menu, courtesy of ChatGPT. 🦾
 ** The Straight Shooter
 A bold bourbon cocktail that hits the mark with subtle sweetness and aromatic bitters.
 
+#+BEGIN_EXPORT HTML
+<div class="cocktail-recipe">
+#+END_EXPORT
+- 2 oz bourbon
+- 0.5 oz maple syrup
+- 2 dashes Angostura bitters
+- Orange peel garnish
+#+BEGIN_EXPORT HTML
+</div>
+#+END_EXPORT
+
 ** The Hit and Rum
 A dangerously smooth rum concoction with a killer combination of flavors.
+
+#+BEGIN_EXPORT HTML
+<div class="cocktail-recipe">
+#+END_EXPORT
+- 2 oz dark rum
+- 1 oz fresh lime juice
+- 0.75 oz passion fruit syrup
+- Splash of ginger beer
+- Mint sprig garnish
+#+BEGIN_EXPORT HTML
+</div>
+#+END_EXPORT
 
 ** The Dead Drop
 A mysterious and dark scotch cocktail with coffee liqueur and chocolate bitters.
 
+#+BEGIN_EXPORT HTML
+<div class="cocktail-recipe">
+#+END_EXPORT
+- 2 oz scotch whisky
+- 0.5 oz coffee liqueur (Kahlúa)
+- 2 dashes chocolate bitters
+- Orange twist garnish
+#+BEGIN_EXPORT HTML
+</div>
+#+END_EXPORT
+
 ** The Liquid Asset
-A gin cocktail with elderflower, lemon, and a spatter of soda.
+A gin cocktail with elderflower, lemon, and a splash of soda.
+
+#+BEGIN_EXPORT HTML
+<div class="cocktail-recipe">
+#+END_EXPORT
+- 2 oz gin
+- 0.75 oz elderflower liqueur (St-Germain)
+- 0.5 oz fresh lemon juice
+- Splash of soda water
+- Lemon wheel garnish
+#+BEGIN_EXPORT HTML
+</div>
+#+END_EXPORT
 
 ** The Molotov Cocktail
 An explosive tequila cocktail made with lime, agave, and fiery jalapeño.
 
+#+BEGIN_EXPORT HTML
+<div class="cocktail-recipe">
+#+END_EXPORT
+- 2 oz tequila (blanco or reposado)
+- 1 oz fresh lime juice
+- 0.5 oz agave nectar
+- 2-3 jalapeño slices (muddle for heat)
+- Tajín rim (optional)
+- Lime wheel garnish
+#+BEGIN_EXPORT HTML
+</div>
+#+END_EXPORT
+
 * Details
-Friends welcome. [[mailto:jay@jaydixit.com][RSVP]] so I can get a body count. Contributions of snacks or beverages are welcome but not required.
 
-Hit man-themed attire optional but encouraged. Dress to kill... or go deep undercover. Just be sure it's executed perfectly. 🤵🏻🔫
+#+BEGIN_EXPORT HTML
+<div class="rsvp-box">
+#+END_EXPORT
 
-*Where*: 166 N 7th Street Brooklyn NY 11211, Apt. 3 \\
-*Map*: https://goo.gl/maps/4doG7fg2aeq6Vj5t7 \\
-*When*: 7:30pm today (Friday July 5) \\
-*RSVP*: [[mailto:jay@jaydixit.com][jay@jaydixit.com]] or (646) 355-8001 \\
-Directions: The building is 166 North 7th Street, next to Pressed Juicery.
+{{{event-note}}} [[mailto:{{{rsvp-email}}}][*RSVP here*]] so I can get a body count.
 
-Until then! \\
-Sunjay
+{{{event-attire}}}
 
-[[./img/4.png]]
-[[./img/3.png]]
+*Where*: {{{event-location}}} \\
+*Map*: [[{{{map-url}}}][{{{map-url}}}]] \\
+*When*: {{{event-date-readable}}} \\
+*RSVP*: [[mailto:{{{rsvp-email}}}][{{{rsvp-email}}}]] or {{{rsvp-phone}}} \\
+*Directions*: {{{event-directions}}}
+
+#+BEGIN_EXPORT html
+<label for="checkbox-for-calendar" class="add-to-calendar-checkbox">+ Add to my Calendar</label><input name="add-to-calendar-checkbox" class="add-to-calendar-checkbox" id="checkbox-for-calendar" type="checkbox"><a class="icon-google" target="_blank" rel="noopener noreferrer" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text={{{event-title}}}&amp;dates={{{event-date-start}}}/{{{event-date-end}}}&amp;details={{{calendar-description}}}&amp;location={{{event-location}}}&amp;sprop=&amp;sprop=name:">Google Calendar</a><a class="icon-yahoo" target="_blank" rel="noopener noreferrer" href="https://calendar.yahoo.com/?v=60&amp;view=d&amp;type=20&amp;title={{{event-title}}}&amp;st={{{event-date-start}}}&amp;desc={{{calendar-description}}}&amp;in_loc={{{event-location}}}">Yahoo! Calendar</a><a class="icon-ical" target="_blank" rel="noopener noreferrer" href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:{{{event-date-start}}}%0ADTEND:{{{event-date-end}}}%0ASUMMARY:{{{event-title}}}%0ADESCRIPTION:{{{calendar-description}}}%0ALOCATION:{{{event-location}}}%0AEND:VEVENT%0AEND:VCALENDAR">iCal Calendar</a><a class="icon-outlook" target="_blank" rel="noopener noreferrer" href="data:text/calendar;charset=utf8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:{{{event-date-start}}}%0ADTEND:{{{event-date-end}}}%0ASUMMARY:{{{event-title}}}%0ADESCRIPTION:{{{calendar-description}}}%0ALOCATION:{{{event-location}}}%0AEND:VEVENT%0AEND:VCALENDAR">Outlook Calendar</a><style type="text/css">#add-to-calendar-checkbox-label{cursor:pointer}.add-to-calendar-checkbox ~ a{display:none}.add-to-calendar-checkbox:checked ~ a{display:block;width:150px;margin-left:20px}input[type=checkbox].add-to-calendar-checkbox{position:absolute;top:-9999px;left:-9999px}.add-to-calendar-checkbox ~ a:before{width:16px;height:16px;display:inline-block;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAQCAYAAACIoli7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0MzJCRDU2NUE1MDIxMUUyOTY1Q0EwNTkxNEJDOUIwNCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0MzJCRDU2NkE1MDIxMUUyOTY1Q0EwNTkxNEJDOUIwNCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQzMkJENTYzQTUwMjExRTI5NjVDQTA1OTE0QkM5QjA0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjQzMkJENTY0QTUwMjExRTI5NjVDQTA1OTE0QkM5QjA0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+1Gcb3QAACh1JREFUeNrEWAtw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);margin-right:.5em;content:' '}.icon-ical:before{background-position:-68px 0}.icon-yahoo:before{background-position:-36px+4px}.icon-google:before{background-position:-52px 0}</style>
+#+END_EXPORT
 
 #+BEGIN_EXPORT HTML
 </div>
+#+END_EXPORT
+
+Until then! \\
+{{{signature}}}
+
+#+BEGIN_EXPORT HTML
+<div class="event-images">
+  <img src="./img/4.png" alt="Movie Night Event" style="max-width: 48%;">
+  <img src="./img/3.png" alt="Hit Man Movie" style="max-width: 48%;">
 </div>
-  </section>
+#+END_EXPORT
+
+# ============================================================
+# PARALLAX SECTION 2 & FOOTER
+# ============================================================
+
+#+BEGIN_EXPORT HTML
+</div>
+   </section>
    <section class="module parallax parallax-2">
  <div class="overlay"></div>
     <div class="container">
-     <h1>Until then...</h1>
+     <h1>{{{event-heading-2}}}</h1>
     </div>
    </section>
-</div>
-</div>
-  </section>
 
- </main>
+</div>
 
  <footer>
   <div class="container">
    <div class="copyright">
-   <small><a href="http://jaydixit.com">jaydixit.com</a></small>
+   <small><a href="https://jaydixit.com">jaydixit.com</a></small>
    </div>
   </div>
 </footer>
-</div>
-</body>
-</html>
-#+END_EXPORT
 
-#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans">
-#+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
-#+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
-#+HTML_HEAD: <script src="js/modernizr.js"></script>
-#+HTML_HEAD: <meta property="og:title" content="Movie Night" />
-#+HTML_HEAD: <meta property="og:description" content="You've been invited...">
-#+HTML_HEAD: <meta property="og:image" content="img/4.png"/>
-#+HTML_HEAD: <meta property="og:url" content="index.html"/>
-#+HTML_HEAD: <meta name="viewport" content="width=device-width, initial-scale=1.0">
-#+OPTIONS:  H:5
+</div>
+#+END_EXPORT
