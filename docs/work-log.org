@@ -61,3 +61,12 @@ To test the template:
 2. View locally: `open invite-canonical/index.html`
 3. Or run local server: `cd invite-canonical && python3 -m http.server 8000`
    Then visit: http://localhost:8000/index.html
+
+** Org Macro Export Problem (Barry Lyndon invite)
+- Goal: reuse the same macro-driven workflow for `barry-lyndon/index.org` so all raw HTML blocks also see the macro values.
+- Problem observed: plain `org-html-export-to-html` leaves `{{{event-title}}}` etc. untouched inside raw HTML and even errors out when the `[[{{{map-url}}}]]` link is parsed (`Unable to resolve link: "{{{map-url}}}"`).
+- Attempted fixes:
+  - Added `#+BIND: org-export-before-processing-hook ((lambda (_backend) (require 'org-macro) (org-macro-initialize-templates) (org-macro-replace-all org-macro-templates)))` inside `barry-lyndon/index.org`.
+  - Added a local variables footer with `org-export-allow-bind-keywords: t` and also exported via CLI with `--eval "(setq org-export-allow-bind-keywords t)"`.
+  - Tested alternative approaches (Org local variables block, `.dir-locals.el`, and a one-off Python preprocessor) but they either prompt every export or still leave the raw HTML macros unresolved.
+- Current status: Emacs still stops with `org-macro-replace-all: Undefined Org macro: event-title; aborting` (when the BIND is honored) or `Unable to resolve link: "{{{map-url}}}"` (when the macros are not pre-expanded). Need a reliable Emacs-only hook or exporter setting that runs macro expansion *before* raw HTML is parsed, without depending on an external script.
