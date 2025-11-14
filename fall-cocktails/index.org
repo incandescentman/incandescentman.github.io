@@ -202,6 +202,12 @@ section.module.content .details a:hover {
 }
 
 @media (max-width: 768px) {
+  section.module.parallax {
+    min-height: 60vh;
+    background-size: contain;
+    background-position: center top;
+    background-attachment: scroll;
+  }
   section.module.content {
     padding: 64px 16px;
   }
