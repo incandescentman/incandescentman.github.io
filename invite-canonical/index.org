@@ -98,21 +98,34 @@ section.module.parallax-5{
 
 #+BEGIN_EXPORT HTML
 <style>
+/* Smooth scroll-triggered animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 section.module.content {
-  padding: 80px 20px;
+  padding: 80px 24px;
   background: #fff;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 section.module.content .container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 48px;
 }
 
 section.module.content h1 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 3.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 48px;
   text-align: center;
   font-weight: 300;
   letter-spacing: 0.02em;
@@ -122,7 +135,7 @@ section.module.content h1 {
 section.module.content h2 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.2em;
-  margin: 1.8em 0 1em 0;
+  margin: 64px 0 32px 0;
   font-weight: 400;
   color: #2a2a2a;
 }
@@ -130,7 +143,7 @@ section.module.content h2 {
 section.module.content h3 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.6em;
-  margin: 1.5em 0 0.5em 0;
+  margin: 48px 0 24px 0;
   font-weight: 500;
   color: #3a3a3a;
 }
@@ -138,22 +151,28 @@ section.module.content h3 {
 section.module.content p {
   font-family: 'Inter', sans-serif;
   font-size: 1.2em;
-  line-height: 1.8;
-  margin-bottom: 1.2em;
+  line-height: 1.75;
+  margin-bottom: 24px;
   color: #333;
   font-weight: 300;
 }
 
 section.module.content .details {
-  margin-top: 3em;
-  padding: 2em;
+  margin-top: 64px;
+  padding: 32px;
   background: #f9f9f9;
   border-radius: 8px;
-  border-left: 4px solid #333;
+  border-left: 4px solid #8b6f47;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+section.module.content .details:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 
 section.module.content .details p {
-  margin-bottom: 0.8em;
+  margin-bottom: 16px;
   font-size: 1.1em;
 }
 
@@ -164,49 +183,83 @@ section.module.content .details strong {
 }
 
 section.module.content .details a {
-  color: #2563eb;
+  color: #8b6f47;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid transparent;
 }
 
 section.module.content .details a:hover {
-  color: #1d4ed8;
-  text-decoration: underline;
+  color: #6d5636;
+  border-bottom: 1px solid #8b6f47;
 }
 
 .add-to-calendar-checkbox {
-  margin-top: 2em;
+  margin-top: 32px;
 }
 
 section.module.content audio {
   display: block;
-  margin: 2em auto;
+  margin: 32px auto;
   max-width: 100%;
 }
 
+/* Dynamic parallax section heights */
+section.module.parallax {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  section.module.parallax {
+    min-height: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.module.parallax {
+    min-height: 600px;
+  }
+}
+
 @media (max-width: 768px) {
+  section.module.content {
+    padding: 64px 16px;
+  }
+
   section.module.content .container {
-    padding: 20px;
+    padding: 24px;
   }
 
   section.module.content h1 {
     font-size: 2.5em;
+    margin-bottom: 32px;
   }
 
   section.module.content h2 {
     font-size: 1.8em;
+    margin: 48px 0 24px 0;
   }
 
   section.module.content h3 {
     font-size: 1.4em;
+    margin: 32px 0 16px 0;
   }
 
   section.module.content p {
     font-size: 1.1em;
+    margin-bottom: 16px;
   }
 
   section.module.content .details {
-    padding: 1.5em;
+    padding: 24px;
+    margin-top: 48px;
+  }
+
+  section.module.content .details p {
+    margin-bottom: 12px;
   }
 }
 </style>
