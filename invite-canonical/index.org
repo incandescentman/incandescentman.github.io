@@ -41,10 +41,10 @@ section.module.parallax-3 {
  background-image: url("img/3.png");
 }
 section.module.parallax-4{
- background-image: url("img/4.png");
+ background-image: url("img/4.jpg");
 }
 section.module.parallax-5{
- background-image: url("img/5.png");
+ background-image: url("img/5.jpg");
 }
 </style>
 
