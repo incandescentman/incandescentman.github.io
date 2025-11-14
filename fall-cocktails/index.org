@@ -51,18 +51,24 @@ section.module.parallax {
 }
 
 section.module.parallax-3 {
-  min-height: 100vh;
+  min-height: 120vh;
 }
 
 @media (min-width: 768px) {
   section.module.parallax {
     min-height: 500px;
   }
+  section.module.parallax-3 {
+    min-height: 160vh;
+  }
 }
 
 @media (min-width: 1200px) {
   section.module.parallax {
     min-height: 600px;
+  }
+  section.module.parallax-3 {
+    min-height: 200vh;
   }
 }
 
