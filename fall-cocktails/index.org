@@ -204,12 +204,11 @@ section.module.content .details a:hover {
 
 @media (max-width: 768px) {
   section.module.parallax {
-    min-height: 120vh;
-    background-size: contain;
+    min-height: 90vh;
+    background-size: cover;
     background-position: center top;
     background-attachment: scroll;
     margin-bottom: 0;
-    background-color: #000;
   }
   section.module.parallax .container {
     padding: 1em 1em 0;
