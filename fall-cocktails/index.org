@@ -38,6 +38,14 @@ section.module.parallax-1 .container {
   text-align: center;
   padding: 5vh 0 0;
 }
+section.module.parallax-1 h1 {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.3em 0.6em;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+}
 section.module.parallax-2 {
  background-image: url("img/2.png");
  min-height: 70vh;
