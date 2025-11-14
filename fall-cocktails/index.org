@@ -1,3 +1,30 @@
+# ============================================================
+# METADATA - Edit for each event
+# ============================================================
+
+#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+#+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
+#+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
+#+HTML_HEAD: <script src="js/modernizr.js"></script>
+#+HTML_HEAD: <meta property="og:title" content="Fall Cocktails" />
+#+HTML_HEAD: <meta property="og:description" content="Join us for a very special evening.">
+#+HTML_HEAD: <meta property="og:image" content="https://jaydixit.com/fall-cocktails/og.png"/>
+#+HTML_HEAD: <meta property="og:url" content="index.html"/>
+
+# ============================================================
+# EVENT CONTENT - Edit these values for each new event
+# ============================================================
+
+# Parallax heading 1 (line 46 below): The Ascension of Fall
+# Event title (line 90): Fall Cocktails
+# Event body (lines 91-100): Main invitation text
+# Event details (lines 102-104): Where/Map/When
+# Parallax heading 2 (line 129): Until then!
+
+# ============================================================
+# HTML TEMPLATE
+# ============================================================
+
 #+BEGIN_EXPORT HTML
 <style>
 section.module.parallax-1 {
@@ -9,115 +36,145 @@ section.module.parallax-2 {
 section.module.parallax-3 {
  background-image: url("img/3.png");
 }
+
+section.module.content {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+section.module.content .container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+section.module.content h1 {
+  font-size: 2.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+section.module.content p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 1.2em;
+  color: #333;
+}
+
+section.module.content .details {
+  margin-top: 3em;
+  padding: 2em;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #333;
+}
+
+section.module.content .details p {
+  margin-bottom: 0.8em;
+  font-size: 1.1em;
+}
+
+section.module.content .details strong {
+  display: inline-block;
+  min-width: 80px;
+  color: #000;
+}
+
+section.module.content .details a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+section.module.content .details a:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  section.module.content .container {
+    padding: 20px;
+  }
+
+  section.module.content h1 {
+    font-size: 2em;
+  }
+
+  section.module.content p {
+    font-size: 1.1em;
+  }
+
+  section.module.content .details {
+    padding: 1.5em;
+  }
+}
 </style>
 
 <div class="wrapper">
 
-<!--   <div class="info-bar"> -->
-<!--   <div class="container"> -->
-<!--    <a class="icon cmn-tut" data-title="Jay Dixit" href="http://jaydixit.com/></a> -->
-
-<!-- <a class="icon cmn-prev" data-title="Jay Dixit" href="http://jaydixit.com"></a>  -->
-<!--   </div> -->
-<!--  </div> -->
-
 <section class="module parallax parallax-1">
     <div class="container">
      <h1>The Ascension of Fall</h1>
-<h1 class="bottom">⬇</h1>
+     <h1 class="bottom">⬇</h1>
     </div>
    </section>
 
 #+END_EXPORT
 
-* Fall Cocktails
-As we relinquish the memory of summer and embrace the cool caress of fall, I'm inviting friends to join me for cocktails at my apartment in Williamsburg this Friday (October 7) at 7:00pm.
+#+BEGIN_EXPORT HTML
+<section class="module content">
+ <div class="container">
+  <h1>Fall Cocktails</h1>
 
-I'll be mixing eighteen (18) batches of Zapatero, a boozy concoction of mezcal, bourbon, and Aztec chocolate bitters. If I can source a bottle of Giffard banana liqueur, I may also attempt an ominous scotch cocktail called Les Fleurs du Mal. Your own civilian contributions of snacks, wine, and bottled spirits are also welcome, but let that notion be not an obligation but a glimmer of joyful possibility.
+  <p>As we relinquish the memory of summer and embrace the cool caress of fall, I'm inviting friends to join me for cocktails at my apartment in Williamsburg this Friday (October 7) at 7:00pm.</p>
 
-If the air is warm and the night inviting, we may even ascend to the rooftop to admire the glittering skyline and raise a glass to the last gasp of summer.
+  <p>I'll be mixing eighteen (18) batches of Zapatero, a boozy concoction of mezcal, bourbon, and Aztec chocolate bitters. If I can source a bottle of Giffard banana liqueur, I may also attempt an ominous scotch cocktail called Les Fleurs du Mal. Your own civilian contributions of snacks, wine, and bottled spirits are also welcome, but let that notion be not an obligation but a glimmer of joyful possibility.</p>
 
-RSVP if you would, and of course please feel free to bring friends.
+  <p>If the air is warm and the night inviting, we may even ascend to the rooftop to admire the glittering skyline and raise a glass to the last gasp of summer.</p>
 
-Looking forward to seeing you. Until then!
+  <p>RSVP if you would, and of course please feel free to bring friends.</p>
 
-Jay
+  <p>Looking forward to seeing you. Until then!</p>
 
-*Where*: [[https://goo.gl/maps/S7hov7YT44mbsjKD8][166 North 7th Street Apt. 3 Brooklyn NY 11211]] \\
-*Map*: [[https://goo.gl/maps/S7hov7YT44mbsjKD8][https://goo.gl/maps/S7hov7YT44mbsjKD8]] \\
-*When*: Friday October 7, 7:00pm \\
+  <p>Jay</p>
 
+  <div class="details">
+   <p><strong>Where:</strong> <a href="https://goo.gl/maps/S7hov7YT44mbsjKD8">166 North 7th Street Apt. 3 Brooklyn NY 11211</a></p>
+   <p><strong>Map:</strong> <a href="https://goo.gl/maps/S7hov7YT44mbsjKD8">https://goo.gl/maps/S7hov7YT44mbsjKD8</a></p>
+   <p><strong>When:</strong> Friday October 7, 7:00pm</p>
+  </div>
+
+ </div>
+</section>
+#+END_EXPORT
 
 #+BEGIN_EXPORT HTML
-</div>
-</div>
-   </section>
+
    <section class="module parallax parallax-2">
     <div class="container">
      <h1>Until then!</h1>
-<h1>⬇</h1>
-
-</div>
+     <h1>⬇</h1>
+    </div>
    </section>
-#+END_EXPORT
 
-#+BEGIN_EXPORT html
-
-</div>
-</div>
+   <section class="module parallax parallax-3">
+    <div class="container">
+    </div>
    </section>
-<section class="module parallax parallax-3">
-  <div class="container">
-  </div>
-  </section>
- </main><!-- /main -->
+
+ </main>
 
  <footer>
   <div class="container">
-
-   <!-- <div class="asides clearfix"> -->
-   <!--  <aside> -->
-   <!--   <nav> -->
-   <!--    <ul> -->
-   <!--     <li><a href="http://jaydixit.com/">Welcome</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/category/tutorials">Tutorials</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/category/snippets">Snippets</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/category/articles">Articles</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/category/resources">Resources</a></li> -->
-   <!--    </ul> -->
-   <!--   </nav> -->
-   <!--  </aside> -->
-   <!--  <aside> -->
-   <!--   <nav> -->
-   <!--    <ul> -->
-   <!--     <li><a href="http://jaydixit.com/archive/">Archive</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/about">About</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/contact">Contact</a></li> -->
-   <!--     <li><a href="http://jaydixit.com/subscribe">Subscribe</a></li> -->
-   <!--    </ul> -->
-   <!--   </nav> -->
-   <!--  </aside> -->
-   <!--  <aside class="logo"> -->
-   <!--   <a href="http://jaydixit.com/"><img alt="Tutorials, Snippets, Resources, and Articles for Web Design and Web Development" onerror="this.src=../assets/images/lighthouse-inverted.jpg" SRC="../assets/images/lighthouse-inverted.jpg"></a> -->
-   <!--  </aside> -->
-   <!-- </div> -->
-
    <div class="copyright">
     <small>
-<a href="http://jaydixit.com">jaydixit.com</a>
+     <a href="https://jaydixit.com">jaydixit.com</a>
     </small>
    </div>
   </div>
- </footer><!-- /footer -->
+ </footer>
 
 </div><!-- /#wrapper -->
 #+END_EXPORT
-
-#+HTML_HEAD: <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
-#+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
-#+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
-#+HTML_HEAD: <script src="js/modernizr.js"></script>
-#+HTML_HEAD: <meta property="og:title" content="Fall Cocktails" />
-#+HTML_HEAD: <meta property="og:description" content="Join us for a very special evening.">
-#+HTML_HEAD: <meta property="og:image" content="https://jaydixit.com/fall-cocktails/og.png"/>
-#+HTML_HEAD: <meta property="og:url" content="index.html"/>
