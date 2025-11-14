@@ -36,7 +36,7 @@ section.module.parallax-1 {
 }
 section.module.parallax-1 .container {
   text-align: center;
-  padding: 5vh 0 0;
+  padding: 2vh 0 0;
 }
 section.module.parallax-1 h1 {
   display: block;
