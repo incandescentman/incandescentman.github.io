@@ -78,20 +78,21 @@ div.outline-2 {
 
 
 @media all and (max-width: 750px) {
-    /* CSS rules here target only screens lower than 750px */
-
-
+    /* Preserve content visibility and improve readability on phones */
     .container {
-    display:none;
+      display: block;
+      padding: 2em 1.5em;
     }
 
-
-    section.module.parallax h1, div.outline-2.parallax h1
-{ display:none;
+    section.module.parallax, div.outline-2.parallax {
+      min-height: 60vh;
+      background-attachment: scroll;
     }
 
-
-
+    section.module.parallax h1, div.outline-2.parallax h1 {
+      display: block;
+      font-size: 48px;
+    }
 }
 
 
