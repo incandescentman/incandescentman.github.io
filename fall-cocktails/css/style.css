@@ -81,7 +81,7 @@ div.outline-2 {
     /* Preserve content visibility and improve readability on phones */
     .container {
       display: block;
-      padding: 2em 1.5em;
+      padding: 1.25em 1em;
     }
 
     section.module.parallax, div.outline-2.parallax {
@@ -92,6 +92,11 @@ div.outline-2 {
     section.module.parallax h1, div.outline-2.parallax h1 {
       display: block;
       font-size: 48px;
+    }
+
+    section.module.content .details,
+    div.outline-2.content .details {
+      margin-top: 32px;
     }
 }
 
