@@ -70,3 +70,24 @@ To test the template:
   - Added a local variables footer with `org-export-allow-bind-keywords: t` and also exported via CLI with `--eval "(setq org-export-allow-bind-keywords t)"`.
   - Tested alternative approaches (Org local variables block, `.dir-locals.el`, and a one-off Python preprocessor) but they either prompt every export or still leave the raw HTML macros unresolved.
 - Current status: Emacs still stops with `org-macro-replace-all: Undefined Org macro: event-title; aborting` (when the BIND is honored) or `Unable to resolve link: "{{{map-url}}}"` (when the macros are not pre-expanded). Need a reliable Emacs-only hook or exporter setting that runs macro expansion *before* raw HTML is parsed, without depending on an external script.
+
+* 2025-11-14 Friday - Fall Cocktails Invite Polish
+
+** Session Overview
+Iterated on `fall-cocktails/index.org` to finalize metadata, section heights, and hero readability tweaks.
+
+** Work Completed
+- Added Org metadata (title, description, keywords) so exports carry structured data.
+- Matched `<main>` tags and ensured wrapper markup is valid.
+- Tuned parallax heights for all three hero sections across breakpoints, including taller scroll reveals for sections 1–3.
+- Introduced and refined a translucent overlay for the top hero heading, stretching edge-to-edge with zero padding, and positioned the heading flush with the top.
+- Removed redundant down-arrow headings and hid the default Org-generated `h1.title`.
+- Ensured the invite-specific CSS changes live inside the Org export (min-heights, containers, etc.).
+
+** Files Modified
+- `fall-cocktails/index.org` (multiple commits refining metadata, layout, and overlay)
+- `fall-cocktails/index.html` (needs regeneration after export)
+
+** Next Steps
+- Re-export `fall-cocktails/index.org` to refresh the HTML artifact.
+- Review other invites (`invite-canonical/`, `barry-lyndon/`) for similar metadata and accessibility improvements.
