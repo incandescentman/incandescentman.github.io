@@ -39,11 +39,11 @@ section.module.parallax-1 .container {
   padding: 5vh 0 0;
 }
 section.module.parallax-1 h1 {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 0.3em 0.6em;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0.4em 0;
   background: rgba(0, 0, 0, 0.35);
-  border-radius: 6px;
   backdrop-filter: blur(4px);
 }
 section.module.parallax-2 {
