@@ -91,7 +91,7 @@ div.outline-2 {
 
     section.module.parallax h1, div.outline-2.parallax h1 {
       display: block;
-      font-size: clamp(32px, 8vw, 48px);
+      font-size: 48px;
     }
 
     section.module.content .details,
