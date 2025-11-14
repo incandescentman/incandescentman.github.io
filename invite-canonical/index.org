@@ -2,7 +2,7 @@
 # METADATA - Edit for each event
 # ============================================================
 
-#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400;500&display=swap">
 #+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
 #+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
 #+HTML_HEAD: <script src="js/modernizr.js"></script>
@@ -31,6 +31,44 @@
 
 #+BEGIN_EXPORT HTML
 <style>
+/* Typography base */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', 'Garamond', serif;
+}
+
+/* Parallax sections with overlay */
+section.module.parallax-1,
+section.module.parallax-2,
+section.module.parallax-3,
+section.module.parallax-4,
+section.module.parallax-5 {
+  position: relative;
+}
+
+section.module.parallax-1::before,
+section.module.parallax-2::before,
+section.module.parallax-3::before,
+section.module.parallax-4::before,
+section.module.parallax-5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+section.module.parallax .container {
+  position: relative;
+  z-index: 2;
+}
+
 section.module.parallax-1 {
  background-image: url("img/1.png");
 }
@@ -72,18 +110,38 @@ section.module.content .container {
 }
 
 section.module.content h1 {
-  font-size: 2.5em;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5em;
   margin-bottom: 1.5em;
   text-align: center;
   font-weight: 300;
   letter-spacing: 0.02em;
+  color: #1a1a1a;
+}
+
+section.module.content h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2em;
+  margin: 1.8em 0 1em 0;
+  font-weight: 400;
+  color: #2a2a2a;
+}
+
+section.module.content h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6em;
+  margin: 1.5em 0 0.5em 0;
+  font-weight: 500;
+  color: #3a3a3a;
 }
 
 section.module.content p {
+  font-family: 'Inter', sans-serif;
   font-size: 1.2em;
   line-height: 1.8;
   margin-bottom: 1.2em;
   color: #333;
+  font-weight: 300;
 }
 
 section.module.content .details {
@@ -132,7 +190,15 @@ section.module.content audio {
   }
 
   section.module.content h1 {
-    font-size: 2em;
+    font-size: 2.5em;
+  }
+
+  section.module.content h2 {
+    font-size: 1.8em;
+  }
+
+  section.module.content h3 {
+    font-size: 1.4em;
   }
 
   section.module.content p {
