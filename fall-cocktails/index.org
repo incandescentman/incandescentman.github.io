@@ -32,38 +32,12 @@
 <style>
 section.module.parallax-1 {
  background-image: url("img/1.jpg");
- min-height: 60vh;
-}
-section.module.parallax-1 .container {
-  text-align: center;
-  padding: 0;
-  position: relative;
-}
-section.module.parallax-1 .container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5vh;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px);
-}
-section.module.parallax-1 h1 {
-  display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0.1em 0;
-  background: rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(2px);
 }
 section.module.parallax-2 {
  background-image: url("img/2.png");
- min-height: 70vh;
 }
 section.module.parallax-3 {
  background-image: url("img/3.png");
- min-height: 90vh;
 }
 
 /* Dynamic parallax section heights */
@@ -77,21 +51,15 @@ section.module.parallax {
 }
 
 section.module.parallax-3 {
-  min-height: 90vh;
+  min-height: 120vh;
 }
 
 @media (min-width: 768px) {
   section.module.parallax {
     min-height: 500px;
   }
-  section.module.parallax-1 {
-    min-height: 90vh;
-  }
-  section.module.parallax-2 {
-    min-height: 110vh;
-  }
   section.module.parallax-3 {
-    min-height: 120vh;
+    min-height: 160vh;
   }
 }
 
@@ -99,14 +67,8 @@ section.module.parallax-3 {
   section.module.parallax {
     min-height: 600px;
   }
-  section.module.parallax-1 {
-    min-height: 110vh;
-  }
-  section.module.parallax-2 {
-    min-height: 140vh;
-  }
   section.module.parallax-3 {
-    min-height: 140vh;
+    min-height: 200vh;
   }
 }
 
@@ -250,6 +212,7 @@ section.module.content .details a:hover {
 <section class="module parallax parallax-1">
     <div class="container">
      <h1>The Ascension of Fall</h1>
+     <h1 class="bottom">⬇</h1>
     </div>
    </section>
 
@@ -287,6 +250,7 @@ section.module.content .details a:hover {
    <section class="module parallax parallax-2">
     <div class="container">
      <h1>Until then!</h1>
+     <h1>⬇</h1>
     </div>
    </section>
 
