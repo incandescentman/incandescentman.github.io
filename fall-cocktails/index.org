@@ -30,6 +30,9 @@
 
 #+BEGIN_EXPORT HTML
 <style>
+h1.title {
+ display: none;
+}
 section.module.parallax-1 {
  background-image: url("img/1.jpg");
  min-height: 60vh;
