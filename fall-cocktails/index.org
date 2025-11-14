@@ -1,7 +1,10 @@
+#+TITLE: Fall Cocktails
+#+DESCRIPTION: Join us for a very special evening.
+#+KEYWORDS: cocktails, fall, invitation
+
 # ============================================================
 # METADATA - Edit for each event
 # ============================================================
-
 #+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
 #+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
 #+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
@@ -40,6 +43,15 @@ section.module.parallax-3 {
 /* Dynamic parallax section heights */
 section.module.parallax {
   min-height: 400px;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+section.module.parallax-3 {
+  min-height: 100vh;
 }
 
 @media (min-width: 768px) {
@@ -52,6 +64,20 @@ section.module.parallax {
   section.module.parallax {
     min-height: 600px;
   }
+}
+
+/* Hide footer and remove bottom spacing */
+footer {
+  display: none;
+}
+
+body, html, .wrapper, main {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+section.module.parallax-3 {
+  margin-bottom: 0 !important;
 }
 
 /* Smooth scroll-triggered animations */
@@ -175,6 +201,7 @@ section.module.content .details a:hover {
 </style>
 
 <div class="wrapper">
+<main>
 
 <section class="module parallax parallax-1">
     <div class="container">
