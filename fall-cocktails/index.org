@@ -36,14 +36,25 @@ section.module.parallax-1 {
 }
 section.module.parallax-1 .container {
   text-align: center;
-  padding-top: 17vh;
+  padding: 0;
+  position: relative;
+}
+section.module.parallax-1 .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5vh;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
 }
 section.module.parallax-1 h1 {
-  display: inline-block;
-  margin: 0 auto;
-  padding: 0;
-  background: rgba(0, 0, 0, 0.35);
-  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0.1em 0;
+  background: rgba(0, 0, 0, 0.28);
   backdrop-filter: blur(2px);
 }
 section.module.parallax-2 {
