@@ -162,6 +162,15 @@ Created custom Vite plugin in `astro.config.mjs` to handle static HTML folders i
 - Image: `img/the-square.jpg` (famous dinner scene with Terry Notary)
 - Added CSS for parallax-3 with responsive heights
 
+*** Org-Mode Content Conversion
+- Converted HTML content section to native org-mode for easier editing
+- Body paragraphs now use org syntax: `/italics/`, `*bold*`, `---` em-dash, `\\` line breaks
+- Where/When details use org links: `[[url][text]]`
+- Cocktail Menu uses `** Heading` org heading
+- Added CSS to style org's `.outline-2` wrapper divs like details boxes
+- Fixed cocktail menu width with negative margins to match container width
+- Updated party-event-protocol.org with org-mode editing documentation
+
 ** Live URL
 https://dixit.ca/song-of-my-city/
 

@@ -128,12 +128,47 @@ section.module.content .container {
   padding: 48px;
 }
 
-section.module.content h1 {
+section.module.content h1,
+section.module.content h2 {
   font-size: 2.5em;
   margin-bottom: 48px;
   text-align: center;
   font-weight: 300;
   letter-spacing: 0.02em;
+}
+
+section.module.content h3 {
+  font-size: 1.4em;
+  font-weight: 400;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #333;
+}
+
+/* Style org's outline-2 wrapper (for ** headings) like details box */
+section.module.content .outline-2 {
+  margin-top: 32px;
+  margin-left: -48px;
+  margin-right: -48px;
+  padding: 40px 48px;
+  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+section.module.content .outline-2:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  section.module.content .outline-2 {
+    margin-left: -24px;
+    margin-right: -24px;
+    padding: 32px 24px;
+  }
 }
 
 section.module.content p {
@@ -246,41 +281,48 @@ section.module.content .details a:hover {
 
 #+BEGIN_EXPORT HTML
 <section class="module content">
- <div class="container">
-  <h1>Movie Night: Song of My City</h1>
+ <div class="container"> 
+#+END_EXPORT
 
-  <p>Goodside gathers to celebrate our very own John Sears, whose work as editor on this short film earned a spot at Telluride.</p>
+* Movie Night: Song of My City
+Goodside gathers to celebrate our very own John Sears, whose work as editor on this short film earned a spot at Telluride.
 
-  <p><em>Song of My City</em>, directed by David C. Roberts, is a cinematic montage that reconstructs 1970s New York as it exists in the movies that mythologized it&mdash;<em>Taxi Driver</em>, <em>The Warriors</em>, <em>The Taking of Pelham 123</em>. Seventeen minutes of neon, steam, and a skyline that no longer exists.</p>
+/Song of My City/, directed by David C. Roberts, is a cinematic montage that reconstructs 1970s New York as it exists in the movies that mythologized it---/Taxi Driver/, /The Warriors/, /The Taking of Pelham 123/. Seventeen minutes of neon, steam, and a skyline that no longer exists.
 
-  <p>Afterwards, we'll screen Ruben Östlund's <em>The Square</em>&mdash;winner of the Palme d'Or at Cannes. A satirical black comedy about a museum curator whose ordered life unravels in increasingly absurd ways.</p>
+Afterwards, we'll screen Ruben Östlund's /The Square/---winner of the Palme d'Or at Cannes. A satirical black comedy about a museum curator whose ordered life unravels in increasingly absurd ways.
 
-  <p>Join us. We'll watch, and raise a glass to John's achievement.</p>
+Join us. We'll watch, and raise a glass to John's achievement.
 
+#+BEGIN_EXPORT HTML
   <div class="details">
-   <p><strong>Where:</strong> <a href="https://goo.gl/maps/S7hov7YT44mbsjKD8">166 North 7th Street Apt. 3 Brooklyn NY 11211</a></p>
-   <p><strong>When:</strong> Thursday December 18, 6:30pm</p>
+#+END_EXPORT
+
+*Where:* [[https://goo.gl/maps/S7hov7YT44mbsjKD8][166 North 7th Street Apt. 3 Brooklyn NY 11211]]
+
+*When:* Thursday December 18, 6:30pm
+
+#+BEGIN_EXPORT HTML
   </div>
+#+END_EXPORT
 
-  <div class="details" style="margin-top: 32px;">
-   <h2 style="font-size: 1.4em; font-weight: 400; margin-bottom: 24px; text-align: center; color: #333;">Cocktail Menu</h2>
+** Cocktail Menu
 
-   <p><strong>The Editor's Cut</strong><br/>
-   Bourbon, sweet vermouth, Angostura bitters, orange peel</p>
+*The Editor's Cut* \\
+Bourbon, sweet vermouth, Angostura bitters, orange peel
 
-   <p><strong>The Clean Cut</strong> <em>(mocktail)</em><br/>
-   Seedlip or non-alcoholic whiskey, black tea, tonic, fresh lime</p>
+*The Clean Cut* /(mocktail)/ \\
+Seedlip or non-alcoholic whiskey, black tea, tonic, fresh lime
 
-   <p><strong>The Telluride Toast</strong><br/>
-   Gin, lemon juice, simple syrup, lemon peel</p>
+*The Telluride Toast* \\
+Gin, lemon juice, simple syrup, lemon peel
 
-   <p><strong>Seventeen Minutes</strong><br/>
-   Vodka, lemon juice, simple syrup, soda water, lemon peel</p>
+*Seventeen Minutes* \\
+Vodka, lemon juice, simple syrup, soda water, lemon peel
 
-   <p><strong>Neon Steam</strong><br/>
-   Bourbon, lemon juice, honey syrup, hot water, lemon wheel</p>
-  </div>
+*Neon Steam* \\
+Bourbon, lemon juice, honey syrup, hot water, lemon wheel
 
+#+BEGIN_EXPORT HTML
  </div>
 </section>
 #+END_EXPORT
