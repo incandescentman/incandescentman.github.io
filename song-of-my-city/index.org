@@ -55,7 +55,7 @@ section.module.parallax-2 {
  min-height: 70vh;
 }
 section.module.parallax-3 {
- background-image: url("img/song-of-my-city-3.jpg");
+ background-image: url("img/the-square.jpg");
  min-height: 90vh;
 }
 
@@ -261,11 +261,13 @@ section.module.content .details a:hover {
 #+BEGIN_EXPORT HTML
 <section class="module content">
  <div class="container">
-  <h1>Song of My City</h1>
+  <h1>Movie Night: Song of My City</h1>
 
   <p>Join me for an intimate screening to celebrate my friend John Sears, whose work as editor on this short film earned a spot at Telluride.</p>
 
   <p><em>Song of My City</em>, directed by David C. Roberts, is a cinematic montage that reconstructs 1970s New York as it exists in the movies that mythologized it&mdash;<em>Taxi Driver</em>, <em>The Warriors</em>, <em>The Taking of Pelham 123</em>. Seventeen minutes of neon, steam, and a skyline that no longer exists.</p>
+
+  <p>Afterwards, we'll screen Ruben Östlund's <em>The Square</em>&mdash;winner of the Palme d'Or at Cannes. A satirical black comedy about a museum curator whose ordered life unravels in increasingly absurd ways.</p>
 
   <p>We'll gather, watch, and raise a glass to John.</p>
 
