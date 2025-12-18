@@ -159,3 +159,35 @@ Created custom Vite plugin in `astro.config.mjs` to handle static HTML folders i
 
 ** Live URL
 https://dixit.ca/song-of-my-city/
+
+** Handoff: Creating Future Event Invitations
+
+*** Source Files
+- Edit `index.org` only (not `index.html` — it's auto-generated)
+- After editing org, regenerate HTML via Emacs export or copy updated HTML
+
+*** Deploying to dixit.ca
+1. Copy invitation folder to `astro-monorepo/apps/jaydocs/public/`
+2. Update all meta tags to use `dixit.ca` domain (not jaydixit.com):
+   - `og:image` → `https://dixit.ca/[folder]/og.png`
+   - `og:url` → `https://dixit.ca/[folder]/`
+3. Fonts: use absolute path `/fonts/` (shared fonts at `jaydocs/public/fonts/`)
+
+*** OG Image
+- Create fresh `og.png` for each event (don't reuse old ones)
+- Use one of the event's hero images
+- Recommended size: 1200x630 or similar wide aspect ratio
+
+*** Parallax Images
+- Aspect ratio: 16:9 or wider (~1.89:1 ideal)
+- Resolution: 1920px+ wide (2560px for retina)
+- Use `background-size: cover` — images crop from edges, keep subject centered
+
+*** Image File Naming
+- Use descriptive names: `event-name-1.png`, `event-name-2.png`
+- Update CSS references in `index.org` to match new filenames
+
+*** Testing
+- Local: `npm run dev` in jaydocs, visit `http://localhost:4321/[folder]/`
+- OG image: use https://www.opengraph.xyz or Facebook Debugger
+- After deploy: wait 1-2 min for Vercel, then test with trailing slash
