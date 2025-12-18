@@ -91,3 +91,43 @@ Iterated on `fall-cocktails/index.org` to finalize metadata, section heights, an
 ** Next Steps
 - Re-export `fall-cocktails/index.org` to refresh the HTML artifact.
 - Review other invites (`invite-canonical/`, `barry-lyndon/`) for similar metadata and accessibility improvements.
+
+* 2025-12-18 Thursday - Song of My City Screening Invite
+
+** Session Overview
+Created new event invitation for Goodside movie night celebrating John Sears' Telluride selection.
+
+** Work Completed
+*** Initial Setup
+- Duplicated `barry-lyndon/` folder to create `song-of-my-city/`
+- Cleaned up legacy Barry Lyndon images and references
+
+*** Content Updates
+- Updated event details: Thursday December 18, 6:30pm
+- Wrote invitation copy celebrating "our very own John Sears" and Goodside
+- Described film: "Song of My City" by David C. Roberts - a cinematic montage reconstructing 1970s New York from B-roll of Taxi Driver, The Warriors, The Taking of Pelham 123
+- Added The Square (Ruben Östlund, Palme d'Or winner) as double feature, later removed
+- Added cocktail menu: The Editor's Cut, The Clean Cut (mocktail), The Telluride Toast, Seventeen Minutes, Neon Steam
+
+*** Image Updates
+- Replaced photo stills with custom watercolor artwork
+- Hero image: watercolor rooftop/skyline with event details
+- Closing image: watercolor Times Square "A Goodside Event"
+- Simplified from 3 parallax sections to 2
+- Removed hero heading text (redundant with image text)
+
+*** Technical Changes
+- Updated all CSS references from .jpg to .png
+- Removed parallax-3 section and related CSS
+- Cleaned up media queries for two-section layout
+- Updated OpenGraph metadata for social sharing
+
+** Files Modified
+- `song-of-my-city/index.org` (complete customization)
+- `song-of-my-city/index.html` (auto-generated)
+- `song-of-my-city/img/` (new watercolor images)
+
+** Commits
+- `d06b8b9` - Add Song of My City screening invite
+- `be7d472` - Add The Square as double feature, update title
+- `538df5e` - Update images and content for Song of My City screening
