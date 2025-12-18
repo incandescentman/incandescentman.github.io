@@ -1,0 +1,220 @@
+#+TITLE: Party Event Invitation Protocol
+#+AUTHOR: Jay Dixit
+#+DESCRIPTION: Step-by-step guide for creating new event invitations
+
+* Overview
+
+This document outlines the protocol for creating new event invitation pages using the parallax template system. Invitations are org-mode files that export to HTML with parallax scrolling effects.
+
+* Quick Start Checklist
+
+- [ ] Duplicate an existing invitation folder (e.g., ~barry-lyndon/~ or ~song-of-my-city/~)
+- [ ] Update ~index.org~ with new event details
+- [ ] Add hero images (16:9 or wider, 1920px+ wide)
+- [ ] Create ~og.png~ for social sharing (1200x630)
+- [ ] Export org to HTML in Emacs (~C-c C-e h h~)
+- [ ] Copy folder to ~astro-monorepo/apps/jaydocs/public/~
+- [ ] Update all meta tags to use ~dixit.ca~ domain
+- [ ] Update CSS font paths to ~/fonts/~
+- [ ] Test locally and deploy
+
+* Source Files
+
+** Edit Only index.org
+
+- *NEVER* edit ~index.html~ directly — it's auto-generated from ~index.org~
+- All content changes go in ~index.org~
+- After editing, regenerate HTML via Emacs export: ~C-c C-e h h~
+
+** File Structure
+
+#+begin_example
+event-name/
+├── index.org          # Source file (edit this)
+├── index.html         # Generated output (don't edit)
+├── og.png             # OpenGraph image for social sharing
+├── css/
+│   ├── base.css       # Font definitions, resets, base styles
+│   └── style.css      # Parallax and layout styles
+├── js/
+│   └── modernizr.js   # Browser feature detection
+└── img/
+    ├── event-name-1.png   # First parallax hero image
+    └── event-name-2.png   # Second parallax hero image
+#+end_example
+
+* Images
+
+** Parallax Hero Images
+
+| Requirement    | Specification                              |
+|----------------+--------------------------------------------|
+| Aspect ratio   | 16:9 or wider (~1.89:1 ideal)              |
+| Resolution     | 1920px+ wide (2560px for retina)           |
+| Format         | PNG or JPG                                 |
+| Naming         | ~event-name-1.png~, ~event-name-2.png~     |
+
+- Images use ~background-size: cover~ — they crop from edges
+- Keep important content centered in the frame
+- Update CSS references in ~index.org~ to match new filenames:
+
+#+begin_src css
+section.module.parallax-1 {
+  background-image: url("img/event-name-1.png");
+}
+section.module.parallax-2 {
+  background-image: url("img/event-name-2.png");
+}
+#+end_src
+
+** OpenGraph Image (og.png)
+
+| Requirement  | Specification                    |
+|--------------+----------------------------------|
+| Size         | 1200x630 (or similar wide ratio) |
+| Format       | PNG                              |
+| Content      | Use one of the event hero images |
+
+- *Create fresh ~og.png~ for each event* — don't reuse old ones
+- Social platforms cache aggressively; new events need new images
+
+* Deploying to dixit.ca
+
+** Step 1: Copy to Jaydocs
+
+#+begin_src bash
+cp -r /path/to/event-name/ /path/to/astro-monorepo/apps/jaydocs/public/
+#+end_src
+
+** Step 2: Update Domain References
+
+Change all ~jaydixit.com~ references to ~dixit.ca~:
+
+#+begin_src html
+<!-- OpenGraph meta tags -->
+<meta property="og:image" content="https://dixit.ca/event-name/og.png"/>
+<meta property="og:url" content="https://dixit.ca/event-name/"/>
+#+end_src
+
+** Step 3: Update Font Paths
+
+Fonts are shared at ~jaydocs/public/fonts/~. Update ~css/base.css~ to use absolute paths:
+
+#+begin_src css
+@font-face {
+  font-family: 'Garamond Premier Pro';
+  src: url('/fonts/garamondpremrpro-webfont.woff') format('woff'),
+       url('/fonts/garamondpremrpro-webfont.ttf') format('truetype');
+}
+#+end_src
+
+** Step 4: Commit and Deploy
+
+#+begin_src bash
+cd /path/to/astro-monorepo
+git add .
+git commit -m "Add [event-name] invitation"
+git push
+#+end_src
+
+Vercel auto-deploys on push. Wait 1-2 minutes for deployment.
+
+* Testing
+
+** Local Development
+
+#+begin_src bash
+cd /path/to/astro-monorepo/apps/jaydocs
+npm run dev
+# Visit http://localhost:4321/event-name/
+#+end_src
+
+Note: Always use trailing slash in URLs.
+
+** OpenGraph Testing
+
+After deployment, verify social sharing previews:
+
+1. [[https://www.opengraph.xyz][opengraph.xyz]] — Quick preview tool
+2. [[https://developers.facebook.com/tools/debug/][Facebook Sharing Debugger]] — Clears FB cache
+3. [[https://cards-dev.twitter.com/validator][Twitter Card Validator]] — Test Twitter previews
+
+If old images appear, use the debugger tools to clear cached versions.
+
+* Template Customization
+
+** Parallax Sections
+
+The template supports 2-3 parallax sections. Each section needs:
+
+1. CSS class definition with background image
+2. Height settings for mobile/tablet/desktop
+3. HTML section element in the markup
+
+** Content Section
+
+The main content area between parallax sections contains:
+
+- Event title (h1)
+- Invitation copy (paragraphs)
+- Details box (location, date/time)
+- Optional: cocktail menu, additional info
+
+** Styling Accents
+
+The template uses a warm accent color for links and labels:
+
+#+begin_src css
+color: #9b4819;  /* Warm brown/rust accent */
+#+end_src
+
+Adjust this in the ~.details strong~ and ~.details a~ selectors.
+
+* Troubleshooting
+
+** 404 on Static Pages
+
+Ensure ~vercel.json~ has trailing slash enabled:
+
+#+begin_src json
+{
+  "trailingSlash": true
+}
+#+end_src
+
+** Fonts Not Loading
+
+- Check font paths are absolute (~/fonts/...~)
+- Verify fonts exist in ~jaydocs/public/fonts/~
+
+** Old OG Image Appearing
+
+- Replace ~og.png~ with new image
+- Clear cache using Facebook/Twitter debugger tools
+- Wait for CDN propagation (can take minutes)
+
+** Parallax Not Working on Mobile
+
+iOS Safari doesn't support ~background-attachment: fixed~. The CSS includes a fallback:
+
+#+begin_src css
+@media (max-width: 768px) {
+  section.module.parallax {
+    background-attachment: scroll;
+  }
+}
+#+end_src
+
+* Reference: Existing Invitations
+
+| Folder          | Event                         | Status |
+|-----------------+-------------------------------+--------|
+| invite-canonical | Template with org macros     | Master |
+| barry-lyndon    | Barry Lyndon screening        | Live   |
+| fall-cocktails  | Fall cocktails party          | Live   |
+| song-of-my-city | Song of My City screening     | Live   |
+
+* Live URLs
+
+- https://dixit.ca/song-of-my-city/
+- (Add future events here)
