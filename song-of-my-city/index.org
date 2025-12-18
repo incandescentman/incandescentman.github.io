@@ -18,11 +18,12 @@
 # EVENT CONTENT - Edit these values for each new event
 # ============================================================
 
-# Parallax heading 1 (line 46 below): Barry Lyndon Awaits
-# Event title (line 90): Barry Lyndon Screening
+# Parallax heading 1 (line 46 below): Song of My City
+# Event title (line 90): Movie Night: Song of My City
 # Event body (lines 91-100): Movie night invitation text
 # Event details (lines 102-104): Where/Map/When
-# Parallax heading 2 (line 129): Intermission Toast
+# Parallax heading 2: (empty)
+# Parallax heading 3: The Square
 
 # ============================================================
 # HTML TEMPLATE
@@ -34,7 +35,7 @@ h1.title {
  display: none;
 }
 section.module.parallax-1 {
- background-image: url("img/song-of-my-city-1.jpg");
+ background-image: url("img/song-of-my-city-1.png");
  min-height: 60vh;
 }
 section.module.parallax-1 .container {
@@ -51,11 +52,7 @@ section.module.parallax-1 h1 {
   backdrop-filter: blur(4px);
 }
 section.module.parallax-2 {
- background-image: url("img/song-of-my-city-2.jpg");
- min-height: 70vh;
-}
-section.module.parallax-3 {
- background-image: url("img/the-square.jpg");
+ background-image: url("img/song-of-my-city-2.png");
  min-height: 90vh;
 }
 
@@ -69,10 +66,6 @@ section.module.parallax {
   background-attachment: fixed;
 }
 
-section.module.parallax-3 {
-  min-height: 90vh;
-}
-
 @media (min-width: 768px) {
   section.module.parallax {
     min-height: 500px;
@@ -81,9 +74,6 @@ section.module.parallax-3 {
     min-height: 90vh;
   }
   section.module.parallax-2 {
-    min-height: 110vh;
-  }
-  section.module.parallax-3 {
     min-height: 120vh;
   }
 }
@@ -98,9 +88,6 @@ section.module.parallax-3 {
   section.module.parallax-2 {
     min-height: 140vh;
   }
-  section.module.parallax-3 {
-    min-height: 140vh;
-  }
 }
 
 /* Hide footer and remove bottom spacing */
@@ -113,7 +100,7 @@ body, html, .wrapper, main {
   padding-bottom: 0 !important;
 }
 
-section.module.parallax-3 {
+section.module.parallax-2 {
   margin-bottom: 0 !important;
 }
 
@@ -252,7 +239,6 @@ section.module.content .details a:hover {
 
 <section class="module parallax parallax-1">
     <div class="container">
-     <h1>Song of My City</h1>
     </div>
    </section>
 
@@ -263,19 +249,36 @@ section.module.content .details a:hover {
  <div class="container">
   <h1>Movie Night: Song of My City</h1>
 
-  <p>Join me for an intimate screening to celebrate my friend John Sears, whose work as editor on this short film earned a spot at Telluride.</p>
+  <p>Goodside gathers to celebrate our very own John Sears, whose work as editor on this short film earned a spot at Telluride.</p>
 
   <p><em>Song of My City</em>, directed by David C. Roberts, is a cinematic montage that reconstructs 1970s New York as it exists in the movies that mythologized it&mdash;<em>Taxi Driver</em>, <em>The Warriors</em>, <em>The Taking of Pelham 123</em>. Seventeen minutes of neon, steam, and a skyline that no longer exists.</p>
 
   <p>Afterwards, we'll screen Ruben Östlund's <em>The Square</em>&mdash;winner of the Palme d'Or at Cannes. A satirical black comedy about a museum curator whose ordered life unravels in increasingly absurd ways.</p>
 
-  <p>We'll gather, watch, and raise a glass to John.</p>
-
-  <p>Jay</p>
+  <p>Join us. We'll watch, and raise a glass to John's achievement.</p>
 
   <div class="details">
    <p><strong>Where:</strong> <a href="https://goo.gl/maps/S7hov7YT44mbsjKD8">166 North 7th Street Apt. 3 Brooklyn NY 11211</a></p>
    <p><strong>When:</strong> Thursday December 18, 6:30pm</p>
+  </div>
+
+  <div class="details" style="margin-top: 32px;">
+   <h2 style="font-size: 1.4em; font-weight: 400; margin-bottom: 24px; text-align: center; color: #333;">Cocktail Menu</h2>
+
+   <p><strong>The Editor's Cut</strong><br/>
+   Bourbon, sweet vermouth, Angostura bitters, orange peel</p>
+
+   <p><strong>The Clean Cut</strong> <em>(mocktail)</em><br/>
+   Seedlip or non-alcoholic whiskey, black tea, tonic, fresh lime</p>
+
+   <p><strong>The Telluride Toast</strong><br/>
+   Gin, lemon juice, simple syrup, lemon peel</p>
+
+   <p><strong>Seventeen Minutes</strong><br/>
+   Vodka, lemon juice, simple syrup, soda water, lemon peel</p>
+
+   <p><strong>Neon Steam</strong><br/>
+   Bourbon, lemon juice, honey syrup, hot water, lemon wheel</p>
   </div>
 
  </div>
@@ -285,11 +288,6 @@ section.module.content .details a:hover {
 #+BEGIN_EXPORT HTML
 
    <section class="module parallax parallax-2">
-    <div class="container">
-    </div>
-   </section>
-
-   <section class="module parallax parallax-3">
     <div class="container">
     </div>
    </section>
