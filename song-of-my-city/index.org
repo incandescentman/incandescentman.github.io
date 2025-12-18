@@ -1,0 +1,308 @@
+#+TITLE: Song of My City Screening
+#+DESCRIPTION: Join us for an intimate screening to celebrate John's Telluride selection.
+#+KEYWORDS: movie night, Song of My City, screening, short film
+
+# ============================================================
+# METADATA - Edit for each event
+# ============================================================
+#+HTML_HEAD: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+#+HTML_HEAD: <link rel="stylesheet" href="css/base.css">
+#+HTML_HEAD: <link rel="stylesheet" href="css/style.css">
+#+HTML_HEAD: <script src="js/modernizr.js"></script>
+#+HTML_HEAD: <meta property="og:title" content="Song of My City Screening" />
+#+HTML_HEAD: <meta property="og:description" content="Join us for an intimate screening to celebrate John's Telluride selection." />
+#+HTML_HEAD: <meta property="og:image" content="https://jaydixit.com/song-of-my-city/og.png"/>
+#+HTML_HEAD: <meta property="og:url" content="song-of-my-city/index.html"/>
+
+# ============================================================
+# EVENT CONTENT - Edit these values for each new event
+# ============================================================
+
+# Parallax heading 1 (line 46 below): Barry Lyndon Awaits
+# Event title (line 90): Barry Lyndon Screening
+# Event body (lines 91-100): Movie night invitation text
+# Event details (lines 102-104): Where/Map/When
+# Parallax heading 2 (line 129): Intermission Toast
+
+# ============================================================
+# HTML TEMPLATE
+# ============================================================
+
+#+BEGIN_EXPORT HTML
+<style>
+h1.title {
+ display: none;
+}
+section.module.parallax-1 {
+ background-image: url("img/song-of-my-city-1.jpg");
+ min-height: 60vh;
+}
+section.module.parallax-1 .container {
+  text-align: center;
+  padding: 0 0 0;
+}
+section.module.parallax-1 h1 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0.4em 0.6em;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0) 100%);
+  backdrop-filter: blur(4px);
+}
+section.module.parallax-2 {
+ background-image: url("img/song-of-my-city-2.jpg");
+ min-height: 70vh;
+}
+section.module.parallax-3 {
+ background-image: url("img/song-of-my-city-3.jpg");
+ min-height: 90vh;
+}
+
+/* Dynamic parallax section heights */
+section.module.parallax {
+  min-height: 400px;
+  height: auto;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+section.module.parallax-3 {
+  min-height: 90vh;
+}
+
+@media (min-width: 768px) {
+  section.module.parallax {
+    min-height: 500px;
+  }
+  section.module.parallax-1 {
+    min-height: 90vh;
+  }
+  section.module.parallax-2 {
+    min-height: 110vh;
+  }
+  section.module.parallax-3 {
+    min-height: 120vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.module.parallax {
+    min-height: 600px;
+  }
+  section.module.parallax-1 {
+    min-height: 110vh;
+  }
+  section.module.parallax-2 {
+    min-height: 140vh;
+  }
+  section.module.parallax-3 {
+    min-height: 140vh;
+  }
+}
+
+/* Hide footer and remove bottom spacing */
+footer {
+  display: none;
+}
+
+body, html, .wrapper, main {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+section.module.parallax-3 {
+  margin-bottom: 0 !important;
+}
+
+/* Smooth scroll-triggered animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section.module.content {
+  padding: 80px 24px;
+  background: #fff;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+section.module.content .container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 48px;
+}
+
+section.module.content h1 {
+  font-size: 2.5em;
+  margin-bottom: 48px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+section.module.content p {
+  font-size: 1.2em;
+  line-height: 1.75;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+section.module.content .details {
+  margin-top: 64px;
+  padding: 40px;
+  background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%);
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+section.module.content .details:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+section.module.content .details p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+section.module.content .details p:last-child {
+  margin-bottom: 0;
+}
+
+section.module.content .details strong {
+  display: inline-block;
+  min-width: 90px;
+  font-weight: 600;
+  font-size: 1.05em;
+  color: #9b4819;
+  letter-spacing: 0.3px;
+}
+
+section.module.content .details a {
+  color: #9b4819;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+
+section.module.content .details a:hover {
+  color: #7a3614;
+  border-bottom: 1px solid #9b4819;
+}
+
+@media (max-width: 768px) {
+  section.module.parallax {
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: scroll;
+    margin-bottom: 0;
+  }
+  section.module.parallax .container {
+    padding: 1em 1em 0;
+  }
+  section.module.content {
+    padding: 64px 16px;
+  }
+
+  section.module.content .container {
+    padding: 24px;
+  }
+
+  section.module.content h1 {
+    font-size: 2em;
+    margin-bottom: 32px;
+  }
+
+  section.module.content p {
+    font-size: 1.1em;
+    margin-bottom: 16px;
+  }
+
+  section.module.content .details {
+    padding: 32px;
+    margin-top: 48px;
+  }
+
+  section.module.content .details p {
+    margin-bottom: 16px;
+  }
+
+  section.module.content .details strong {
+    min-width: 80px;
+    font-size: 1.02em;
+  }
+}
+</style>
+
+<div class="wrapper">
+<main>
+
+<section class="module parallax parallax-1">
+    <div class="container">
+     <h1>Song of My City</h1>
+    </div>
+   </section>
+
+#+END_EXPORT
+
+#+BEGIN_EXPORT HTML
+<section class="module content">
+ <div class="container">
+  <h1>Song of My City</h1>
+
+  <p>Join me for an intimate screening to celebrate my friend John Sears, whose work as editor on this short film earned a spot at Telluride.</p>
+
+  <p><em>Song of My City</em>, directed by David C. Roberts, is a cinematic montage that reconstructs 1970s New York as it exists in the movies that mythologized it&mdash;<em>Taxi Driver</em>, <em>The Warriors</em>, <em>The Taking of Pelham 123</em>. Seventeen minutes of neon, steam, and a skyline that no longer exists.</p>
+
+  <p>We'll gather, watch, and raise a glass to John.</p>
+
+  <p>Jay</p>
+
+  <div class="details">
+   <p><strong>Where:</strong> <a href="https://goo.gl/maps/S7hov7YT44mbsjKD8">166 North 7th Street Apt. 3 Brooklyn NY 11211</a></p>
+   <p><strong>When:</strong> Thursday December 18, 6:30pm</p>
+  </div>
+
+ </div>
+</section>
+#+END_EXPORT
+
+#+BEGIN_EXPORT HTML
+
+   <section class="module parallax parallax-2">
+    <div class="container">
+    </div>
+   </section>
+
+   <section class="module parallax parallax-3">
+    <div class="container">
+    </div>
+   </section>
+
+ </main>
+
+ <footer>
+  <div class="container">
+   <div class="copyright">
+    <small>
+     <a href="https://jaydixit.com">jaydixit.com</a>
+    </small>
+   </div>
+  </div>
+ </footer>
+
+</div><!-- /#wrapper -->
+#+END_EXPORT
