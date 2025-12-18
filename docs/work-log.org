@@ -127,7 +127,35 @@ Created new event invitation for Goodside movie night celebrating John Sears' Te
 - `song-of-my-city/index.html` (auto-generated)
 - `song-of-my-city/img/` (new watercolor images)
 
-** Commits
+** Commits (incandescentman repo)
 - `d06b8b9` - Add Song of My City screening invite
 - `be7d472` - Add The Square as double feature, update title
 - `538df5e` - Update images and content for Song of My City screening
+
+*** Jaydocs Integration
+Deployed invite to dixit.ca via astro-monorepo/apps/jaydocs
+
+**** Vite Plugin for Static HTML
+Created custom Vite plugin in `astro.config.mjs` to handle static HTML folders in `public/`:
+- Auto-resolves `index.html` for directory URLs
+- Redirects `/path` to `/path/` for correct relative path resolution
+- Enables standalone HTML pages to work alongside Astro routes
+
+**** Font Integration
+- Created shared font location at `jaydocs/public/fonts/`
+- Garamond Premier Pro fonts available at `/fonts/` for all static pages
+- Updated CSS to use absolute paths (`/fonts/...`) for portability
+
+**** Itinerary Updates
+- Added December 22 (NYC→Ottawa) and Dec 31 (Ottawa→NYC) to itinerary
+- Fixed org→mdx sync issue (mdx is the source for display, org is user-editable)
+
+** Commits (astro-monorepo)
+- `70e0185` - Add Song of My City screening invite to jaydocs
+- `daff9a0` - Add domain (dixit.ca) to jaydocs CLAUDE.md
+- `4807f2a` - Add public folder index.html resolution + December itinerary
+- `2b4c075` - Add Garamond fonts for song-of-my-city invite
+- `b9bfe08` - Move fonts to shared jaydocs/public/fonts/ location
+
+** Live URL
+https://dixit.ca/song-of-my-city/
