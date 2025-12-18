@@ -157,6 +157,11 @@ Created custom Vite plugin in `astro.config.mjs` to handle static HTML folders i
 - `2b4c075` - Add Garamond fonts for song-of-my-city invite
 - `b9bfe08` - Move fonts to shared jaydocs/public/fonts/ location
 
+*** Later Addition: The Square Image
+- Added The Square movie poster as third parallax section at bottom of invite
+- Image: `img/the-square.jpg` (famous dinner scene with Terry Notary)
+- Added CSS for parallax-3 with responsive heights
+
 ** Live URL
 https://dixit.ca/song-of-my-city/
 
