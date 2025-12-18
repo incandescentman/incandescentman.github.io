@@ -171,6 +171,16 @@ Created custom Vite plugin in `astro.config.mjs` to handle static HTML folders i
 - Fixed cocktail menu width with negative margins to match container width
 - Updated party-event-protocol.org with org-mode editing documentation
 
+*** Smart Quotes Fix
+- *Critical learning:* Content inside `#+BEGIN_EXPORT HTML` blocks is passed through verbatim—no org processing (including smart quotes)
+- Text must be *outside* HTML export blocks to get smart quote conversion
+- Added `#+OPTIONS: ':t` to enable smart quotes
+
+*** Consolidation to Jaydocs
+- Deleted `incandescentman/song-of-my-city/` folder
+- Canonical location is now `astro-monorepo/apps/jaydocs/public/song-of-my-city/`
+- Updated party-event-protocol.org with canonical location
+
 ** Live URL
 https://dixit.ca/song-of-my-city/
 
