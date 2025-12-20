@@ -215,3 +215,54 @@ https://dixit.ca/song-of-my-city/
 - Local: `npm run dev` in jaydocs, visit `http://localhost:4321/[folder]/`
 - OG image: use https://www.opengraph.xyz or Facebook Debugger
 - After deploy: wait 1-2 min for Vercel, then test with trailing slash
+
+* 2025-12-20 Saturday - New Year, New You Party Invite
+
+** Session Overview
+Created retro 1950s-themed New Year's Eve party invitation with parallax scrolling.
+
+** Work Completed
+*** Initial Setup
+- Duplicated `song-of-my-city/` to create `new-year-new-you/`
+- Updated all metadata, titles, and OG tags for new event
+- Followed party-event-protocol.org workflow
+
+*** Content
+- Wrote tongue-in-cheek 1950s self-improvement invitation copy
+- Theme: "Step boldly into 1958" with mid-century excellence
+- Details: December 31st, 6:30pm at Jay's apartment
+- Dress code: skinny ties, polished shoes, Crest smile, FIRM HANDSHAKE
+
+*** Images
+- Added 5 AI-generated retro images (3 ChatGPT, 2 Gemini)
+- Expanded from 3 to 5 parallax sections to showcase all images
+- Added responsive media queries for parallax-4 and parallax-5
+
+*** Typography
+- Switched from Garamond Premier Pro to Adobe Garamond Pro
+- Copied font files from socratic to jaydocs shared fonts folder
+- Updated @font-face declarations with relative paths
+
+*** UX Improvements
+- Added bouncing scroll arrows (⬇) to indicate more content below
+- Arrows styled at 8em with 0.6 opacity, smaller (5em) on mobile
+- Added scroll-spacer with matching background for smooth bottom scroll
+- Hidden scroll-spacer on mobile (fixed backgrounds don't work on iOS)
+
+*** Mobile Optimization
+- Reduced parallax section height to 25vh (shows more image width)
+- Added mobile fallback for background-attachment: scroll
+- Responsive arrow sizing and positioning
+
+*** Styling Fixes
+- Added margin-bottom to details box for proper spacing
+- Fixed font path from absolute to relative for local testing
+
+** Files Modified
+- `jaydocs/public/new-year-new-you/` (new folder)
+- `jaydocs/public/new-year-new-you/index.org` (source)
+- `jaydocs/public/new-year-new-you/css/base.css` (Adobe Garamond Pro fonts)
+- `jaydocs/public/fonts/adobe-garamond-pro/` (new font files)
+
+** Live URL
+https://dixit.ca/new-year-new-you/
